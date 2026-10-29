@@ -701,31 +701,33 @@ return {
        say:'No atendimento. A chegada, a triagem e o cadastro são da recepção, com a assistente cobrindo o almoço; emergência vai direto ao médico veterinário. A emergência é da Linha de Frente, com o Back, a Raissa e o estagiário no apoio, e a Internista como referência. Consulta, plano de tratamento e receita são do médico veterinário, e a recepção colhe os termos e cobra. Orçamentos por WhatsApp e ligação são da assistente, com o médico veterinário na parte técnica. Estornos, descontos e reclamações são da Laís, que recorre ao Vitor. E no PetLove, a assistente confere; a glosa é corrigida por quem atendeu.'},
       {v:{type:'table', left:true, tag:'Seg a sex · internação e suporte', h:'Da internação **ao estoque**', grid:'2fr 1.4fr 1.8fr 1.4fr', cols:['Processo','Dono','Participa','Recorre a'], rows:[
         ['Condutas, exames e notícias','**Internista**','Back, estagiários','Linha de Frente'],
+        ['Alta dos internados (08h–21h)','**Linha de Frente**','Internista (passa o caso), recepção','Internista'],
         ['Vídeos de notícias ao tutor','**Amanda (manhã)**','M.V. aprova','Internista'],
         ['Kits, baias e alimentação','**Raissa**','Bernardo, Amanda','M.V. responsável'],
         ['Estoque, farmácia e compras','**Raissa**','Bernardo (conferência de NF)','Vitor (pedido)'],
         ['Insumos das máquinas (IDEXX, hemogasômetro)','**Raissa**','M.V. que usa','Vitor'],
         ['Almotolias, lixo hospitalar, desinfecção dos consultórios','**Faxina**','estagiário após o uso','Laís']]},
-       say:'Na internação e no suporte. Condutas, exames e notícias dos internados são da Internista, com o Back e os estagiários. Os vídeos de notícias para o tutor são da Amanda, de manhã, com a aprovação do médico veterinário. Kits, baias e alimentação são da Raissa, com o apoio dos estagiários. Estoque, farmácia e a lista de compras também são da Raissa; o Bernardo pode conferir a nota, e o pedido é do Vitor. Os insumos das máquinas da internação, como o IDEXX e o hemogasômetro, são controlados pela Raissa. E a reposição das almotolias, das caixas de lixo hospitalar e a limpeza e desinfecção dos consultórios são da faxina, que responde à Laís.'}
+       say:'Na internação e no suporte. Condutas, exames e notícias dos internados são da Internista, com o Back e os estagiários. A alta dos internados é sempre da Linha de Frente, das oito às vinte e uma, com o caso passado pela Internista. Os vídeos de notícias para o tutor são da Amanda, de manhã, com a aprovação do médico veterinário. Kits, baias e alimentação são da Raissa, com o apoio dos estagiários. Estoque, farmácia e a lista de compras também são da Raissa; o Bernardo pode conferir a nota, e o pedido é do Vitor. Os insumos das máquinas da internação, como o IDEXX e o hemogasômetro, são controlados pela Raissa. E a reposição das almotolias, das caixas de lixo hospitalar e a limpeza e desinfecção dos consultórios são da faxina, que responde à Laís.'}
      ]},
     {id:'semana-noite', title:'Seg a sex · fim de tarde e noite', small:'18h às 08h',
      beats:[
       {v:{type:'timeline', tag:'Segunda a sexta · noite', h:'Quem **fecha o dia** e quem passa a noite', rows:[
-        T('M.V. Back Internação','altas e fechamento 18h–20h','back',[[8,20,'08h–20h']]),
-        T('M.V. Linha de Frente · tarde','preferência até 21h','lf',[[14,21,'14h–21h']]),
+        T('M.V. Back Internação','fechamento com tutores 18h–20h','back',[[8,20,'08h–20h']]),
+        T('M.V. Linha de Frente · tarde','altas dos internados até 21h','lf',[[14,21,'14h–21h']]),
         T('M.V. Plantonista','atendimento geral a partir das 21h','plant',[[20,32,'20h–08h']]),
         T('Recepção 12x36','fecha o caixa 18h30','rec',[[8,19.5,'07h30–19h30']]),
         T('Bernardo · estagiário','passa à noturna 20h45','aux',[[15,21,'15h–21h']]),
         T('Aux. Vet. Noturna','recepção e suporte da noite','aux',[[19,31,'19h–07h']])], hl:[2,5], notes:[['19h','Raissa e recepção passam à noturna'],['20h','Back passa ao Plantonista']]},
-       say:'No fim de tarde e à noite, as mãos trocam várias vezes. Às dezoito, a Internista passa a internação ao Back, que faz as altas e o fechamento com os tutores até as vinte. Às dezenove, a Raissa e a recepção passam à auxiliar noturna. Às vinte, o Back passa o plantão ao Plantonista, que assume o atendimento geral a partir das vinte e uma; até lá, a preferência ainda é da Linha de Frente da tarde. E às seis e quarenta e cinco, a noturna faz a passagem para a manhã.'},
-      {v:{type:'table', left:true, tag:'Seg a sex · noite', h:'Quem responde **depois das 20h**', grid:'2fr 1.4fr 1.8fr 1.4fr', cols:['Processo','Dono','Participa','Recorre a'], rows:[
-        ['Altas e fechamento com tutores (18h–20h)','**Back Internação**','Recepção (cobrança)','Internista'],
+       say:'No fim de tarde e à noite, as mãos trocam várias vezes. Às dezoito, a Internista passa a internação ao Back, que faz o fechamento das atualizações com os tutores até as vinte; as altas continuam com a Linha de Frente, até as vinte e uma. Às dezenove, a Raissa e a recepção passam à auxiliar noturna. Às vinte, o Back passa o plantão ao Plantonista, que assume o atendimento geral a partir das vinte e uma; até lá, a preferência ainda é da Linha de Frente da tarde. E às seis e quarenta e cinco, a noturna faz a passagem para a manhã.'},
+      {v:{type:'table', left:true, tag:'Seg a sex · noite', h:'Quem responde **depois das 18h**', grid:'2fr 1.4fr 1.8fr 1.4fr', cols:['Processo','Dono','Participa','Recorre a'], rows:[
+        ['Altas dos internados (até 21h)','**Linha de Frente**','Back, recepção (cobrança)','Internista'],
+        ['Fechamento das atualizações com tutores (18h–20h)','**Back Internação**','—','Internista'],
         ['Atendimento geral e emergência','**Plantonista**','Aux. Vet. Noturna','Linha de Frente até 21h'],
         ['Recepção, telefone e caixa da noite','**Aux. Vet. Noturna**','Plantonista','Laís (no dia seguinte)'],
         ['Notícias dos internados','**Plantonista**','—','Internista'],
         ['Falta de medicamento ou insumo','**Aux. Vet. Noturna**','Plantonista','Raissa (passagem)'],
         ['Óbito durante o plantão','**Plantonista**','Aux. Vet. Noturna','Laís (estorno)']]},
-       say:'Depois das vinte. As altas e o fechamento com os tutores, até as vinte, são do Back. O atendimento geral e as emergências são do Plantonista, com a auxiliar noturna. A recepção, o telefone e o caixa da noite ficam com a auxiliar noturna; divergência vai para a Laís no dia seguinte. As notícias dos internados são do Plantonista, até as oito. Falta de medicamento ou insumo é registrada pela noturna na passagem para a Raissa. E o óbito no plantão é comunicado pelo Plantonista, com a noturna acolhendo o tutor.'}
+       say:'Depois das dezoito. As altas dos internados continuam com a Linha de Frente, até as vinte e uma, inclusive entre as dezoito e as vinte. O fechamento das atualizações com os tutores, até as vinte, é do Back. O atendimento geral e as emergências são do Plantonista, com a auxiliar noturna. A recepção, o telefone e o caixa da noite ficam com a auxiliar noturna; divergência vai para a Laís no dia seguinte. As notícias dos internados são do Plantonista, até as oito. Falta de medicamento ou insumo é registrada pela noturna na passagem para a Raissa. E o óbito no plantão é comunicado pelo Plantonista, com a noturna acolhendo o tutor.'}
      ]},
     {id:'sabado', title:'Sábado', small:'Equipe reduzida',
      beats:[
@@ -800,10 +802,10 @@ return {
         ['06h45','Aux. Vet. Noturna','Recepção, Amanda e Raissa (pendências da noite)'],
         ['08h','Plantonista','Internista e Back'],
         ['14h–15h','Linha de Frente manhã','Linha de Frente tarde'],
-        ['18h','Internista','Back (altas e fechamento)'],
+        ['18h','Internista','Back (fechamento) e Linha de Frente (altas previstas)'],
         ['19h–19h30','Raissa · Recepção · Bernardo','Aux. Vet. Noturna'],
         ['20h','Back','Plantonista']]},
-       say:'Por fim, as trocas de mão do dia. Às seis e quarenta e cinco, a noturna passa as pendências da noite. Às oito, o Plantonista passa à Internista e ao Back. Entre as quatorze e as quinze, a Linha de Frente da manhã passa à da tarde. Às dezoito, a Internista passa ao Back. Entre as dezenove e as dezenove e trinta, a Raissa, a recepção e o Bernardo passam à noturna. E às vinte, o Back passa ao Plantonista. Sempre por escrito.'},
+       say:'Por fim, as trocas de mão do dia. Às seis e quarenta e cinco, a noturna passa as pendências da noite. Às oito, o Plantonista passa à Internista e ao Back. Entre as quatorze e as quinze, a Linha de Frente da manhã passa à da tarde. Às dezoito, a Internista passa ao Back e entrega à Linha de Frente as altas previstas. Entre as dezenove e as dezenove e trinta, a Raissa, a recepção e o Bernardo passam à noturna. E às vinte, o Back passa ao Plantonista. Sempre por escrito.'},
       {v:{type:'title', dark:true, tag:'Hospital Veterinário Reino Animal', h:'Cada tarefa com **um dono**. Cada passagem **por escrito**.', sub:'Na dúvida, consulte o manual do seu cargo ou procure quem destrava: a Laís, o M.V. responsável ou o Vitor.', chips:['Dono','Participa','Recorre a'], lastOn:true},
        say:'Cada tarefa tem um dono, e cada passagem é feita por escrito. Na dúvida, consulte o manual do seu cargo ou procure quem destrava: a Laís, o médico veterinário responsável ou o Vitor. Obrigado.'}
      ]}
