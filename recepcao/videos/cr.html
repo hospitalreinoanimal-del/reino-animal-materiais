@@ -844,16 +844,16 @@ return {
         "Temperatura da geladeira às 08h e 16h."
        ],
        [
-        "Farmácia e receitas",
-        "Faltas pedidas à Raissa; receita controlada retida entregue à Raissa."
+        "Geladeira de medicamentos",
+        "Sábados, domingos e feriados: temperatura às 10h e às 16h (dias úteis: Raissa)."
        ],
        [
-        "Ambiente",
-        "Recepção organizada. Limpeza e desinfecção dos consultórios, almotolias e caixas de lixo hospitalar são da faxina."
+        "Farmácia e receitas",
+        "Faltas pedidas à Raissa; receita controlada retida entregue à Raissa."
        ]
       ]
      },
-     "say": "Continuando. Laudos: Resultados anexados e avisados. Vacinas: Temperatura da geladeira às oito e dezesseis. Farmácia e receitas: Faltas pedidas à Raissa; receita controlada retida entregue à Raissa. Ambiente: Recepção organizada. Limpeza e desinfecção dos consultórios, almotolias e caixas de lixo hospitalar são da faxina."
+     "say": "Continuando. Laudos: Resultados anexados e avisados. Vacinas: Temperatura da geladeira às oito e dezesseis. Geladeira de medicamentos: Sábados, domingos e feriados: temperatura às dez e às dezesseis (dias úteis: Raissa). Farmácia e receitas: Faltas pedidas à Raissa; receita controlada retida entregue à Raissa."
     },
     {
      "v": {
@@ -868,12 +868,16 @@ return {
       ],
       "rows": [
        [
+        "Ambiente",
+        "Recepção organizada. Limpeza e desinfecção dos consultórios, almotolias e caixas de lixo hospitalar são da faxina."
+       ],
+       [
         "Cobertura",
         "WhatsApp, Flow e orçamentos no almoço da Assistente (13h–14h)."
        ]
       ]
      },
-     "say": "Continuando. Cobertura: WhatsApp, Flow e orçamentos no almoço da Assistente (das treze às quatorze)."
+     "say": "Continuando. Ambiente: Recepção organizada. Limpeza e desinfecção dos consultórios, almotolias e caixas de lixo hospitalar são da faxina. Cobertura: WhatsApp, Flow e orçamentos no almoço da Assistente (das treze às quatorze)."
     }
    ],
    "quiz": {
@@ -918,7 +922,7 @@ return {
        ],
        [
         "Plantão",
-        "Serviço terceirizado: agendamento e confirmação só com a cobrança antecipada de R$ 95"
+        "Serviço terceirizado: agendamento e confirmação só com a cobrança antecipada de R$ 95, abatida do valor do serviço"
        ],
        [
         "Plantão",
@@ -926,7 +930,7 @@ return {
        ]
       ]
      },
-     "say": "Regras do plantão inteiro. Triagem na chegada: emergência vai direto ao médico veterinário, antes do cadastro. Status da agenda atualizado em cada etapa (chegou, em atendimento, finalizado). Cancelamento: remarcação solicitada e agenda atualizada, com motivo. Serviço terceirizado: agendamento e confirmação só com a cobrança antecipada de noventa e cinco reais. Microchipagem: número do microchip incluído no cadastro do pet antes do consultório."
+     "say": "Regras do plantão inteiro. Triagem na chegada: emergência vai direto ao médico veterinário, antes do cadastro. Status da agenda atualizado em cada etapa (chegou, em atendimento, finalizado). Cancelamento: remarcação solicitada e agenda atualizada, com motivo. Serviço terceirizado: agendamento e confirmação só com a cobrança antecipada de noventa e cinco reais, abatida do valor do serviço. Microchipagem: número do microchip incluído no cadastro do pet antes do consultório."
     },
     {
      "v": {
@@ -1013,16 +1017,16 @@ return {
         "Temperatura da geladeira de vacinas — manhã (registrada)"
        ],
        [
-        "08:15",
-        "Agenda do dia conferida; WhatsApp/Flow: mensagens da noite respondidas"
+        "10:00",
+        "Sábado, domingo e feriado: temperatura da geladeira de medicamentos registrada (10h) — dias úteis: N/A"
        ],
        [
-        "10:00",
-        "Laudos do e-mail anexados e na agenda do vet; clínicas e tutores avisados"
+        "08:15",
+        "Agenda do dia conferida; WhatsApp/Flow: mensagens da noite respondidas"
        ]
       ]
      },
-     "say": "Rotina do plantão doze por trinta e seis. Sete e trinta, Passagem de turno lida e assinada. Sete e quarenta e cinco, Abertura de caixa: troco, maquininhas e sistema; valores da noite conferidos. Oito, Temperatura da geladeira de vacinas — manhã (registrada). Oito e quinze, Agenda do dia conferida; WhatsApp ou Flow: mensagens da noite respondidas. Dez, Laudos do e-mail anexados e na agenda do vet; clínicas e tutores avisados."
+     "say": "Rotina do plantão doze por trinta e seis. Sete e trinta, Passagem de turno lida e assinada. Sete e quarenta e cinco, Abertura de caixa: troco, maquininhas e sistema; valores da noite conferidos. Oito, Temperatura da geladeira de vacinas — manhã (registrada). Dez, Sábado, domingo e feriado: temperatura da geladeira de medicamentos registrada (dez) — dias úteis: não se aplica. Oito e quinze, Agenda do dia conferida; WhatsApp ou Flow: mensagens da noite respondidas."
     },
     {
      "v": {
@@ -1036,6 +1040,10 @@ return {
        "Tarefa"
       ],
       "rows": [
+       [
+        "10:00",
+        "Laudos do e-mail anexados e na agenda do vet; clínicas e tutores avisados"
+       ],
        [
         "11:00",
         "Farmácia da recepção: faltas verificadas e reposição pedida à Raissa"
@@ -1051,14 +1059,10 @@ return {
        [
         "14:00",
         "Documentos assinados do período digitalizados e anexados"
-       ],
-       [
-        "16:00",
-        "Temperatura da geladeira de vacinas — tarde (registrada)"
        ]
       ]
      },
-     "say": "Onze, Farmácia da recepção: faltas verificadas e reposição pedida à Raissa. Doze, Intervalo de almoço (uma hora) — a Assistente cobre a recepção (de segunda a sexta). Treze, Cobertura dos canais da Assistente no almoço dela (WhatsApp, Flow e orçamentos) — não se aplica no fim de semana. Quatorze, Documentos assinados do período digitalizados e anexados. Dezesseis, Temperatura da geladeira de vacinas — tarde (registrada)."
+     "say": "Dez, Laudos do e-mail anexados e na agenda do vet; clínicas e tutores avisados. Onze, Farmácia da recepção: faltas verificadas e reposição pedida à Raissa. Doze, Intervalo de almoço (uma hora) — a Assistente cobre a recepção (de segunda a sexta). Treze, Cobertura dos canais da Assistente no almoço dela (WhatsApp, Flow e orçamentos) — não se aplica no fim de semana. Quatorze, Documentos assinados do período digitalizados e anexados."
     },
     {
      "v": {
@@ -1073,6 +1077,14 @@ return {
       ],
       "rows": [
        [
+        "16:00",
+        "Temperatura da geladeira de vacinas — tarde (registrada)"
+       ],
+       [
+        "16:00",
+        "Sábado, domingo e feriado: temperatura da geladeira de medicamentos registrada (16h) — dias úteis: N/A"
+       ],
+       [
         "17:00",
         "Pendências conferidas: sem assinatura, sem recebimento, sem anexo, exame sem aviso, agenda sem status"
        ],
@@ -1086,7 +1098,7 @@ return {
        ]
       ]
      },
-     "say": "Dezessete, Pendências conferidas: sem assinatura, sem recebimento, sem anexo, exame sem aviso, agenda sem status. Dezoito e trinta, Fechamento de caixa: maquininhas, pix e dinheiro contra sistema (relatório para a Laís). Dezenove, Recepção limpa e organizada e passagem de turno escrita."
+     "say": "Dezesseis, Temperatura da geladeira de vacinas — tarde (registrada). Dezesseis, Sábado, domingo e feriado: temperatura da geladeira de medicamentos registrada (dezesseis) — dias úteis: não se aplica. Dezessete, Pendências conferidas: sem assinatura, sem recebimento, sem anexo, exame sem aviso, agenda sem status. Dezoito e trinta, Fechamento de caixa: maquininhas, pix e dinheiro contra sistema (relatório para a Laís). Dezenove, Recepção limpa e organizada e passagem de turno escrita."
     },
     {
      "v": {
@@ -1173,10 +1185,10 @@ return {
        "Temperatura fora da faixa: Raissa e M.V. de plantão na hora.",
        "Passagem escrita e rubrica em todo plantão.",
        "Óbito: acolher; a notícia é do M.V.",
-       "Serviço terceirizado: agendamento e confirmação só com a cobrança antecipada de R$ 95."
+       "Serviço terceirizado: agendamento e confirmação só com a cobrança antecipada de R$ 95, abatida do valor do serviço."
       ]
      },
-     "say": "As regras do cargo. Primeiro: nenhum atendimento sai sem cobrança conferida. Depois: nunca estornar ou cancelar sem aprovação da Laís. Em seguida: temperatura fora da faixa: Raissa e médico veterinário de plantão na hora. Também: passagem escrita e rubrica em todo plantão. E ainda: óbito: acolher; a notícia é do médico veterinário. Por fim: serviço terceirizado: agendamento e confirmação só com a cobrança antecipada de noventa e cinco reais."
+     "say": "As regras do cargo. Primeiro: nenhum atendimento sai sem cobrança conferida. Depois: nunca estornar ou cancelar sem aprovação da Laís. Em seguida: temperatura fora da faixa: Raissa e médico veterinário de plantão na hora. Também: passagem escrita e rubrica em todo plantão. E ainda: óbito: acolher; a notícia é do médico veterinário. Por fim: serviço terceirizado: agendamento e confirmação só com a cobrança antecipada de noventa e cinco reais, abatida do valor do serviço."
     },
     {
      "v": {
@@ -1350,14 +1362,14 @@ return {
     }
    ],
    "quiz": {
-    "q": "Tutor quer agendar um serviço terceirizado.",
+    "q": "Sábado, domingo ou feriado: geladeira de medicamentos.",
     "o": [
-     "Só agende e confirme com a cobrança antecipada de R$ 95. Sem o pagamento, o horário não fica reservado.",
+     "Registre a temperatura às 10h e às 16h (nos dias úteis é da Raissa). Fora da faixa: Raissa e M.V. de plantão na hora.",
      "Ignorar, porque não é urgente",
      "Pedir para o tutor voltar outro dia"
     ],
     "a": 0,
-    "why": "Só agende e confirme com a cobrança antecipada de R$ 95. Sem o pagamento, o horário não fica reservado."
+    "why": "Registre a temperatura às 10h e às 16h (nos dias úteis é da Raissa). Fora da faixa: Raissa e M.V. de plantão na hora."
    }
   },
   {
@@ -1414,12 +1426,12 @@ return {
         "Avise a Raissa e o M.V. de plantão na hora e registre."
        ],
        [
-        "Tutor quer agendar um serviço terceirizado.",
-        "Só agende e confirme com a cobrança antecipada de R$ 95. Sem o pagamento, o horário não fica reservado."
+        "Sábado, domingo ou feriado: geladeira de medicamentos.",
+        "Registre a temperatura às 10h e às 16h (nos dias úteis é da Raissa). Fora da faixa: Raissa e M.V. de plantão na hora."
        ]
       ]
      },
-     "say": "Quando: Tutor quer orçamento. Registre o pedido e passe à Assistente; no balcão, ofereça o valor de tabela do que for seu (consulta, vacina). Quando: Temperatura da geladeira de vacinas fora da faixa. Avise a Raissa e o médico veterinário de plantão na hora e registre. Quando: Tutor quer agendar um serviço terceirizado. Só agende e confirme com a cobrança antecipada de noventa e cinco reais. Sem o pagamento, o horário não fica reservado."
+     "say": "Quando: Tutor quer orçamento. Registre o pedido e passe à Assistente; no balcão, ofereça o valor de tabela do que for seu (consulta, vacina). Quando: Temperatura da geladeira de vacinas fora da faixa. Avise a Raissa e o médico veterinário de plantão na hora e registre. Quando: Sábado, domingo ou feriado: geladeira de medicamentos. Registre a temperatura às dez e às dezesseis (nos dias úteis é da Raissa). Fora da faixa: Raissa e médico veterinário de plantão na hora."
     },
     {
      "v": {
@@ -1433,6 +1445,10 @@ return {
        "O que fazer"
       ],
       "rows": [
+       [
+        "Tutor quer agendar um serviço terceirizado.",
+        "Só agende e confirme com a cobrança antecipada de R$ 95, abatida do valor do serviço. Sem o pagamento, o horário não fica reservado."
+       ],
        [
         "Faltou medicamento na farmácia.",
         "Peça à Raissa. Nada sai sem lançamento no SimplesVet."
@@ -1440,14 +1456,10 @@ return {
        [
         "Óbito de paciente.",
         "Quem comunica é o M.V. Você acolhe em local reservado; a parte burocrática só depois, quando o tutor estiver pronto."
-       ],
-       [
-        "Tutor reclamou.",
-        "Escute sem interromper, não discuta, registre e leve à Laís no mesmo dia."
        ]
       ]
      },
-     "say": "Quando: Faltou medicamento na farmácia. Peça à Raissa. Nada sai sem lançamento no SimplesVet. Quando: Óbito de paciente. Quem comunica é o médico veterinário Você acolhe em local reservado; a parte burocrática só depois, quando o tutor estiver pronto. Quando: Tutor reclamou. Escute sem interromper, não discuta, registre e leve à Laís no mesmo dia."
+     "say": "Quando: Tutor quer agendar um serviço terceirizado. Só agende e confirme com a cobrança antecipada de noventa e cinco reais, abatida do valor do serviço. Sem o pagamento, o horário não fica reservado. Quando: Faltou medicamento na farmácia. Peça à Raissa. Nada sai sem lançamento no SimplesVet. Quando: Óbito de paciente. Quem comunica é o médico veterinário Você acolhe em local reservado; a parte burocrática só depois, quando o tutor estiver pronto."
     },
     {
      "v": {
@@ -1461,6 +1473,10 @@ return {
        "O que fazer"
       ],
       "rows": [
+       [
+        "Tutor reclamou.",
+        "Escute sem interromper, não discuta, registre e leve à Laís no mesmo dia."
+       ],
        [
         "Receita controlada retida.",
         "Entregue à Raissa para arquivar."
@@ -1471,18 +1487,18 @@ return {
        ]
       ]
      },
-     "say": "Quando: Receita controlada retida. Entregue à Raissa para arquivar. Quando: Sua colega saiu para almoçar. Você cobre WhatsApp, Flow e orçamentos (das treze às quatorze). Balcão nunca fica vazio."
+     "say": "Quando: Tutor reclamou. Escute sem interromper, não discuta, registre e leve à Laís no mesmo dia. Quando: Receita controlada retida. Entregue à Raissa para arquivar. Quando: Sua colega saiu para almoçar. Você cobre WhatsApp, Flow e orçamentos (das treze às quatorze). Balcão nunca fica vazio."
     }
    ],
    "quiz": {
-    "q": "Faltou medicamento na farmácia.",
+    "q": "Tutor quer agendar um serviço terceirizado.",
     "o": [
      "Resolver sozinho e não contar a ninguém",
-     "Peça à Raissa. Nada sai sem lançamento no SimplesVet.",
+     "Só agende e confirme com a cobrança antecipada de R$ 95, abatida do valor do serviço. Sem o pagamento, o horário não fica reservado.",
      "Esperar a Laís perguntar"
     ],
     "a": 1,
-    "why": "Peça à Raissa. Nada sai sem lançamento no SimplesVet."
+    "why": "Só agende e confirme com a cobrança antecipada de R$ 95, abatida do valor do serviço. Sem o pagamento, o horário não fica reservado."
    }
   },
   {
@@ -1635,14 +1651,14 @@ return {
     }
    ],
    "quiz": {
-    "q": "Óbito de paciente.",
+    "q": "Faltou medicamento na farmácia.",
     "o": [
-     "Quem comunica é o M.V. Você acolhe em local reservado; a parte burocrática só depois, quando o tutor estiver pronto.",
+     "Peça à Raissa. Nada sai sem lançamento no SimplesVet.",
      "Deixar para o próximo turno, sem registrar",
      "Fazer do jeito que achar melhor, mesmo fora da regra"
     ],
     "a": 0,
-    "why": "Quem comunica é o M.V. Você acolhe em local reservado; a parte burocrática só depois, quando o tutor estiver pronto."
+    "why": "Peça à Raissa. Nada sai sem lançamento no SimplesVet."
    }
   },
   {
