@@ -918,15 +918,15 @@ return {
        ],
        [
         "Plantão",
-        "Microchipagem: número do microchip incluído no cadastro do pet antes do consultório"
+        "Serviço terceirizado: agendamento e confirmação só com a cobrança antecipada de R$ 95"
        ],
        [
         "Plantão",
-        "PetLove: cadastro, elegibilidade e carência conferidos antes do consultório"
+        "Microchipagem: número do microchip incluído no cadastro do pet antes do consultório"
        ]
       ]
      },
-     "say": "Regras do plantão inteiro. Triagem na chegada: emergência vai direto ao médico veterinário, antes do cadastro. Status da agenda atualizado em cada etapa (chegou, em atendimento, finalizado). Cancelamento: remarcação solicitada e agenda atualizada, com motivo. Microchipagem: número do microchip incluído no cadastro do pet antes do consultório. PetLove: cadastro, elegibilidade e carência conferidos antes do consultório."
+     "say": "Regras do plantão inteiro. Triagem na chegada: emergência vai direto ao médico veterinário, antes do cadastro. Status da agenda atualizado em cada etapa (chegou, em atendimento, finalizado). Cancelamento: remarcação solicitada e agenda atualizada, com motivo. Serviço terceirizado: agendamento e confirmação só com a cobrança antecipada de noventa e cinco reais. Microchipagem: número do microchip incluído no cadastro do pet antes do consultório."
     },
     {
      "v": {
@@ -942,6 +942,10 @@ return {
       "rows": [
        [
         "Plantão",
+        "PetLove: cadastro, elegibilidade e carência conferidos antes do consultório"
+       ],
+       [
+        "Plantão",
         "Documentos (emitidos pelo M.V.) assinados pelo tutor e anexados; folha PetLove assinada"
        ],
        [
@@ -955,14 +959,10 @@ return {
        [
         "Plantão",
         "Recepção limpa e organizada; apoio na higienização dos consultórios após os atendimentos"
-       ],
-       [
-        "Plantão",
-        "Pedido de orçamento registrado no Flow e encaminhado à Assistente"
        ]
       ]
      },
-     "say": "Documentos (emitidos pelo médico veterinário) assinados pelo tutor e anexados; folha PetLove assinada. Valores recebidos ao fim de cada atendimento (PetLove: nota particular e coparticipação). Receita de controlado do tutor: via de retenção entregue à Raissa (nunca descartar). Recepção limpa e organizada; apoio na higienização dos consultórios após os atendimentos. Pedido de orçamento registrado no Flow e encaminhado à Assistente."
+     "say": "PetLove: cadastro, elegibilidade e carência conferidos antes do consultório. Documentos (emitidos pelo médico veterinário) assinados pelo tutor e anexados; folha PetLove assinada. Valores recebidos ao fim de cada atendimento (PetLove: nota particular e coparticipação). Receita de controlado do tutor: via de retenção entregue à Raissa (nunca descartar). Recepção limpa e organizada; apoio na higienização dos consultórios após os atendimentos."
     },
     {
      "v": {
@@ -978,11 +978,15 @@ return {
       "rows": [
        [
         "Plantão",
+        "Pedido de orçamento registrado no Flow e encaminhado à Assistente"
+       ],
+       [
+        "Plantão",
         "Foco comercial do mês oferecido nos atendimentos e canais"
        ]
       ]
      },
-     "say": "Foco comercial do mês oferecido nos atendimentos e canais."
+     "say": "Pedido de orçamento registrado no Flow e encaminhado à Assistente. Foco comercial do mês oferecido nos atendimentos e canais."
     },
     {
      "v": {
@@ -1168,10 +1172,11 @@ return {
        "Nunca estornar ou cancelar sem aprovação da Laís.",
        "Temperatura fora da faixa: Raissa e M.V. de plantão na hora.",
        "Passagem escrita e rubrica em todo plantão.",
-       "Óbito: acolher; a notícia é do M.V."
+       "Óbito: acolher; a notícia é do M.V.",
+       "Serviço terceirizado: agendamento e confirmação só com a cobrança antecipada de R$ 95."
       ]
      },
-     "say": "As regras do cargo. Primeiro: nenhum atendimento sai sem cobrança conferida. Depois: nunca estornar ou cancelar sem aprovação da Laís. Em seguida: temperatura fora da faixa: Raissa e médico veterinário de plantão na hora. Também: passagem escrita e rubrica em todo plantão. Por fim: óbito: acolher; a notícia é do médico veterinário."
+     "say": "As regras do cargo. Primeiro: nenhum atendimento sai sem cobrança conferida. Depois: nunca estornar ou cancelar sem aprovação da Laís. Em seguida: temperatura fora da faixa: Raissa e médico veterinário de plantão na hora. Também: passagem escrita e rubrica em todo plantão. E ainda: óbito: acolher; a notícia é do médico veterinário. Por fim: serviço terceirizado: agendamento e confirmação só com a cobrança antecipada de noventa e cinco reais."
     },
     {
      "v": {
@@ -1345,14 +1350,14 @@ return {
     }
    ],
    "quiz": {
-    "q": "Faltou medicamento na farmácia.",
+    "q": "Tutor quer agendar um serviço terceirizado.",
     "o": [
-     "Peça à Raissa. Nada sai sem lançamento no SimplesVet.",
+     "Só agende e confirme com a cobrança antecipada de R$ 95. Sem o pagamento, o horário não fica reservado.",
      "Ignorar, porque não é urgente",
      "Pedir para o tutor voltar outro dia"
     ],
     "a": 0,
-    "why": "Peça à Raissa. Nada sai sem lançamento no SimplesVet."
+    "why": "Só agende e confirme com a cobrança antecipada de R$ 95. Sem o pagamento, o horário não fica reservado."
    }
   },
   {
@@ -1409,12 +1414,12 @@ return {
         "Avise a Raissa e o M.V. de plantão na hora e registre."
        ],
        [
-        "Faltou medicamento na farmácia.",
-        "Peça à Raissa. Nada sai sem lançamento no SimplesVet."
+        "Tutor quer agendar um serviço terceirizado.",
+        "Só agende e confirme com a cobrança antecipada de R$ 95. Sem o pagamento, o horário não fica reservado."
        ]
       ]
      },
-     "say": "Quando: Tutor quer orçamento. Registre o pedido e passe à Assistente; no balcão, ofereça o valor de tabela do que for seu (consulta, vacina). Quando: Temperatura da geladeira de vacinas fora da faixa. Avise a Raissa e o médico veterinário de plantão na hora e registre. Quando: Faltou medicamento na farmácia. Peça à Raissa. Nada sai sem lançamento no SimplesVet."
+     "say": "Quando: Tutor quer orçamento. Registre o pedido e passe à Assistente; no balcão, ofereça o valor de tabela do que for seu (consulta, vacina). Quando: Temperatura da geladeira de vacinas fora da faixa. Avise a Raissa e o médico veterinário de plantão na hora e registre. Quando: Tutor quer agendar um serviço terceirizado. Só agende e confirme com a cobrança antecipada de noventa e cinco reais. Sem o pagamento, o horário não fica reservado."
     },
     {
      "v": {
@@ -1428,6 +1433,10 @@ return {
        "O que fazer"
       ],
       "rows": [
+       [
+        "Faltou medicamento na farmácia.",
+        "Peça à Raissa. Nada sai sem lançamento no SimplesVet."
+       ],
        [
         "Óbito de paciente.",
         "Quem comunica é o M.V. Você acolhe em local reservado; a parte burocrática só depois, quando o tutor estiver pronto."
@@ -1435,14 +1444,10 @@ return {
        [
         "Tutor reclamou.",
         "Escute sem interromper, não discuta, registre e leve à Laís no mesmo dia."
-       ],
-       [
-        "Receita controlada retida.",
-        "Entregue à Raissa para arquivar."
        ]
       ]
      },
-     "say": "Quando: Óbito de paciente. Quem comunica é o médico veterinário Você acolhe em local reservado; a parte burocrática só depois, quando o tutor estiver pronto. Quando: Tutor reclamou. Escute sem interromper, não discuta, registre e leve à Laís no mesmo dia. Quando: Receita controlada retida. Entregue à Raissa para arquivar."
+     "say": "Quando: Faltou medicamento na farmácia. Peça à Raissa. Nada sai sem lançamento no SimplesVet. Quando: Óbito de paciente. Quem comunica é o médico veterinário Você acolhe em local reservado; a parte burocrática só depois, quando o tutor estiver pronto. Quando: Tutor reclamou. Escute sem interromper, não discuta, registre e leve à Laís no mesmo dia."
     },
     {
      "v": {
@@ -1457,23 +1462,27 @@ return {
       ],
       "rows": [
        [
+        "Receita controlada retida.",
+        "Entregue à Raissa para arquivar."
+       ],
+       [
         "Sua colega saiu para almoçar.",
         "Você cobre WhatsApp, Flow e orçamentos (13h–14h). Balcão nunca fica vazio."
        ]
       ]
      },
-     "say": "Quando: Sua colega saiu para almoçar. Você cobre WhatsApp, Flow e orçamentos (das treze às quatorze). Balcão nunca fica vazio."
+     "say": "Quando: Receita controlada retida. Entregue à Raissa para arquivar. Quando: Sua colega saiu para almoçar. Você cobre WhatsApp, Flow e orçamentos (das treze às quatorze). Balcão nunca fica vazio."
     }
    ],
    "quiz": {
-    "q": "Óbito de paciente.",
+    "q": "Faltou medicamento na farmácia.",
     "o": [
      "Resolver sozinho e não contar a ninguém",
-     "Quem comunica é o M.V. Você acolhe em local reservado; a parte burocrática só depois, quando o tutor estiver pronto.",
+     "Peça à Raissa. Nada sai sem lançamento no SimplesVet.",
      "Esperar a Laís perguntar"
     ],
     "a": 1,
-    "why": "Quem comunica é o M.V. Você acolhe em local reservado; a parte burocrática só depois, quando o tutor estiver pronto."
+    "why": "Peça à Raissa. Nada sai sem lançamento no SimplesVet."
    }
   },
   {
@@ -1626,14 +1635,14 @@ return {
     }
    ],
    "quiz": {
-    "q": "Tutor reclamou.",
+    "q": "Óbito de paciente.",
     "o": [
-     "Escute sem interromper, não discuta, registre e leve à Laís no mesmo dia.",
+     "Quem comunica é o M.V. Você acolhe em local reservado; a parte burocrática só depois, quando o tutor estiver pronto.",
      "Deixar para o próximo turno, sem registrar",
      "Fazer do jeito que achar melhor, mesmo fora da regra"
     ],
     "a": 0,
-    "why": "Escute sem interromper, não discuta, registre e leve à Laís no mesmo dia."
+    "why": "Quem comunica é o M.V. Você acolhe em local reservado; a parte burocrática só depois, quando o tutor estiver pronto."
    }
   },
   {

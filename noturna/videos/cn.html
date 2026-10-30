@@ -741,14 +741,14 @@ return {
     }
    ],
    "quiz": {
-    "q": "Chegou emergência de madrugada.",
+    "q": "Tutor quer agendar um serviço terceirizado.",
     "o": [
      "Resolver sozinho e não contar a ninguém",
-     "Direto ao M.V. plantonista. Depois, cadastro, termo (emitido pelo M.V.) e cobrança, com calma e conferidos.",
+     "Agende e confirme só com a cobrança antecipada de R$ 95.",
      "Esperar a Laís perguntar"
     ],
     "a": 1,
-    "why": "Direto ao M.V. plantonista. Depois, cadastro, termo (emitido pelo M.V.) e cobrança, com calma e conferidos."
+    "why": "Agende e confirme só com a cobrança antecipada de R$ 95."
    }
   },
   {
@@ -771,14 +771,14 @@ return {
     }
    ],
    "quiz": {
-    "q": "Tutor ligou pedindo notícia do internado.",
+    "q": "Chegou emergência de madrugada.",
     "o": [
-     "Notícias são do M.V. plantonista: anote e passe a ele.",
+     "Direto ao M.V. plantonista. Depois, cadastro, termo (emitido pelo M.V.) e cobrança, com calma e conferidos.",
      "Deixar para o próximo turno, sem registrar",
      "Fazer do jeito que achar melhor, mesmo fora da regra"
     ],
     "a": 0,
-    "why": "Notícias são do M.V. plantonista: anote e passe a ele."
+    "why": "Direto ao M.V. plantonista. Depois, cadastro, termo (emitido pelo M.V.) e cobrança, com calma e conferidos."
    }
   },
   {
@@ -844,14 +844,14 @@ return {
     }
    ],
    "quiz": {
-    "q": "Faltou medicamento ou insumo à noite.",
+    "q": "Tutor ligou pedindo notícia do internado.",
     "o": [
      "Pedir para o tutor voltar outro dia",
-     "Use o disponível com lançamento; anote a falta na passagem para a Raissa.",
+     "Notícias são do M.V. plantonista: anote e passe a ele.",
      "Ignorar, porque não é urgente"
     ],
     "a": 1,
-    "why": "Use o disponível com lançamento; anote a falta na passagem para a Raissa."
+    "why": "Notícias são do M.V. plantonista: anote e passe a ele."
    }
   },
   {
@@ -885,11 +885,15 @@ return {
        ],
        [
         "Plantão",
+        "Serviço terceirizado: agendamento e confirmação só com a cobrança antecipada de R$ 95"
+       ],
+       [
+        "Plantão",
         "Nada sai do estoque sem lançamento; medicações só conforme prescrição; controlados registrados"
        ]
       ]
      },
-     "say": "Regras do plantão inteiro. Suporte ao médico veterinário Plantonista em procedimentos, contenções e emergências. Documentação necessária do atendimento emitida e anexada (termos são emitidos pelo médico veterinário). Valores recebidos com cobrança conferida no sistema e comprovante guardado. Nada sai do estoque sem lançamento; medicações só conforme prescrição; controlados registrados."
+     "say": "Regras do plantão inteiro. Suporte ao médico veterinário Plantonista em procedimentos, contenções e emergências. Documentação necessária do atendimento emitida e anexada (termos são emitidos pelo médico veterinário). Valores recebidos com cobrança conferida no sistema e comprovante guardado. Serviço terceirizado: agendamento e confirmação só com a cobrança antecipada de noventa e cinco reais. Nada sai do estoque sem lançamento; medicações só conforme prescrição; controlados registrados."
     },
     {
      "v": {
@@ -1029,14 +1033,14 @@ return {
     }
    ],
    "quiz": {
-    "q": "Recebi pagamento à noite.",
+    "q": "Faltou medicamento ou insumo à noite.",
     "o": [
-     "Confira o valor com o sistema e guarde o comprovante; divergência vai à Laís.",
+     "Use o disponível com lançamento; anote a falta na passagem para a Raissa.",
      "Esperar a Laís perguntar",
      "Resolver sozinho e não contar a ninguém"
     ],
     "a": 0,
-    "why": "Confira o valor com o sistema e guarde o comprovante; divergência vai à Laís."
+    "why": "Use o disponível com lançamento; anote a falta na passagem para a Raissa."
    }
   },
   {
@@ -1053,10 +1057,11 @@ return {
       "items": [
        "Plantão inteiro marcado na coluna do dia em que começou.",
        "Divergência de valores ou documento pendente vai à Laís.",
-       "Controlados só com prescrição e registro."
+       "Controlados só com prescrição e registro.",
+       "Serviço terceirizado: agendamento e confirmação só com a cobrança antecipada de R$ 95."
       ]
      },
-     "say": "As regras do cargo. Primeiro: plantão inteiro marcado na coluna do dia em que começou. Depois: divergência de valores ou documento pendente vai à Laís. Por fim: controlados só com prescrição e registro."
+     "say": "As regras do cargo. Primeiro: plantão inteiro marcado na coluna do dia em que começou. Depois: divergência de valores ou documento pendente vai à Laís. Em seguida: controlados só com prescrição e registro. Por fim: serviço terceirizado: agendamento e confirmação só com a cobrança antecipada de noventa e cinco reais."
     },
     {
      "v": {
@@ -1091,14 +1096,14 @@ return {
     }
    ],
    "quiz": {
-    "q": "Óbito durante o plantão.",
+    "q": "Recebi pagamento à noite.",
     "o": [
      "Fazer do jeito que achar melhor, mesmo fora da regra",
-     "O M.V. liga para o tutor. Você prepara o corpo para a despedida e acolhe o tutor quando ele chegar.",
+     "Confira o valor com o sistema e guarde o comprovante; divergência vai à Laís.",
      "Deixar para o próximo turno, sem registrar"
     ],
     "a": 1,
-    "why": "O M.V. liga para o tutor. Você prepara o corpo para a despedida e acolhe o tutor quando ele chegar."
+    "why": "Confira o valor com o sistema e guarde o comprovante; divergência vai à Laís."
    }
   },
   {
@@ -1237,14 +1242,14 @@ return {
     }
    ],
    "quiz": {
-    "q": "Tutor nervoso ou reclamando.",
+    "q": "Óbito durante o plantão.",
     "o": [
-     "Escute, acolha, não discuta; registre e leve à Laís.",
+     "O M.V. liga para o tutor. Você prepara o corpo para a despedida e acolhe o tutor quando ele chegar.",
      "Ignorar, porque não é urgente",
      "Pedir para o tutor voltar outro dia"
     ],
     "a": 0,
-    "why": "Escute, acolha, não discuta; registre e leve à Laís."
+    "why": "O M.V. liga para o tutor. Você prepara o corpo para a despedida e acolhe o tutor quando ele chegar."
    }
   },
   {
@@ -1265,20 +1270,20 @@ return {
       ],
       "rows": [
        [
+        "Tutor quer agendar um serviço terceirizado.",
+        "Agende e confirme só com a cobrança antecipada de R$ 95."
+       ],
+       [
         "Chegou emergência de madrugada.",
         "Direto ao M.V. plantonista. Depois, cadastro, termo (emitido pelo M.V.) e cobrança, com calma e conferidos."
        ],
        [
         "Tutor ligou pedindo notícia do internado.",
         "Notícias são do M.V. plantonista: anote e passe a ele."
-       ],
-       [
-        "Faltou medicamento ou insumo à noite.",
-        "Use o disponível com lançamento; anote a falta na passagem para a Raissa."
        ]
       ]
      },
-     "say": "Quando: Chegou emergência de madrugada. Direto ao médico veterinário plantonista. Depois, cadastro, termo (emitido pelo médico veterinário) e cobrança, com calma e conferidos. Quando: Tutor ligou pedindo notícia do internado. Notícias são do médico veterinário plantonista: anote e passe a ele. Quando: Faltou medicamento ou insumo à noite. Use o disponível com lançamento; anote a falta na passagem para a Raissa."
+     "say": "Quando: Tutor quer agendar um serviço terceirizado. Agende e confirme só com a cobrança antecipada de noventa e cinco reais. Quando: Chegou emergência de madrugada. Direto ao médico veterinário plantonista. Depois, cadastro, termo (emitido pelo médico veterinário) e cobrança, com calma e conferidos. Quando: Tutor ligou pedindo notícia do internado. Notícias são do médico veterinário plantonista: anote e passe a ele."
     },
     {
      "v": {
@@ -1292,6 +1297,10 @@ return {
        "O que fazer"
       ],
       "rows": [
+       [
+        "Faltou medicamento ou insumo à noite.",
+        "Use o disponível com lançamento; anote a falta na passagem para a Raissa."
+       ],
        [
         "Recebi pagamento à noite.",
         "Confira o valor com o sistema e guarde o comprovante; divergência vai à Laís."
@@ -1299,14 +1308,10 @@ return {
        [
         "Óbito durante o plantão.",
         "O M.V. liga para o tutor. Você prepara o corpo para a despedida e acolhe o tutor quando ele chegar."
-       ],
-       [
-        "Tutor nervoso ou reclamando.",
-        "Escute, acolha, não discuta; registre e leve à Laís."
        ]
       ]
      },
-     "say": "Quando: Recebi pagamento à noite. Confira o valor com o sistema e guarde o comprovante; divergência vai à Laís. Quando: Óbito durante o plantão. O médico veterinário liga para o tutor. Você prepara o corpo para a despedida e acolhe o tutor quando ele chegar. Quando: Tutor nervoso ou reclamando. Escute, acolha, não discuta; registre e leve à Laís."
+     "say": "Quando: Faltou medicamento ou insumo à noite. Use o disponível com lançamento; anote a falta na passagem para a Raissa. Quando: Recebi pagamento à noite. Confira o valor com o sistema e guarde o comprovante; divergência vai à Laís. Quando: Óbito durante o plantão. O médico veterinário liga para o tutor. Você prepara o corpo para a despedida e acolhe o tutor quando ele chegar."
     },
     {
      "v": {
@@ -1321,23 +1326,27 @@ return {
       ],
       "rows": [
        [
+        "Tutor nervoso ou reclamando.",
+        "Escute, acolha, não discuta; registre e leve à Laís."
+       ],
+       [
         "Fim do plantão.",
         "Passagem escrita às 06h45; plantão inteiro marcado na coluna do dia em que começou."
        ]
       ]
      },
-     "say": "Quando: Fim do plantão. Passagem escrita às seis e quarenta e cinco; plantão inteiro marcado na coluna do dia em que começou."
+     "say": "Quando: Tutor nervoso ou reclamando. Escute, acolha, não discuta; registre e leve à Laís. Quando: Fim do plantão. Passagem escrita às seis e quarenta e cinco; plantão inteiro marcado na coluna do dia em que começou."
     }
    ],
    "quiz": {
-    "q": "Fim do plantão.",
+    "q": "Tutor nervoso ou reclamando.",
     "o": [
      "Resolver sozinho e não contar a ninguém",
-     "Passagem escrita às 06h45; plantão inteiro marcado na coluna do dia em que começou.",
+     "Escute, acolha, não discuta; registre e leve à Laís.",
      "Esperar a Laís perguntar"
     ],
     "a": 1,
-    "why": "Passagem escrita às 06h45; plantão inteiro marcado na coluna do dia em que começou."
+    "why": "Escute, acolha, não discuta; registre e leve à Laís."
    }
   },
   {
@@ -1484,7 +1493,17 @@ return {
      },
      "say": "Indicadores: Passagens completas; medicações no horário; faltas registradas. Checklist: Meta: noventa por cento ou mais dos plantões. E todo dia quinze tem a conversa individual com a supervisão."
     }
-   ]
+   ],
+   "quiz": {
+    "q": "Fim do plantão.",
+    "o": [
+     "Passagem escrita às 06h45; plantão inteiro marcado na coluna do dia em que começou.",
+     "Deixar para o próximo turno, sem registrar",
+     "Fazer do jeito que achar melhor, mesmo fora da regra"
+    ],
+    "a": 0,
+    "why": "Passagem escrita às 06h45; plantão inteiro marcado na coluna do dia em que começou."
+   }
   },
   {
    "id": "fim",

@@ -1082,6 +1082,10 @@ return {
       "rows": [
        [
         "—",
+        "Serviço terceirizado: agendamento e confirmação só com a cobrança antecipada de R$ 95"
+       ],
+       [
+        "—",
         "Pedido de estorno ou cancelamento de venda registrado e enviado à Laís para aprovação"
        ],
        [
@@ -1098,7 +1102,7 @@ return {
        ]
       ]
      },
-     "say": "Eventual. Pedido de estorno ou cancelamento de venda registrado e enviado à Laís para aprovação. Treinamento de recepcionista nova (apoio à Laís). Problema com exame no laboratório: recoleta ou atraso resolvido. Apoio à recepção: documentos de assinatura e recebimento de valores."
+     "say": "Eventual. Serviço terceirizado: agendamento e confirmação só com a cobrança antecipada de noventa e cinco reais. Pedido de estorno ou cancelamento de venda registrado e enviado à Laís para aprovação. Treinamento de recepcionista nova (apoio à Laís). Problema com exame no laboratório: recoleta ou atraso resolvido. Apoio à recepção: documentos de assinatura e recebimento de valores."
     }
    ],
    "quiz": {
@@ -1127,10 +1131,11 @@ return {
        "Pendência não passa de 24h sem solução ou responsável.",
        "Estorno ou cancelamento só com aprovação da Laís.",
        "Relatório à Laís toda sexta.",
-       "Almoço só depois que a Recepção voltar: o balcão nunca fica vazio."
+       "Almoço só depois que a Recepção voltar: o balcão nunca fica vazio.",
+       "Serviço terceirizado: agendamento e confirmação só com a cobrança antecipada de R$ 95."
       ]
      },
-     "say": "As regras do cargo. Primeiro: pendência não passa de vinte e quatro horas sem solução ou responsável. Depois: estorno ou cancelamento só com aprovação da Laís. Em seguida: relatório à Laís toda sexta. Por fim: almoço só depois que a Recepção voltar: o balcão nunca fica vazio."
+     "say": "As regras do cargo. Primeiro: pendência não passa de vinte e quatro horas sem solução ou responsável. Depois: estorno ou cancelamento só com aprovação da Laís. Em seguida: relatório à Laís toda sexta. Também: almoço só depois que a Recepção voltar: o balcão nunca fica vazio. Por fim: serviço terceirizado: agendamento e confirmação só com a cobrança antecipada de noventa e cinco reais."
     },
     {
      "v": {
@@ -1168,14 +1173,14 @@ return {
     }
    ],
    "quiz": {
-    "q": "A recepção saiu para almoçar (12h–13h).",
+    "q": "Tutor quer agendar um serviço terceirizado.",
     "o": [
      "Fazer do jeito que achar melhor, mesmo fora da regra",
-     "Você cobre balcão, caixa e telefone. Seu almoço só depois que ela voltar.",
+     "Agende e confirme só com a cobrança antecipada de R$ 95.",
      "Deixar para o próximo turno, sem registrar"
     ],
     "a": 1,
-    "why": "Você cobre balcão, caixa e telefone. Seu almoço só depois que ela voltar."
+    "why": "Agende e confirme só com a cobrança antecipada de R$ 95."
    }
   },
   {
@@ -1304,14 +1309,14 @@ return {
     }
    ],
    "quiz": {
-    "q": "Laboratório atrasou resultado.",
+    "q": "A recepção saiu para almoçar (12h–13h).",
     "o": [
-     "Cobre o laboratório, avise o M.V. e o tutor com nova previsão.",
+     "Você cobre balcão, caixa e telefone. Seu almoço só depois que ela voltar.",
      "Ignorar, porque não é urgente",
      "Pedir para o tutor voltar outro dia"
     ],
     "a": 0,
-    "why": "Cobre o laboratório, avise o M.V. e o tutor com nova previsão."
+    "why": "Você cobre balcão, caixa e telefone. Seu almoço só depois que ela voltar."
    }
   },
   {
@@ -1364,16 +1369,16 @@ return {
         "Cobre a assinatura do tutor e anexe o resultado na plataforma; falha de lançamento vai à Laís."
        ],
        [
-        "A recepção saiu para almoçar (12h–13h).",
-        "Você cobre balcão, caixa e telefone. Seu almoço só depois que ela voltar."
+        "Tutor quer agendar um serviço terceirizado.",
+        "Agende e confirme só com a cobrança antecipada de R$ 95."
        ],
        [
-        "Laboratório atrasou resultado.",
-        "Cobre o laboratório, avise o M.V. e o tutor com nova previsão."
+        "A recepção saiu para almoçar (12h–13h).",
+        "Você cobre balcão, caixa e telefone. Seu almoço só depois que ela voltar."
        ]
       ]
      },
-     "say": "Quando: PetLove sem autorização assinada ou sem resultado. Cobre a assinatura do tutor e anexe o resultado na plataforma; falha de lançamento vai à Laís. Quando: A recepção saiu para almoçar (das doze às treze). Você cobre balcão, caixa e telefone. Seu almoço só depois que ela voltar. Quando: Laboratório atrasou resultado. Cobre o laboratório, avise o médico veterinário e o tutor com nova previsão."
+     "say": "Quando: PetLove sem autorização assinada ou sem resultado. Cobre a assinatura do tutor e anexe o resultado na plataforma; falha de lançamento vai à Laís. Quando: Tutor quer agendar um serviço terceirizado. Agende e confirme só com a cobrança antecipada de noventa e cinco reais. Quando: A recepção saiu para almoçar (das doze às treze). Você cobre balcão, caixa e telefone. Seu almoço só depois que ela voltar."
     },
     {
      "v": {
@@ -1388,6 +1393,10 @@ return {
       ],
       "rows": [
        [
+        "Laboratório atrasou resultado.",
+        "Cobre o laboratório, avise o M.V. e o tutor com nova previsão."
+       ],
+       [
         "Mudou alguém na equipe de M.V.",
         "Atualize os comissionados no SimplesVet até o último dia útil do mês."
        ],
@@ -1397,18 +1406,18 @@ return {
        ]
       ]
      },
-     "say": "Quando: Mudou alguém na equipe de médico veterinário. Atualize os comissionados no SimplesVet até o último dia útil do mês. Quando: Tutor perguntou sobre diagnóstico. Não informe: \"Essa avaliação é do nosso médico veterinário, vou pedir para ele te explicar.\"."
+     "say": "Quando: Laboratório atrasou resultado. Cobre o laboratório, avise o médico veterinário e o tutor com nova previsão. Quando: Mudou alguém na equipe de médico veterinário. Atualize os comissionados no SimplesVet até o último dia útil do mês. Quando: Tutor perguntou sobre diagnóstico. Não informe: \"Essa avaliação é do nosso médico veterinário, vou pedir para ele te explicar.\"."
     }
    ],
    "quiz": {
-    "q": "Mudou alguém na equipe de M.V.",
+    "q": "Laboratório atrasou resultado.",
     "o": [
      "Resolver sozinho e não contar a ninguém",
-     "Atualize os comissionados no SimplesVet até o último dia útil do mês.",
+     "Cobre o laboratório, avise o M.V. e o tutor com nova previsão.",
      "Esperar a Laís perguntar"
     ],
     "a": 1,
-    "why": "Atualize os comissionados no SimplesVet até o último dia útil do mês."
+    "why": "Cobre o laboratório, avise o M.V. e o tutor com nova previsão."
    }
   },
   {
@@ -1561,14 +1570,14 @@ return {
     }
    ],
    "quiz": {
-    "q": "Tutor perguntou sobre diagnóstico.",
+    "q": "Mudou alguém na equipe de M.V.",
     "o": [
-     "Não informe: \"Essa avaliação é do nosso médico veterinário, vou pedir para ele te explicar.\"",
+     "Atualize os comissionados no SimplesVet até o último dia útil do mês.",
      "Deixar para o próximo turno, sem registrar",
      "Fazer do jeito que achar melhor, mesmo fora da regra"
     ],
     "a": 0,
-    "why": "Não informe: \"Essa avaliação é do nosso médico veterinário, vou pedir para ele te explicar.\""
+    "why": "Atualize os comissionados no SimplesVet até o último dia útil do mês."
    }
   },
   {
