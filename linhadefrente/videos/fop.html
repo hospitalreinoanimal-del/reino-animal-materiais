@@ -689,11 +689,11 @@ return {
         T('Recepção 12x36','todos os dias','rec',[[8,19.5,'07h30–19h30']]),
         T('Assistente Administrativo','orçamentos e conferência','adm',[[8,18,'08h–18h']]),
         T('Laís · Coordenadora','equipe administrativa e atendimento','ger',[[10,20,'10h–20h']]),
-        T('Thay · Supervisora','rotina clínica e processos','aux',[[8,18,'seg–sex']]),
+        T('Thay · Supervisora','rotina clínica e processos','aux',[[8,18,'08h–18h']]),
         T('Raissa · Aux. Vet.','estoque, farmácia e suporte','aux',[[10.25,19.25,'10h15–19h15']]),
         T('Estagiários','Amanda · Bernardo','aux',[[8,13,'07h–13h'],[15,21,'15h–21h']]),
         T('Faxina 12x36','todos os dias','todos',[[8,19,'07h–19h']])], notes:[['12h–15h','almoços em escala, sem deixar a recepção vazia']]},
-       say:'No apoio: a recepção das sete e meia às dezenove e meia, a assistente das oito às dezoito, a Laís das dez às vinte, a Thay de segunda a sexta, a Raissa a partir das dez e quinze, a Amanda de manhã e o Bernardo à tarde, e a faxina das sete às dezenove. Os almoços são em escala, e a recepção nunca fica vazia.'},
+       say:'No apoio: a recepção das sete e meia às dezenove e meia, a assistente das oito às dezoito, a Laís das dez às vinte, a Thay de segunda a sexta, das oito às dezoito, a Raissa a partir das dez e quinze, a Amanda de manhã e o Bernardo à tarde, e a faxina das sete às dezenove. Os almoços são em escala, e a recepção nunca fica vazia.'},
       {v:{type:'table', left:true, tag:'Seg a sex · atendimento', h:'Do balcão **ao consultório**', grid:'2fr 1.4fr 1.8fr 1.4fr', cols:['Processo','Dono','Participa','Recorre a'], rows:[
         ['Chegada, triagem e cadastro','**Recepção**','Assistente (almoço)','M.V. (emergência)'],
         ['Emergência','**M.V. da Linha de Frente**','Back, Raissa, estagiário','Internista'],
@@ -804,11 +804,12 @@ return {
       {v:{type:'table', left:true, tag:'Supervisão administrativa · Thay', h:'O elo entre **a clínica e a gestão**', grid:'2.2fr 1.1fr 2fr 1.2fr', cols:['Processo','Dono','Participa','Recorre a'], rows:[
         ['Auditoria dos lançamentos no sistema','**Thay**','M.V. responsável pelo atendimento','Vitor'],
         ['Despesas dos clientes internados atualizadas','**Thay** (supervisiona)','Internista e Back lançam','Vitor'],
-        ['Escala dos estagiários e dos veterinários','**Thay**','Estagiários e M.V.','Vitor'],
+        ['Escala dos estagiários','**Thay**','Estagiários','Vitor'],
+        ['Escala dos veterinários','**Thay** (gere)','M.V. Internista, lado a lado','Vitor'],
         ['Compras e fornecedores','**Thay**','Raissa (lista)','Vitor (aprova)'],
         ['Controlados, documentos da empresa e raio-X','**Thay**','Raissa anota; RT assina','Vitor'],
         ['Esterilização e procedimentos da faxina','**Thay**','Auxiliares e faxina','Vitor']]},
-       say:'A supervisão administrativa. A Thay é o elo entre a rotina clínica e a gestão. Ela audita os lançamentos no sistema junto com o médico veterinário responsável pelo atendimento, e supervisiona a atualização das despesas dos clientes internados, que a Internista e o Back lançam. Cuida da escala dos estagiários e dos veterinários, das compras e dos fornecedores, com a lista da Raissa e a aprovação do Vitor. E responde pelo livro de controlados, pelos documentos da empresa, pela pasta do raio-X, pela esterilização e pelos procedimentos da faxina.'},
+       say:'A supervisão administrativa. A Thay é o elo entre a rotina clínica e a gestão. Ela audita os lançamentos no sistema junto com o médico veterinário responsável pelo atendimento, e supervisiona a atualização das despesas dos clientes internados, que a Internista e o Back lançam. Cuida da escala dos estagiários e gere a escala dos veterinários, lado a lado com a Internista, das compras e dos fornecedores, com a lista da Raissa e a aprovação do Vitor. E responde pelo livro de controlados, pelos documentos da empresa, pela pasta do raio-X, pela esterilização e pelos procedimentos da faxina.'},
       {v:{type:'rule', tone:'rule', tag:'Quem recorre a quem', txt:'Necessidade da rotina clínica: **leve à Thay**.', sub:'Falta, escala, lançamento, equipamento ou documento: a Thay resolve ou leva à diretoria. Atendimento ao cliente, recepção e equipe administrativa seguem com a Laís.'},
        say:'Guarde a regra. Necessidade da rotina clínica, como falta de material, escala, lançamento, equipamento ou documento, vai à Thay, que resolve ou leva à diretoria. Atendimento ao cliente, recepção e equipe administrativa continuam com a Laís.'}
      ]},
