@@ -657,9 +657,9 @@ return {
       {v:{type:'timeline', tag:'Segunda a sexta', h:'O seu dia e **quem cobre quem**', rows:[
         T('Letícia · Assistente','almoço 13h–14h','rec',[[8,13,'08h–13h'],[14,18,'14h–18h']]),
         T('Recepção 12x36','almoço 12h–13h: você cobre','rec',[[8,12,'07h30–12h'],[13,19.5,'13h–19h30']]),
-        T('Laís · Supervisora','sua supervisora','ger',[[10,14,'10h–14h'],[15,20,'15h–20h']]),
+        T('Laís · Coordenadora','sua coordenadora','ger',[[10,14,'10h–14h'],[15,20,'15h–20h']]),
         T('M.V. Linha de Frente','parte técnica dos orçamentos','lf',[[8,21,'08h–21h']])]},
-       say:'De segunda a sexta, você trabalha das oito às dezoito, com almoço das treze às quatorze. A recepção almoça das doze às treze, e quem cobre o balcão é você. No seu almoço, a recepção cobre os seus canais. A Laís, sua supervisora, está das dez às vinte. E a parte técnica dos orçamentos você monta com o médico veterinário da Linha de Frente.'},
+       say:'De segunda a sexta, você trabalha das oito às dezoito, com almoço das treze às quatorze. A recepção almoça das doze às treze, e quem cobre o balcão é você. No seu almoço, a recepção cobre os seus canais. A Laís, sua coordenadora, está das dez às vinte. E a parte técnica dos orçamentos você monta com o médico veterinário da Linha de Frente.'},
       {v:{type:'table', left:true, tag:'A quem recorrer', h:'Cada assunto tem **um dono**', grid:'1.7fr 3fr', cols:['Assunto','Com quem'], rows:[
         ['Escala, folga, metas, estorno, desconto, preço de serviço','**Laís**'],['Parte técnica do orçamento, diagnóstico, termos','**M.V.** que atendeu ou de plantão'],['Glosa PetLove','**M.V.** que fez o atendimento (Laís acompanha)'],['Falta de medicamento ou insumo','**Raissa**'],['Boleto, nota de compra, pagamento','**Laís** (ponte com o BPO)']]},
        say:'A quem recorrer. Escala, folga, metas, estorno, desconto e preço de serviço, com a Laís. A parte técnica do orçamento, diagnóstico e termos, com o médico veterinário. Glosa do PetLove é corrigida pelo médico veterinário que fez o atendimento, com a Laís acompanhando. Falta de medicamento ou insumo, com a Raissa. E boleto, nota de compra ou pagamento passam pela Laís, que é a ponte com o BPO.'}],
@@ -748,8 +748,8 @@ return {
 
     {id:'fim', title:'Limites e indicadores', small:'Como você é acompanhada',
      beats:[
-      {v:{type:'list', no:true, tag:'Limites', h:'Não é **sua função**', items:['Definir preço de serviço (Laís)','Compras e negociação com fornecedores (Vitor)','Corrigir atendimento glosado (M.V.)','Conciliação e baixa de recebimentos (BPO)','Orientação clínica ao tutor (M.V.)']},
-       say:'O que não é sua função: definir preço de serviço, que é da Laís; compras e negociação com fornecedores, do Vitor; corrigir atendimento glosado, do médico veterinário; conciliação e baixa de recebimentos, do BPO; e orientação clínica ao tutor, do médico veterinário.'},
+      {v:{type:'list', no:true, tag:'Limites', h:'Não é **sua função**', items:['Definir preço de serviço (Laís)','Compras e negociação com fornecedores (Thay)','Corrigir atendimento glosado (M.V.)','Conciliação e baixa de recebimentos (BPO)','Orientação clínica ao tutor (M.V.)']},
+       say:'O que não é sua função: definir preço de serviço, que é da Laís; compras e negociação com fornecedores, da Thay; corrigir atendimento glosado, do médico veterinário; conciliação e baixa de recebimentos, do BPO; e orientação clínica ao tutor, do médico veterinário.'},
       {v:{type:'table', left:true, tag:'Indicadores', h:'Como você é **acompanhada**', grid:'1.3fr 3.4fr', cols:['Item','Detalhe'], rows:[
         ['Indicadores','Orçamentos aprovados ÷ enviados; vacinas e retornos recuperados; glosas; pendências acima de 24h'],['Checklist','Meta: 90% ou mais no mês; ✔ sem fazer é fraude'],['Remuneração','Salário fixo + premiação pelas metas do mês'],['Conversa individual','Todo dia 15, com a Laís']]},
        say:'Como você é acompanhada. Os indicadores são a conversão dos orçamentos, as vacinas e retornos recuperados, as glosas e as pendências acima de vinte e quatro horas. A meta do checklist é noventa por cento ou mais no mês, e marcar visto sem fazer é fraude. A sua remuneração é salário fixo mais premiação pelas metas do mês. E todo dia quinze há a conversa individual com a Laís.'},

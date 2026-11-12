@@ -648,8 +648,8 @@ return {
      beats:[
       {v:{type:'title', dark:true, tag:'Treinamento individual · Raissa', h:'Nenhum setor **sem insumo**', sub:'Nenhum item vencido, nenhuma medicação sem lançamento, nenhuma nota sem entrada e o M.V. sempre apoiado.', chips:['Estoque','Compras','Farmácia','Suporte ao M.V.'], lastOn:true},
        say:'Olá, Raissa! Este é o seu treinamento individual. A sua missão no hospital é esta: nenhum setor sem insumo, nenhum item vencido, nenhuma medicação sem lançamento, nenhuma nota sem entrada, e o médico veterinário sempre apoiado.'},
-      {v:{type:'list', tag:'Roteiro', h:'O que você vai ver', two:true, compact:true, num:true, items:['O seu dia e quem te apoia','Geladeira de medicamentos','Estoque no sistema','Lista de compras com o Vitor','Recebimento e nota fiscal','Farmácia e controlados','Validade','Máquinas e setores','Suporte ao M.V.','Delegar sem perder o controle','Passagens e limites']},
-       say:'O roteiro. O seu dia e quem te apoia. A geladeira de medicamentos, que é novidade. O estoque no sistema, a lista de compras com o Vitor, o recebimento e a nota fiscal. A farmácia e os controlados, a validade, as máquinas e os setores. O suporte ao médico veterinário. Como delegar sem perder o controle. E, por fim, as passagens e os limites do cargo.'}]},
+      {v:{type:'list', tag:'Roteiro', h:'O que você vai ver', two:true, compact:true, num:true, items:['O seu dia e quem te apoia','Geladeira de medicamentos','Estoque no sistema','Lista de compras com a Thay','Recebimento e nota fiscal','Farmácia e controlados','Validade','Máquinas e setores','Suporte ao M.V.','Delegar sem perder o controle','Passagens e limites']},
+       say:'O roteiro. O seu dia e quem te apoia. A geladeira de medicamentos, que é novidade. O estoque no sistema, a lista de compras com a Thay, o recebimento e a nota fiscal. A farmácia e os controlados, a validade, as máquinas e os setores. O suporte ao médico veterinário. Como delegar sem perder o controle. E, por fim, as passagens e os limites do cargo.'}]},
 
     {id:'dia', title:'O seu dia', small:'Jornada e quem te apoia',
      beats:[
@@ -661,8 +661,8 @@ return {
         T('Aux. Vet. Noturna','recebe a sua passagem','aux',[[19,31,'19h–07h']])]},
        say:'De segunda a sexta, você começa às dez e quinze, almoça das quinze e quinze às dezesseis e quinze, e fecha o dia com a passagem às dezenove. No sábado, das dez e quinze às quatorze, você deixa kits, farmácia e ambientes prontos para o fim de semana. A Amanda está de manhã e registra a temperatura das dez. O Bernardo chega às quinze, cobre o seu almoço e registra a temperatura das dezesseis. E a auxiliar noturna recebe a sua passagem.'},
       {v:{type:'table', left:true, tag:'A quem você responde', h:'Cada assunto tem **um dono**', grid:'1.6fr 3fr', cols:['Assunto','Com quem'], rows:[
-        ['Estoque, compras e custos','**Vitor**'],['Pacientes e suporte clínico','**M.V. responsável** ou de plantão'],['Escala, folga e horário','**Laís**'],['Livro de controlados','**Marcos Veloso** (RT) assina'],['Apoio no dia a dia','**Amanda** (manhã) e **Bernardo** (tarde)']]},
-       say:'A quem você responde. Estoque, compras e custos, com o Vitor. Pacientes e suporte clínico, com o médico veterinário responsável ou de plantão. Escala, folga e horário, com a Laís. O livro de controlados é assinado pelo responsável técnico, o doutor Marcos Veloso. E no dia a dia, você tem o apoio da Amanda de manhã e do Bernardo à tarde.'}],
+        ['Estoque, compras e custos','**Thay**'],['Pacientes e suporte clínico','**M.V. responsável** ou de plantão'],['Escala, folga e horário','**Thay**'],['Livro de controlados','**Marcos Veloso** (RT) assina'],['Apoio no dia a dia','**Amanda** (manhã) e **Bernardo** (tarde)']]},
+       say:'A quem você responde. Estoque, compras e custos, com a Thay. Pacientes e suporte clínico, com o médico veterinário responsável ou de plantão. Escala, folga e horário, com a Thay. O livro de controlados é assinado pelo responsável técnico, o doutor Marcos Veloso. E no dia a dia, você tem o apoio da Amanda de manhã e do Bernardo à tarde.'}],
      quiz:{q:'Quem cobre a internação no seu almoço, das 15h15 às 16h15?', o:['A recepção','O Bernardo','Ninguém, a internação espera'], a:1, why:'O Bernardo cobre a internação no seu almoço. Deixe as pendências escritas antes de sair.'}},
 
     {id:'geladeira', title:'Geladeira de medicamentos', small:'Registro às 10h e às 16h',
@@ -672,8 +672,8 @@ return {
       {v:{type:'flow', tag:'Como funciona', h:'Delegar, **conferir** e agir', steps:[
         {n:'1', t:'10h · registro', w:[['aux','Amanda (ou você)']]},{n:'2', t:'10h15 · confere', w:[['aux','você, ao chegar']]},
         {n:'3', t:'16h · registro', w:[['aux','Bernardo (seu almoço)']]},{n:'4', t:'16h15 · confere', w:[['aux','você, na volta']]},
-        {n:'!', t:'Fora da faixa', w:[['plant','M.V. de plantão e Vitor na hora']]}], me:[1,3]},
-       say:'Funciona assim. Às dez, a Amanda registra; às dez e quinze, quando você chega, confere. Às dezesseis, o Bernardo registra, porque você está no almoço; às dezesseis e quinze, na volta, você confere. Se a temperatura estiver fora da faixa, avise na hora o médico veterinário de plantão e o Vitor, e registre a ocorrência. Nos sábados, domingos e feriados, quem registra a geladeira de medicamentos é a recepção.'},
+        {n:'!', t:'Fora da faixa', w:[['plant','M.V. de plantão e Thay']]}], me:[1,3]},
+       say:'Funciona assim. Às dez, a Amanda registra; às dez e quinze, quando você chega, confere. Às dezesseis, o Bernardo registra, porque você está no almoço; às dezesseis e quinze, na volta, você confere. Se a temperatura estiver fora da faixa, avise na hora o médico veterinário de plantão e a Thay, e registre a ocorrência. Nos sábados, domingos e feriados, quem registra a geladeira de medicamentos é a recepção.'},
       {v:{type:'split', tag:'Não confundir', h:'Duas geladeiras, **dois donos**', a:{k:'Geladeira de medicamentos', h:'**Você** é a dona', items:['Dias úteis: 10h e 16h','Amanda e Bernardo podem registrar','Fim de semana e feriado: recepção'], w:'aux'}, b:{k:'Geladeira de vacinas', h:'A **recepção** registra', items:['08h e 16h','Fora da faixa: avisam você e o M.V.','Você ajuda a resolver'], w:'rec'}},
        say:'Não confunda as duas geladeiras. A de medicamentos é sua nos dias úteis, com registro às dez e às dezesseis; nos sábados, domingos e feriados, a recepção registra. A de vacinas é registrada pela recepção, às oito e às dezesseis; se der fora da faixa, a recepção avisa você e o médico veterinário de plantão.'}],
      quiz:{q:'O Bernardo registrou a temperatura das 16h. O que falta?', o:['Nada, a tarefa é dele','Você conferir o registro na volta do almoço','Avisar a Laís'], a:1, why:'Quem delega confere. O registro é sua responsabilidade: na volta do almoço, você confere que foi feito.'}},
@@ -681,22 +681,22 @@ return {
     {id:'estoque', title:'Estoque no sistema', small:'O estoque só bate se tudo for lançado',
      beats:[
       {v:{type:'flow', tag:'Todo dia', h:'O estoque só bate **se tudo for lançado**', steps:[
-        {n:'1', t:'10h30 · saídas de ontem', w:[['aux','kits, prescrições, maleta']]},{n:'2', t:'11h · sem lançamento?', w:[['aux','medicações retiradas']]},{n:'!', t:'Divergência', w:[['ger','Vitor no mesmo dia']]}], me:[0,1]},
-       say:'Todo dia, às dez e meia, você dá saída no SimplesVet das medicações e insumos usados ontem: kits, prescrições e maleta. Às onze, verifica as medicações retiradas sem lançamento. Achou divergência? Avise o Vitor no mesmo dia, com o item e a quantidade.'},
+        {n:'1', t:'10h30 · saídas de ontem', w:[['aux','kits, prescrições, maleta']]},{n:'2', t:'11h · sem lançamento?', w:[['aux','medicações retiradas']]},{n:'!', t:'Divergência', w:[['ger','Thay no mesmo dia']]}], me:[0,1]},
+       say:'Todo dia, às dez e meia, você dá saída no SimplesVet das medicações e insumos usados ontem: kits, prescrições e maleta. Às onze, verifica as medicações retiradas sem lançamento. Achou divergência? Avise a Thay no mesmo dia, com o item e a quantidade.'},
       {v:{type:'table', left:true, tag:'Contagens', h:'Quando você **conta**', grid:'1.3fr 3.4fr', cols:['Quando','O quê'], rows:[
         ['Quinta, 17h30','Vacinas e itens de maior saída: estoque × sistema'],['Último dia do mês','Inventário geral e ajuste no SimplesVet, com apoio dos estagiários']]},
        say:'As contagens. Toda quinta, às dezessete e trinta, você conta as vacinas e os itens de maior saída, comparando o estoque com o sistema. E no último dia do mês, faz o inventário geral e o ajuste no SimplesVet, com o apoio dos estagiários.'}],
-     quiz:{q:'Você achou um item com quantidade diferente do sistema. O que faz?', o:['Ajusta o sistema e segue','Avisa o Vitor no mesmo dia, com item e quantidade','Espera o inventário do fim do mês'], a:1, why:'Divergência de estoque vai ao Vitor no mesmo dia. O ajuste geral é no inventário mensal.'}},
+     quiz:{q:'Você achou um item com quantidade diferente do sistema. O que faz?', o:['Ajusta o sistema e segue','Avisa a Thay no mesmo dia, com item e quantidade','Espera o inventário do fim do mês'], a:1, why:'Divergência de estoque vai à Thay no mesmo dia. O ajuste geral é no inventário mensal.'}},
 
-    {id:'compras', title:'Lista de compras', small:'Você monta; o Vitor pede',
+    {id:'compras', title:'Lista de compras', small:'Você monta; a Thay pede',
      beats:[
-      {v:{type:'flow', tag:'Compras', h:'Você monta a lista; **o Vitor pede**', steps:[
-        {n:'1', t:'Abaixo do mínimo', w:[['aux','anota no dia']]},{n:'2', t:'Lista da semana', w:[['aux','segunda, até 17h30']]},{n:'3', t:'Pedido e negociação', w:[['ger','Vitor']]},{n:'4', t:'Chegou', w:[['aux','conferência e NF']]}], me:[0,1,3]},
-       say:'Compras. Item abaixo do estoque mínimo é anotado no mesmo dia na lista de compras. Toda segunda, até as dezessete e trinta, a lista da semana, com insumos, medicamentos e vacinas, vai ao Vitor. O pedido ao fornecedor e a negociação são do Vitor. Quando a compra chega, volta para você conferir e dar entrada.'},
+      {v:{type:'flow', tag:'Compras', h:'Você monta a lista; **a Thay pede**', steps:[
+        {n:'1', t:'Abaixo do mínimo', w:[['aux','anota no dia']]},{n:'2', t:'Lista da semana', w:[['aux','segunda, até 17h30']]},{n:'3', t:'Cotação e pedido', w:[['ger','Thay · Vitor aprova']]},{n:'4', t:'Chegou', w:[['aux','conferência e NF']]}], me:[0,1,3]},
+       say:'Compras. Item abaixo do estoque mínimo é anotado no mesmo dia na lista de compras. Toda segunda, até as dezessete e trinta, a lista da semana, com insumos, medicamentos e vacinas, vai à Thay. A cotação, o pedido ao fornecedor e a negociação são da Thay, com aprovação do Vitor. Quando a compra chega, volta para você conferir e dar entrada.'},
       {v:{type:'table', left:true, tag:'Situações', h:'E quando **foge da rotina**', grid:'1.6fr 3fr', cols:['Situação','O que fazer'], rows:[
-        ['Falta que para o atendimento','**Vitor na hora**, para compra emergencial'],['Lista mensal de medicamentos','Ao Vitor **até o dia 25**'],['Fornecedor ligou oferecendo produto','Anote e passe ao Vitor; você não negocia'],['Insumo das máquinas acabando','Entra na lista da semana']]},
-       say:'E quando foge da rotina. Se a falta para o atendimento, avise o Vitor na hora, para compra emergencial. A lista mensal de medicamentos vai ao Vitor até o dia vinte e cinco. Se um fornecedor ligar oferecendo produto ou preço, anote e passe ao Vitor: você não negocia. E insumo das máquinas acabando entra na lista da semana.'}],
-     quiz:{q:'Acabou um insumo e o M.V. não consegue atender. O que você faz?', o:['Coloca na lista de segunda','Avisa o Vitor na hora, para compra emergencial','Pede direto ao fornecedor'], a:1, why:'Falta que para o atendimento vai ao Vitor na hora. Pedido ao fornecedor é sempre do Vitor.'}},
+        ['Falta que para o atendimento','**Thay na hora**, para compra emergencial'],['Lista mensal de medicamentos','À Thay **até o dia 25**'],['Fornecedor ligou oferecendo produto','Anote e passe à Thay; você não negocia'],['Insumo das máquinas acabando','Entra na lista da semana']]},
+       say:'E quando foge da rotina. Se a falta para o atendimento, avise a Thay na hora, para compra emergencial. A lista mensal de medicamentos vai à Thay até o dia vinte e cinco. Se um fornecedor ligar oferecendo produto ou preço, anote e passe à Thay: você não negocia. E insumo das máquinas acabando entra na lista da semana.'}],
+     quiz:{q:'Acabou um insumo e o M.V. não consegue atender. O que você faz?', o:['Coloca na lista de segunda','Avisa a Thay na hora, para compra emergencial','Pede direto ao fornecedor'], a:1, why:'Falta que para o atendimento vai à Thay na hora. Pedido ao fornecedor é sempre da Thay.'}},
 
     {id:'nf', title:'Recebimento e nota fiscal', small:'Entrada no mesmo dia',
      beats:[
@@ -720,18 +720,18 @@ return {
     {id:'validade', title:'Validade', small:'Nenhum item vencido',
      beats:[
       {v:{type:'table', left:true, tag:'Validade', h:'Nenhum item **vencido**', grid:'1.3fr 3.4fr', cols:['Quando','O quê'], rows:[
-        ['Quarta, 17h30','Loja e internação: itens a vencer em 90 dias informados ao Vitor e à Laís (promoção ou troca)'],['Dia 5 do mês','Controle geral de validade; vencidos separados para descarte, com registro']]},
-       say:'Validade. Toda quarta, às dezessete e trinta, você informa ao Vitor e à Laís os itens da loja e da internação que vencem em noventa dias, para promoção ou troca. E no dia cinco de cada mês, faz o controle geral: vencidos separados para descarte, com registro.'}],
-     quiz:{q:'Um produto da loja vence em 2 meses. O que fazer?', o:['Nada até vencer','Avisar o Vitor e a Laís, para promoção ou troca','Descartar agora'], a:1, why:'Itens a vencer em 90 dias vão ao Vitor e à Laís, para dar giro ou trocar com o fornecedor.'}},
+        ['Quarta, 17h30','Loja e internação: itens a vencer em 90 dias informados à Thay e à Laís (promoção ou troca)'],['Dia 5 do mês','Controle geral de validade; vencidos separados para descarte, com registro']]},
+       say:'Validade. Toda quarta, às dezessete e trinta, você informa à Thay e à Laís os itens da loja e da internação que vencem em noventa dias, para promoção ou troca. E no dia cinco de cada mês, faz o controle geral: vencidos separados para descarte, com registro.'}],
+     quiz:{q:'Um produto da loja vence em 2 meses. O que fazer?', o:['Nada até vencer','Avisar a Thay e a Laís, para promoção ou troca','Descartar agora'], a:1, why:'Itens a vencer em 90 dias vão à Thay e à Laís, para dar giro ou trocar com o fornecedor.'}},
 
     {id:'setores', title:'Máquinas e setores', small:'IDEXX, hemogasômetro e reposição',
      beats:[
       {v:{type:'table', left:true, tag:'Máquinas e setores', h:'Cada setor **abastecido**', grid:'1.3fr 3.4fr', cols:['Quando','O quê'], rows:[
-        ['Segunda, 11h','Insumos das máquinas da internação (IDEXX, hemogasômetro e demais) conferidos; falta na lista ao Vitor'],['Todo dia, 12h','Reposição na internação, no bloco cirúrgico e nos consultórios'],['Terça, 17h30','Kits de testes rápidos montados'],['Todo dia, 18h15','Descarte de perfurocortantes e resíduos dos setores (PGRSS)'],['Dias 1 e 15','Alopurinol separado para o alojamento, com saída registrada']]},
-       say:'Máquinas e setores. Toda segunda, às onze, você confere os insumos das máquinas da internação, como o IDEXX e o hemogasômetro; o que faltar entra na lista do Vitor. Todo dia, ao meio-dia, repõe os insumos da internação, do bloco cirúrgico e dos consultórios. Às terças, monta os kits de testes rápidos. Todo dia, às dezoito e quinze, faz o descarte de perfurocortantes e resíduos. E nos dias um e quinze, separa o alopurinol do alojamento, com a saída registrada.'},
+        ['Segunda, 11h','Insumos das máquinas da internação (IDEXX, hemogasômetro e demais) conferidos; falta na lista à Thay'],['Todo dia, 12h','Reposição na internação, no bloco cirúrgico e nos consultórios'],['Terça, 17h30','Kits de testes rápidos montados'],['Todo dia, 18h15','Descarte de perfurocortantes e resíduos dos setores (PGRSS)'],['Dias 1 e 15','Alopurinol separado para o alojamento, com saída registrada']]},
+       say:'Máquinas e setores. Toda segunda, às onze, você confere os insumos das máquinas da internação, como o IDEXX e o hemogasômetro; o que faltar entra na lista da Thay. Todo dia, ao meio-dia, repõe os insumos da internação, do bloco cirúrgico e dos consultórios. Às terças, monta os kits de testes rápidos. Todo dia, às dezoito e quinze, faz o descarte de perfurocortantes e resíduos. E nos dias um e quinze, separa o alopurinol do alojamento, com a saída registrada.'},
       {v:{type:'rule', tone:'ok', tag:'Não é sua função', txt:'Almotolias, caixas de lixo hospitalar e limpeza dos consultórios são **da faxina**.', sub:'Você higieniza e organiza o que usa; a limpeza pesada e a desinfecção dos consultórios são da faxina, que responde à Laís.'},
        say:'Atenção: a reposição das almotolias e das caixas de lixo hospitalar, e a limpeza e a desinfecção dos consultórios, são da faxina, que responde à Laís. Você higieniza e organiza o que usa; a limpeza pesada não é sua.'}],
-     quiz:{q:'O hemogasômetro está com o insumo acabando. O que fazer?', o:['Esperar acabar','Colocar na lista de compras ao Vitor','Pedir à faxina'], a:1, why:'Os insumos das máquinas da internação são seus: o que está acabando entra na lista do Vitor; se parar o atendimento, Vitor na hora.'}},
+     quiz:{q:'O hemogasômetro está com o insumo acabando. O que fazer?', o:['Esperar acabar','Colocar na lista de compras à Thay','Pedir à faxina'], a:1, why:'Os insumos das máquinas da internação são seus: o que está acabando entra na lista da Thay; se parar o atendimento, Thay na hora.'}},
 
     {id:'suporte', title:'Suporte ao M.V.', small:'O paciente vem primeiro',
      beats:[
@@ -741,8 +741,8 @@ return {
 
     {id:'delegar', title:'Delegar sem perder o controle', small:'Quem delega confere',
      beats:[
-      {v:{type:'split', tag:'Delegar', h:'Quem delega **confere**', a:{k:'Pode delegar', h:'Amanda e **Bernardo**', items:['Temperatura das 10h (Amanda) e das 16h (Bernardo)','Conferência da NF (Bernardo)','Reposição, contagem e inventário','Demandas manuais de controle básico'], w:'aux'}, b:{k:'Só você', h:'Não se **delega**', items:['Entrada da NF no SimplesVet','Livro de controlados','Lista de compras ao Vitor','Conferência dos registros de temperatura (dias úteis)'], w:'back'}},
-       say:'Delegar sem perder o controle. Você pode delegar à Amanda a temperatura das dez e ao Bernardo a temperatura das dezesseis, a conferência da nota, a reposição, as contagens e as demandas manuais. Mas não se delega: a entrada da nota no SimplesVet, o livro de controlados, a lista de compras ao Vitor e a conferência dos registros de temperatura. Regra de ouro: quem delega confere.'}],
+      {v:{type:'split', tag:'Delegar', h:'Quem delega **confere**', a:{k:'Pode delegar', h:'Amanda e **Bernardo**', items:['Temperatura das 10h (Amanda) e das 16h (Bernardo)','Conferência da NF (Bernardo)','Reposição, contagem e inventário','Demandas manuais de controle básico'], w:'aux'}, b:{k:'Só você', h:'Não se **delega**', items:['Entrada da NF no SimplesVet','Livro de controlados','Lista de compras à Thay','Conferência dos registros de temperatura (dias úteis)'], w:'back'}},
+       say:'Delegar sem perder o controle. Você pode delegar à Amanda a temperatura das dez e ao Bernardo a temperatura das dezesseis, a conferência da nota, a reposição, as contagens e as demandas manuais. Mas não se delega: a entrada da nota no SimplesVet, o livro de controlados, a lista de compras à Thay e a conferência dos registros de temperatura. Regra de ouro: quem delega confere.'}],
      quiz:{q:'Qual destas tarefas você NÃO pode delegar?', o:['Registrar a temperatura das 16h','Anotar o livro de controlados','Conferir uma NF'], a:1, why:'O livro de controlados é só seu. Temperatura e conferência de NF podem ser delegadas, com a sua conferência.'}},
 
     {id:'passagens', title:'Passagens e limites', small:'Tudo por escrito',
@@ -750,8 +750,8 @@ return {
       {v:{type:'table', left:true, tag:'Passagens', h:'Tudo **por escrito**', grid:'1.1fr 3.6fr', cols:['Quando','Passagem'], rows:[
         ['10h15','Lê a passagem da auxiliar noturna e da Amanda; combina prioridades com a Internista'],['15h','Passa ao Bernardo as pendências da internação e do estoque'],['19h','Passagem escrita à auxiliar noturna: pacotes, kits, pendências e faltas'],['Sábado, 13h45','Ao Back, ao Plantonista e à noturna: o que fica até segunda']]},
        say:'As passagens, sempre por escrito. Às dez e quinze, você lê a passagem da auxiliar noturna e da Amanda e combina as prioridades com a Internista. Às quinze, passa ao Bernardo as pendências da internação e do estoque. Às dezenove, faz a passagem escrita à auxiliar noturna: pacotes, kits, pendências e faltas. E no sábado, às treze e quarenta e cinco, passa ao Back, ao Plantonista e à noturna o que fica até segunda.'},
-      {v:{type:'list', no:true, tag:'Limites', h:'Não é **sua função**', items:['Pedido ou negociação com fornecedor (Vitor)','Diagnosticar, prescrever ou mudar conduta (M.V.)','Assinar o livro de controlados (RT)','Limpeza pesada e desinfecção dos consultórios (faxina)']},
-       say:'E o que não é sua função: pedido ou negociação com fornecedor, que é do Vitor; diagnosticar, prescrever ou mudar conduta, que é do médico veterinário; assinar o livro de controlados, que é do responsável técnico; e a limpeza pesada, que é da faxina.'}]},
+      {v:{type:'list', no:true, tag:'Limites', h:'Não é **sua função**', items:['Pedido ou negociação com fornecedor (Thay)','Diagnosticar, prescrever ou mudar conduta (M.V.)','Assinar o livro de controlados (RT)','Limpeza pesada e desinfecção dos consultórios (faxina)']},
+       say:'E o que não é sua função: pedido ou negociação com fornecedor, que é da Thay; diagnosticar, prescrever ou mudar conduta, que é do médico veterinário; assinar o livro de controlados, que é do responsável técnico; e a limpeza pesada, que é da faxina.'}]},
 
     {id:'fim', title:'Indicadores e ciência', small:'Como você é acompanhada',
      beats:[
