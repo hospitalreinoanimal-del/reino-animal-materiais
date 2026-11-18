@@ -810,14 +810,10 @@ return {
        [
         "Cadastro e plano",
         "Cadastro do cliente, validação do plano de saúde e microchip dos animais do plano."
-       ],
-       [
-        "Documentos",
-        "Termos de autorização (emitidos pelo M.V.) assinados e anexados."
        ]
       ]
      },
-     "say": "Você é dono das seguintes frentes. Chegada: Recebe o cliente, acompanha a pesagem (balança higienizada com álcool a cada paciente) e atualiza o status da agenda. Cadastro e plano: Cadastro do cliente, validação do plano de saúde e microchip dos animais do plano. Documentos: Termos de autorização (emitidos pelo médico veterinário) assinados e anexados."
+     "say": "Você é dono das seguintes frentes. Chegada: Recebe o cliente, acompanha a pesagem (balança higienizada com álcool a cada paciente) e atualiza o status da agenda. Cadastro e plano: Cadastro do cliente, validação do plano de saúde e microchip dos animais do plano."
     },
     {
      "v": {
@@ -832,20 +828,20 @@ return {
       ],
       "rows": [
        [
+        "Documentos",
+        "Termos de autorização (emitidos pelo M.V.) assinados pelo tutor, escaneados e anexados ao prontuário do paciente no SimplesVet."
+       ],
+       [
         "Caixa",
         "Abre e fecha o caixa; recebimento das vendas; relatório à Laís."
        ],
        [
         "Flow",
         "Acompanha as demandas do CRM (Flow); no fim de semana assume Flow, orçamentos, agendamentos e vacinas."
-       ],
-       [
-        "Exames",
-        "Gestão do e-mail: resultados (laboratório, raio-X) anexados no SimplesVet e no PetLove, com “Resultado de exame” na agenda do M.V."
        ]
       ]
      },
-     "say": "Continuando. Caixa: Abre e fecha o caixa; recebimento das vendas; relatório à Laís. Flow: Acompanha as demandas do CRM (Flow); no fim de semana assume Flow, orçamentos, agendamentos e vacinas. Exames: Gestão do e-mail: resultados (laboratório, raio-X) anexados no SimplesVet e no PetLove, com “Resultado de exame” na agenda do médico veterinário."
+     "say": "Continuando. Documentos: Termos de autorização (emitidos pelo médico veterinário) assinados pelo tutor, escaneados e anexados ao prontuário do paciente no SimplesVet. Caixa: Abre e fecha o caixa; recebimento das vendas; relatório à Laís. Flow: Acompanha as demandas do CRM (Flow); no fim de semana assume Flow, orçamentos, agendamentos e vacinas."
     },
     {
      "v": {
@@ -860,20 +856,40 @@ return {
       ],
       "rows": [
        [
+        "Exames",
+        "Gestão do e-mail: resultados (laboratório, raio-X) anexados no SimplesVet e no PetLove, com “Resultado de exame” na agenda do M.V."
+       ],
+       [
         "Geladeiras",
         "Vacinas: 10h e 16h todos os dias. Medicamentos: 10h e 16h aos sábados, domingos e feriados."
        ],
        [
         "Farmácia de venda",
         "Reposição dos medicamentos de venda, com saída lançada."
-       ],
+       ]
+      ]
+     },
+     "say": "Continuando. Exames: Gestão do e-mail: resultados (laboratório, raio-X) anexados no SimplesVet e no PetLove, com “Resultado de exame” na agenda do médico veterinário. Geladeiras: Vacinas: dez e dezesseis todos os dias. Medicamentos: dez e dezesseis aos sábados, domingos e feriados. Farmácia de venda: Reposição dos medicamentos de venda, com saída lançada."
+    },
+    {
+     "v": {
+      "type": "table",
+      "left": true,
+      "tag": "Responsabilidades · 4",
+      "h": "Você é **dono(a) de**",
+      "grid": "1.3fr 3.6fr",
+      "cols": [
+       "Frente",
+       "O que faz"
+      ],
+      "rows": [
        [
         "Ambiente",
         "Recepção e consultórios organizados após o uso; limpeza e desinfecção são da faxina."
        ]
       ]
      },
-     "say": "Continuando. Geladeiras: Vacinas: dez e dezesseis todos os dias. Medicamentos: dez e dezesseis aos sábados, domingos e feriados. Farmácia de venda: Reposição dos medicamentos de venda, com saída lançada. Ambiente: Recepção e consultórios organizados após o uso; limpeza e desinfecção são da faxina."
+     "say": "Continuando. Ambiente: Recepção e consultórios organizados após o uso; limpeza e desinfecção são da faxina."
     }
    ],
    "quiz": {
@@ -1082,15 +1098,11 @@ return {
        ],
        [
         "14:00",
-        "Documentos assinados do período digitalizados e anexados"
-       ],
-       [
-        "15:00",
-        "E-mail: 2ª checagem de resultados que chegaram no dia"
+        "Documentos de assinatura da manhã (termos, autorizações, folha do plano) escaneados e anexados ao prontuário do paciente no SimplesVet"
        ]
       ]
      },
-     "say": "Onze e trinta, Intervalo de almoço (das onze e trinta às doze e trinta) — a Assistente cobre a recepção (de segunda a sexta). Doze e trinta, Cobertura dos canais da Assistente no almoço dela (das doze e trinta às treze e trinta: Flow e orçamentos) — não se aplica no fim de semana. Quatorze, Documentos assinados do período digitalizados e anexados. Quinze, E-mail: 2ª checagem de resultados que chegaram no dia."
+     "say": "Onze e trinta, Intervalo de almoço (das onze e trinta às doze e trinta) — a Assistente cobre a recepção (de segunda a sexta). Doze e trinta, Cobertura dos canais da Assistente no almoço dela (das doze e trinta às treze e trinta: Flow e orçamentos) — não se aplica no fim de semana. Quatorze, Documentos de assinatura da manhã (termos, autorizações, folha do plano) escaneados e anexados ao prontuário do paciente no SimplesVet."
     },
     {
      "v": {
@@ -1105,20 +1117,44 @@ return {
       ],
       "rows": [
        [
+        "18:00",
+        "Documentos de assinatura da tarde escaneados e anexados ao prontuário do paciente; nenhum papel sem anexo"
+       ],
+       [
+        "15:00",
+        "E-mail: 2ª checagem de resultados que chegaram no dia"
+       ],
+       [
         "16:00",
         "Temperatura da geladeira de vacinas registrada (16h)"
        ],
        [
         "16:05",
         "Sábado, domingo e feriado: temperatura da geladeira de medicamentos registrada (16h) — dias úteis: N/A"
-       ],
+       ]
+      ]
+     },
+     "say": "Dezoito, Documentos de assinatura da tarde escaneados e anexados ao prontuário do paciente; nenhum papel sem anexo. Quinze, E-mail: 2ª checagem de resultados que chegaram no dia. Dezesseis, Temperatura da geladeira de vacinas registrada (dezesseis). Dezesseis e cinco, Sábado, domingo e feriado: temperatura da geladeira de medicamentos registrada (dezesseis) — dias úteis: não se aplica."
+    },
+    {
+     "v": {
+      "type": "table",
+      "left": true,
+      "tag": "Sua rotina · Rotina do plantão 12x36 (5)",
+      "h": "Igual ao **seu checklist**",
+      "grid": ".8fr 5fr",
+      "cols": [
+       "Hora",
+       "Tarefa"
+      ],
+      "rows": [
        [
         "17:00",
         "Pendências conferidas: sem assinatura, sem recebimento, sem anexo, exame sem aviso na agenda, agenda sem status"
        ]
       ]
      },
-     "say": "Dezesseis, Temperatura da geladeira de vacinas registrada (dezesseis). Dezesseis e cinco, Sábado, domingo e feriado: temperatura da geladeira de medicamentos registrada (dezesseis) — dias úteis: não se aplica. Dezessete, Pendências conferidas: sem assinatura, sem recebimento, sem anexo, exame sem aviso na agenda, agenda sem status."
+     "say": "Dezessete, Pendências conferidas: sem assinatura, sem recebimento, sem anexo, exame sem aviso na agenda, agenda sem status."
     },
     {
      "v": {
@@ -1542,20 +1578,20 @@ return {
       ],
       "rows": [
        [
+        "Tutor assinou um termo ou autorização.",
+        "Escaneie e anexe ao prontuário do paciente no SimplesVet (rodadas às 14h e às 18h); nenhum papel fica sem anexo."
+       ],
+       [
         "Fim do plantão.",
         "Feche o caixa, liste as pendências e escreva a passagem para a colega do dia seguinte dar continuidade."
        ],
        [
         "Tutor quer atendimento com M.V. volante.",
         "Agende e confirme só após o adiantamento de R$ 115, abatido do valor do atendimento."
-       ],
-       [
-        "Óbito de paciente.",
-        "Quem comunica é o M.V. Você acolhe em local reservado; a parte burocrática só depois, quando o tutor estiver pronto."
        ]
       ]
      },
-     "say": "Quando: Fim do plantão. Feche o caixa, liste as pendências e escreva a passagem para a colega do dia seguinte dar continuidade. Quando: Tutor quer atendimento com médico veterinário volante. Agende e confirme só após o adiantamento de cento e quinze reais, abatido do valor do atendimento. Quando: Óbito de paciente. Quem comunica é o médico veterinário Você acolhe em local reservado; a parte burocrática só depois, quando o tutor estiver pronto."
+     "say": "Quando: Tutor assinou um termo ou autorização. Escaneie e anexe ao prontuário do paciente no SimplesVet (rodadas às quatorze e às dezoito); nenhum papel fica sem anexo. Quando: Fim do plantão. Feche o caixa, liste as pendências e escreva a passagem para a colega do dia seguinte dar continuidade. Quando: Tutor quer atendimento com médico veterinário volante. Agende e confirme só após o adiantamento de cento e quinze reais, abatido do valor do atendimento."
     },
     {
      "v": {
@@ -1570,23 +1606,27 @@ return {
       ],
       "rows": [
        [
+        "Óbito de paciente.",
+        "Quem comunica é o M.V. Você acolhe em local reservado; a parte burocrática só depois, quando o tutor estiver pronto."
+       ],
+       [
         "Receita controlada retida.",
         "Entregue à Thay (livro de controlados). Nunca descarte."
        ]
       ]
      },
-     "say": "Quando: Receita controlada retida. Entregue à Thay (livro de controlados). Nunca descarte."
+     "say": "Quando: Óbito de paciente. Quem comunica é o médico veterinário Você acolhe em local reservado; a parte burocrática só depois, quando o tutor estiver pronto. Quando: Receita controlada retida. Entregue à Thay (livro de controlados). Nunca descarte."
     }
    ],
    "quiz": {
-    "q": "Fim do plantão.",
+    "q": "Tutor assinou um termo ou autorização.",
     "o": [
      "Resolver sozinho e não contar a ninguém",
-     "Feche o caixa, liste as pendências e escreva a passagem para a colega do dia seguinte dar continuidade.",
+     "Escaneie e anexe ao prontuário do paciente no SimplesVet (rodadas às 14h e às 18h); nenhum papel fica sem anexo.",
      "Esperar a Laís perguntar"
     ],
     "a": 1,
-    "why": "Feche o caixa, liste as pendências e escreva a passagem para a colega do dia seguinte dar continuidade."
+    "why": "Escaneie e anexe ao prontuário do paciente no SimplesVet (rodadas às 14h e às 18h); nenhum papel fica sem anexo."
    }
   },
   {
@@ -1743,14 +1783,14 @@ return {
     }
    ],
    "quiz": {
-    "q": "Tutor quer atendimento com M.V. volante.",
+    "q": "Fim do plantão.",
     "o": [
-     "Agende e confirme só após o adiantamento de R$ 115, abatido do valor do atendimento.",
+     "Feche o caixa, liste as pendências e escreva a passagem para a colega do dia seguinte dar continuidade.",
      "Deixar para o próximo turno, sem registrar",
      "Fazer do jeito que achar melhor, mesmo fora da regra"
     ],
     "a": 0,
-    "why": "Agende e confirme só após o adiantamento de R$ 115, abatido do valor do atendimento."
+    "why": "Feche o caixa, liste as pendências e escreva a passagem para a colega do dia seguinte dar continuidade."
    }
   },
   {
