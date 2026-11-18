@@ -642,9 +642,9 @@ return {
  "id": "cargo-recepcao",
  "cargo": "Treinamento · Auxiliar Administrativo (Recepção)",
  "titulo": "Auxiliar Administrativo",
- "grupo": "Treinamento do cargo · versão 28/10/2026",
+ "grupo": "Treinamento do cargo · versão 18/11/2026",
  "ciencia": "Assisti ao treinamento do cargo de Auxiliar Administrativo (Recepção) e conheço a rotina, as regras, os limites e as boas condutas no atendimento.",
- "rodape": "Base: premissas do cargo (versão 3), checklists v8 e manual de consulta (28/10/2026). A narração usa a voz instalada no aparelho; a voz mais natural costuma ser a do Microsoft Edge.",
+ "rodape": "Base: premissas do cargo (versão 4), checklists v10 e manual de consulta (18/11/2026). A narração usa a voz instalada no aparelho; a voz mais natural costuma ser a do Microsoft Edge.",
  "chapters": [
   {
    "id": "abertura",
@@ -727,11 +727,11 @@ return {
        ],
        [
         "Referência técnica",
-        "Letícia (Assistente Administrativo)."
+        "Assistente Administrativo."
        ]
       ]
      },
-     "say": "Cargo: Auxiliar Administrativo (Recepção). Ocupantes: Kethelen e Ester. Jornada: Escala doze por trinta e seis, das sete e trinta às dezenove e trinta, com uma hora de almoço (das doze às treze), revezando com a Assistente. Responde a: Laís, Coordenadora Administrativa. Referência técnica: Letícia (Assistente Administrativo)."
+     "say": "Cargo: Auxiliar Administrativo (Recepção). Ocupantes: Kethelen e Ester. Jornada: Escala doze por trinta e seis, das sete e trinta às dezenove e trinta, com uma hora de almoço (das doze às treze), revezando com a Assistente. Responde a: Laís, Coordenadora Administrativa. Referência técnica: Assistente Administrativo."
     },
     {
      "v": {
@@ -776,14 +776,14 @@ return {
     }
    ],
    "quiz": {
-    "q": "Tutor pergunta \"é grave?\".",
+    "q": "Paciente na balança.",
     "o": [
-     "Não informe: \"O doutor já está com ele. Assim que estiver estável, ele chama você para explicar tudo.\"",
+     "Acompanhe a pesagem e higienize a balança com álcool depois de cada paciente.",
      "Deixar para o próximo turno, sem registrar",
      "Fazer do jeito que achar melhor, mesmo fora da regra"
     ],
     "a": 0,
-    "why": "Não informe: \"O doutor já está com ele. Assim que estiver estável, ele chama você para explicar tudo.\""
+    "why": "Acompanhe a pesagem e higienize a balança com álcool depois de cada paciente."
    }
   },
   {
@@ -804,24 +804,20 @@ return {
       ],
       "rows": [
        [
-        "Chegada e agenda",
-        "Triagem, cadastro com microchip, status da agenda, remarcação."
+        "Chegada",
+        "Recebe o cliente, acompanha a pesagem (balança higienizada com álcool a cada paciente) e atualiza o status da agenda."
+       ],
+       [
+        "Cadastro e plano",
+        "Cadastro do cliente, validação do plano de saúde e microchip dos animais do plano."
        ],
        [
         "Documentos",
-        "Termos (do M.V.) assinados e anexados; folha PetLove."
-       ],
-       [
-        "Caixa",
-        "Abertura e fechamento; valores recebidos; relatório à Laís."
-       ],
-       [
-        "Comercial",
-        "Balcão, WhatsApp e Flow; orçamento registrado e passado à Assistente."
+        "Termos de autorização (emitidos pelo M.V.) assinados e anexados."
        ]
       ]
      },
-     "say": "Você é dono das seguintes frentes. Chegada e agenda: Triagem, cadastro com microchip, status da agenda, remarcação. Documentos: Termos (do médico veterinário) assinados e anexados; folha PetLove. Caixa: Abertura e fechamento; valores recebidos; relatório à Laís. Comercial: Balcão, WhatsApp e Flow; orçamento registrado e passado à Assistente."
+     "say": "Você é dono das seguintes frentes. Chegada: Recebe o cliente, acompanha a pesagem (balança higienizada com álcool a cada paciente) e atualiza o status da agenda. Cadastro e plano: Cadastro do cliente, validação do plano de saúde e microchip dos animais do plano. Documentos: Termos de autorização (emitidos pelo médico veterinário) assinados e anexados."
     },
     {
      "v": {
@@ -836,24 +832,20 @@ return {
       ],
       "rows": [
        [
-        "Laudos",
-        "Resultados anexados e avisados."
+        "Caixa",
+        "Abre e fecha o caixa; recebimento das vendas; relatório à Laís."
        ],
        [
-        "Vacinas",
-        "Temperatura da geladeira às 08h e 16h."
+        "Flow",
+        "Acompanha as demandas do CRM (Flow); no fim de semana assume Flow, orçamentos, agendamentos e vacinas."
        ],
        [
-        "Geladeira de medicamentos",
-        "Sábados, domingos e feriados: temperatura às 10h e às 16h (dias úteis: Raissa)."
-       ],
-       [
-        "Farmácia e receitas",
-        "Faltas pedidas à Raissa; receita controlada retida entregue à Raissa."
+        "Exames",
+        "Gestão do e-mail: resultados (laboratório, raio-X) anexados no SimplesVet e no PetLove, com “Resultado de exame” na agenda do M.V."
        ]
       ]
      },
-     "say": "Continuando. Laudos: Resultados anexados e avisados. Vacinas: Temperatura da geladeira às oito e dezesseis. Geladeira de medicamentos: Sábados, domingos e feriados: temperatura às dez e às dezesseis (dias úteis: Raissa). Farmácia e receitas: Faltas pedidas à Raissa; receita controlada retida entregue à Raissa."
+     "say": "Continuando. Caixa: Abre e fecha o caixa; recebimento das vendas; relatório à Laís. Flow: Acompanha as demandas do CRM (Flow); no fim de semana assume Flow, orçamentos, agendamentos e vacinas. Exames: Gestão do e-mail: resultados (laboratório, raio-X) anexados no SimplesVet e no PetLove, com “Resultado de exame” na agenda do médico veterinário."
     },
     {
      "v": {
@@ -868,27 +860,31 @@ return {
       ],
       "rows": [
        [
-        "Ambiente",
-        "Recepção organizada. Limpeza e desinfecção dos consultórios, almotolias e caixas de lixo hospitalar são da faxina."
+        "Geladeiras",
+        "Vacinas: 10h e 16h todos os dias. Medicamentos: 10h e 16h aos sábados, domingos e feriados."
        ],
        [
-        "Cobertura",
-        "WhatsApp, Flow e orçamentos no almoço da Assistente (13h–14h)."
+        "Farmácia de venda",
+        "Reposição dos medicamentos de venda, com saída lançada."
+       ],
+       [
+        "Ambiente",
+        "Recepção e consultórios organizados após o uso; limpeza e desinfecção são da faxina."
        ]
       ]
      },
-     "say": "Continuando. Ambiente: Recepção organizada. Limpeza e desinfecção dos consultórios, almotolias e caixas de lixo hospitalar são da faxina. Cobertura: WhatsApp, Flow e orçamentos no almoço da Assistente (das treze às quatorze)."
+     "say": "Continuando. Geladeiras: Vacinas: dez e dezesseis todos os dias. Medicamentos: dez e dezesseis aos sábados, domingos e feriados. Farmácia de venda: Reposição dos medicamentos de venda, com saída lançada. Ambiente: Recepção e consultórios organizados após o uso; limpeza e desinfecção são da faxina."
     }
    ],
    "quiz": {
-    "q": "Tutor pediu desconto ou estorno.",
+    "q": "Tutor pergunta \"é grave?\".",
     "o": [
      "Pedir para o tutor voltar outro dia",
-     "Não prometa. Registre e leve à Laís, que aprova ou não.",
+     "Não informe: \"O doutor já está com ele. Assim que estiver estável, ele chama você para explicar tudo.\"",
      "Ignorar, porque não é urgente"
     ],
     "a": 1,
-    "why": "Não prometa. Registre e leve à Laís, que aprova ou não."
+    "why": "Não informe: \"O doutor já está com ele. Assim que estiver estável, ele chama você para explicar tudo.\""
    }
   },
   {
@@ -914,23 +910,15 @@ return {
        ],
        [
         "Plantão",
-        "Status da agenda atualizado em cada etapa (chegou, em atendimento, finalizado)"
+        "Pesagem acompanhada; balança higienizada com álcool a cada paciente"
        ],
        [
         "Plantão",
-        "Cancelamento: remarcação solicitada e agenda atualizada, com motivo"
-       ],
-       [
-        "Plantão",
-        "Serviço terceirizado: agendamento e confirmação só com a cobrança antecipada de R$ 95, abatida do valor do serviço"
-       ],
-       [
-        "Plantão",
-        "Microchipagem: número do microchip incluído no cadastro do pet antes do consultório"
+        "Status da agenda atualizado em cada etapa (chegou, em atendimento, finalizado); cancelamento com remarcação e motivo"
        ]
       ]
      },
-     "say": "Regras do plantão inteiro. Triagem na chegada: emergência vai direto ao médico veterinário, antes do cadastro. Status da agenda atualizado em cada etapa (chegou, em atendimento, finalizado). Cancelamento: remarcação solicitada e agenda atualizada, com motivo. Serviço terceirizado: agendamento e confirmação só com a cobrança antecipada de noventa e cinco reais, abatida do valor do serviço. Microchipagem: número do microchip incluído no cadastro do pet antes do consultório."
+     "say": "Regras do plantão inteiro. Triagem na chegada: emergência vai direto ao médico veterinário, antes do cadastro. Pesagem acompanhada; balança higienizada com álcool a cada paciente. Status da agenda atualizado em cada etapa (chegou, em atendimento, finalizado); cancelamento com remarcação e motivo."
     },
     {
      "v": {
@@ -946,27 +934,19 @@ return {
       "rows": [
        [
         "Plantão",
-        "PetLove: cadastro, elegibilidade e carência conferidos antes do consultório"
+        "Cadastro completo do cliente; plano de saúde validado (cadastro, elegibilidade e carência) antes do consultório; microchip dos animais do plano no cadastro"
        ],
        [
         "Plantão",
-        "Documentos (emitidos pelo M.V.) assinados pelo tutor e anexados; folha PetLove assinada"
+        "Termos de autorização (emitidos pelo M.V.) assinados pelo tutor e anexados"
        ],
        [
         "Plantão",
-        "Valores recebidos ao fim de cada atendimento (PetLove: nota particular e coparticipação)"
-       ],
-       [
-        "Plantão",
-        "Receita de controlado do tutor: via de retenção entregue à Raissa (nunca descartar)"
-       ],
-       [
-        "Plantão",
-        "Recepção limpa e organizada; apoio na higienização dos consultórios após os atendimentos"
+        "Valores recebidos ao fim de cada atendimento (plano: nota particular e coparticipação)"
        ]
       ]
      },
-     "say": "PetLove: cadastro, elegibilidade e carência conferidos antes do consultório. Documentos (emitidos pelo médico veterinário) assinados pelo tutor e anexados; folha PetLove assinada. Valores recebidos ao fim de cada atendimento (PetLove: nota particular e coparticipação). Receita de controlado do tutor: via de retenção entregue à Raissa (nunca descartar). Recepção limpa e organizada; apoio na higienização dos consultórios após os atendimentos."
+     "say": "Cadastro completo do cliente; plano de saúde validado (cadastro, elegibilidade e carência) antes do consultório; microchip dos animais do plano no cadastro. Termos de autorização (emitidos pelo médico veterinário) assinados pelo tutor e anexados. Valores recebidos ao fim de cada atendimento (plano: nota particular e coparticipação)."
     },
     {
      "v": {
@@ -982,7 +962,35 @@ return {
       "rows": [
        [
         "Plantão",
-        "Pedido de orçamento registrado no Flow e encaminhado à Assistente"
+        "Atendimento com M.V. volante: agendamento e confirmação só após o adiantamento de R$ 115, abatido do valor do atendimento"
+       ],
+       [
+        "Plantão",
+        "CRM (Flow) acompanhado: demandas respondidas ou passadas à Assistente"
+       ],
+       [
+        "Plantão",
+        "Receita de controlado do tutor: via de retenção entregue à Thay (nunca descartar)"
+       ]
+      ]
+     },
+     "say": "Atendimento com médico veterinário volante: agendamento e confirmação só após o adiantamento de cento e quinze reais, abatido do valor do atendimento. CRM (Flow) acompanhado: demandas respondidas ou passadas à Assistente. Receita de controlado do tutor: via de retenção entregue à Thay (nunca descartar)."
+    },
+    {
+     "v": {
+      "type": "table",
+      "left": true,
+      "tag": "Sua rotina · Regras do plantão inteiro (4)",
+      "h": "Igual ao **seu checklist**",
+      "grid": ".8fr 5fr",
+      "cols": [
+       "Hora",
+       "Tarefa"
+      ],
+      "rows": [
+       [
+        "Plantão",
+        "Recepção e consultórios organizados após cada uso (limpeza e desinfecção são da faxina)"
        ],
        [
         "Plantão",
@@ -990,7 +998,7 @@ return {
        ]
       ]
      },
-     "say": "Pedido de orçamento registrado no Flow e encaminhado à Assistente. Foco comercial do mês oferecido nos atendimentos e canais."
+     "say": "Recepção e consultórios organizados após cada uso (limpeza e desinfecção são da faxina). Foco comercial do mês oferecido nos atendimentos e canais."
     },
     {
      "v": {
@@ -1013,20 +1021,16 @@ return {
         "Abertura de caixa: troco, maquininhas e sistema; valores da noite conferidos"
        ],
        [
-        "08:00",
-        "Temperatura da geladeira de vacinas — manhã (registrada)"
+        "08:15",
+        "Agenda do dia conferida; Flow e WhatsApp: mensagens da noite respondidas"
        ],
        [
         "10:00",
-        "Sábado, domingo e feriado: temperatura da geladeira de medicamentos registrada (10h) — dias úteis: N/A"
-       ],
-       [
-        "08:15",
-        "Agenda do dia conferida; WhatsApp/Flow: mensagens da noite respondidas"
+        "Temperatura da geladeira de vacinas registrada (10h)"
        ]
       ]
      },
-     "say": "Rotina do plantão doze por trinta e seis. Sete e trinta, Passagem de turno lida e assinada. Sete e quarenta e cinco, Abertura de caixa: troco, maquininhas e sistema; valores da noite conferidos. Oito, Temperatura da geladeira de vacinas — manhã (registrada). Dez, Sábado, domingo e feriado: temperatura da geladeira de medicamentos registrada (dez) — dias úteis: não se aplica. Oito e quinze, Agenda do dia conferida; WhatsApp ou Flow: mensagens da noite respondidas."
+     "say": "Rotina do plantão doze por trinta e seis. Sete e trinta, Passagem de turno lida e assinada. Sete e quarenta e cinco, Abertura de caixa: troco, maquininhas e sistema; valores da noite conferidos. Oito e quinze, Agenda do dia conferida; Flow e WhatsApp: mensagens da noite respondidas. Dez, Temperatura da geladeira de vacinas registrada (dez)."
     },
     {
      "v": {
@@ -1041,28 +1045,20 @@ return {
       ],
       "rows": [
        [
-        "10:00",
-        "Laudos do e-mail anexados e na agenda do vet; clínicas e tutores avisados"
+        "10:05",
+        "Sábado, domingo e feriado: temperatura da geladeira de medicamentos registrada (10h) — dias úteis: N/A"
+       ],
+       [
+        "10:30",
+        "E-mail: resultados (laboratório, raio-X e outros) anexados no SimplesVet e no PetLove; “Resultado de exame” incluído na agenda do M.V. responsável"
        ],
        [
         "11:00",
-        "Farmácia da recepção: faltas verificadas e reposição pedida à Raissa"
-       ],
-       [
-        "12:00",
-        "Intervalo de almoço (1h) — a Assistente cobre a recepção (seg–sex)"
-       ],
-       [
-        "13:00",
-        "Cobertura dos canais da Assistente no almoço dela (WhatsApp, Flow e orçamentos) — N/A no fim de semana"
-       ],
-       [
-        "14:00",
-        "Documentos assinados do período digitalizados e anexados"
+        "Farmácia de venda reposta (medicamentos de venda, com saída lançada)"
        ]
       ]
      },
-     "say": "Dez, Laudos do e-mail anexados e na agenda do vet; clínicas e tutores avisados. Onze, Farmácia da recepção: faltas verificadas e reposição pedida à Raissa. Doze, Intervalo de almoço (uma hora) — a Assistente cobre a recepção (de segunda a sexta). Treze, Cobertura dos canais da Assistente no almoço dela (WhatsApp, Flow e orçamentos) — não se aplica no fim de semana. Quatorze, Documentos assinados do período digitalizados e anexados."
+     "say": "Dez e cinco, Sábado, domingo e feriado: temperatura da geladeira de medicamentos registrada (dez) — dias úteis: não se aplica. Dez e trinta, E-mail: resultados (laboratório, raio-X e outros) anexados no SimplesVet e no PetLove; “Resultado de exame” incluído na agenda do médico veterinário responsável. Onze, Farmácia de venda reposta (medicamentos de venda, com saída lançada)."
     },
     {
      "v": {
@@ -1077,28 +1073,100 @@ return {
       ],
       "rows": [
        [
-        "16:00",
-        "Temperatura da geladeira de vacinas — tarde (registrada)"
+        "12:00",
+        "Intervalo de almoço (1h) — a Assistente cobre a recepção (seg–sex)"
        ],
        [
+        "13:00",
+        "Cobertura dos canais da Assistente no almoço dela (Flow e orçamentos) — N/A no fim de semana"
+       ],
+       [
+        "14:00",
+        "Documentos assinados do período digitalizados e anexados"
+       ],
+       [
+        "15:00",
+        "E-mail: 2ª checagem de resultados que chegaram no dia"
+       ]
+      ]
+     },
+     "say": "Doze, Intervalo de almoço (uma hora) — a Assistente cobre a recepção (de segunda a sexta). Treze, Cobertura dos canais da Assistente no almoço dela (Flow e orçamentos) — não se aplica no fim de semana. Quatorze, Documentos assinados do período digitalizados e anexados. Quinze, E-mail: 2ª checagem de resultados que chegaram no dia."
+    },
+    {
+     "v": {
+      "type": "table",
+      "left": true,
+      "tag": "Sua rotina · Rotina do plantão 12x36 (4)",
+      "h": "Igual ao **seu checklist**",
+      "grid": ".8fr 5fr",
+      "cols": [
+       "Hora",
+       "Tarefa"
+      ],
+      "rows": [
+       [
         "16:00",
+        "Temperatura da geladeira de vacinas registrada (16h)"
+       ],
+       [
+        "16:05",
         "Sábado, domingo e feriado: temperatura da geladeira de medicamentos registrada (16h) — dias úteis: N/A"
        ],
        [
         "17:00",
-        "Pendências conferidas: sem assinatura, sem recebimento, sem anexo, exame sem aviso, agenda sem status"
-       ],
+        "Pendências conferidas: sem assinatura, sem recebimento, sem anexo, exame sem aviso na agenda, agenda sem status"
+       ]
+      ]
+     },
+     "say": "Dezesseis, Temperatura da geladeira de vacinas registrada (dezesseis). Dezesseis e cinco, Sábado, domingo e feriado: temperatura da geladeira de medicamentos registrada (dezesseis) — dias úteis: não se aplica. Dezessete, Pendências conferidas: sem assinatura, sem recebimento, sem anexo, exame sem aviso na agenda, agenda sem status."
+    },
+    {
+     "v": {
+      "type": "table",
+      "left": true,
+      "tag": "Sua rotina · Rotina do plantão 12x36 (5)",
+      "h": "Igual ao **seu checklist**",
+      "grid": ".8fr 5fr",
+      "cols": [
+       "Hora",
+       "Tarefa"
+      ],
+      "rows": [
        [
         "18:30",
         "Fechamento de caixa: maquininhas, PIX e dinheiro × sistema (relatório para a Laís)"
        ],
        [
         "19:00",
-        "Recepção limpa e organizada e passagem de turno escrita"
+        "Recepção e consultórios organizados e passagem de turno escrita"
        ]
       ]
      },
-     "say": "Dezesseis, Temperatura da geladeira de vacinas — tarde (registrada). Dezesseis, Sábado, domingo e feriado: temperatura da geladeira de medicamentos registrada (dezesseis) — dias úteis: não se aplica. Dezessete, Pendências conferidas: sem assinatura, sem recebimento, sem anexo, exame sem aviso, agenda sem status. Dezoito e trinta, Fechamento de caixa: maquininhas, pix e dinheiro contra sistema (relatório para a Laís). Dezenove, Recepção limpa e organizada e passagem de turno escrita."
+     "say": "Dezoito e trinta, Fechamento de caixa: maquininhas, pix e dinheiro contra sistema (relatório para a Laís). Dezenove, Recepção e consultórios organizados e passagem de turno escrita."
+    },
+    {
+     "v": {
+      "type": "table",
+      "left": true,
+      "tag": "Sua rotina · Sábados, domingos e feriados",
+      "h": "Igual ao **seu checklist**",
+      "grid": ".8fr 5fr",
+      "cols": [
+       "Hora",
+       "Tarefa"
+      ],
+      "rows": [
+       [
+        "Plantão",
+        "Flow e WhatsApp: orçamentos do pedido ao retorno ao tutor (M.V. apoia quando necessário)"
+       ],
+       [
+        "Plantão",
+        "Agendamentos de consultas e vacinas feitos e registrados"
+       ]
+      ]
+     },
+     "say": "Sábados, domingos e feriados. Flow e WhatsApp: orçamentos do pedido ao retorno ao tutor (médico veterinário apoia quando necessário). Agendamentos de consultas e vacinas feitos e registrados."
     },
     {
      "v": {
@@ -1114,7 +1182,7 @@ return {
       "rows": [
        [
         "—",
-        "Temperatura fora da faixa: Raissa e M.V. de plantão avisados na hora"
+        "Temperatura fora da faixa: M.V. de plantão avisado na hora; Raissa e Thay no dia"
        ],
        [
         "—",
@@ -1122,19 +1190,15 @@ return {
        ],
        [
         "—",
-        "PetLove em carência: tutor orientado (antecipação pelo app ou atendimento particular)"
+        "Plano em carência: tutor orientado (antecipação pelo app ou atendimento particular)"
        ],
        [
         "—",
-        "Óbito: tutor acolhido em local reservado; a notícia é do M.V. responsável"
-       ],
-       [
-        "—",
-        "Reclamação registrada e passada à Laís no mesmo dia"
+        "Resultado de exame atrasado: laboratório cobrado e M.V. avisado"
        ]
       ]
      },
-     "say": "Eventual. Temperatura fora da faixa: Raissa e médico veterinário de plantão avisados na hora. Pedido de estorno ou cancelamento: registrado e enviado à Laís (nunca estornar sem aprovação). PetLove em carência: tutor orientado (antecipação pelo app ou atendimento particular). Óbito: tutor acolhido em local reservado; a notícia é do médico veterinário responsável. Reclamação registrada e passada à Laís no mesmo dia."
+     "say": "Eventual. Temperatura fora da faixa: médico veterinário de plantão avisado na hora; Raissa e Thay no dia. Pedido de estorno ou cancelamento: registrado e enviado à Laís (nunca estornar sem aprovação). Plano em carência: tutor orientado (antecipação pelo app ou atendimento particular). Resultado de exame atrasado: laboratório cobrado e médico veterinário avisado."
     },
     {
      "v": {
@@ -1150,22 +1214,30 @@ return {
       "rows": [
        [
         "—",
+        "Óbito: tutor acolhido em local reservado; a notícia é do M.V. responsável"
+       ],
+       [
+        "—",
+        "Reclamação registrada e passada à Laís no mesmo dia"
+       ],
+       [
+        "—",
         "Visita a internado acompanhada conforme a regra"
        ]
       ]
      },
-     "say": "Visita a internado acompanhada conforme a regra."
+     "say": "Óbito: tutor acolhido em local reservado; a notícia é do médico veterinário responsável. Reclamação registrada e passada à Laís no mesmo dia. Visita a internado acompanhada conforme a regra."
     }
    ],
    "quiz": {
-    "q": "Tutor quer orçamento.",
+    "q": "Tutor pediu desconto ou estorno.",
     "o": [
-     "Registre o pedido e passe à Assistente; no balcão, ofereça o valor de tabela do que for seu (consulta, vacina).",
+     "Não prometa. Registre e leve à Laís, que aprova ou não.",
      "Esperar a Laís perguntar",
      "Resolver sozinho e não contar a ninguém"
     ],
     "a": 0,
-    "why": "Registre o pedido e passe à Assistente; no balcão, ofereça o valor de tabela do que for seu (consulta, vacina)."
+    "why": "Não prometa. Registre e leve à Laís, que aprova ou não."
    }
   },
   {
@@ -1182,13 +1254,13 @@ return {
       "items": [
        "Nenhum atendimento sai sem cobrança conferida.",
        "Nunca estornar ou cancelar sem aprovação da Laís.",
-       "Temperatura fora da faixa: Raissa e M.V. de plantão na hora.",
+       "Temperatura fora da faixa: M.V. de plantão na hora.",
        "Passagem escrita e rubrica em todo plantão.",
        "Óbito: acolher; a notícia é do M.V.",
-       "Serviço terceirizado: agendamento e confirmação só com a cobrança antecipada de R$ 95, abatida do valor do serviço."
+       "M.V. volante: agendamento e confirmação só após o adiantamento de R$ 115, abatido do valor do atendimento."
       ]
      },
-     "say": "As regras do cargo. Primeiro: nenhum atendimento sai sem cobrança conferida. Depois: nunca estornar ou cancelar sem aprovação da Laís. Em seguida: temperatura fora da faixa: Raissa e médico veterinário de plantão na hora. Também: passagem escrita e rubrica em todo plantão. E ainda: óbito: acolher; a notícia é do médico veterinário. Por fim: serviço terceirizado: agendamento e confirmação só com a cobrança antecipada de noventa e cinco reais, abatida do valor do serviço."
+     "say": "As regras do cargo. Primeiro: nenhum atendimento sai sem cobrança conferida. Depois: nunca estornar ou cancelar sem aprovação da Laís. Em seguida: temperatura fora da faixa: médico veterinário de plantão na hora. Também: passagem escrita e rubrica em todo plantão. E ainda: óbito: acolher; a notícia é do médico veterinário. Por fim: médico veterinário volante: agendamento e confirmação só após o adiantamento de cento e quinze reais, abatido do valor do atendimento."
     },
     {
      "v": {
@@ -1199,12 +1271,12 @@ return {
       "items": [
        "Informar diagnóstico ou conduta (M.V.).",
        "Emitir documentos clínicos (M.V.).",
-       "Montar orçamento de WhatsApp ou ligação (Assistente).",
-       "Lançar NF de compra (Raissa) ou negociar com fornecedor (Thay).",
+       "Montar orçamento nos dias úteis (Assistente).",
+       "Limpeza pesada e desinfecção (faxina).",
        "Retirar item da farmácia sem lançamento."
       ]
      },
-     "say": "E o que não é sua função. Informar diagnóstico ou conduta (médico veterinário). Emitir documentos clínicos (médico veterinário). Montar orçamento de WhatsApp ou ligação (Assistente). Lançar nota fiscal de compra (Raissa) ou negociar com fornecedor (Thay). Retirar item da farmácia sem lançamento."
+     "say": "E o que não é sua função. Informar diagnóstico ou conduta (médico veterinário). Emitir documentos clínicos (médico veterinário). Montar orçamento nos dias úteis (Assistente). Limpeza pesada e desinfecção (faxina). Retirar item da farmácia sem lançamento."
     },
     {
      "v": {
@@ -1214,7 +1286,7 @@ return {
       "two": true,
       "compact": true,
       "items": [
-       "Pontualidade e registro de ponto em todas as entradas, saídas e intervalos; troca de horário só com aprovação da Laís.",
+       "Pontualidade e registro de ponto em todas as entradas, saídas e intervalos; troca de horário só com aprovação da Laís (administrativo e faxina) ou da Thay (rotina clínica).",
        "Almoço sempre com cobertura definida (tabela de almoço da equipe).",
        "Passagem de turno sempre por escrito: pendências, pacientes, faltas de material e recados.",
        "Checklist do dia: só a coluna de hoje aceita marcação; ✔, ✘ (com motivo em Observações) ou N/A, e rubrica no dia.",
@@ -1222,18 +1294,18 @@ return {
        "Dados de tutores e pacientes só no sistema do hospital (LGPD): não trocar telefone pessoal com tutor, não fotografar nem divulgar prontuários, dependências ou clientes."
       ]
      },
-     "say": "E as regras gerais, que valem para toda a equipe. Pontualidade e registro de ponto em todas as entradas, saídas e intervalos; troca de horário só com aprovação da Laís. Almoço sempre com cobertura definida (tabela de almoço da equipe). Passagem de turno sempre por escrito: pendências, pacientes, faltas de material e recados. Checklist do dia: só a coluna de hoje aceita marcação; visto, xis (com motivo em Observações) ou não se aplica, e rubrica no dia. Um xis não é punição. Marcar visto sem realizar a atividade é fraude, passível de advertência. Dados de tutores e pacientes só no sistema do hospital (lei de proteção de dados): não trocar telefone pessoal com tutor, não fotografar nem divulgar prontuários, dependências ou clientes."
+     "say": "E as regras gerais, que valem para toda a equipe. Pontualidade e registro de ponto em todas as entradas, saídas e intervalos; troca de horário só com aprovação da Laís (administrativo e faxina) ou da Thay (rotina clínica). Almoço sempre com cobertura definida (tabela de almoço da equipe). Passagem de turno sempre por escrito: pendências, pacientes, faltas de material e recados. Checklist do dia: só a coluna de hoje aceita marcação; visto, xis (com motivo em Observações) ou não se aplica, e rubrica no dia. Um xis não é punição. Marcar visto sem realizar a atividade é fraude, passível de advertência. Dados de tutores e pacientes só no sistema do hospital (lei de proteção de dados): não trocar telefone pessoal com tutor, não fotografar nem divulgar prontuários, dependências ou clientes."
     }
    ],
    "quiz": {
-    "q": "Temperatura da geladeira de vacinas fora da faixa.",
+    "q": "Chegou resultado de exame no e-mail.",
     "o": [
      "Fazer do jeito que achar melhor, mesmo fora da regra",
-     "Avise a Raissa e o M.V. de plantão na hora e registre.",
+     "Anexe no SimplesVet e no PetLove (se for do plano) e inclua \"Resultado de exame\" na agenda do M.V. responsável.",
      "Deixar para o próximo turno, sem registrar"
     ],
     "a": 1,
-    "why": "Avise a Raissa e o M.V. de plantão na hora e registre."
+    "why": "Anexe no SimplesVet e no PetLove (se for do plano) e inclua \"Resultado de exame\" na agenda do M.V. responsável."
    }
   },
   {
@@ -1362,14 +1434,14 @@ return {
     }
    ],
    "quiz": {
-    "q": "Sábado, domingo ou feriado: geladeira de medicamentos.",
+    "q": "Sábado, domingo ou feriado.",
     "o": [
-     "Registre a temperatura às 10h e às 16h (nos dias úteis é da Raissa). Fora da faixa: Raissa e M.V. de plantão na hora.",
+     "Sem a Assistente: você faz Flow, orçamentos, agendamentos e vacinas, e registra a geladeira de medicamentos às 10h e às 16h.",
      "Ignorar, porque não é urgente",
      "Pedir para o tutor voltar outro dia"
     ],
     "a": 0,
-    "why": "Registre a temperatura às 10h e às 16h (nos dias úteis é da Raissa). Fora da faixa: Raissa e M.V. de plantão na hora."
+    "why": "Sem a Assistente: você faz Flow, orçamentos, agendamentos e vacinas, e registra a geladeira de medicamentos às 10h e às 16h."
    }
   },
   {
@@ -1394,16 +1466,44 @@ return {
         "Direto para a internação, antes do cadastro. Avise o M.V. de plantão. Acolha o tutor na recepção (água, café, lugar para sentar) e faça o cadastro depois, com calma."
        ],
        [
+        "Paciente na balança.",
+        "Acompanhe a pesagem e higienize a balança com álcool depois de cada paciente."
+       ],
+       [
         "Tutor pergunta \"é grave?\".",
         "Não informe: \"O doutor já está com ele. Assim que estiver estável, ele chama você para explicar tudo.\""
-       ],
+       ]
+      ]
+     },
+     "say": "Quando: Chegou um paciente em emergência. Direto para a internação, antes do cadastro. Avise o médico veterinário de plantão. Acolha o tutor na recepção (água, café, lugar para sentar) e faça o cadastro depois, com calma. Quando: Paciente na balança. Acompanhe a pesagem e higienize a balança com álcool depois de cada paciente. Quando: Tutor pergunta \"é grave?\". Não informe: \"O doutor já está com ele. Assim que estiver estável, ele chama você para explicar tudo.\"."
+    },
+    {
+     "v": {
+      "type": "table",
+      "left": true,
+      "tag": "Situações do dia a dia",
+      "h": "E agora, **o que eu faço?**",
+      "grid": "1.4fr 3fr",
+      "cols": [
+       "Situação",
+       "O que fazer"
+      ],
+      "rows": [
        [
         "Tutor pediu desconto ou estorno.",
         "Não prometa. Registre e leve à Laís, que aprova ou não."
+       ],
+       [
+        "Chegou resultado de exame no e-mail.",
+        "Anexe no SimplesVet e no PetLove (se for do plano) e inclua \"Resultado de exame\" na agenda do M.V. responsável."
+       ],
+       [
+        "Sábado, domingo ou feriado.",
+        "Sem a Assistente: você faz Flow, orçamentos, agendamentos e vacinas, e registra a geladeira de medicamentos às 10h e às 16h."
        ]
       ]
      },
-     "say": "Quando: Chegou um paciente em emergência. Direto para a internação, antes do cadastro. Avise o médico veterinário de plantão. Acolha o tutor na recepção (água, café, lugar para sentar) e faça o cadastro depois, com calma. Quando: Tutor pergunta \"é grave?\". Não informe: \"O doutor já está com ele. Assim que estiver estável, ele chama você para explicar tudo.\". Quando: Tutor pediu desconto ou estorno. Não prometa. Registre e leve à Laís, que aprova ou não."
+     "say": "Quando: Tutor pediu desconto ou estorno. Não prometa. Registre e leve à Laís, que aprova ou não. Quando: Chegou resultado de exame no e-mail. Anexe no SimplesVet e no PetLove (se for do plano) e inclua \"Resultado de exame\" na agenda do médico veterinário responsável. Quando: Sábado, domingo ou feriado. Sem a Assistente: você faz Flow, orçamentos, agendamentos e vacinas, e registra a geladeira de medicamentos às dez e às dezesseis."
     },
     {
      "v": {
@@ -1418,87 +1518,31 @@ return {
       ],
       "rows": [
        [
-        "Tutor quer orçamento.",
-        "Registre o pedido e passe à Assistente; no balcão, ofereça o valor de tabela do que for seu (consulta, vacina)."
-       ],
-       [
-        "Temperatura da geladeira de vacinas fora da faixa.",
-        "Avise a Raissa e o M.V. de plantão na hora e registre."
-       ],
-       [
-        "Sábado, domingo ou feriado: geladeira de medicamentos.",
-        "Registre a temperatura às 10h e às 16h (nos dias úteis é da Raissa). Fora da faixa: Raissa e M.V. de plantão na hora."
-       ]
-      ]
-     },
-     "say": "Quando: Tutor quer orçamento. Registre o pedido e passe à Assistente; no balcão, ofereça o valor de tabela do que for seu (consulta, vacina). Quando: Temperatura da geladeira de vacinas fora da faixa. Avise a Raissa e o médico veterinário de plantão na hora e registre. Quando: Sábado, domingo ou feriado: geladeira de medicamentos. Registre a temperatura às dez e às dezesseis (nos dias úteis é da Raissa). Fora da faixa: Raissa e médico veterinário de plantão na hora."
-    },
-    {
-     "v": {
-      "type": "table",
-      "left": true,
-      "tag": "Situações do dia a dia",
-      "h": "E agora, **o que eu faço?**",
-      "grid": "1.4fr 3fr",
-      "cols": [
-       "Situação",
-       "O que fazer"
-      ],
-      "rows": [
-       [
-        "Tutor quer agendar um serviço terceirizado.",
-        "Só agende e confirme com a cobrança antecipada de R$ 95, abatida do valor do serviço. Sem o pagamento, o horário não fica reservado."
-       ],
-       [
-        "Faltou medicamento na farmácia.",
-        "Peça à Raissa. Nada sai sem lançamento no SimplesVet."
+        "Tutor quer atendimento com M.V. volante.",
+        "Agende e confirme só após o adiantamento de R$ 115, abatido do valor do atendimento."
        ],
        [
         "Óbito de paciente.",
         "Quem comunica é o M.V. Você acolhe em local reservado; a parte burocrática só depois, quando o tutor estiver pronto."
-       ]
-      ]
-     },
-     "say": "Quando: Tutor quer agendar um serviço terceirizado. Só agende e confirme com a cobrança antecipada de noventa e cinco reais, abatida do valor do serviço. Sem o pagamento, o horário não fica reservado. Quando: Faltou medicamento na farmácia. Peça à Raissa. Nada sai sem lançamento no SimplesVet. Quando: Óbito de paciente. Quem comunica é o médico veterinário Você acolhe em local reservado; a parte burocrática só depois, quando o tutor estiver pronto."
-    },
-    {
-     "v": {
-      "type": "table",
-      "left": true,
-      "tag": "Situações do dia a dia",
-      "h": "E agora, **o que eu faço?**",
-      "grid": "1.4fr 3fr",
-      "cols": [
-       "Situação",
-       "O que fazer"
-      ],
-      "rows": [
-       [
-        "Tutor reclamou.",
-        "Escute sem interromper, não discuta, registre e leve à Laís no mesmo dia."
        ],
        [
         "Receita controlada retida.",
-        "Entregue à Raissa para arquivar."
-       ],
-       [
-        "Sua colega saiu para almoçar.",
-        "Você cobre WhatsApp, Flow e orçamentos (13h–14h). Balcão nunca fica vazio."
+        "Entregue à Thay (livro de controlados). Nunca descarte."
        ]
       ]
      },
-     "say": "Quando: Tutor reclamou. Escute sem interromper, não discuta, registre e leve à Laís no mesmo dia. Quando: Receita controlada retida. Entregue à Raissa para arquivar. Quando: Sua colega saiu para almoçar. Você cobre WhatsApp, Flow e orçamentos (das treze às quatorze). Balcão nunca fica vazio."
+     "say": "Quando: Tutor quer atendimento com médico veterinário volante. Agende e confirme só após o adiantamento de cento e quinze reais, abatido do valor do atendimento. Quando: Óbito de paciente. Quem comunica é o médico veterinário Você acolhe em local reservado; a parte burocrática só depois, quando o tutor estiver pronto. Quando: Receita controlada retida. Entregue à Thay (livro de controlados). Nunca descarte."
     }
    ],
    "quiz": {
-    "q": "Tutor quer agendar um serviço terceirizado.",
+    "q": "Tutor quer atendimento com M.V. volante.",
     "o": [
      "Resolver sozinho e não contar a ninguém",
-     "Só agende e confirme com a cobrança antecipada de R$ 95, abatida do valor do serviço. Sem o pagamento, o horário não fica reservado.",
+     "Agende e confirme só após o adiantamento de R$ 115, abatido do valor do atendimento.",
      "Esperar a Laís perguntar"
     ],
     "a": 1,
-    "why": "Só agende e confirme com a cobrança antecipada de R$ 95, abatida do valor do serviço. Sem o pagamento, o horário não fica reservado."
+    "why": "Agende e confirme só após o adiantamento de R$ 115, abatido do valor do atendimento."
    }
   },
   {
@@ -1631,7 +1675,11 @@ return {
       "rows": [
        [
         "Indicadores",
-        "Agenda atualizada; orçamentos encaminhados no turno; atendimentos sem cobrança ou anexo; diferença de caixa; registros de temperatura."
+        "Agenda atualizada; atendimentos sem cobrança ou anexo; resultados anexados no dia; diferença de caixa; registros de temperatura."
+       ],
+       [
+        "Indicador compartilhado",
+        "Vacinas e retornos são resultado de todos: o M.V. registra o retorno e a vacina programada (a Thay garante o registro e acompanha o indicador); a Assistente e a Recepção fazem o contato com o tutor (a Laís acompanha a meta)."
        ],
        [
         "Checklist",
@@ -1647,18 +1695,18 @@ return {
        ]
       ]
      },
-     "say": "Indicadores: Agenda atualizada; orçamentos encaminhados no turno; atendimentos sem cobrança ou anexo; diferença de caixa; registros de temperatura. Checklist: Meta: noventa por cento ou mais dos plantões. Remuneração: Salário fixo + premiação pelas metas do mês. E todo dia quinze tem a conversa individual com a supervisão."
+     "say": "Indicadores: Agenda atualizada; atendimentos sem cobrança ou anexo; resultados anexados no dia; diferença de caixa; registros de temperatura. Indicador compartilhado: Vacinas e retornos são resultado de todos: o médico veterinário registra o retorno e a vacina programada (a Thay garante o registro e acompanha o indicador); a Assistente e a Recepção fazem o contato com o tutor (a Laís acompanha a meta). Checklist: Meta: noventa por cento ou mais dos plantões. Remuneração: Salário fixo + premiação pelas metas do mês. E todo dia quinze tem a conversa individual com a supervisão."
     }
    ],
    "quiz": {
-    "q": "Faltou medicamento na farmácia.",
+    "q": "Óbito de paciente.",
     "o": [
-     "Peça à Raissa. Nada sai sem lançamento no SimplesVet.",
+     "Quem comunica é o M.V. Você acolhe em local reservado; a parte burocrática só depois, quando o tutor estiver pronto.",
      "Deixar para o próximo turno, sem registrar",
      "Fazer do jeito que achar melhor, mesmo fora da regra"
     ],
     "a": 0,
-    "why": "Peça à Raissa. Nada sai sem lançamento no SimplesVet."
+    "why": "Quem comunica é o M.V. Você acolhe em local reservado; a parte burocrática só depois, quando o tutor estiver pronto."
    }
   },
   {
@@ -1675,10 +1723,10 @@ return {
        "Receber bem cada tutor, manter a agenda em dia e fechar cada atendimento assinado, recebido e documentado.",
        "Nenhum atendimento sai sem cobrança conferida.",
        "Nunca estornar ou cancelar sem aprovação da Laís.",
-       "Temperatura fora da faixa: Raissa e M.V. de plantão na hora."
+       "Temperatura fora da faixa: M.V. de plantão na hora."
       ]
      },
-     "say": "Para fechar, o essencial. Receber bem cada tutor, manter a agenda em dia e fechar cada atendimento assinado, recebido e documentado. Nenhum atendimento sai sem cobrança conferida. Nunca estornar ou cancelar sem aprovação da Laís. Temperatura fora da faixa: Raissa e médico veterinário de plantão na hora."
+     "say": "Para fechar, o essencial. Receber bem cada tutor, manter a agenda em dia e fechar cada atendimento assinado, recebido e documentado. Nenhum atendimento sai sem cobrança conferida. Nunca estornar ou cancelar sem aprovação da Laís. Temperatura fora da faixa: médico veterinário de plantão na hora."
     },
     {
      "v": {

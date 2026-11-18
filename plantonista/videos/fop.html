@@ -644,7 +644,7 @@ const T = (n, sub, w, bars) => ({n, sub, w, bars});
 return {
   id:'fluxo-operacional-v1', cargo:'Fluxo operacional do hospital', titulo:'Fluxo ==operacional== do hospital', grupo:'Apresentação · Hospital Veterinário Reino Animal · 29/10/2026',
   ciencia:'Assisti à apresentação do fluxo operacional do hospital.',
-  rodape:'Base: políticas dos cargos CLT (v. 28/10/2026), política do corpo clínico, checklists v8 e manual de conduta do M.V. Horários de referência; a escala do mês prevalece. A narração usa a voz instalada no aparelho; a mais natural costuma ser a do Microsoft Edge.',
+  rodape:'Base: políticas dos cargos CLT (v. 18/11/2026), política do corpo clínico, checklists v10 e manual de conduta do M.V. Horários de referência; a escala do mês prevalece. A narração usa a voz instalada no aparelho; a mais natural costuma ser a do Microsoft Edge.',
   chapters:[
     {id:'abertura', title:'Abertura', small:'Quem faz o quê, em cada turno',
      beats:[
@@ -661,9 +661,9 @@ return {
           sideL:{t:'BPO financeiro', s:'empresa externa · ponte: Laís', w:'fin'},
           side:{t:'Marcos Veloso · RT', s:'sócio fundador', w:'plant'},
           cols:[
-            {t:'Laís', s:'Coordenadora Administrativa', chip:'sócia', w:'ger', kids:[['Letícia · Kethelen · Ester','Assistente e Recepção 12x36'],['Faxina','12x36 · procedimentos com a Thay']]},
-            {t:'Thay', s:'Supervisora Administrativa', w:'aux', kids:[['Raissa','Aux. Vet. · estoque e farmácia'],['Aux. Vet. Noturna','12x36 · 19h–07h'],['Amanda · Bernardo','estagiários · escala da Thay']]},
-            {t:'Corpo clínico', s:'Médicos veterinários', w:'plant', kids:[['Escala e lançamentos','com a Thay'],['Internação','decisão clínica do M.V.']]}]},
+            {t:'Laís', s:'Coordenadora Administrativa', chip:'sócia', w:'ger', kids:[['Assistente · Recepção','Kethelen e Ester 12x36'],['Faxina','pessoas com a Laís · procedimentos com a Thay']]},
+            {t:'Thay', s:'Supervisora Administrativa', w:'aux', kids:[['Raissa','Aux. Vet. · estoque e farmácia'],['Amanda · Bernardo','estagiários'],['Aux. noturnas e de fim de semana','escala da Thay']]},
+            {t:'Corpo clínico', s:'Médicos veterinários', w:'plant', kids:[['Escala dos veterinários','Ana (Internista) · Thay apoia'],['Auditoria dos atendimentos','com a Thay']]}]},
        say:'Primeiro, quem é quem. O Conselho, de sócios e consultores, orienta a direção. O Vitor, Diretor Executivo, dirige o hospital. A Laís, Coordenadora Administrativa, lidera a assistente, a recepção e a faxina. A Thay, Supervisora Administrativa, é o elo entre a rotina clínica e a gestão: supervisiona a Raissa, a auxiliar noturna e os estagiários, cuida da escala dos estagiários e dos veterinários, das compras e da conformidade, e audita os lançamentos no sistema com os médicos veterinários. E o corpo clínico decide tudo o que é clínico. O Marcos Veloso é o responsável técnico, e o BPO financeiro fala com a equipe só pela Laís.'}
      ]},
     {id:'ler', title:'Como ler', small:'Dono, participa, recorre a',
@@ -689,28 +689,34 @@ return {
         T('Recepção 12x36','todos os dias','rec',[[8,19.5,'07h30–19h30']]),
         T('Assistente Administrativo','orçamentos e conferência','adm',[[8,18,'08h–18h']]),
         T('Laís · Coordenadora','equipe administrativa e atendimento','ger',[[10,20,'10h–20h']]),
-        T('Thay · Supervisora','rotina clínica e processos','aux',[[8,18,'08h–18h']]),
-        T('Raissa · Aux. Vet.','estoque, farmácia e suporte','aux',[[10.25,19.25,'10h15–19h15']]),
+        T('Thay · Supervisora','auditoria, compras, estoque e rondas','aux',[[8,18,'08h–18h']]),
+        T('Raissa · Aux. Vet.','estoque, farmácia, esterilização e suporte','aux',[[10.25,19.25,'10h15–19h15']]),
         T('Estagiários','Amanda · Bernardo','aux',[[8,13,'07h–13h'],[15,21,'15h–21h']]),
-        T('Faxina 12x36','todos os dias','todos',[[8,19,'07h–19h']])], notes:[['12h–15h','almoços em escala, sem deixar a recepção vazia']]},
-       say:'No apoio: a recepção das sete e meia às dezenove e meia, a assistente das oito às dezoito, a Laís das dez às vinte, a Thay de segunda a sexta, das oito às dezoito, a Raissa a partir das dez e quinze, a Amanda de manhã e o Bernardo à tarde, e a faxina das sete às dezenove. Os almoços são em escala, e a recepção nunca fica vazia.'},
+        T('Faxina 12x36','todos os dias','todos',[[8,19,'07h–19h']])], notes:[['12h–13h','a Amanda cobre o almoço da Raissa; a Assistente cobre a recepção']]},
+       say:'No apoio: a recepção das sete e meia às dezenove e meia, a assistente das oito às dezoito, a Laís das dez às vinte, a Thay de segunda a sexta, das oito às dezoito, a Raissa a partir das dez e quinze, a Amanda de manhã e o Bernardo à tarde, e a faxina das sete às dezenove. Os almoços são em escala: ao meio-dia, a Amanda cobre a Raissa e a assistente cobre a recepção, que nunca fica vazia.'},
       {v:{type:'table', left:true, tag:'Seg a sex · atendimento', h:'Do balcão **ao consultório**', grid:'2fr 1.4fr 1.8fr 1.4fr', cols:['Processo','Dono','Participa','Recorre a'], rows:[
-        ['Chegada, triagem e cadastro','**Recepção**','Assistente (almoço)','M.V. (emergência)'],
+        ['Chegada, pesagem, cadastro e plano de saúde','**Recepção**','Assistente (almoço)','M.V. (emergência)'],
         ['Emergência','**M.V. da Linha de Frente**','Back, Raissa, estagiário','Internista'],
         ['Consulta, plano e receita','**M.V. da Linha de Frente**','Recepção: termos e cobrança','Laís (preço)'],
         ['Orçamento por WhatsApp e ligação','**Assistente**','M.V. (parte técnica)','Laís (negociação)'],
         ['Estorno, desconto, reclamação','**Laís**','Recepção e Assistente','Vitor'],
-        ['PetLove: autorização e conferência','**Assistente**','M.V. que atendeu (glosa)','Thay (auditoria)']]},
-       say:'No atendimento. A chegada, a triagem e o cadastro são da recepção, com a assistente cobrindo o almoço; emergência vai direto ao médico veterinário. A emergência é da Linha de Frente, com o Back, a Raissa e o estagiário no apoio, e a Internista como referência. Consulta, plano de tratamento e receita são do médico veterinário, e a recepção colhe os termos e cobra. Orçamentos por WhatsApp e ligação são da assistente, com o médico veterinário na parte técnica. Estornos, descontos e reclamações são da Laís, que recorre ao Vitor. E no PetLove, a assistente confere, a glosa é corrigida por quem atendeu, e a Thay audita os lançamentos.'},
+        ['Auditoria do atendimento (padrão ouro)','**Thay**','M.V. que atendeu corrige','Ana · Vitor'],
+        ['PetLove: validação e anexos · financeiro D-1','**Recepção** · **Laís**','M.V. que atendeu (glosa)','Thay (aciona o M.V.)']]},
+       say:'No atendimento. A chegada, a pesagem, o cadastro e a validação do plano de saúde são da recepção, com a assistente cobrindo o almoço; emergência vai direto ao médico veterinário. A emergência é da Linha de Frente, com o Back, a Raissa e o estagiário no apoio, e a Internista como referência. Consulta, plano de tratamento, receita e o lançamento das despesas são do médico veterinário, e a recepção colhe os termos e cobra. Orçamentos por WhatsApp e ligação são da assistente, do início ao fim. Estorno, desconto e reclamação são da Laís. A Thay audita os atendimentos: se a indicação e os itens vendidos condizem com a anamnese, se os documentos estão de acordo e se a ficha está completa; quem corrige é o médico veterinário que atendeu. No PetLove, a recepção valida e anexa, e a Laís confere o financeiro do dia anterior.'},
       {v:{type:'table', left:true, tag:'Seg a sex · internação e suporte', h:'Da internação **ao estoque**', grid:'2fr 1.4fr 1.8fr 1.4fr', cols:['Processo','Dono','Participa','Recorre a'], rows:[
         ['Condutas, exames e notícias','**Internista**','Back, estagiários','Linha de Frente'],
         ['Alta dos internados (seg–sex, 08h–21h)','**Linha de Frente**','Internista (passa o caso), recepção','Internista'],
-        ['Vídeos de notícias ao tutor','**Amanda (manhã)**','M.V. aprova','Internista'],
-        ['Kits, baias e alimentação','**Raissa**','Bernardo, Amanda','M.V. responsável'],
-        ['Estoque e farmácia','**Raissa**','Bernardo (conferência de NF)','Thay'],
-        ['Insumos das máquinas (IDEXX, hemogasômetro)','**Raissa**','M.V. que usa','Thay'],
-        ['Almotolias, lixo hospitalar, desinfecção dos consultórios','**Faxina**','estagiário após o uso','Thay (procedimentos)']]},
-       say:'Na internação e no suporte. Condutas, exames e notícias dos internados são da Internista, com o Back e os estagiários. De segunda a sexta, a alta dos internados é sempre da Linha de Frente, das oito às vinte e uma, com o caso passado pela Internista. Os vídeos de notícias para o tutor são da Amanda, de manhã, com a aprovação do médico veterinário. Kits, baias e alimentação são da Raissa, com o apoio dos estagiários. Estoque, farmácia e a lista de compras também são da Raissa, com a Thay como referência; o Bernardo pode conferir a nota. Os insumos das máquinas da internação, como o IDEXX e o hemogasômetro, são controlados pela Raissa. E a reposição das almotolias, das caixas de lixo hospitalar e a limpeza e desinfecção dos consultórios são da faxina, que segue os procedimentos orientados pela Thay.'}
+        ['Vídeos de notícias ao tutor','**Amanda** 7h–8h · **Bernardo** 19h–20h','M.V. aprova','Internista'],
+        ['Kits e medicações da prescrição','**Raissa**','Amanda, Bernardo','M.V. responsável'],
+        ['Baias, alimentação e salas após o uso','**Amanda · Bernardo**','Raissa','Thay'],
+        ['Estoque, recebimento e esterilização do dia','**Raissa**','Estagiários (NF, depois de treinados)','Thay'],
+        ['Insumos das máquinas (IDEXX, hemogasômetro)','**Raissa**','M.V. que usa','Thay']]},
+       say:'Na internação e no suporte. Condutas, exames e notícias dos internados são da Internista, com o Back e os estagiários. De segunda a sexta, a alta dos internados é sempre da Linha de Frente, das oito às vinte e uma, com o caso passado pela Internista. Os vídeos de notícias para o tutor são da Amanda, entre as sete e as oito, e do Bernardo, entre as dezenove e as vinte, com a aprovação do médico veterinário. Kits e medicações da prescrição são da Raissa. Baias, alimentação e a limpeza das salas depois do uso são dos estagiários. Estoque, recebimento das compras e a esterilização do dia são da Raissa; os estagiários podem conferir a nota depois de treinados.'},
+      {v:{type:'table', left:true, tag:'Seg a sex · estoque e ambientes', h:'Compras **e limpeza**', grid:'2fr 1.4fr 1.8fr 1.4fr', cols:['Processo','Dono','Participa','Recorre a'], rows:[
+        ['Cotação, compras, validade e giro','**Thay**','Raissa (lista)','Vitor (aprova)'],
+        ['Recebimento da compra e entrada da NF','**Raissa**','estagiário treinado (confere)','Thay'],
+        ['Limpeza pesada, desinfecção, almotolias e lixo hospitalar','**Faxina**','estagiários após o uso','Thay (procedimentos)']]},
+       say:'E no estoque. Cotação, compras, validade e giro são da Thay, com aprovação do Vitor: quem compra não recebe. Os insumos das máquinas da internação são controlados pela Raissa. E a limpeza pesada, a desinfecção, as almotolias e o lixo hospitalar são da faxina, que segue os procedimentos da Thay.'}
      ]},
     {id:'semana-noite', title:'Seg a sex · fim de tarde e noite', small:'18h às 08h',
      beats:[
@@ -740,18 +746,20 @@ return {
         T('M.V. Back Internação','internação; notícias após 13h','back',[[8,20,'08h–20h']]),
         T('M.V. Silvestres e Exóticos','escala variável','plant',[[8,20,'08h–20h']]),
         T('Raissa · Aux. Vet.','kits e farmácia do fim de semana','aux',[[10.25,14,'10h15–14h']]),
+        T('Aux. fim de semana','free lancer · suporte do dia','aux',[[8,19,'07h–19h']]),
         T('Recepção 12x36','todos os dias','rec',[[8,19.5,'07h30–19h30']]),
         T('Faxina 12x36','todos os dias','todos',[[8,19,'07h–19h']]),
         T('Aux. Vet. Noturna','12x36','aux',[[19,31,'19h–07h']])]},
        say:'No sábado, a equipe é reduzida, mas as regras são as mesmas. A Linha de Frente atende e atualiza as notícias e as condutas dos internados até as treze. O Plantonista de atendimento cobre o dia, das oito às vinte, e faz todas as altas dos internados, inclusive de manhã; no sábado a alta não é da Linha de Frente. O Back cuida da internação, assumindo as notícias depois das treze. Silvestres atende das oito às vinte. A Raissa prepara os kits, a farmácia e os ambientes para o fim de semana e, às treze e quarenta e cinco, passa por escrito o que fica até segunda. Recepção, faxina e noturna seguem a escala doze por trinta e seis.'},
       {v:{type:'table', left:true, tag:'Sábado', h:'Sem administrativo: **quem cobre o quê**', grid:'2fr 1.4fr 1.8fr 1.4fr', cols:['Processo','Dono','Participa','Recorre a'], rows:[
-        ['Orçamentos por WhatsApp','**Recepção**','M.V. do dia','Assistente (segunda)'],
+        ['Flow, orçamentos, agendamentos e vacinas','**Recepção**','M.V. do dia','Assistente (segunda)'],
         ['Estorno ou reclamação','**Recepção registra**','—','Laís (segunda)'],
         ['Notícias e condutas dos internados','**Linha de Frente** até 13h · **Back** depois','Plantonista','Internista (segunda)'],
         ['Altas dos internados (dia todo)','**Plantonista Atendimento**','Back','—'],
         ['Kits e farmácia do fim de semana','**Raissa**','Back','Thay'],
+        ['Suporte ao M.V. e internação','**Aux. fim de semana**','—','Thay (segunda)'],
         ['Almotolias e lixo hospitalar','**Faxina**','—','Thay (segunda)']]},
-       say:'Sem o administrativo no sábado, veja quem cobre o quê. Os orçamentos por WhatsApp ficam com a recepção, com o médico veterinário do dia. Estorno e reclamação são registrados pela recepção e levados à Laís na segunda; nunca se estorna sem aprovação. As notícias e condutas dos internados são da Linha de Frente até as treze e do Back depois. As altas dos internados, o dia todo, são do Plantonista de atendimento, e não da Linha de Frente. A Raissa deixa kits, farmácia e controlados prontos para o fim de semana. E a faxina mantém almotolias e lixo hospitalar repostos.'}
+       say:'Sem o administrativo no sábado, veja quem cobre o quê. O Flow, os orçamentos, os agendamentos e as vacinas ficam com a recepção, com o médico veterinário do dia. A auxiliar de fim de semana, das sete às dezenove, assume o suporte, as baias, os vídeos de notícias e a esterilização. Estorno e reclamação são registrados pela recepção e levados à Laís na segunda; nunca se estorna sem aprovação. As notícias e condutas dos internados são da Linha de Frente até as treze e do Back depois. As altas dos internados, o dia todo, são do Plantonista de atendimento, e não da Linha de Frente. A Raissa deixa kits, farmácia e controlados prontos para o fim de semana. E a faxina mantém almotolias e lixo hospitalar repostos.'}
      ]},
     {id:'domingo', title:'Domingos e feriados', small:'Mesma escala',
      beats:[
@@ -759,16 +767,18 @@ return {
         T('M.V. Plantonista','dia: consultas, urgências e altas','plant',[[8,20,'08h–20h'],[20,32,'20h–08h']]),
         T('M.V. Back Internação','notícias, resultados e condutas','back',[[8,20,'08h–20h']]),
         T('M.V. Silvestres e Exóticos','volante: acionado quando preciso','plant',[[8,20,'sob demanda']]),
+        T('Aux. fim de semana','free lancer · suporte do dia','aux',[[8,19,'07h–19h']]),
         T('Recepção 12x36','todos os dias','rec',[[8,19.5,'07h30–19h30']]),
         T('Faxina 12x36','todos os dias','todos',[[8,19,'07h–19h']]),
         T('Aux. Vet. Noturna','12x36','aux',[[19,31,'19h–07h']])], notes:[['feriado','funciona igual ao domingo'],['segunda 08h','pendências passam ao administrativo e à Raissa']]},
-       say:'Domingos e feriados funcionam na mesma escala de plantão. O Plantonista de atendimento faz as consultas, as urgências e as altas, das oito às vinte. O Back cuida da internação, com as notícias, os resultados e as condutas. Silvestres trabalha como volante, acionado quando preciso. À noite, o Plantonista noturno. E recepção, faxina e noturna seguem a escala doze por trinta e seis. Não há administrativo nem Raissa: as pendências ficam registradas para segunda às oito.'},
+       say:'Domingos e feriados funcionam na mesma escala de plantão. O Plantonista de atendimento faz as consultas, as urgências e as altas, das oito às vinte. O Back cuida da internação, com as notícias, os resultados e as condutas. Silvestres trabalha como volante, acionado quando preciso. À noite, o Plantonista noturno. A auxiliar de fim de semana faz o suporte do dia, das sete às dezenove. E recepção, faxina e noturna seguem a escala doze por trinta e seis. Não há administrativo nem Raissa: as pendências ficam registradas para segunda às oito.'},
       {v:{type:'table', left:true, tag:'Domingos e feriados', h:'Tudo que não fecha **fica registrado**', grid:'2fr 1.4fr 1.8fr 1.4fr', cols:['Processo','Dono','Participa','Recorre a'], rows:[
         ['Atendimento e emergência','**Plantonista Atendimento**','Back','Silvestres (volante)'],
         ['Internação e notícias','**Back Internação**','Plantonista','Internista (segunda)'],
         ['Recepção, orçamentos e caixa','**Recepção**','M.V. do dia','Laís (segunda)'],
-        ['Falta de insumo ou medicamento','**Back** registra','Recepção','Raissa (segunda)'],
-        ['Ambientes, almotolias e lixo hospitalar','**Faxina**','—','Thay (segunda)']]},
+        ['Suporte ao M.V. e internação','**Aux. fim de semana**','—','Thay (segunda)'],
+        ['Falta de insumo ou medicamento','**Aux. fim de semana**','Back','Raissa (segunda)'],
+        ['Limpeza e lixo hospitalar','**Faxina**','—','Thay (segunda)']]},
        say:'Nos domingos e feriados, tudo que não fecha fica registrado. Atendimento e emergência são do Plantonista de atendimento, com o Back. Internação e notícias são do Back. Recepção, orçamentos e caixa são da recepção, com o médico veterinário do dia. Falta de insumo ou medicamento é registrada para a Raissa na segunda. E a faxina cuida dos ambientes, das almotolias e do lixo hospitalar.'}
      ]},
     {id:'consultorio', title:'O atendimento do M.V.', small:'Do plano à recepção',
@@ -789,29 +799,33 @@ return {
     {id:'suprimentos', title:'Suprimentos, máquinas e ambientes', small:'Quem repõe o quê',
      beats:[
       {v:{type:'table', left:true, tag:'Suprimentos e ambientes', h:'Quem **repõe o quê**', grid:'2.2fr 1.6fr 2fr', cols:['Item','Dono','Participa'], rows:[
-        ['Insumos da internação, bloco e consultórios','**Raissa**','Bernardo; noturna registra o uso'],
+        ['Insumos da internação, bloco e consultórios','**Raissa**','estagiários; noturna e aux. de fim de semana registram o uso'],
         ['Medicamentos da farmácia e maleta preta','**Raissa**','—'],
         ['Insumos das máquinas da internação (IDEXX, hemogasômetro e outras)','**Raissa**','M.V. avisa quando acaba'],
-        ['Kits de internação','**Raissa**','Bernardo abre e repõe'],
+        ['Kits de internação (montagem e contagem)','**Raissa**','estagiários repõem e devolvem'],
+        ['Produtos de limpeza (lista de compras)','**Faxina**','Thay compra'],
         ['Almotolias e caixas de lixo hospitalar','**Faxina**','—'],
-        ['Limpeza e desinfecção dos consultórios','**Faxina**','estagiário organiza após o uso']]},
+        ['Limpeza pesada e desinfecção dos ambientes','**Faxina**','estagiários limpam e organizam após o uso']]},
        say:'Quem repõe o quê. Os insumos da internação, do bloco e dos consultórios, os medicamentos da farmácia e a maleta preta são da Raissa. Os insumos das máquinas da internação, como o IDEXX e o hemogasômetro, também são controlados pela Raissa, e o médico veterinário avisa quando algo acaba. Os kits de internação são da Raissa, com o Bernardo abrindo e repondo. Já as almotolias, as caixas de lixo hospitalar e a limpeza e desinfecção dos consultórios são da faxina.'},
-      {v:{type:'rule', tone:'rule', tag:'Compra', txt:'A Raissa **monta a lista**; a Thay **cota e acompanha o pedido**.', sub:'O Vitor aprova a compra. Quando chega, a Raissa confere a nota (pode delegar ao estagiário) e dá entrada no sistema no mesmo dia. Nada sai do estoque sem lançamento.'},
-       say:'E a compra: a Raissa monta a lista, a Thay cota com os fornecedores e acompanha o pedido, e o Vitor aprova. Quando a mercadoria chega, a Raissa confere a nota, podendo delegar ao estagiário, e dá entrada no sistema no mesmo dia. Nada sai do estoque sem lançamento.'}
+      {v:{type:'rule', tone:'rule', tag:'Compra', txt:'A Raissa **monta a lista**; a Thay **cota e compra**. Quem compra **não recebe**.', sub:'O Vitor aprova a compra. Quando chega, a Raissa confere a nota (pode delegar ao estagiário treinado) e dá entrada no sistema no mesmo dia. Nada sai do estoque sem lançamento.'},
+       say:'E a compra: a Raissa monta a lista, a Thay cota com os fornecedores e faz o pedido, e o Vitor aprova. Quem compra não recebe: quando a mercadoria chega, é a Raissa que confere a nota, podendo delegar ao estagiário treinado, e dá entrada no sistema no mesmo dia. Nada sai do estoque sem lançamento.'}
      ]},
     {id:'thay', title:'A supervisão administrativa', small:'O elo entre a clínica e a gestão',
      beats:[
       {v:{type:'table', left:true, tag:'Supervisão administrativa · Thay', h:'O elo entre **a clínica e a gestão**', grid:'2.2fr 1.1fr 2fr 1.2fr', cols:['Processo','Dono','Participa','Recorre a'], rows:[
-        ['Auditoria dos lançamentos no sistema','**Thay**','M.V. responsável pelo atendimento','Vitor'],
-        ['Despesas dos clientes internados atualizadas','**Thay** (supervisiona)','Internista e Back lançam','Vitor'],
-        ['Escala dos estagiários','**Thay**','Estagiários','Vitor'],
-        ['Escala dos veterinários','**Thay** (gere)','M.V. Internista, lado a lado','Vitor'],
-        ['Compras e fornecedores','**Thay**','Raissa (lista)','Vitor (aprova)'],
-        ['Controlados, documentos da empresa e raio-X','**Thay**','Raissa anota; RT assina','Vitor'],
-        ['Esterilização e procedimentos da faxina','**Thay**','Auxiliares e faxina','Vitor']]},
-       say:'A supervisão administrativa. A Thay é o elo entre a rotina clínica e a gestão. Ela audita os lançamentos no sistema junto com o médico veterinário responsável pelo atendimento, e supervisiona a atualização das despesas dos clientes internados, que a Internista e o Back lançam. Cuida da escala dos estagiários e gere a escala dos veterinários, lado a lado com a Internista, das compras e dos fornecedores, com a lista da Raissa e a aprovação do Vitor. E responde pelo livro de controlados, pelos documentos da empresa, pela pasta do raio-X, pela esterilização e pelos procedimentos da faxina.'},
-      {v:{type:'rule', tone:'rule', tag:'Quem recorre a quem', txt:'Necessidade da rotina clínica: **leve à Thay**.', sub:'Falta, escala, lançamento, equipamento ou documento: a Thay resolve ou leva à diretoria. Atendimento ao cliente, recepção e equipe administrativa seguem com a Laís.'},
-       say:'Guarde a regra. Necessidade da rotina clínica, como falta de material, escala, lançamento, equipamento ou documento, vai à Thay, que resolve ou leva à diretoria. Atendimento ao cliente, recepção e equipe administrativa continuam com a Laís.'}
+        ['Auditoria dos atendimentos (indicação × anamnese, documentos, ficha completa)','**Thay**','M.V. que atendeu corrige','Ana · Vitor'],
+        ['Despesas dos internados','**Internista (Ana)** lança','Thay confere','Vitor'],
+        ['Indicadores: retorno e vacinas programadas × realizadas','**Thay**','M.V. registra · Assistente contata','Laís · Vitor'],
+        ['Fornecedores, cotação, compras, validade e giro','**Thay**','Raissa (lista e recebimento)','Vitor (aprova)']]},
+       say:'A supervisão administrativa. A Thay é o elo entre a rotina clínica e a gestão, e o cargo dela é de rondas pelo hospital. Ela audita os atendimentos com os médicos veterinários: se a indicação e os itens vendidos condizem com a anamnese, se os documentos estão de acordo e se a ficha está completa, no padrão ouro. Quem lança e corrige é o médico veterinário que atendeu; nos internados, a Internista Ana. Ela acompanha os indicadores de retorno e de vacinas programadas contra realizadas, que dependem do registro do médico veterinário e do contato da assistente. Cuida dos fornecedores, da cotação e das compras, da validade e do giro, com aprovação do Vitor.'},
+      {v:{type:'table', left:true, tag:'Supervisão administrativa · Thay', h:'Escala, conformidade **e rondas**', grid:'2.2fr 1.1fr 2fr 1.2fr', cols:['Processo','Dono','Participa','Recorre a'], rows:[
+        ['Escala dos estagiários e aux. veterinárias','**Thay**','—','Vitor'],
+        ['Escala dos veterinários','**Ana (Internista)**','Thay apoia','Vitor'],
+        ['Controlados, documentos, raio-X, MTR e dedetização','**Thay**','RT assina; Assistente preenche o MTR','Vitor'],
+        ['Esterilização e procedimentos da faxina','**Thay** supervisiona','Raissa, auxiliares e faxina','Vitor']]},
+       say:'Continuando. Faz a escala dos estagiários e das auxiliares veterinárias e apoia a Ana, que é a responsável pela escala dos veterinários. E cuida do livro de controlados, dos documentos e da conformidade, e supervisiona a esterilização e os procedimentos da faxina.'},
+      {v:{type:'rule', tone:'rule', tag:'Quem recorre a quem', txt:'Necessidade da rotina clínica: **leve à Thay**.', sub:'Falta, compra, auditoria, equipamento, documento ou escala de estagiários e auxiliares: a Thay resolve ou leva à diretoria. Escala dos veterinários: Ana. Atendimento ao cliente, recepção e equipe administrativa seguem com a Laís.'},
+       say:'Guarde a regra. Necessidade da rotina clínica, como falta de material, compra, auditoria, equipamento, documento ou a escala dos estagiários e das auxiliares, vai à Thay, que resolve ou leva à diretoria. A escala dos veterinários é da Ana. Atendimento ao cliente, recepção, caixa e equipe administrativa continuam com a Laís.'}
      ]},
     {id:'trocas', title:'As trocas de mão do dia', small:'Passagens',
      beats:[

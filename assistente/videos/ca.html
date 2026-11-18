@@ -642,9 +642,9 @@ return {
  "id": "cargo-assistente",
  "cargo": "Treinamento · Assistente Administrativo",
  "titulo": "Assistente Administrativo",
- "grupo": "Treinamento do cargo · versão 28/10/2026",
+ "grupo": "Treinamento do cargo · versão 18/11/2026",
  "ciencia": "Assisti ao treinamento do cargo de Assistente Administrativo e conheço a rotina, as regras, os limites e as boas condutas no atendimento.",
- "rodape": "Base: premissas do cargo (versão 3), checklists v8 e manual de consulta (28/10/2026). A narração usa a voz instalada no aparelho; a voz mais natural costuma ser a do Microsoft Edge.",
+ "rodape": "Base: premissas do cargo (versão 4), checklists v10 e manual de consulta (18/11/2026). A narração usa a voz instalada no aparelho; a voz mais natural costuma ser a do Microsoft Edge.",
  "chapters": [
   {
    "id": "abertura",
@@ -657,7 +657,7 @@ return {
       "dark": true,
       "tag": "Treinamento do cargo · Reino Animal",
       "h": "**Assistente Administrativo**",
-      "sub": "Todo atendimento agendado, cobrado, anexado e conferido, sem glosa e sem pendência esquecida; todo orçamento com retorno.",
+      "sub": "Agenda e CRM sem pendência, todo orçamento com retorno, tutor ouvido depois do atendimento e vacinas e retornos recuperados.",
       "chips": [
        "Rotina",
        "Regras",
@@ -666,7 +666,7 @@ return {
       ],
       "lastOn": true
      },
-     "say": "Olá! Este é o treinamento do cargo Assistente Administrativo, do Hospital Veterinário Reino Animal. A missão do cargo é esta: Todo atendimento agendado, cobrado, anexado e conferido, sem glosa e sem pendência esquecida; todo orçamento com retorno."
+     "say": "Olá! Este é o treinamento do cargo Assistente Administrativo, do Hospital Veterinário Reino Animal. A missão do cargo é esta: Agenda e CRM sem pendência, todo orçamento com retorno, tutor ouvido depois do atendimento e vacinas e retornos recuperados."
     },
     {
      "v": {
@@ -714,10 +714,6 @@ return {
         "Assistente Administrativo"
        ],
        [
-        "Ocupante",
-        "Letícia"
-       ],
-       [
         "Jornada",
         "Segunda a sexta, das 08h às 18h, com 1h de almoço (13h–14h), revezando com a Recepção."
        ],
@@ -727,32 +723,32 @@ return {
        ],
        [
         "Atua junto com",
-        "Recepção 12x36: uma cobre o almoço da outra; referência da Recepção nas dúvidas do dia a dia."
+        "Recepção 12x36: uma cobre o almoço da outra; referência e treinamento da Recepção."
        ]
       ]
      },
-     "say": "Cargo: Assistente Administrativo. Ocupante: Letícia. Jornada: Segunda a sexta, das oito às dezoito, com uma hora de almoço (das treze às quatorze), revezando com a Recepção. Responde a: Laís, Coordenadora Administrativa. Atua junto com: Recepção doze por trinta e seis: uma cobre o almoço da outra; referência da Recepção nas dúvidas do dia a dia."
+     "say": "Cargo: Assistente Administrativo. Jornada: Segunda a sexta, das oito às dezoito, com uma hora de almoço (das treze às quatorze), revezando com a Recepção. Responde a: Laís, Coordenadora Administrativa. Atua junto com: Recepção doze por trinta e seis: uma cobre o almoço da outra; referência e treinamento da Recepção."
     },
     {
      "v": {
       "type": "rule",
       "tone": "ok",
       "tag": "Missão",
-      "txt": "Todo atendimento agendado, cobrado, anexado e conferido, sem glosa e sem pendência esquecida; todo orçamento com retorno.",
+      "txt": "Agenda e CRM sem pendência, todo orçamento com retorno, tutor ouvido depois do atendimento e vacinas e retornos recuperados.",
       "sub": "Tudo o que você faz no dia serve a esta missão."
      },
-     "say": "Guarde a sua missão: Todo atendimento agendado, cobrado, anexado e conferido, sem glosa e sem pendência esquecida; todo orçamento com retorno. Tudo o que você faz no dia serve a ela."
+     "say": "Guarde a sua missão: Agenda e CRM sem pendência, todo orçamento com retorno, tutor ouvido depois do atendimento e vacinas e retornos recuperados. Tudo o que você faz no dia serve a ela."
     }
    ],
    "quiz": {
     "q": "Tutor pediu orçamento pelo WhatsApp.",
     "o": [
      "Resolver sozinho e não contar a ninguém",
-     "Monte com o M.V. (parte técnica), envie com o que está incluído, formas de pagamento e uma proposta de horário. Registre e acompanhe até a decisão.",
+     "Monte do início ao fim (M.V. apoia na parte técnica), envie com o que está incluído, formas de pagamento e uma proposta de horário. Registre e acompanhe até a decisão.",
      "Esperar a Laís perguntar"
     ],
     "a": 1,
-    "why": "Monte com o M.V. (parte técnica), envie com o que está incluído, formas de pagamento e uma proposta de horário. Registre e acompanhe até a decisão."
+    "why": "Monte do início ao fim (M.V. apoia na parte técnica), envie com o que está incluído, formas de pagamento e uma proposta de horário. Registre e acompanhe até a decisão."
    }
   },
   {
@@ -767,12 +763,12 @@ return {
       "h": "Como o cargo **trabalha**",
       "items": [
        "Confere o dia anterior antes de tudo.",
-       "Todo contato com tutor fica registrado no sistema.",
+       "Todo contato com tutor fica registrado no sistema e no Flow.",
        "Quem pediu orçamento sempre recebe retorno.",
        "Segue o Manual de Boas Condutas no Atendimento."
       ]
      },
-     "say": "Como o cargo trabalha. Primeiro: confere o dia anterior antes de tudo. Depois: todo contato com tutor fica registrado no sistema. Em seguida: quem pediu orçamento sempre recebe retorno. Por fim: segue o Manual de Boas Condutas no Atendimento."
+     "say": "Como o cargo trabalha. Primeiro: confere o dia anterior antes de tudo. Depois: todo contato com tutor fica registrado no sistema e no Flow. Em seguida: quem pediu orçamento sempre recebe retorno. Por fim: segue o Manual de Boas Condutas no Atendimento."
     }
    ],
    "quiz": {
@@ -804,24 +800,20 @@ return {
       ],
       "rows": [
        [
-        "Conferência",
-        "Atendimentos do dia anterior lançados, cobrados e anexados."
+        "Agenda e Flow",
+        "Conferência de pendências e atualização da agenda no SimplesVet e no CRM (Flow)."
        ],
        [
         "Orçamentos",
-        "WhatsApp e ligações, montados com o M.V. e acompanhados até a decisão."
+        "WhatsApp e ligações, do início ao fim (M.V. apoia quando necessário)."
        ],
        [
-        "PetLove",
-        "Conferência D-1, autorizações e resultados na plataforma; falha de lançamento à Laís."
-       ],
-       [
-        "Laboratórios",
-        "Prazos, recoletas e resultados anexados."
+        "Vacinas e retornos",
+        "Agendamento de vacinas, contato de vacinas em atraso e confirmação dos retornos marcados pelo M.V."
        ]
       ]
      },
-     "say": "Você é dono das seguintes frentes. Conferência: Atendimentos do dia anterior lançados, cobrados e anexados. Orçamentos: WhatsApp e ligações, montados com o médico veterinário e acompanhados até a decisão. PetLove: Conferência do dia anterior, autorizações e resultados na plataforma; falha de lançamento à Laís. Laboratórios: Prazos, recoletas e resultados anexados."
+     "say": "Você é dono das seguintes frentes. Agenda e Flow: Conferência de pendências e atualização da agenda no SimplesVet e no CRM (Flow). Orçamentos: WhatsApp e ligações, do início ao fim (médico veterinário apoia quando necessário). Vacinas e retornos: Agendamento de vacinas, contato de vacinas em atraso e confirmação dos retornos marcados pelo médico veterinário."
     },
     {
      "v": {
@@ -836,28 +828,52 @@ return {
       ],
       "rows": [
        [
-        "Agenda e recorrência",
-        "Confirmações, pré-operatório, vacinas em atraso, retornos."
+        "Pós-venda",
+        "Pesquisa de satisfação com os tutores das altas e consultas do dia anterior."
        ],
        [
-        "Comissionados",
-        "SimplesVet até o último dia útil do mês."
+        "Cirurgias",
+        "Confirmação e orientações pré-operatórias."
        ],
        [
-        "Resíduos",
-        "MTR."
-       ],
-       [
-        "Cobertura",
-        "Balcão, caixa e telefone no almoço da Recepção (12h–13h)."
+        "Atendimento presencial",
+        "Apoio à Recepção nos picos; cobertura do almoço da aux. administrativa (12h–13h)."
        ]
       ]
      },
-     "say": "Continuando. Agenda e recorrência: Confirmações, pré-operatório, vacinas em atraso, retornos. Comissionados: SimplesVet até o último dia útil do mês. Resíduos: manifesto de resíduos. Cobertura: Balcão, caixa e telefone no almoço da Recepção (das doze às treze)."
+     "say": "Continuando. Pós-venda: Pesquisa de satisfação com os tutores das altas e consultas do dia anterior. Cirurgias: Confirmação e orientações pré-operatórias. Atendimento presencial: Apoio à Recepção nos picos; cobertura do almoço da aux. administrativa (das doze às treze)."
+    },
+    {
+     "v": {
+      "type": "table",
+      "left": true,
+      "tag": "Responsabilidades · 3",
+      "h": "Você é **dono(a) de**",
+      "grid": "1.3fr 3.6fr",
+      "cols": [
+       "Frente",
+       "O que faz"
+      ],
+      "rows": [
+       [
+        "Volantes",
+        "Recebe o adiantamento de R$ 115 dos atendimentos com M.V. volante (terceirizado)."
+       ],
+       [
+        "Resíduos",
+        "Preenche o MTR (lixo hospitalar); a Thay confere."
+       ],
+       [
+        "Equipe",
+        "Treinamento da Recepção no sistema, no Flow e na rotina."
+       ]
+      ]
+     },
+     "say": "Continuando. Volantes: Recebe o adiantamento de cento e quinze reais dos atendimentos com médico veterinário volante (terceirizado). Resíduos: Preenche o manifesto de resíduos (lixo hospitalar); a Thay confere. Equipe: Treinamento da Recepção no sistema, no Flow e na rotina."
     }
    ],
    "quiz": {
-    "q": "Achei atendimento de ontem sem cobrança ou sem anexo.",
+    "q": "Achei atendimento de ontem sem assinatura, recebimento ou anexo.",
     "o": [
      "Pedir para o tutor voltar outro dia",
      "Resolva ou defina responsável no mesmo dia. Pendência não passa de 24h.",
@@ -886,27 +902,19 @@ return {
       "rows": [
        [
         "08:00",
-        "Agenda do dia aberta; mensagens e ligações da noite respondidas"
+        "Agenda do dia e CRM (Flow) abertos; mensagens e ligações da noite respondidas"
        ],
        [
         "08:30",
-        "Atendimentos de ontem conferidos: lançados, cobrados e anexados (pendências com dono em 24h)"
+        "Pendências do dia anterior conferidas: sem assinatura, sem recebimento, sem anexo; agenda do SimplesVet e Flow atualizados (pendência com dono em 24h)"
        ],
        [
         "09:00",
-        "Planos de saúde (PetLove): D-1 SimplesVet × Histórico de Atendimentos; falha de lançamento à Laís"
-       ],
-       [
-        "09:30",
-        "Planos: pendências anexadas na plataforma (autorização assinada do tutor e resultados de exames)"
-       ],
-       [
-        "10:00",
-        "Orçamentos do WhatsApp e das ligações: novos pedidos registrados e montados com o M.V."
+        "Pesquisa de satisfação (pós-venda): tutores das altas e consultas de ontem contatados; respostas registradas; insatisfação passada à Laís no dia"
        ]
       ]
      },
-     "say": "Diário — segunda a sexta. Oito, Agenda do dia aberta; mensagens e ligações da noite respondidas. Oito e trinta, Atendimentos de ontem conferidos: lançados, cobrados e anexados (pendências com dono em vinte e quatro horas). Nove, Planos de saúde (PetLove): do dia anterior SimplesVet contra Histórico de Atendimentos; falha de lançamento à Laís. Nove e trinta, Planos: pendências anexadas na plataforma (autorização assinada do tutor e resultados de exames). Dez, Orçamentos do WhatsApp e das ligações: novos pedidos registrados e montados com o médico veterinário."
+     "say": "Diário — segunda a sexta. Oito, Agenda do dia e CRM (Flow) abertos; mensagens e ligações da noite respondidas. Oito e trinta, Pendências do dia anterior conferidas: sem assinatura, sem recebimento, sem anexo; agenda do SimplesVet e Flow atualizados (pendência com dono em vinte e quatro horas). Nove, Pesquisa de satisfação (pós-venda): tutores das altas e consultas de ontem contatados; respostas registradas; insatisfação passada à Laís no dia."
     },
     {
      "v": {
@@ -921,12 +929,12 @@ return {
       ],
       "rows": [
        [
-        "10:30",
-        "Exames: resultados anexados aos prontuários; pendências com laboratórios"
+        "10:00",
+        "Orçamentos do WhatsApp e das ligações: do pedido ao retorno ao tutor (M.V. apoia quando necessário)"
        ],
        [
         "11:00",
-        "Foco comercial do mês: ações do dia (recorrência, orçamentos, vacinas)"
+        "Vacinas: agendamentos do dia e da semana organizados"
        ],
        [
         "11:30",
@@ -934,15 +942,11 @@ return {
        ],
        [
         "12:00",
-        "Cobertura da recepção no almoço da recepcionista (balcão, caixa, telefone e WhatsApp)"
-       ],
-       [
-        "13:00",
-        "Intervalo de almoço (1h) — a recepção cobre os canais da Assistente"
+        "Cobertura da recepção no almoço da aux. administrativa (balcão, caixa, telefone e Flow)"
        ]
       ]
      },
-     "say": "Dez e trinta, Exames: resultados anexados aos prontuários; pendências com laboratórios. Onze, Foco comercial do mês: ações do dia (recorrência, orçamentos, vacinas). Onze e trinta, Vacinas em atraso: contatos do dia feitos e registrados. Doze, Cobertura da recepção no almoço da recepcionista (balcão, caixa, telefone e WhatsApp). Treze, Intervalo de almoço (uma hora) — a recepção cobre os canais da Assistente."
+     "say": "Dez, Orçamentos do WhatsApp e das ligações: do pedido ao retorno ao tutor (médico veterinário apoia quando necessário). Onze, Vacinas: agendamentos do dia e da semana organizados. Onze e trinta, Vacinas em atraso: contatos do dia feitos e registrados. Doze, Cobertura da recepção no almoço da aux. administrativa (balcão, caixa, telefone e Flow)."
     },
     {
      "v": {
@@ -957,28 +961,24 @@ return {
       ],
       "rows": [
        [
+        "13:00",
+        "Intervalo de almoço (1h) — a recepção cobre os canais da Assistente"
+       ],
+       [
         "14:00",
         "Orçamentos enviados: acompanhamento até o retorno; motivo registrado quando não converte"
        ],
        [
-        "14:15",
-        "Serviço sem cadastro ou sem preço: pedido à Laís (cadastro e precificação)"
-       ],
-       [
         "14:30",
-        "Agendamentos da semana organizados (consultas, vacinas, procedimentos, cirurgias)"
-       ],
-       [
-        "14:45",
-        "Consultas e cirurgias de amanhã confirmadas com os tutores"
+        "Retornos marcados pelo M.V.: tutores contatados para confirmar o retorno"
        ],
        [
         "15:00",
-        "Orientação pré-operatória das cirurgias de amanhã: jejum, exames e termo (emitido pelo M.V.)"
+        "Consultas e cirurgias de amanhã confirmadas; orientação pré-operatória (jejum, exames e termo do M.V.)"
        ]
       ]
      },
-     "say": "Quatorze, Orçamentos enviados: acompanhamento até o retorno; motivo registrado quando não converte. Quatorze e quinze, Serviço sem cadastro ou sem preço: pedido à Laís (cadastro e precificação). Quatorze e trinta, Agendamentos da semana organizados (consultas, vacinas, procedimentos, cirurgias). Quatorze e quarenta e cinco, Consultas e cirurgias de amanhã confirmadas com os tutores. Quinze, Orientação pré-operatória das cirurgias de amanhã: jejum, exames e termo (emitido pelo médico veterinário)."
+     "say": "Treze, Intervalo de almoço (uma hora) — a recepção cobre os canais da Assistente. Quatorze, Orçamentos enviados: acompanhamento até o retorno; motivo registrado quando não converte. Quatorze e trinta, Retornos marcados pelo médico veterinário: tutores contatados para confirmar o retorno. Quinze, Consultas e cirurgias de amanhã confirmadas; orientação pré-operatória (jejum, exames e termo do médico veterinário)."
     },
     {
      "v": {
@@ -994,15 +994,7 @@ return {
       "rows": [
        [
         "16:00",
-        "Planos: 2ª checagem de pendências (resultados que chegaram no dia anexados)"
-       ],
-       [
-        "16:30",
-        "Suporte à Laís e aos M.V.; apoio à recepção (assinaturas e recebimento) quando necessário"
-       ],
-       [
-        "17:00",
-        "Pendências de notas: tutores contatados para correção"
+        "Atendimento ao cliente presencial em apoio à recepção nos horários de pico"
        ],
        [
         "17:30",
@@ -1010,7 +1002,7 @@ return {
        ]
       ]
      },
-     "say": "Dezesseis, Planos: 2ª checagem de pendências (resultados que chegaram no dia anexados). Dezesseis e trinta, Suporte à Laís e aos médico veterinário; apoio à recepção (assinaturas e recebimento) quando necessário. Dezessete, Pendências de notas: tutores contatados para correção. Dezessete e trinta, Lista de pendências para amanhã e passagem à recepção."
+     "say": "Dezesseis, Atendimento ao cliente presencial em apoio à recepção nos horários de pico. Dezessete e trinta, Lista de pendências para amanhã e passagem à recepção."
     },
     {
      "v": {
@@ -1025,24 +1017,20 @@ return {
       ],
       "rows": [
        [
-        "11:30",
-        "Recontato de retornos e check-ups vencidos"
-       ],
-       [
         "16:00",
-        "MTR preenchido e conferido (ajuste ao dia da coleta)"
+        "MTR (lixo hospitalar) preenchido para o dia da coleta e enviado à Thay para conferência"
        ],
        [
         "16:30",
-        "Comissionados da semana conferidos no SimplesVet (nome de quem atendeu e divisões)"
+        "Treinamento da recepção (15 min): um ponto do sistema, do Flow ou do manual de boas condutas"
        ],
        [
         "17:00",
-        "Relatório à Laís: orçamentos × aprovados, pendências de planos, vacinas e retornos, meta do mês"
+        "Relatório à Laís: orçamentos × aprovados, pesquisa de satisfação, vacinas e retornos, meta do mês"
        ]
       ]
      },
-     "say": "Semanal. Onze e trinta, Recontato de retornos e check-ups vencidos. Dezesseis, manifesto de resíduos preenchido e conferido (ajuste ao dia da coleta). Dezesseis e trinta, Comissionados da semana conferidos no SimplesVet (nome de quem atendeu e divisões). Dezessete, Relatório à Laís: orçamentos contra aprovados, pendências de planos, vacinas e retornos, meta do mês."
+     "say": "Semanal. Dezesseis, manifesto de resíduos (lixo hospitalar) preenchido para o dia da coleta e enviado à Thay para conferência. Dezesseis e trinta, Treinamento da recepção (quinze minutos): um ponto do sistema, do Flow ou do manual de boas condutas. Dezessete, Relatório à Laís: orçamentos contra aprovados, pesquisa de satisfação, vacinas e retornos, meta do mês."
     },
     {
      "v": {
@@ -1058,21 +1046,17 @@ return {
       "rows": [
        [
         "16:30",
-        "Resultado do recontato de vacinas e retornos no mês"
-       ],
-       [
-        "16:00",
-        "Comissionados incluídos ou alterados no SimplesVet (até o último dia útil)"
+        "Resultado do mês: vacinas e retornos recuperados e consolidado da pesquisa de satisfação"
        ]
       ]
      },
-     "say": "Mensal. Dezesseis e trinta, Resultado do recontato de vacinas e retornos no mês. Dezesseis, Comissionados incluídos ou alterados no SimplesVet (até o último dia útil)."
+     "say": "Mensal. Dezesseis e trinta, Resultado do mês: vacinas e retornos recuperados e consolidado da pesquisa de satisfação."
     },
     {
      "v": {
       "type": "table",
       "left": true,
-      "tag": "Sua rotina · Eventual",
+      "tag": "Sua rotina · Eventual (1)",
       "h": "Igual ao **seu checklist**",
       "grid": ".8fr 5fr",
       "cols": [
@@ -1082,19 +1066,35 @@ return {
       "rows": [
        [
         "—",
-        "Serviço terceirizado: agendamento e confirmação só com a cobrança antecipada de R$ 95, abatida do valor do serviço"
+        "Atendimento com M.V. volante (terceirizado): agendamento e confirmação só após o adiantamento de R$ 115, abatido do valor do atendimento"
+       ],
+       [
+        "—",
+        "Serviço sem cadastro ou sem preço: pedido à Laís (cadastro e precificação)"
        ],
        [
         "—",
         "Pedido de estorno ou cancelamento de venda registrado e enviado à Laís para aprovação"
-       ],
+       ]
+      ]
+     },
+     "say": "Eventual. Atendimento com médico veterinário volante (terceirizado): agendamento e confirmação só após o adiantamento de cento e quinze reais, abatido do valor do atendimento. Serviço sem cadastro ou sem preço: pedido à Laís (cadastro e precificação). Pedido de estorno ou cancelamento de venda registrado e enviado à Laís para aprovação."
+    },
+    {
+     "v": {
+      "type": "table",
+      "left": true,
+      "tag": "Sua rotina · Eventual (2)",
+      "h": "Igual ao **seu checklist**",
+      "grid": ".8fr 5fr",
+      "cols": [
+       "Hora",
+       "Tarefa"
+      ],
+      "rows": [
        [
         "—",
-        "Treinamento de recepcionista nova (apoio à Laís)"
-       ],
-       [
-        "—",
-        "Problema com exame no laboratório: recoleta ou atraso resolvido"
+        "Recepcionista nova: treinamento no sistema, no Flow e na rotina (com a Laís)"
        ],
        [
         "—",
@@ -1102,18 +1102,18 @@ return {
        ]
       ]
      },
-     "say": "Eventual. Serviço terceirizado: agendamento e confirmação só com a cobrança antecipada de noventa e cinco reais, abatida do valor do serviço. Pedido de estorno ou cancelamento de venda registrado e enviado à Laís para aprovação. Treinamento de recepcionista nova (apoio à Laís). Problema com exame no laboratório: recoleta ou atraso resolvido. Apoio à recepção: documentos de assinatura e recebimento de valores."
+     "say": "Recepcionista nova: treinamento no sistema, no Flow e na rotina (com a Laís). Apoio à recepção: documentos de assinatura e recebimento de valores."
     }
    ],
    "quiz": {
-    "q": "PetLove sem autorização assinada ou sem resultado.",
+    "q": "Tutor quer atendimento com M.V. volante.",
     "o": [
-     "Cobre a assinatura do tutor e anexe o resultado na plataforma; falha de lançamento vai à Laís.",
+     "Agende e confirme só após o adiantamento de R$ 115, abatido do valor do atendimento.",
      "Esperar a Laís perguntar",
      "Resolver sozinho e não contar a ninguém"
     ],
     "a": 0,
-    "why": "Cobre a assinatura do tutor e anexe o resultado na plataforma; falha de lançamento vai à Laís."
+    "why": "Agende e confirme só após o adiantamento de R$ 115, abatido do valor do atendimento."
    }
   },
   {
@@ -1132,10 +1132,10 @@ return {
        "Estorno ou cancelamento só com aprovação da Laís.",
        "Relatório à Laís toda sexta.",
        "Almoço só depois que a Recepção voltar: o balcão nunca fica vazio.",
-       "Serviço terceirizado: agendamento e confirmação só com a cobrança antecipada de R$ 95, abatida do valor do serviço."
+       "M.V. volante: agendamento e confirmação só após o adiantamento de R$ 115, abatido do valor do atendimento."
       ]
      },
-     "say": "As regras do cargo. Primeiro: pendência não passa de vinte e quatro horas sem solução ou responsável. Depois: estorno ou cancelamento só com aprovação da Laís. Em seguida: relatório à Laís toda sexta. Também: almoço só depois que a Recepção voltar: o balcão nunca fica vazio. Por fim: serviço terceirizado: agendamento e confirmação só com a cobrança antecipada de noventa e cinco reais, abatida do valor do serviço."
+     "say": "As regras do cargo. Primeiro: pendência não passa de vinte e quatro horas sem solução ou responsável. Depois: estorno ou cancelamento só com aprovação da Laís. Em seguida: relatório à Laís toda sexta. Também: almoço só depois que a Recepção voltar: o balcão nunca fica vazio. Por fim: médico veterinário volante: agendamento e confirmação só após o adiantamento de cento e quinze reais, abatido do valor do atendimento."
     },
     {
      "v": {
@@ -1144,14 +1144,14 @@ return {
       "tag": "Limites",
       "h": "Não é **sua função**",
       "items": [
+       "Lançamentos e glosas PetLove (Laís e Thay).",
+       "Comissionados no SimplesVet (Laís).",
        "Definir preço de serviço (Laís).",
        "Compras e negociação com fornecedores (Thay).",
-       "Corrigir atendimento glosado (M.V.).",
-       "Conciliação e baixa de recebimentos (BPO).",
-       "Orientação clínica ao tutor."
+       "Orientação clínica ao tutor (M.V.)."
       ]
      },
-     "say": "E o que não é sua função. Definir preço de serviço (Laís). Compras e negociação com fornecedores (Thay). Corrigir atendimento glosado (médico veterinário). Conciliação e baixa de recebimentos (bê pê ó). Orientação clínica ao tutor."
+     "say": "E o que não é sua função. Lançamentos e glosas PetLove (Laís e Thay). Comissionados no SimplesVet (Laís). Definir preço de serviço (Laís). Compras e negociação com fornecedores (Thay). Orientação clínica ao tutor (médico veterinário)."
     },
     {
      "v": {
@@ -1161,7 +1161,7 @@ return {
       "two": true,
       "compact": true,
       "items": [
-       "Pontualidade e registro de ponto em todas as entradas, saídas e intervalos; troca de horário só com aprovação da Laís.",
+       "Pontualidade e registro de ponto em todas as entradas, saídas e intervalos; troca de horário só com aprovação da Laís (administrativo e faxina) ou da Thay (rotina clínica).",
        "Almoço sempre com cobertura definida (tabela de almoço da equipe).",
        "Passagem de turno sempre por escrito: pendências, pacientes, faltas de material e recados.",
        "Checklist do dia: só a coluna de hoje aceita marcação; ✔, ✘ (com motivo em Observações) ou N/A, e rubrica no dia.",
@@ -1169,18 +1169,18 @@ return {
        "Dados de tutores e pacientes só no sistema do hospital (LGPD): não trocar telefone pessoal com tutor, não fotografar nem divulgar prontuários, dependências ou clientes."
       ]
      },
-     "say": "E as regras gerais, que valem para toda a equipe. Pontualidade e registro de ponto em todas as entradas, saídas e intervalos; troca de horário só com aprovação da Laís. Almoço sempre com cobertura definida (tabela de almoço da equipe). Passagem de turno sempre por escrito: pendências, pacientes, faltas de material e recados. Checklist do dia: só a coluna de hoje aceita marcação; visto, xis (com motivo em Observações) ou não se aplica, e rubrica no dia. Um xis não é punição. Marcar visto sem realizar a atividade é fraude, passível de advertência. Dados de tutores e pacientes só no sistema do hospital (lei de proteção de dados): não trocar telefone pessoal com tutor, não fotografar nem divulgar prontuários, dependências ou clientes."
+     "say": "E as regras gerais, que valem para toda a equipe. Pontualidade e registro de ponto em todas as entradas, saídas e intervalos; troca de horário só com aprovação da Laís (administrativo e faxina) ou da Thay (rotina clínica). Almoço sempre com cobertura definida (tabela de almoço da equipe). Passagem de turno sempre por escrito: pendências, pacientes, faltas de material e recados. Checklist do dia: só a coluna de hoje aceita marcação; visto, xis (com motivo em Observações) ou não se aplica, e rubrica no dia. Um xis não é punição. Marcar visto sem realizar a atividade é fraude, passível de advertência. Dados de tutores e pacientes só no sistema do hospital (lei de proteção de dados): não trocar telefone pessoal com tutor, não fotografar nem divulgar prontuários, dependências ou clientes."
     }
    ],
    "quiz": {
-    "q": "Tutor quer agendar um serviço terceirizado.",
+    "q": "Pesquisa de satisfação com tutor insatisfeito.",
     "o": [
      "Fazer do jeito que achar melhor, mesmo fora da regra",
-     "Agende e confirme só com a cobrança antecipada de R$ 95, abatida do valor do serviço.",
+     "Escute, agradeça, registre e passe à Laís no mesmo dia.",
      "Deixar para o próximo turno, sem registrar"
     ],
     "a": 1,
-    "why": "Agende e confirme só com a cobrança antecipada de R$ 95, abatida do valor do serviço."
+    "why": "Escute, agradeça, registre e passe à Laís no mesmo dia."
    }
   },
   {
@@ -1338,19 +1338,19 @@ return {
       "rows": [
        [
         "Tutor pediu orçamento pelo WhatsApp.",
-        "Monte com o M.V. (parte técnica), envie com o que está incluído, formas de pagamento e uma proposta de horário. Registre e acompanhe até a decisão."
+        "Monte do início ao fim (M.V. apoia na parte técnica), envie com o que está incluído, formas de pagamento e uma proposta de horário. Registre e acompanhe até a decisão."
        ],
        [
         "Tutor pediu desconto.",
         "Explique o valor do que está incluído. Fora da tabela: leve à Laís; nunca prometa antes da aprovação."
        ],
        [
-        "Achei atendimento de ontem sem cobrança ou sem anexo.",
+        "Achei atendimento de ontem sem assinatura, recebimento ou anexo.",
         "Resolva ou defina responsável no mesmo dia. Pendência não passa de 24h."
        ]
       ]
      },
-     "say": "Quando: Tutor pediu orçamento pelo WhatsApp. Monte com o médico veterinário (parte técnica), envie com o que está incluído, formas de pagamento e uma proposta de horário. Registre e acompanhe até a decisão. Quando: Tutor pediu desconto. Explique o valor do que está incluído. Fora da tabela: leve à Laís; nunca prometa antes da aprovação. Quando: Achei atendimento de ontem sem cobrança ou sem anexo. Resolva ou defina responsável no mesmo dia. Pendência não passa de vinte e quatro horas."
+     "say": "Quando: Tutor pediu orçamento pelo WhatsApp. Monte do início ao fim (médico veterinário apoia na parte técnica), envie com o que está incluído, formas de pagamento e uma proposta de horário. Registre e acompanhe até a decisão. Quando: Tutor pediu desconto. Explique o valor do que está incluído. Fora da tabela: leve à Laís; nunca prometa antes da aprovação. Quando: Achei atendimento de ontem sem assinatura, recebimento ou anexo. Resolva ou defina responsável no mesmo dia. Pendência não passa de vinte e quatro horas."
     },
     {
      "v": {
@@ -1365,12 +1365,12 @@ return {
       ],
       "rows": [
        [
-        "PetLove sem autorização assinada ou sem resultado.",
-        "Cobre a assinatura do tutor e anexe o resultado na plataforma; falha de lançamento vai à Laís."
+        "Tutor quer atendimento com M.V. volante.",
+        "Agende e confirme só após o adiantamento de R$ 115, abatido do valor do atendimento."
        ],
        [
-        "Tutor quer agendar um serviço terceirizado.",
-        "Agende e confirme só com a cobrança antecipada de R$ 95, abatida do valor do serviço."
+        "Pesquisa de satisfação com tutor insatisfeito.",
+        "Escute, agradeça, registre e passe à Laís no mesmo dia."
        ],
        [
         "A recepção saiu para almoçar (12h–13h).",
@@ -1378,7 +1378,7 @@ return {
        ]
       ]
      },
-     "say": "Quando: PetLove sem autorização assinada ou sem resultado. Cobre a assinatura do tutor e anexe o resultado na plataforma; falha de lançamento vai à Laís. Quando: Tutor quer agendar um serviço terceirizado. Agende e confirme só com a cobrança antecipada de noventa e cinco reais, abatida do valor do serviço. Quando: A recepção saiu para almoçar (das doze às treze). Você cobre balcão, caixa e telefone. Seu almoço só depois que ela voltar."
+     "say": "Quando: Tutor quer atendimento com médico veterinário volante. Agende e confirme só após o adiantamento de cento e quinze reais, abatido do valor do atendimento. Quando: Pesquisa de satisfação com tutor insatisfeito. Escute, agradeça, registre e passe à Laís no mesmo dia. Quando: A recepção saiu para almoçar (das doze às treze). Você cobre balcão, caixa e telefone. Seu almoço só depois que ela voltar."
     },
     {
      "v": {
@@ -1393,12 +1393,8 @@ return {
       ],
       "rows": [
        [
-        "Laboratório atrasou resultado.",
-        "Cobre o laboratório, avise o M.V. e o tutor com nova previsão."
-       ],
-       [
-        "Mudou alguém na equipe de M.V.",
-        "Atualize os comissionados no SimplesVet até o último dia útil do mês."
+        "Quarta-feira: MTR.",
+        "Preencha o MTR para o dia da coleta e envie à Thay para conferência."
        ],
        [
         "Tutor perguntou sobre diagnóstico.",
@@ -1406,18 +1402,18 @@ return {
        ]
       ]
      },
-     "say": "Quando: Laboratório atrasou resultado. Cobre o laboratório, avise o médico veterinário e o tutor com nova previsão. Quando: Mudou alguém na equipe de médico veterinário. Atualize os comissionados no SimplesVet até o último dia útil do mês. Quando: Tutor perguntou sobre diagnóstico. Não informe: \"Essa avaliação é do nosso médico veterinário, vou pedir para ele te explicar.\"."
+     "say": "Quando: Quarta-feira: manifesto de resíduos. Preencha o manifesto de resíduos para o dia da coleta e envie à Thay para conferência. Quando: Tutor perguntou sobre diagnóstico. Não informe: \"Essa avaliação é do nosso médico veterinário, vou pedir para ele te explicar.\"."
     }
    ],
    "quiz": {
-    "q": "Laboratório atrasou resultado.",
+    "q": "Quarta-feira: MTR.",
     "o": [
      "Resolver sozinho e não contar a ninguém",
-     "Cobre o laboratório, avise o M.V. e o tutor com nova previsão.",
+     "Preencha o MTR para o dia da coleta e envie à Thay para conferência.",
      "Esperar a Laís perguntar"
     ],
     "a": 1,
-    "why": "Cobre o laboratório, avise o M.V. e o tutor com nova previsão."
+    "why": "Preencha o MTR para o dia da coleta e envie à Thay para conferência."
    }
   },
   {
@@ -1550,7 +1546,11 @@ return {
       "rows": [
        [
         "Indicadores",
-        "Orçamentos aprovados ÷ enviados; vacinas e retornos recuperados; glosas; pendências acima de 24h."
+        "Orçamentos aprovados ÷ enviados; vacinas e retornos recuperados; satisfação dos tutores; pendências acima de 24h."
+       ],
+       [
+        "Indicador compartilhado",
+        "Vacinas e retornos são resultado de todos: o M.V. registra o retorno e a vacina programada (a Thay garante o registro e acompanha o indicador); a Assistente e a Recepção fazem o contato com o tutor (a Laís acompanha a meta)."
        ],
        [
         "Checklist",
@@ -1566,18 +1566,18 @@ return {
        ]
       ]
      },
-     "say": "Indicadores: Orçamentos aprovados ÷ enviados; vacinas e retornos recuperados; glosas; pendências acima de vinte e quatro horas. Checklist: Meta: noventa por cento ou mais no mês. Remuneração: Salário fixo + premiação pelas metas do mês. E todo dia quinze tem a conversa individual com a supervisão."
+     "say": "Indicadores: Orçamentos aprovados ÷ enviados; vacinas e retornos recuperados; satisfação dos tutores; pendências acima de vinte e quatro horas. Indicador compartilhado: Vacinas e retornos são resultado de todos: o médico veterinário registra o retorno e a vacina programada (a Thay garante o registro e acompanha o indicador); a Assistente e a Recepção fazem o contato com o tutor (a Laís acompanha a meta). Checklist: Meta: noventa por cento ou mais no mês. Remuneração: Salário fixo + premiação pelas metas do mês. E todo dia quinze tem a conversa individual com a supervisão."
     }
    ],
    "quiz": {
-    "q": "Mudou alguém na equipe de M.V.",
+    "q": "Tutor perguntou sobre diagnóstico.",
     "o": [
-     "Atualize os comissionados no SimplesVet até o último dia útil do mês.",
+     "Não informe: \"Essa avaliação é do nosso médico veterinário, vou pedir para ele te explicar.\"",
      "Deixar para o próximo turno, sem registrar",
      "Fazer do jeito que achar melhor, mesmo fora da regra"
     ],
     "a": 0,
-    "why": "Atualize os comissionados no SimplesVet até o último dia útil do mês."
+    "why": "Não informe: \"Essa avaliação é do nosso médico veterinário, vou pedir para ele te explicar.\""
    }
   },
   {
@@ -1591,13 +1591,13 @@ return {
       "tag": "Para levar com você",
       "h": "O essencial **do seu cargo**",
       "items": [
-       "Todo atendimento agendado, cobrado, anexado e conferido, sem glosa e sem pendência esquecida; todo orçamento com retorno.",
+       "Agenda e CRM sem pendência, todo orçamento com retorno, tutor ouvido depois do atendimento e vacinas e retornos recuperados.",
        "Pendência não passa de 24h sem solução ou responsável.",
        "Estorno ou cancelamento só com aprovação da Laís.",
        "Relatório à Laís toda sexta."
       ]
      },
-     "say": "Para fechar, o essencial. Todo atendimento agendado, cobrado, anexado e conferido, sem glosa e sem pendência esquecida; todo orçamento com retorno. Pendência não passa de vinte e quatro horas sem solução ou responsável. Estorno ou cancelamento só com aprovação da Laís. Relatório à Laís toda sexta."
+     "say": "Para fechar, o essencial. Agenda e CRM sem pendência, todo orçamento com retorno, tutor ouvido depois do atendimento e vacinas e retornos recuperados. Pendência não passa de vinte e quatro horas sem solução ou responsável. Estorno ou cancelamento só com aprovação da Laís. Relatório à Laís toda sexta."
     },
     {
      "v": {

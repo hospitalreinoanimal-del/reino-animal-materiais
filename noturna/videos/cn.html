@@ -642,9 +642,9 @@ return {
  "id": "cargo-noturna",
  "cargo": "Treinamento · Auxiliar Veterinária Noturna (12x36)",
  "titulo": "Auxiliar Veterinária Noturna",
- "grupo": "Treinamento do cargo · versão 28/10/2026",
+ "grupo": "Treinamento do cargo · versão 18/11/2026",
  "ciencia": "Assisti ao treinamento do cargo de Auxiliar Veterinária Noturna e conheço a rotina do plantão, as regras e as boas condutas no atendimento.",
- "rodape": "Base: premissas do cargo (versão 3), checklists v8 e manual de consulta (28/10/2026). A narração usa a voz instalada no aparelho; a voz mais natural costuma ser a do Microsoft Edge.",
+ "rodape": "Base: premissas do cargo (versão 4), checklists v10 e manual de consulta (18/11/2026). A narração usa a voz instalada no aparelho; a voz mais natural costuma ser a do Microsoft Edge.",
  "chapters": [
   {
    "id": "abertura",
@@ -657,7 +657,7 @@ return {
       "dark": true,
       "tag": "Treinamento do cargo · Reino Animal",
       "h": "Auxiliar Veterinária Noturna **(12x36)**",
-      "sub": "Suporte ao M.V. plantonista durante a noite, com a internação cuidada e a passagem da manhã completa.",
+      "sub": "Suporte ao M.V. plantonista durante a noite, internação cuidada, tutor bem atendido e a passagem da manhã completa.",
       "chips": [
        "Rotina",
        "Regras",
@@ -666,7 +666,7 @@ return {
       ],
       "lastOn": true
      },
-     "say": "Olá! Este é o treinamento do cargo Auxiliar Veterinária Noturna (doze por trinta e seis), do Hospital Veterinário Reino Animal. A missão do cargo é esta: Suporte ao médico veterinário plantonista durante a noite, com a internação cuidada e a passagem da manhã completa."
+     "say": "Olá! Este é o treinamento do cargo Auxiliar Veterinária Noturna (doze por trinta e seis), do Hospital Veterinário Reino Animal. A missão do cargo é esta: Suporte ao médico veterinário plantonista durante a noite, internação cuidada, tutor bem atendido e a passagem da manhã completa."
     },
     {
      "v": {
@@ -715,7 +715,7 @@ return {
        ],
        [
         "Ocupantes",
-        "Auxiliares noturnas"
+        "Karol e Lavinia"
        ],
        [
         "Jornada",
@@ -723,32 +723,32 @@ return {
        ],
        [
         "Responde a",
-        "M.V. plantonista (condutas), Raissa (estoque e farmácia), Thay (escala e rotina)."
+        "Thay (escala e rotina); M.V. plantonista (condutas); Raissa (estoque e farmácia)."
        ]
       ]
      },
-     "say": "Cargo: Auxiliar Veterinária Noturna. Ocupantes: Auxiliares noturnas. Jornada: Escala doze por trinta e seis, das dezenove às sete, uma hora de descanso na madrugada combinada com o médico veterinário plantonista. Responde a: médico veterinário plantonista (condutas), Raissa (estoque e farmácia), Thay (escala e rotina)."
+     "say": "Cargo: Auxiliar Veterinária Noturna. Ocupantes: Karol e Lavinia. Jornada: Escala doze por trinta e seis, das dezenove às sete, uma hora de descanso na madrugada combinada com o médico veterinário plantonista. Responde a: Thay (escala e rotina); médico veterinário plantonista (condutas); Raissa (estoque e farmácia)."
     },
     {
      "v": {
       "type": "rule",
       "tone": "ok",
       "tag": "Missão",
-      "txt": "Suporte ao M.V. plantonista durante a noite, com a internação cuidada e a passagem da manhã completa.",
+      "txt": "Suporte ao M.V. plantonista durante a noite, internação cuidada, tutor bem atendido e a passagem da manhã completa.",
       "sub": "Tudo o que você faz no dia serve a esta missão."
      },
-     "say": "Guarde a sua missão: Suporte ao médico veterinário plantonista durante a noite, com a internação cuidada e a passagem da manhã completa. Tudo o que você faz no dia serve a ela."
+     "say": "Guarde a sua missão: Suporte ao médico veterinário plantonista durante a noite, internação cuidada, tutor bem atendido e a passagem da manhã completa. Tudo o que você faz no dia serve a ela."
     }
    ],
    "quiz": {
-    "q": "Tutor quer agendar um serviço terceirizado.",
+    "q": "Tutor quer atendimento com M.V. volante.",
     "o": [
      "Resolver sozinho e não contar a ninguém",
-     "Agende e confirme só com a cobrança antecipada de R$ 95, abatida do valor do serviço.",
+     "Agende e confirme só após o adiantamento de R$ 115, abatido do valor do atendimento.",
      "Esperar a Laís perguntar"
     ],
     "a": 1,
-    "why": "Agende e confirme só com a cobrança antecipada de R$ 95, abatida do valor do serviço."
+    "why": "Agende e confirme só após o adiantamento de R$ 115, abatido do valor do atendimento."
    }
   },
   {
@@ -763,22 +763,22 @@ return {
       "h": "Como o cargo **trabalha**",
       "items": [
        "Tudo que é feito com o paciente segue prescrição e supervisão do M.V.",
-       "Nada sai do estoque sem lançamento.",
+       "À noite, ela também é a recepção.",
        "A passagem das 06h45 deixa a manhã pronta."
       ]
      },
-     "say": "Como o cargo trabalha. Primeiro: tudo que é feito com o paciente segue prescrição e supervisão do médico veterinário. Depois: nada sai do estoque sem lançamento. Por fim: a passagem das seis e quarenta e cinco deixa a manhã pronta."
+     "say": "Como o cargo trabalha. Primeiro: tudo que é feito com o paciente segue prescrição e supervisão do médico veterinário. Depois: à noite, ela também é a recepção. Por fim: a passagem das seis e quarenta e cinco deixa a manhã pronta."
     }
    ],
    "quiz": {
     "q": "Chegou emergência de madrugada.",
     "o": [
-     "Direto ao M.V. plantonista. Depois, cadastro, termo (emitido pelo M.V.) e cobrança, com calma e conferidos.",
+     "Direto ao M.V. plantonista. Depois, cadastro, termo (gerado pelo M.V.), assinatura e cobrança, com calma e conferidos.",
      "Deixar para o próximo turno, sem registrar",
      "Fazer do jeito que achar melhor, mesmo fora da regra"
     ],
     "a": 0,
-    "why": "Direto ao M.V. plantonista. Depois, cadastro, termo (emitido pelo M.V.) e cobrança, com calma e conferidos."
+    "why": "Direto ao M.V. plantonista. Depois, cadastro, termo (gerado pelo M.V.), assinatura e cobrança, com calma e conferidos."
    }
   },
   {
@@ -800,23 +800,19 @@ return {
       "rows": [
        [
         "Suporte ao plantonista",
-        "Procedimentos, contenções e emergências; documentação anexada (termos são do M.V.)."
+        "Procedimentos, contenções e emergências; medicações e parâmetros da noite."
        ],
        [
-        "Internação",
-        "Baias, parâmetros e medicações da noite conforme a prescrição."
-       ],
-       [
-        "Farmácia",
-        "Uso da noite registrado; faltas anotadas na passagem para a Raissa."
+        "Ambientes",
+        "Limpeza e organização das baias, raio-X, consultórios, ambulatórios e bloco; esterilização dos materiais."
        ],
        [
         "Atendimento ao tutor",
-        "Recepção da noite: balcão, telefone e WhatsApp no padrão do Manual de Boas Condutas."
+        "Balcão, telefone, Flow e WhatsApp no padrão do Manual de Boas Condutas; orçamentos registrados."
        ]
       ]
      },
-     "say": "Você é dono das seguintes frentes. Suporte ao plantonista: Procedimentos, contenções e emergências; documentação anexada (termos são do médico veterinário). Internação: Baias, parâmetros e medicações da noite conforme a prescrição. Farmácia: Uso da noite registrado; faltas anotadas na passagem para a Raissa. Atendimento ao tutor: Recepção da noite: balcão, telefone e WhatsApp no padrão do Manual de Boas Condutas."
+     "say": "Você é dono das seguintes frentes. Suporte ao plantonista: Procedimentos, contenções e emergências; medicações e parâmetros da noite. Ambientes: Limpeza e organização das baias, raio-X, consultórios, ambulatórios e bloco; esterilização dos materiais. Atendimento ao tutor: Balcão, telefone, Flow e WhatsApp no padrão do Manual de Boas Condutas; orçamentos registrados."
     },
     {
      "v": {
@@ -832,7 +828,11 @@ return {
       "rows": [
        [
         "Caixa da noite",
-        "Valores conferidos com o sistema e comprovantes guardados."
+        "Abertura e fechamento do caixa; valores conferidos com o sistema."
+       ],
+       [
+        "Documentos",
+        "Termos gerados pelo M.V. impressos, assinados pelo tutor e anexados."
        ],
        [
         "Passagem",
@@ -840,18 +840,18 @@ return {
        ]
       ]
      },
-     "say": "Continuando. Caixa da noite: Valores conferidos com o sistema e comprovantes guardados. Passagem: Passagem escrita às seis e quarenta e cinco."
+     "say": "Continuando. Caixa da noite: Abertura e fechamento do caixa; valores conferidos com o sistema. Documentos: Termos gerados pelo médico veterinário impressos, assinados pelo tutor e anexados. Passagem: Passagem escrita às seis e quarenta e cinco."
     }
    ],
    "quiz": {
-    "q": "Tutor ligou pedindo notícia do internado.",
+    "q": "Tutor pediu orçamento à noite.",
     "o": [
      "Pedir para o tutor voltar outro dia",
-     "Notícias são do M.V. plantonista: anote e passe a ele.",
+     "Registre no Flow e monte com o M.V. plantonista; o que ficar pendente passa à Assistente.",
      "Ignorar, porque não é urgente"
     ],
     "a": 1,
-    "why": "Notícias são do M.V. plantonista: anote e passe a ele."
+    "why": "Registre no Flow e monte com o M.V. plantonista; o que ficar pendente passa à Assistente."
    }
   },
   {
@@ -863,7 +863,7 @@ return {
      "v": {
       "type": "table",
       "left": true,
-      "tag": "Sua rotina · Regras do plantão inteiro",
+      "tag": "Sua rotina · Regras do plantão inteiro (1)",
       "h": "Igual ao **seu checklist**",
       "grid": ".8fr 5fr",
       "cols": [
@@ -877,15 +877,35 @@ return {
        ],
        [
         "Plantão",
-        "Documentação necessária do atendimento emitida e anexada (termos são emitidos pelo M.V.)"
+        "Atendimento ao tutor no padrão do manual: balcão, telefone, Flow e WhatsApp; orçamentos registrados (M.V. apoia)"
+       ],
+       [
+        "Plantão",
+        "Termos gerados pelo M.V. impressos, assinados pelo tutor e anexados"
        ],
        [
         "Plantão",
         "Valores recebidos com cobrança conferida no sistema e comprovante guardado"
-       ],
+       ]
+      ]
+     },
+     "say": "Regras do plantão inteiro. Suporte ao médico veterinário Plantonista em procedimentos, contenções e emergências. Atendimento ao tutor no padrão do manual: balcão, telefone, Flow e WhatsApp; orçamentos registrados (médico veterinário apoia). Termos gerados pelo médico veterinário impressos, assinados pelo tutor e anexados. Valores recebidos com cobrança conferida no sistema e comprovante guardado."
+    },
+    {
+     "v": {
+      "type": "table",
+      "left": true,
+      "tag": "Sua rotina · Regras do plantão inteiro (2)",
+      "h": "Igual ao **seu checklist**",
+      "grid": ".8fr 5fr",
+      "cols": [
+       "Hora",
+       "Tarefa"
+      ],
+      "rows": [
        [
         "Plantão",
-        "Serviço terceirizado: agendamento e confirmação só com a cobrança antecipada de R$ 95, abatida do valor do serviço"
+        "Atendimento com M.V. volante: agendamento e confirmação só após o adiantamento de R$ 115, abatido do valor do atendimento"
        ],
        [
         "Plantão",
@@ -893,7 +913,7 @@ return {
        ]
       ]
      },
-     "say": "Regras do plantão inteiro. Suporte ao médico veterinário Plantonista em procedimentos, contenções e emergências. Documentação necessária do atendimento emitida e anexada (termos são emitidos pelo médico veterinário). Valores recebidos com cobrança conferida no sistema e comprovante guardado. Serviço terceirizado: agendamento e confirmação só com a cobrança antecipada de noventa e cinco reais, abatida do valor do serviço. Nada sai do estoque sem lançamento; medicações só conforme prescrição; controlados registrados."
+     "say": "Atendimento com médico veterinário volante: agendamento e confirmação só após o adiantamento de cento e quinze reais, abatido do valor do atendimento. Nada sai do estoque sem lançamento; medicações só conforme prescrição; controlados registrados."
     },
     {
      "v": {
@@ -909,27 +929,23 @@ return {
       "rows": [
        [
         "19:00",
-        "Passagem da auxiliar diurna lida e assinada: pacotes, kits, pendências e faltas"
+        "Passagem da aux. diurna lida e assinada: pacotes, kits, pendências e faltas"
+       ],
+       [
+        "19:15",
+        "Abertura do caixa da noite: valores recebidos da recepção conferidos"
        ],
        [
         "19:30",
-        "Baias dos internados higienizadas e organizadas"
+        "Limpeza e organização das baias da internação"
        ],
        [
         "20:00",
         "Prescrições da noite conferidas; medicações puxadas conforme prescrição"
-       ],
-       [
-        "20:30",
-        "Ambientes abastecidos para a noite (reposição de insumos)"
-       ],
-       [
-        "21:30",
-        "Materiais esterilizados e prontos para uso"
        ]
       ]
      },
-     "say": "Rotina do plantão doze por trinta e seis. Dezenove, Passagem da auxiliar diurna lida e assinada: pacotes, kits, pendências e faltas. Dezenove e trinta, Baias dos internados higienizadas e organizadas. Vinte, Prescrições da noite conferidas; medicações puxadas conforme prescrição. Vinte e trinta, Ambientes abastecidos para a noite (reposição de insumos). Vinte e uma e trinta, Materiais esterilizados e prontos para uso."
+     "say": "Rotina do plantão doze por trinta e seis. Dezenove, Passagem da aux. diurna lida e assinada: pacotes, kits, pendências e faltas. Dezenove e quinze, Abertura do caixa da noite: valores recebidos da recepção conferidos. Dezenove e trinta, Limpeza e organização das baias da internação. Vinte, Prescrições da noite conferidas; medicações puxadas conforme prescrição."
     },
     {
      "v": {
@@ -944,28 +960,24 @@ return {
       ],
       "rows": [
        [
+        "20:30",
+        "Ambientes organizados e abastecidos para a noite (raio-X, consultórios, ambulatórios e bloco)"
+       ],
+       [
+        "21:30",
+        "Esterilização dos materiais usados no dia (embalados, identificados e registrados)"
+       ],
+       [
         "22:00",
         "Internação: parâmetros e cuidados lançados (rodada da noite)"
        ],
        [
         "00:00",
         "Medicações da madrugada conforme prescrição; seringas identificadas"
-       ],
-       [
-        "01:00",
-        "Intervalo de descanso (1h) combinado com o M.V. plantonista; internação coberta"
-       ],
-       [
-        "02:00",
-        "Baias: rodada de higienização e organização"
-       ],
-       [
-        "03:00",
-        "Kits de internação conferidos; uso da noite registrado para reposição"
        ]
       ]
      },
-     "say": "Vinte e duas, Internação: parâmetros e cuidados lançados (rodada da noite). Zero, Medicações da madrugada conforme prescrição; seringas identificadas. Uma, Intervalo de descanso (uma hora) combinado com o médico veterinário plantonista; internação coberta. Duas, Baias: rodada de higienização e organização. Três, Kits de internação conferidos; uso da noite registrado para reposição."
+     "say": "Vinte e trinta, Ambientes organizados e abastecidos para a noite (raio-X, consultórios, ambulatórios e bloco). Vinte e uma e trinta, Esterilização dos materiais usados no dia (embalados, identificados e registrados). Vinte e duas, Internação: parâmetros e cuidados lançados (rodada da noite). Zero, Medicações da madrugada conforme prescrição; seringas identificadas."
     },
     {
      "v": {
@@ -980,12 +992,40 @@ return {
       ],
       "rows": [
        [
-        "05:00",
-        "Internação: rodada de parâmetros e medicações"
+        "01:00",
+        "Intervalo de descanso (1h) combinado com o M.V. plantonista; internação coberta"
        ],
        [
+        "02:00",
+        "Baias: rodada de limpeza e organização"
+       ],
+       [
+        "03:00",
+        "Kits de internação conferidos; uso da noite registrado para reposição"
+       ],
+       [
+        "05:00",
+        "Internação: rodada de parâmetros e medicações"
+       ]
+      ]
+     },
+     "say": "Uma, Intervalo de descanso (uma hora) combinado com o médico veterinário plantonista; internação coberta. Duas, Baias: rodada de limpeza e organização. Três, Kits de internação conferidos; uso da noite registrado para reposição. Cinco, Internação: rodada de parâmetros e medicações."
+    },
+    {
+     "v": {
+      "type": "table",
+      "left": true,
+      "tag": "Sua rotina · Rotina do plantão 12x36 (4)",
+      "h": "Igual ao **seu checklist**",
+      "grid": ".8fr 5fr",
+      "cols": [
+       "Hora",
+       "Tarefa"
+      ],
+      "rows": [
+       [
         "06:00",
-        "Valores recebidos na noite conferidos × sistema; comprovantes organizados"
+        "Fechamento do caixa da noite: valores × sistema; comprovantes organizados"
        ],
        [
         "06:30",
@@ -993,11 +1033,11 @@ return {
        ],
        [
         "06:45",
-        "Passagem escrita: pendências, valores recebidos, documentos emitidos e faltas de estoque"
+        "Passagem escrita: pendências, valores recebidos, documentos e faltas de estoque"
        ]
       ]
      },
-     "say": "Cinco, Internação: rodada de parâmetros e medicações. Seis, Valores recebidos na noite conferidos contra sistema; comprovantes organizados. Seis e trinta, Descarte de perfurocortantes e resíduos (PGRSS). Seis e quarenta e cinco, Passagem escrita: pendências, valores recebidos, documentos emitidos e faltas de estoque."
+     "say": "Seis, Fechamento do caixa da noite: valores contra sistema; comprovantes organizados. Seis e trinta, Descarte de perfurocortantes e resíduos (PGRSS). Seis e quarenta e cinco, Passagem escrita: pendências, valores recebidos, documentos e faltas de estoque."
     },
     {
      "v": {
@@ -1021,26 +1061,26 @@ return {
        ],
        [
         "—",
-        "Insumo ou medicação em falta: registrado na passagem para a Raissa"
+        "Insumo ou medicação em falta: registrado na passagem para a Raissa e a Thay"
        ],
        [
         "—",
-        "Divergência de valores ou documento pendente: registrada e passada à Laís"
+        "Divergência de valores: registrada e passada à Laís"
        ]
       ]
      },
-     "say": "Eventual. Admissão na madrugada: kit de internação separado e baia preparada. Óbito: apoio ao médico veterinário; tutor acolhido (a notícia é do médico veterinário). Insumo ou medicação em falta: registrado na passagem para a Raissa. Divergência de valores ou documento pendente: registrada e passada à Laís."
+     "say": "Eventual. Admissão na madrugada: kit de internação separado e baia preparada. Óbito: apoio ao médico veterinário; tutor acolhido (a notícia é do médico veterinário). Insumo ou medicação em falta: registrado na passagem para a Raissa e a Thay. Divergência de valores: registrada e passada à Laís."
     }
    ],
    "quiz": {
-    "q": "Faltou medicamento ou insumo à noite.",
+    "q": "Tutor ligou pedindo notícia do internado.",
     "o": [
-     "Use o disponível com lançamento; anote a falta na passagem para a Raissa.",
+     "Notícias são do M.V. plantonista: anote e passe a ele.",
      "Esperar a Laís perguntar",
      "Resolver sozinho e não contar a ninguém"
     ],
     "a": 0,
-    "why": "Use o disponível com lançamento; anote a falta na passagem para a Raissa."
+    "why": "Notícias são do M.V. plantonista: anote e passe a ele."
    }
   },
   {
@@ -1056,12 +1096,12 @@ return {
       "num": true,
       "items": [
        "Plantão inteiro marcado na coluna do dia em que começou.",
-       "Divergência de valores ou documento pendente vai à Laís.",
+       "Divergência de valores vai à Laís.",
        "Controlados só com prescrição e registro.",
-       "Serviço terceirizado: agendamento e confirmação só com a cobrança antecipada de R$ 95, abatida do valor do serviço."
+       "M.V. volante: agendamento e confirmação só após o adiantamento de R$ 115, abatido do valor do atendimento."
       ]
      },
-     "say": "As regras do cargo. Primeiro: plantão inteiro marcado na coluna do dia em que começou. Depois: divergência de valores ou documento pendente vai à Laís. Em seguida: controlados só com prescrição e registro. Por fim: serviço terceirizado: agendamento e confirmação só com a cobrança antecipada de noventa e cinco reais, abatida do valor do serviço."
+     "say": "As regras do cargo. Primeiro: plantão inteiro marcado na coluna do dia em que começou. Depois: divergência de valores vai à Laís. Em seguida: controlados só com prescrição e registro. Por fim: médico veterinário volante: agendamento e confirmação só após o adiantamento de cento e quinze reais, abatido do valor do atendimento."
     },
     {
      "v": {
@@ -1071,10 +1111,11 @@ return {
       "h": "Não é **sua função**",
       "items": [
        "Diagnosticar, prescrever ou mudar conduta.",
+       "Emitir termos ou receitas (são gerados pelo M.V.).",
        "Comunicar óbito ao tutor (M.V.)."
       ]
      },
-     "say": "E o que não é sua função. Diagnosticar, prescrever ou mudar conduta. Comunicar óbito ao tutor (médico veterinário)."
+     "say": "E o que não é sua função. Diagnosticar, prescrever ou mudar conduta. Emitir termos ou receitas (são gerados pelo médico veterinário). Comunicar óbito ao tutor (médico veterinário)."
     },
     {
      "v": {
@@ -1084,7 +1125,7 @@ return {
       "two": true,
       "compact": true,
       "items": [
-       "Pontualidade e registro de ponto em todas as entradas, saídas e intervalos; troca de horário só com aprovação da Laís.",
+       "Pontualidade e registro de ponto em todas as entradas, saídas e intervalos; troca de horário só com aprovação da Laís (administrativo e faxina) ou da Thay (rotina clínica).",
        "Almoço sempre com cobertura definida (tabela de almoço da equipe).",
        "Passagem de turno sempre por escrito: pendências, pacientes, faltas de material e recados.",
        "Checklist do dia: só a coluna de hoje aceita marcação; ✔, ✘ (com motivo em Observações) ou N/A, e rubrica no dia.",
@@ -1092,18 +1133,18 @@ return {
        "Dados de tutores e pacientes só no sistema do hospital (LGPD): não trocar telefone pessoal com tutor, não fotografar nem divulgar prontuários, dependências ou clientes."
       ]
      },
-     "say": "E as regras gerais, que valem para toda a equipe. Pontualidade e registro de ponto em todas as entradas, saídas e intervalos; troca de horário só com aprovação da Laís. Almoço sempre com cobertura definida (tabela de almoço da equipe). Passagem de turno sempre por escrito: pendências, pacientes, faltas de material e recados. Checklist do dia: só a coluna de hoje aceita marcação; visto, xis (com motivo em Observações) ou não se aplica, e rubrica no dia. Um xis não é punição. Marcar visto sem realizar a atividade é fraude, passível de advertência. Dados de tutores e pacientes só no sistema do hospital (lei de proteção de dados): não trocar telefone pessoal com tutor, não fotografar nem divulgar prontuários, dependências ou clientes."
+     "say": "E as regras gerais, que valem para toda a equipe. Pontualidade e registro de ponto em todas as entradas, saídas e intervalos; troca de horário só com aprovação da Laís (administrativo e faxina) ou da Thay (rotina clínica). Almoço sempre com cobertura definida (tabela de almoço da equipe). Passagem de turno sempre por escrito: pendências, pacientes, faltas de material e recados. Checklist do dia: só a coluna de hoje aceita marcação; visto, xis (com motivo em Observações) ou não se aplica, e rubrica no dia. Um xis não é punição. Marcar visto sem realizar a atividade é fraude, passível de advertência. Dados de tutores e pacientes só no sistema do hospital (lei de proteção de dados): não trocar telefone pessoal com tutor, não fotografar nem divulgar prontuários, dependências ou clientes."
     }
    ],
    "quiz": {
-    "q": "Recebi pagamento à noite.",
+    "q": "Faltou medicamento ou insumo à noite.",
     "o": [
      "Fazer do jeito que achar melhor, mesmo fora da regra",
-     "Confira o valor com o sistema e guarde o comprovante; divergência vai à Laís.",
+     "Use o disponível com lançamento; anote a falta na passagem para a Raissa e a Thay.",
      "Deixar para o próximo turno, sem registrar"
     ],
     "a": 1,
-    "why": "Confira o valor com o sistema e guarde o comprovante; divergência vai à Laís."
+    "why": "Use o disponível com lançamento; anote a falta na passagem para a Raissa e a Thay."
    }
   },
   {
@@ -1242,14 +1283,14 @@ return {
     }
    ],
    "quiz": {
-    "q": "Óbito durante o plantão.",
+    "q": "Caixa da noite.",
     "o": [
-     "O M.V. liga para o tutor. Você prepara o corpo para a despedida e acolhe o tutor quando ele chegar.",
+     "Abra às 19h15 conferindo o que veio da recepção e feche às 06h com valores × sistema; divergência vai à Laís.",
      "Ignorar, porque não é urgente",
      "Pedir para o tutor voltar outro dia"
     ],
     "a": 0,
-    "why": "O M.V. liga para o tutor. Você prepara o corpo para a despedida e acolhe o tutor quando ele chegar."
+    "why": "Abra às 19h15 conferindo o que veio da recepção e feche às 06h com valores × sistema; divergência vai à Laís."
    }
   },
   {
@@ -1270,20 +1311,48 @@ return {
       ],
       "rows": [
        [
-        "Tutor quer agendar um serviço terceirizado.",
-        "Agende e confirme só com a cobrança antecipada de R$ 95, abatida do valor do serviço."
+        "Tutor quer atendimento com M.V. volante.",
+        "Agende e confirme só após o adiantamento de R$ 115, abatido do valor do atendimento."
        ],
        [
         "Chegou emergência de madrugada.",
-        "Direto ao M.V. plantonista. Depois, cadastro, termo (emitido pelo M.V.) e cobrança, com calma e conferidos."
+        "Direto ao M.V. plantonista. Depois, cadastro, termo (gerado pelo M.V.), assinatura e cobrança, com calma e conferidos."
        ],
+       [
+        "Tutor pediu orçamento à noite.",
+        "Registre no Flow e monte com o M.V. plantonista; o que ficar pendente passa à Assistente."
+       ]
+      ]
+     },
+     "say": "Quando: Tutor quer atendimento com médico veterinário volante. Agende e confirme só após o adiantamento de cento e quinze reais, abatido do valor do atendimento. Quando: Chegou emergência de madrugada. Direto ao médico veterinário plantonista. Depois, cadastro, termo (gerado pelo médico veterinário), assinatura e cobrança, com calma e conferidos. Quando: Tutor pediu orçamento à noite. Registre no Flow e monte com o médico veterinário plantonista; o que ficar pendente passa à Assistente."
+    },
+    {
+     "v": {
+      "type": "table",
+      "left": true,
+      "tag": "Situações do dia a dia",
+      "h": "E agora, **o que eu faço?**",
+      "grid": "1.4fr 3fr",
+      "cols": [
+       "Situação",
+       "O que fazer"
+      ],
+      "rows": [
        [
         "Tutor ligou pedindo notícia do internado.",
         "Notícias são do M.V. plantonista: anote e passe a ele."
+       ],
+       [
+        "Faltou medicamento ou insumo à noite.",
+        "Use o disponível com lançamento; anote a falta na passagem para a Raissa e a Thay."
+       ],
+       [
+        "Caixa da noite.",
+        "Abra às 19h15 conferindo o que veio da recepção e feche às 06h com valores × sistema; divergência vai à Laís."
        ]
       ]
      },
-     "say": "Quando: Tutor quer agendar um serviço terceirizado. Agende e confirme só com a cobrança antecipada de noventa e cinco reais, abatida do valor do serviço. Quando: Chegou emergência de madrugada. Direto ao médico veterinário plantonista. Depois, cadastro, termo (emitido pelo médico veterinário) e cobrança, com calma e conferidos. Quando: Tutor ligou pedindo notícia do internado. Notícias são do médico veterinário plantonista: anote e passe a ele."
+     "say": "Quando: Tutor ligou pedindo notícia do internado. Notícias são do médico veterinário plantonista: anote e passe a ele. Quando: Faltou medicamento ou insumo à noite. Use o disponível com lançamento; anote a falta na passagem para a Raissa e a Thay. Quando: Caixa da noite. Abra às dezenove e quinze conferindo o que veio da recepção e feche às seis com valores contra sistema; divergência vai à Laís."
     },
     {
      "v": {
@@ -1297,37 +1366,9 @@ return {
        "O que fazer"
       ],
       "rows": [
-       [
-        "Faltou medicamento ou insumo à noite.",
-        "Use o disponível com lançamento; anote a falta na passagem para a Raissa."
-       ],
-       [
-        "Recebi pagamento à noite.",
-        "Confira o valor com o sistema e guarde o comprovante; divergência vai à Laís."
-       ],
        [
         "Óbito durante o plantão.",
         "O M.V. liga para o tutor. Você prepara o corpo para a despedida e acolhe o tutor quando ele chegar."
-       ]
-      ]
-     },
-     "say": "Quando: Faltou medicamento ou insumo à noite. Use o disponível com lançamento; anote a falta na passagem para a Raissa. Quando: Recebi pagamento à noite. Confira o valor com o sistema e guarde o comprovante; divergência vai à Laís. Quando: Óbito durante o plantão. O médico veterinário liga para o tutor. Você prepara o corpo para a despedida e acolhe o tutor quando ele chegar."
-    },
-    {
-     "v": {
-      "type": "table",
-      "left": true,
-      "tag": "Situações do dia a dia",
-      "h": "E agora, **o que eu faço?**",
-      "grid": "1.4fr 3fr",
-      "cols": [
-       "Situação",
-       "O que fazer"
-      ],
-      "rows": [
-       [
-        "Tutor nervoso ou reclamando.",
-        "Escute, acolha, não discuta; registre e leve à Laís."
        ],
        [
         "Fim do plantão.",
@@ -1335,18 +1376,18 @@ return {
        ]
       ]
      },
-     "say": "Quando: Tutor nervoso ou reclamando. Escute, acolha, não discuta; registre e leve à Laís. Quando: Fim do plantão. Passagem escrita às seis e quarenta e cinco; plantão inteiro marcado na coluna do dia em que começou."
+     "say": "Quando: Óbito durante o plantão. O médico veterinário liga para o tutor. Você prepara o corpo para a despedida e acolhe o tutor quando ele chegar. Quando: Fim do plantão. Passagem escrita às seis e quarenta e cinco; plantão inteiro marcado na coluna do dia em que começou."
     }
    ],
    "quiz": {
-    "q": "Tutor nervoso ou reclamando.",
+    "q": "Óbito durante o plantão.",
     "o": [
      "Resolver sozinho e não contar a ninguém",
-     "Escute, acolha, não discuta; registre e leve à Laís.",
+     "O M.V. liga para o tutor. Você prepara o corpo para a despedida e acolhe o tutor quando ele chegar.",
      "Esperar a Laís perguntar"
     ],
     "a": 1,
-    "why": "Escute, acolha, não discuta; registre e leve à Laís."
+    "why": "O M.V. liga para o tutor. Você prepara o corpo para a despedida e acolhe o tutor quando ele chegar."
    }
   },
   {
@@ -1479,7 +1520,7 @@ return {
       "rows": [
        [
         "Indicadores",
-        "Passagens completas; medicações no horário; faltas registradas."
+        "Passagens completas; medicações no horário; caixa sem diferença; faltas registradas."
        ],
        [
         "Checklist",
@@ -1491,7 +1532,7 @@ return {
        ]
       ]
      },
-     "say": "Indicadores: Passagens completas; medicações no horário; faltas registradas. Checklist: Meta: noventa por cento ou mais dos plantões. E todo dia quinze tem a conversa individual com a supervisão."
+     "say": "Indicadores: Passagens completas; medicações no horário; caixa sem diferença; faltas registradas. Checklist: Meta: noventa por cento ou mais dos plantões. E todo dia quinze tem a conversa individual com a supervisão."
     }
    ],
    "quiz": {
@@ -1516,13 +1557,13 @@ return {
       "tag": "Para levar com você",
       "h": "O essencial **do seu cargo**",
       "items": [
-       "Suporte ao M.V. plantonista durante a noite, com a internação cuidada e a passagem da manhã completa.",
+       "Suporte ao M.V. plantonista durante a noite, internação cuidada, tutor bem atendido e a passagem da manhã completa.",
        "Plantão inteiro marcado na coluna do dia em que começou.",
-       "Divergência de valores ou documento pendente vai à Laís.",
+       "Divergência de valores vai à Laís.",
        "Controlados só com prescrição e registro."
       ]
      },
-     "say": "Para fechar, o essencial. Suporte ao médico veterinário plantonista durante a noite, com a internação cuidada e a passagem da manhã completa. Plantão inteiro marcado na coluna do dia em que começou. Divergência de valores ou documento pendente vai à Laís. Controlados só com prescrição e registro."
+     "say": "Para fechar, o essencial. Suporte ao médico veterinário plantonista durante a noite, internação cuidada, tutor bem atendido e a passagem da manhã completa. Plantão inteiro marcado na coluna do dia em que começou. Divergência de valores vai à Laís. Controlados só com prescrição e registro."
     },
     {
      "v": {

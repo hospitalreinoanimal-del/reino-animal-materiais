@@ -642,9 +642,9 @@ return {
  "id": "cargo-estagio-manha",
  "cargo": "Treinamento · Estágio em Medicina Veterinária (manhã)",
  "titulo": "Estágio em Medicina Veterinária",
- "grupo": "Treinamento do cargo · versão 28/10/2026",
+ "grupo": "Treinamento do cargo · versão 18/11/2026",
  "ciencia": "Assisti ao treinamento do estágio da manhã e conheço a rotina, as regras e os limites do estágio.",
- "rodape": "Base: premissas do cargo (versão 3), checklists v8 e manual de consulta (28/10/2026). A narração usa a voz instalada no aparelho; a voz mais natural costuma ser a do Microsoft Edge.",
+ "rodape": "Base: premissas do cargo (versão 4), checklists v10 e manual de consulta (18/11/2026). A narração usa a voz instalada no aparelho; a voz mais natural costuma ser a do Microsoft Edge.",
  "chapters": [
   {
    "id": "abertura",
@@ -657,7 +657,7 @@ return {
       "dark": true,
       "tag": "Treinamento do cargo · Reino Animal",
       "h": "Estágio em Medicina Veterinária **(manhã)**",
-      "sub": "Aprender com supervisão, apoiando a internação da manhã e mantendo o tutor informado com os vídeos de notícias do internado.",
+      "sub": "Aprender com supervisão, apoiando a internação da manhã, mantendo os ambientes prontos e o tutor informado com os vídeos de notícias.",
       "chips": [
        "Rotina",
        "Regras",
@@ -666,7 +666,7 @@ return {
       ],
       "lastOn": true
      },
-     "say": "Olá! Este é o treinamento do cargo Estágio em Medicina Veterinária (manhã), do Hospital Veterinário Reino Animal. A missão do cargo é esta: Aprender com supervisão, apoiando a internação da manhã e mantendo o tutor informado com os vídeos de notícias do internado."
+     "say": "Olá! Este é o treinamento do cargo Estágio em Medicina Veterinária (manhã), do Hospital Veterinário Reino Animal. A missão do cargo é esta: Aprender com supervisão, apoiando a internação da manhã, mantendo os ambientes prontos e o tutor informado com os vídeos de notícias."
     },
     {
      "v": {
@@ -723,7 +723,7 @@ return {
        ],
        [
         "Referências",
-        "M.V. (clínica e supervisão do estágio), Raissa (rotina), Thay (escala)."
+        "M.V. (clínica e supervisão do estágio), Raissa (rotina), Thay (escala e supervisão)."
        ],
        [
         "Base legal",
@@ -731,17 +731,17 @@ return {
        ]
       ]
      },
-     "say": "Cargo: Estagiária de Medicina Veterinária (manhã). Ocupante: Amanda. Jornada: Segunda a sexta, das sete às treze, pausa de quinze minutos. Referências: médico veterinário (clínica e supervisão do estágio), Raissa (rotina), Thay (escala). Base legal: Termo de compromisso e médico veterinário supervisor (lei do estágio)."
+     "say": "Cargo: Estagiária de Medicina Veterinária (manhã). Ocupante: Amanda. Jornada: Segunda a sexta, das sete às treze, pausa de quinze minutos. Referências: médico veterinário (clínica e supervisão do estágio), Raissa (rotina), Thay (escala e supervisão). Base legal: Termo de compromisso e médico veterinário supervisor (lei do estágio)."
     },
     {
      "v": {
       "type": "rule",
       "tone": "ok",
       "tag": "Missão",
-      "txt": "Aprender com supervisão, apoiando a internação da manhã e mantendo o tutor informado com os vídeos de notícias do internado.",
+      "txt": "Aprender com supervisão, apoiando a internação da manhã, mantendo os ambientes prontos e o tutor informado com os vídeos de notícias.",
       "sub": "Tudo o que você faz no dia serve a esta missão."
      },
-     "say": "Guarde a sua missão: Aprender com supervisão, apoiando a internação da manhã e mantendo o tutor informado com os vídeos de notícias do internado. Tudo o que você faz no dia serve a ela."
+     "say": "Guarde a sua missão: Aprender com supervisão, apoiando a internação da manhã, mantendo os ambientes prontos e o tutor informado com os vídeos de notícias. Tudo o que você faz no dia serve a ela."
     }
    ],
    "quiz": {
@@ -803,24 +803,20 @@ return {
       ],
       "rows": [
        [
-        "Internação",
-        "Baias higienizadas, parâmetros com o M.V., alimentação e soltura conforme a prescrição."
-       ],
-       [
-        "Suporte",
-        "Contenção, coleta e exames."
-       ],
-       [
         "Vídeos de notícias",
-        "Vídeo do animal internado gravado com aval do M.V. e enviado ao tutor pelo canal oficial."
+        "Gravados com aval do M.V. e enviados ao tutor entre 7h e 8h."
        ],
        [
-        "Geladeira de medicamentos",
-        "Temperatura das 10h registrada, quando delegado pela Raissa."
+        "Internação",
+        "Alimentação dos pacientes; limpeza e organização das baias."
+       ],
+       [
+        "Ambientes",
+        "Limpeza e organização após o uso: raio-X, consultórios, ambulatórios e bloco cirúrgico (desinfecção pesada é da faxina)."
        ]
       ]
      },
-     "say": "Você é dono das seguintes frentes. Internação: Baias higienizadas, parâmetros com o médico veterinário, alimentação e soltura conforme a prescrição. Suporte: Contenção, coleta e exames. Vídeos de notícias: Vídeo do animal internado gravado com aval do médico veterinário e enviado ao tutor pelo canal oficial. Geladeira de medicamentos: Temperatura das dez registrada, quando delegado pela Raissa."
+     "say": "Você é dono das seguintes frentes. Vídeos de notícias: Gravados com aval do médico veterinário e enviados ao tutor entre sete e oito. Internação: Alimentação dos pacientes; limpeza e organização das baias. Ambientes: Limpeza e organização após o uso: raio-X, consultórios, ambulatórios e bloco cirúrgico (desinfecção pesada é da faxina)."
     },
     {
      "v": {
@@ -835,23 +831,31 @@ return {
       ],
       "rows": [
        [
-        "Passagem",
-        "À Raissa às 12h45."
+        "Suporte",
+        "Suporte geral ao M.V. e à Raissa; reposição e devolução dos kits ao estoque."
+       ],
+       [
+        "Cobertura",
+        "Almoço da Raissa (12h–13h)."
+       ],
+       [
+        "Geladeira de medicamentos",
+        "10h, quando delegado pela Raissa."
        ]
       ]
      },
-     "say": "Continuando. Passagem: À Raissa às doze e quarenta e cinco."
+     "say": "Continuando. Suporte: Suporte geral ao médico veterinário e à Raissa; reposição e devolução dos kits ao estoque. Cobertura: Almoço da Raissa (das doze às treze). Geladeira de medicamentos: dez, quando delegado pela Raissa."
     }
    ],
    "quiz": {
-    "q": "Vou gravar o vídeo de notícias do internado (manhã).",
+    "q": "Vídeo de notícias do internado.",
     "o": [
      "Pedir para o tutor voltar outro dia",
-     "Só com aval do M.V. e envio pelo canal oficial do hospital; nunca pelo celular pessoal.",
+     "Manhã entre 7h e 8h (Amanda), noite entre 19h e 20h (Bernardo); só com aval do M.V. e pelo canal oficial.",
      "Ignorar, porque não é urgente"
     ],
     "a": 1,
-    "why": "Só com aval do M.V. e envio pelo canal oficial do hospital; nunca pelo celular pessoal."
+    "why": "Manhã entre 7h e 8h (Amanda), noite entre 19h e 20h (Bernardo); só com aval do M.V. e pelo canal oficial."
    }
   },
   {
@@ -901,27 +905,23 @@ return {
       "rows": [
        [
         "07:00",
-        "Passagem da auxiliar noturna ouvida junto com o M.V. da internação"
+        "Passagem da aux. noturna ouvida junto com o M.V. da internação"
        ],
        [
         "07:15",
-        "Baias dos internados higienizadas e organizadas (limpeza pesada é da faxina)"
+        "Vídeos de notícias dos internados gravados (com aval do M.V.) e enviados ao tutor pelo canal oficial entre 7h e 8h; envio registrado"
        ],
        [
         "08:00",
-        "Parâmetros aferidos com o M.V. e lançados"
+        "Alimentação dos internados conforme a prescrição"
        ],
        [
         "08:30",
-        "Alimentação e soltura dos internados conforme a prescrição"
-       ],
-       [
-        "09:00",
-        "Suporte ao M.V. em contenção, coleta e exames"
+        "Limpeza e organização das baias da internação (limpeza pesada e desinfecção são da faxina)"
        ]
       ]
      },
-     "say": "Segunda a sexta. Sete, Passagem da auxiliar noturna ouvida junto com o médico veterinário da internação. Sete e quinze, Baias dos internados higienizadas e organizadas (limpeza pesada é da faxina). Oito, Parâmetros aferidos com o médico veterinário e lançados. Oito e trinta, Alimentação e soltura dos internados conforme a prescrição. Nove, Suporte ao médico veterinário em contenção, coleta e exames."
+     "say": "Segunda a sexta. Sete, Passagem da aux. noturna ouvida junto com o médico veterinário da internação. Sete e quinze, Vídeos de notícias dos internados gravados (com aval do médico veterinário) e enviados ao tutor pelo canal oficial entre sete e oito; envio registrado. Oito, Alimentação dos internados conforme a prescrição. Oito e trinta, Limpeza e organização das baias da internação (limpeza pesada e desinfecção são da faxina)."
     },
     {
      "v": {
@@ -936,28 +936,24 @@ return {
       ],
       "rows": [
        [
+        "09:00",
+        "Suporte geral ao M.V.: contenção, coleta, exames e parâmetros"
+       ],
+       [
         "10:00",
         "Temperatura da geladeira de medicamentos registrada (10h), quando delegado pela Raissa"
        ],
        [
-        "10:05",
-        "Vídeos de notícias do animal internado gravados (um por paciente, com aval do M.V.)"
-       ],
-       [
-        "11:00",
-        "Vídeos editados e enviados ao tutor pelo canal oficial do hospital; envio registrado"
+        "10:30",
+        "Limpeza e organização após o uso: sala de raio-X, consultórios, ambulatórios e bloco cirúrgico"
        ],
        [
         "11:30",
-        "Baias: 2ª rodada de higienização; insumos da internação conferidos (faltas à Raissa)"
-       ],
-       [
-        "12:30",
-        "Medicações administradas sob supervisão do M.V."
+        "Kits: reposição e devolução ao estoque, com a Raissa"
        ]
       ]
      },
-     "say": "Dez, Temperatura da geladeira de medicamentos registrada (dez), quando delegado pela Raissa. Dez e cinco, Vídeos de notícias do animal internado gravados (um por paciente, com aval do médico veterinário). Onze, Vídeos editados e enviados ao tutor pelo canal oficial do hospital; envio registrado. Onze e trinta, Baias: 2ª rodada de higienização; insumos da internação conferidos (faltas à Raissa). Doze e trinta, Medicações administradas sob supervisão do médico veterinário."
+     "say": "Nove, Suporte geral ao médico veterinário: contenção, coleta, exames e parâmetros. Dez, Temperatura da geladeira de medicamentos registrada (dez), quando delegado pela Raissa. Dez e trinta, Limpeza e organização após o uso: sala de raio-X, consultórios, ambulatórios e bloco cirúrgico. Onze e trinta, Kits: reposição e devolução ao estoque, com a Raissa."
     },
     {
      "v": {
@@ -972,23 +968,51 @@ return {
       ],
       "rows": [
        [
+        "12:00",
+        "Cobertura da internação no almoço da Raissa (12h–13h)"
+       ],
+       [
         "12:45",
         "Passagem à Raissa: o que foi feito e o que ficou pendente"
        ]
       ]
      },
-     "say": "Doze e quarenta e cinco, Passagem à Raissa: o que foi feito e o que ficou pendente."
+     "say": "Doze, Cobertura da internação no almoço da Raissa (das doze às treze). Doze e quarenta e cinco, Passagem à Raissa: o que foi feito e o que ficou pendente."
+    },
+    {
+     "v": {
+      "type": "table",
+      "left": true,
+      "tag": "Sua rotina · Eventual",
+      "h": "Igual ao **seu checklist**",
+      "grid": ".8fr 5fr",
+      "cols": [
+       "Hora",
+       "Tarefa"
+      ],
+      "rows": [
+       [
+        "—",
+        "Suporte à Raissa: contagem, reposição ou conferência de NF delegada (depois de treinada)"
+       ],
+       [
+        "—",
+        "Emergência: suporte ao M.V. em contenção e procedimentos"
+       ]
+      ]
+     },
+     "say": "Eventual. Suporte à Raissa: contagem, reposição ou conferência de nota fiscal delegada (depois de treinada). Emergência: suporte ao médico veterinário em contenção e procedimentos."
     }
    ],
    "quiz": {
     "q": "A Raissa pediu para conferir uma NF.",
     "o": [
-     "Confira itens, quantidades e validade e devolva à Raissa, que dá a entrada no sistema.",
+     "Depois de treinado: confira pedido × nota × lote × validade e devolva à Raissa, que dá a entrada no sistema.",
      "Esperar a Laís perguntar",
      "Resolver sozinho e não contar a ninguém"
     ],
     "a": 0,
-    "why": "Confira itens, quantidades e validade e devolva à Raissa, que dá a entrada no sistema."
+    "why": "Depois de treinado: confira pedido × nota × lote × validade e devolva à Raissa, que dá a entrada no sistema."
    }
   },
   {
@@ -1031,7 +1055,7 @@ return {
       "two": true,
       "compact": true,
       "items": [
-       "Pontualidade e registro de ponto em todas as entradas, saídas e intervalos; troca de horário só com aprovação da Laís.",
+       "Pontualidade e registro de ponto em todas as entradas, saídas e intervalos; troca de horário só com aprovação da Laís (administrativo e faxina) ou da Thay (rotina clínica).",
        "Almoço sempre com cobertura definida (tabela de almoço da equipe).",
        "Passagem de turno sempre por escrito: pendências, pacientes, faltas de material e recados.",
        "Checklist do dia: só a coluna de hoje aceita marcação; ✔, ✘ (com motivo em Observações) ou N/A, e rubrica no dia.",
@@ -1039,18 +1063,18 @@ return {
        "Dados de tutores e pacientes só no sistema do hospital (LGPD): não trocar telefone pessoal com tutor, não fotografar nem divulgar prontuários, dependências ou clientes."
       ]
      },
-     "say": "E as regras gerais, que valem para toda a equipe. Pontualidade e registro de ponto em todas as entradas, saídas e intervalos; troca de horário só com aprovação da Laís. Almoço sempre com cobertura definida (tabela de almoço da equipe). Passagem de turno sempre por escrito: pendências, pacientes, faltas de material e recados. Checklist do dia: só a coluna de hoje aceita marcação; visto, xis (com motivo em Observações) ou não se aplica, e rubrica no dia. Um xis não é punição. Marcar visto sem realizar a atividade é fraude, passível de advertência. Dados de tutores e pacientes só no sistema do hospital (lei de proteção de dados): não trocar telefone pessoal com tutor, não fotografar nem divulgar prontuários, dependências ou clientes."
+     "say": "E as regras gerais, que valem para toda a equipe. Pontualidade e registro de ponto em todas as entradas, saídas e intervalos; troca de horário só com aprovação da Laís (administrativo e faxina) ou da Thay (rotina clínica). Almoço sempre com cobertura definida (tabela de almoço da equipe). Passagem de turno sempre por escrito: pendências, pacientes, faltas de material e recados. Checklist do dia: só a coluna de hoje aceita marcação; visto, xis (com motivo em Observações) ou não se aplica, e rubrica no dia. Um xis não é punição. Marcar visto sem realizar a atividade é fraude, passível de advertência. Dados de tutores e pacientes só no sistema do hospital (lei de proteção de dados): não trocar telefone pessoal com tutor, não fotografar nem divulgar prontuários, dependências ou clientes."
     }
    ],
    "quiz": {
-    "q": "Acabou o uso de uma sala (raio-X, ambulatório, consultório).",
+    "q": "Acabou o uso de uma sala (raio-X, ambulatório, consultório, bloco).",
     "o": [
      "Fazer do jeito que achar melhor, mesmo fora da regra",
-     "Higienize e organize para o próximo atendimento.",
+     "Limpe e organize para o próximo atendimento; desinfecção pesada é da faxina.",
      "Deixar para o próximo turno, sem registrar"
     ],
     "a": 1,
-    "why": "Higienize e organize para o próximo atendimento."
+    "why": "Limpe e organize para o próximo atendimento; desinfecção pesada é da faxina."
    }
   },
   {
@@ -1095,14 +1119,14 @@ return {
     }
    ],
    "quiz": {
-    "q": "Kit de internação incompleto.",
+    "q": "Kit usado ou incompleto.",
     "o": [
-     "Reponha ou abra um novo kit; falta de material vai à Raissa.",
+     "Reponha ou devolva ao estoque com a Raissa.",
      "Ignorar, porque não é urgente",
      "Pedir para o tutor voltar outro dia"
     ],
     "a": 0,
-    "why": "Reponha ou abra um novo kit; falta de material vai à Raissa."
+    "why": "Reponha ou devolva ao estoque com a Raissa."
    }
   },
   {
@@ -1131,12 +1155,12 @@ return {
         "Não informe: \"Quem passa as notícias é o médico veterinário, vou chamá-lo.\""
        ],
        [
-        "Vou gravar o vídeo de notícias do internado (manhã).",
-        "Só com aval do M.V. e envio pelo canal oficial do hospital; nunca pelo celular pessoal."
+        "Vídeo de notícias do internado.",
+        "Manhã entre 7h e 8h (Amanda), noite entre 19h e 20h (Bernardo); só com aval do M.V. e pelo canal oficial."
        ]
       ]
      },
-     "say": "Quando: O médico veterinário não está presente e um paciente precisa de algo. Nada clínico sem o médico veterinário Chame o médico veterinário de plantão. Quando: Tutor perguntou sobre o quadro do pet. Não informe: \"Quem passa as notícias é o médico veterinário, vou chamá-lo.\". Quando: Vou gravar o vídeo de notícias do internado (manhã). Só com aval do médico veterinário e envio pelo canal oficial do hospital; nunca pelo celular pessoal."
+     "say": "Quando: O médico veterinário não está presente e um paciente precisa de algo. Nada clínico sem o médico veterinário Chame o médico veterinário de plantão. Quando: Tutor perguntou sobre o quadro do pet. Não informe: \"Quem passa as notícias é o médico veterinário, vou chamá-lo.\". Quando: Vídeo de notícias do internado. Manhã entre sete e oito (Amanda), noite entre dezenove e vinte (Bernardo); só com aval do médico veterinário e pelo canal oficial."
     },
     {
      "v": {
@@ -1152,19 +1176,19 @@ return {
       "rows": [
        [
         "A Raissa pediu para conferir uma NF.",
-        "Confira itens, quantidades e validade e devolva à Raissa, que dá a entrada no sistema."
+        "Depois de treinado: confira pedido × nota × lote × validade e devolva à Raissa, que dá a entrada no sistema."
        ],
        [
-        "Acabou o uso de uma sala (raio-X, ambulatório, consultório).",
-        "Higienize e organize para o próximo atendimento."
+        "Acabou o uso de uma sala (raio-X, ambulatório, consultório, bloco).",
+        "Limpe e organize para o próximo atendimento; desinfecção pesada é da faxina."
        ],
        [
-        "Kit de internação incompleto.",
-        "Reponha ou abra um novo kit; falta de material vai à Raissa."
+        "Kit usado ou incompleto.",
+        "Reponha ou devolva ao estoque com a Raissa."
        ]
       ]
      },
-     "say": "Quando: A Raissa pediu para conferir uma nota fiscal. Confira itens, quantidades e validade e devolva à Raissa, que dá a entrada no sistema. Quando: Acabou o uso de uma sala (raio-X, ambulatório, consultório). Higienize e organize para o próximo atendimento. Quando: Kit de internação incompleto. Reponha ou abra um novo kit; falta de material vai à Raissa."
+     "say": "Quando: A Raissa pediu para conferir uma nota fiscal. Depois de treinado: confira pedido contra nota contra lote contra validade e devolva à Raissa, que dá a entrada no sistema. Quando: Acabou o uso de uma sala (raio-X, ambulatório, consultório, bloco). Limpe e organize para o próximo atendimento; desinfecção pesada é da faxina. Quando: Kit usado ou incompleto. Reponha ou devolva ao estoque com a Raissa."
     },
     {
      "v": {
@@ -1179,23 +1203,27 @@ return {
       ],
       "rows": [
        [
+        "Almoço da Raissa (12h–13h).",
+        "Amanda cobre a internação."
+       ],
+       [
         "Fim do turno.",
         "Passagem escrita: à Raissa às 12h45 (manhã) ou à aux. noturna às 20h45 (tarde)."
        ]
       ]
      },
-     "say": "Quando: Fim do turno. Passagem escrita: à Raissa às doze e quarenta e cinco (manhã) ou à aux. noturna às vinte e quarenta e cinco (tarde)."
+     "say": "Quando: Almoço da Raissa (das doze às treze). Amanda cobre a internação. Quando: Fim do turno. Passagem escrita: à Raissa às doze e quarenta e cinco (manhã) ou à aux. noturna às vinte e quarenta e cinco (tarde)."
     }
    ],
    "quiz": {
-    "q": "Fim do turno.",
+    "q": "Almoço da Raissa (12h–13h).",
     "o": [
      "Resolver sozinho e não contar a ninguém",
-     "Passagem escrita: à Raissa às 12h45 (manhã) ou à aux. noturna às 20h45 (tarde).",
+     "Amanda cobre a internação.",
      "Esperar a Laís perguntar"
     ],
     "a": 1,
-    "why": "Passagem escrita: à Raissa às 12h45 (manhã) ou à aux. noturna às 20h45 (tarde)."
+    "why": "Amanda cobre a internação."
    }
   },
   {
@@ -1328,7 +1356,7 @@ return {
       "rows": [
        [
         "Indicadores",
-        "Vídeos enviados; passagens completas; avaliação do M.V. supervisor."
+        "Vídeos enviados até 8h; ambientes prontos; passagens completas; avaliação do M.V. supervisor."
        ],
        [
         "Checklist",
@@ -1340,9 +1368,19 @@ return {
        ]
       ]
      },
-     "say": "Indicadores: Vídeos enviados; passagens completas; avaliação do médico veterinário supervisor. Checklist: Meta: noventa por cento ou mais no mês. E todo dia quinze tem a conversa individual com a supervisão."
+     "say": "Indicadores: Vídeos enviados até oito; ambientes prontos; passagens completas; avaliação do médico veterinário supervisor. Checklist: Meta: noventa por cento ou mais no mês. E todo dia quinze tem a conversa individual com a supervisão."
     }
-   ]
+   ],
+   "quiz": {
+    "q": "Fim do turno.",
+    "o": [
+     "Passagem escrita: à Raissa às 12h45 (manhã) ou à aux. noturna às 20h45 (tarde).",
+     "Deixar para o próximo turno, sem registrar",
+     "Fazer do jeito que achar melhor, mesmo fora da regra"
+    ],
+    "a": 0,
+    "why": "Passagem escrita: à Raissa às 12h45 (manhã) ou à aux. noturna às 20h45 (tarde)."
+   }
   },
   {
    "id": "fim",
@@ -1355,12 +1393,12 @@ return {
       "tag": "Para levar com você",
       "h": "O essencial **do seu cargo**",
       "items": [
-       "Aprender com supervisão, apoiando a internação da manhã e mantendo o tutor informado com os vídeos de notícias do internado.",
+       "Aprender com supervisão, apoiando a internação da manhã, mantendo os ambientes prontos e o tutor informado com os vídeos de notícias.",
        "Vídeo só com aval do M.V. e pelo canal do hospital.",
        "Passagem escrita antes de sair."
       ]
      },
-     "say": "Para fechar, o essencial. Aprender com supervisão, apoiando a internação da manhã e mantendo o tutor informado com os vídeos de notícias do internado. Vídeo só com aval do médico veterinário e pelo canal do hospital. Passagem escrita antes de sair."
+     "say": "Para fechar, o essencial. Aprender com supervisão, apoiando a internação da manhã, mantendo os ambientes prontos e o tutor informado com os vídeos de notícias. Vídeo só com aval do médico veterinário e pelo canal do hospital. Passagem escrita antes de sair."
     },
     {
      "v": {

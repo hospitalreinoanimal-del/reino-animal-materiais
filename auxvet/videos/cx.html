@@ -642,9 +642,9 @@ return {
  "id": "cargo-auxvet",
  "cargo": "Treinamento · Auxiliar Veterinária (Estoque, Farmácia e suporte)",
  "titulo": "Auxiliar Veterinária",
- "grupo": "Treinamento do cargo · versão 28/10/2026",
+ "grupo": "Treinamento do cargo · versão 18/11/2026",
  "ciencia": "Assisti ao treinamento do cargo de Auxiliar Veterinária e conheço a rotina de estoque, farmácia e suporte ao M.V., as regras e os limites do cargo.",
- "rodape": "Base: premissas do cargo (versão 3), checklists v8 e manual de consulta (28/10/2026). A narração usa a voz instalada no aparelho; a voz mais natural costuma ser a do Microsoft Edge.",
+ "rodape": "Base: premissas do cargo (versão 4), checklists v10 e manual de consulta (18/11/2026). A narração usa a voz instalada no aparelho; a voz mais natural costuma ser a do Microsoft Edge.",
  "chapters": [
   {
    "id": "abertura",
@@ -657,7 +657,7 @@ return {
       "dark": true,
       "tag": "Treinamento do cargo · Reino Animal",
       "h": "Auxiliar Veterinária **(Estoque, Farmácia e suporte)**",
-      "sub": "Nenhum setor sem insumo, nenhum item vencido, nenhuma medicação sem lançamento, nenhuma nota sem entrada e o M.V. sempre apoiado.",
+      "sub": "Nenhum setor sem insumo, nenhuma medicação sem lançamento, nenhuma nota sem entrada, materiais esterilizados e o M.V. sempre apoiado.",
       "chips": [
        "Rotina",
        "Regras",
@@ -666,7 +666,7 @@ return {
       ],
       "lastOn": true
      },
-     "say": "Olá! Este é o treinamento do cargo Auxiliar Veterinária (Estoque, Farmácia e suporte), do Hospital Veterinário Reino Animal. A missão do cargo é esta: Nenhum setor sem insumo, nenhum item vencido, nenhuma medicação sem lançamento, nenhuma nota sem entrada e o médico veterinário sempre apoiado."
+     "say": "Olá! Este é o treinamento do cargo Auxiliar Veterinária (Estoque, Farmácia e suporte), do Hospital Veterinário Reino Animal. A missão do cargo é esta: Nenhum setor sem insumo, nenhuma medicação sem lançamento, nenhuma nota sem entrada, materiais esterilizados e o médico veterinário sempre apoiado."
     },
     {
      "v": {
@@ -719,44 +719,40 @@ return {
        ],
        [
         "Jornada",
-        "Início às 10h15, 44h semanais (segunda a sábado), almoço 15h15–16h15 (o Bernardo cobre)."
+        "Início às 10h15, 44h semanais (segunda a sábado), almoço 12h–13h (a Amanda cobre)."
        ],
        [
         "Responde a",
-        "Thay · Supervisora Administrativa (rotina, estoque e compras); M.V. responsável (suporte e pacientes)."
+        "Thay · Supervisora Administrativa; M.V. responsável (pacientes)."
        ],
        [
         "Apoio",
-        "Bernardo (estagiário da tarde) nas demandas manuais e de controle básico."
-       ],
-       [
-        "Plantões extras",
-        "Plantão de 12h no fim de semana só quando solicitado, com hora extra ou banco de horas formal."
+        "Amanda e Bernardo (estagiários), inclusive na conferência de NF depois de treinados."
        ]
       ]
      },
-     "say": "Cargo: Auxiliar Veterinária, Estoque, Farmácia e suporte ao médico veterinário. Ocupante: Raissa. Jornada: Início às dez e quinze, quarenta e quatro horas semanais (segunda a sábado), almoço das quinze e quinze às dezesseis e quinze (o Bernardo cobre). Responde a: Thay, Supervisora Administrativa (rotina, estoque e compras); médico veterinário responsável (suporte e pacientes). Apoio: Bernardo (estagiário da tarde) nas demandas manuais e de controle básico. Plantões extras: Plantão de meio-dia no fim de semana só quando solicitado, com hora extra ou banco de horas formal."
+     "say": "Cargo: Auxiliar Veterinária, Estoque, Farmácia e suporte ao médico veterinário. Ocupante: Raissa. Jornada: Início às dez e quinze, quarenta e quatro horas semanais (segunda a sábado), almoço das doze às treze (a Amanda cobre). Responde a: Thay, Supervisora Administrativa; médico veterinário responsável (pacientes). Apoio: Amanda e Bernardo (estagiários), inclusive na conferência de nota fiscal depois de treinados."
     },
     {
      "v": {
       "type": "rule",
       "tone": "ok",
       "tag": "Missão",
-      "txt": "Nenhum setor sem insumo, nenhum item vencido, nenhuma medicação sem lançamento, nenhuma nota sem entrada e o M.V. sempre apoiado.",
+      "txt": "Nenhum setor sem insumo, nenhuma medicação sem lançamento, nenhuma nota sem entrada, materiais esterilizados e o M.V. sempre apoiado.",
       "sub": "Tudo o que você faz no dia serve a esta missão."
      },
-     "say": "Guarde a sua missão: Nenhum setor sem insumo, nenhum item vencido, nenhuma medicação sem lançamento, nenhuma nota sem entrada e o médico veterinário sempre apoiado. Tudo o que você faz no dia serve a ela."
+     "say": "Guarde a sua missão: Nenhum setor sem insumo, nenhuma medicação sem lançamento, nenhuma nota sem entrada, materiais esterilizados e o médico veterinário sempre apoiado. Tudo o que você faz no dia serve a ela."
     }
    ],
    "quiz": {
     "q": "Item abaixo do estoque mínimo.",
     "o": [
      "Resolver sozinho e não contar a ninguém",
-     "Entra na lista semanal de compras à Thay (segunda). Se parar o atendimento, avise a Thay na hora.",
+     "Entra na lista semanal à Thay (segunda). Se parar o atendimento, avise a Thay na hora.",
      "Esperar a Laís perguntar"
     ],
     "a": 1,
-    "why": "Entra na lista semanal de compras à Thay (segunda). Se parar o atendimento, avise a Thay na hora."
+    "why": "Entra na lista semanal à Thay (segunda). Se parar o atendimento, avise a Thay na hora."
    }
   },
   {
@@ -771,23 +767,23 @@ return {
       "h": "Como o cargo **trabalha**",
       "items": [
        "O estoque só bate com o sistema se tudo for lançado no dia seguinte.",
-       "Quem repõe também controla.",
-       "Compra é com a Thay: a Raissa monta a lista; a Thay cota e faz o pedido; o Vitor aprova.",
-       "Segurança do paciente primeiro: medicação identificada."
+       "Quem recebe não compra: a Raissa monta a lista e recebe; a Thay cota e compra; o Vitor aprova.",
+       "Segurança do paciente primeiro: medicação identificada.",
+       "Sexta e véspera de feriado: o hospital fica abastecido até o próximo dia útil."
       ]
      },
-     "say": "Como o cargo trabalha. Primeiro: o estoque só bate com o sistema se tudo for lançado no dia seguinte. Depois: quem repõe também controla. Em seguida: compra é com a Thay: a Raissa monta a lista; a Thay cota e faz o pedido; o Vitor aprova. Por fim: segurança do paciente primeiro: medicação identificada."
+     "say": "Como o cargo trabalha. Primeiro: o estoque só bate com o sistema se tudo for lançado no dia seguinte. Depois: quem recebe não compra: a Raissa monta a lista e recebe; a Thay cota e compra; o Vitor aprova. Em seguida: segurança do paciente primeiro: medicação identificada. Por fim: sexta e véspera de feriado: o hospital fica abastecido até o próximo dia útil."
     }
    ],
    "quiz": {
     "q": "Chegou uma compra.",
     "o": [
-     "Confira a NF (pode delegar ao estagiário e revisar), dê entrada no SimplesVet no mesmo dia e entregue NF, XML e boleto à Laís.",
+     "Você recebe e confere a NF (pode delegar ao estagiário treinado e revisar), dá entrada no SimplesVet no mesmo dia e entrega NF, XML e boleto à Laís.",
      "Deixar para o próximo turno, sem registrar",
      "Fazer do jeito que achar melhor, mesmo fora da regra"
     ],
     "a": 0,
-    "why": "Confira a NF (pode delegar ao estagiário e revisar), dê entrada no SimplesVet no mesmo dia e entregue NF, XML e boleto à Laís."
+    "why": "Você recebe e confere a NF (pode delegar ao estagiário treinado e revisar), dá entrada no SimplesVet no mesmo dia e entrega NF, XML e boleto à Laís."
    }
   },
   {
@@ -808,24 +804,20 @@ return {
       ],
       "rows": [
        [
-        "Suporte ao M.V.",
-        "Procedimentos, contenção, exames e internação (cobertura das 13h às 15h)."
-       ],
-       [
         "Controle do estoque",
-        "Saídas diárias no SimplesVet; medicações sem lançamento; contagem semanal; inventário mensal."
+        "Saída das medicações e insumos no sistema; contagens; inventário mensal com a Thay."
        ],
        [
-        "Lista de compras",
-        "Itens abaixo do mínimo; lista semanal à Thay (segunda), que cota e faz o pedido; Vitor aprova; medicamentos até o dia 25."
+        "Kits",
+        "Elaboração e contagem dos kits de internação."
        ],
        [
-        "Validade",
-        "Loja e internação: a vencer em 90 dias à Thay e à Laís."
+        "Reposição",
+        "Insumos nos ambientes (bloco cirúrgico, internações, consultórios), farmácia interna e maleta; suficiente para fins de semana e feriados."
        ]
       ]
      },
-     "say": "Você é dono das seguintes frentes. Suporte ao médico veterinário: Procedimentos, contenção, exames e internação (cobertura das treze às quinze). Controle do estoque: Saídas diárias no SimplesVet; medicações sem lançamento; contagem semanal; inventário mensal. Lista de compras: Itens abaixo do mínimo; lista semanal à Thay (segunda), que cota e faz o pedido; Vitor aprova; medicamentos até o dia vinte e cinco. Validade: Loja e internação: a vencer em noventa dias à Thay e à Laís."
+     "say": "Você é dono das seguintes frentes. Controle do estoque: Saída das medicações e insumos no sistema; contagens; inventário mensal com a Thay. Kits: Elaboração e contagem dos kits de internação. Reposição: Insumos nos ambientes (bloco cirúrgico, internações, consultórios), farmácia interna e maleta; suficiente para fins de semana e feriados."
     },
     {
      "v": {
@@ -840,24 +832,16 @@ return {
       ],
       "rows": [
        [
-        "Reposição",
-        "Insumos na internação, bloco cirúrgico e consultórios; medicamentos da farmácia e maleta preta."
-       ],
-       [
-        "Máquinas da internação",
-        "Controle dos insumos do IDEXX, do hemogasômetro e demais equipamentos; falta entra na lista de compras ao Vitor."
+        "Recebimento",
+        "Recebe e confere as compras (pode delegar aos estagiários treinados); entrada de NF e boletos no sistema; NF, XML e boleto à Laís."
        ],
        [
         "Geladeira de medicamentos",
-        "Dias úteis: temperatura registrada às 10h e às 16h (pode delegar à Amanda e ao Bernardo); confere todo dia que os dois registros foram feitos. Sábados, domingos e feriados: a recepção registra."
-       ],
-       [
-        "Controlados",
-        "Livro anotado para assinatura do RT (Marcos Veloso); receitas retidas arquivadas."
+        "Dias úteis: 10h e 16h (pode delegar à Amanda e ao Bernardo; ela confere)."
        ]
       ]
      },
-     "say": "Continuando. Reposição: Insumos na internação, bloco cirúrgico e consultórios; medicamentos da farmácia e maleta preta. Máquinas da internação: Controle dos insumos do IDEXX, do hemogasômetro e demais equipamentos; falta entra na lista de compras ao Vitor. Geladeira de medicamentos: Dias úteis: temperatura registrada às dez e às dezesseis (pode delegar à Amanda e ao Bernardo); confere todo dia que os dois registros foram feitos. Sábados, domingos e feriados: a recepção registra. Controlados: Livro anotado para assinatura do responsável técnico (Marcos Veloso); receitas retidas arquivadas."
+     "say": "Continuando. Recebimento: Recebe e confere as compras (pode delegar aos estagiários treinados); entrada de nota fiscal e boletos no sistema; nota fiscal, xis eme ele e boleto à Laís. Geladeira de medicamentos: Dias úteis: dez e dezesseis (pode delegar à Amanda e ao Bernardo; ela confere)."
     },
     {
      "v": {
@@ -872,12 +856,20 @@ return {
       ],
       "rows": [
        [
-        "Recebimento de compras",
-        "Confere a NF (pode delegar ao estagiário); entrada no SimplesVet é dela, no mesmo dia; NF, XML e boleto à Laís."
+        "Suporte ao M.V.",
+        "Internação e atendimentos: contenção e aferição de parâmetros; medicações da prescrição dos internados puxadas."
+       ],
+       [
+        "Esterilização",
+        "Esterilização dos materiais durante o dia; a Thay supervisiona."
+       ],
+       [
+        "Lista de compras",
+        "Lista semanal e mensal à Thay; insumos das máquinas da internação."
        ]
       ]
      },
-     "say": "Continuando. Recebimento de compras: Confere a nota fiscal (pode delegar ao estagiário); entrada no SimplesVet é dela, no mesmo dia; nota fiscal, xis eme ele e boleto à Laís."
+     "say": "Continuando. Suporte ao médico veterinário: Internação e atendimentos: contenção e aferição de parâmetros; medicações da prescrição dos internados puxadas. Esterilização: Esterilização dos materiais durante o dia; a Thay supervisiona. Lista de compras: Lista semanal e mensal à Thay; insumos das máquinas da internação."
     }
    ],
    "quiz": {
@@ -914,23 +906,15 @@ return {
        ],
        [
         "10:15",
-        "Passagem da auxiliar noturna e da Amanda lida; prioridades combinadas com a Internista"
+        "Passagem da aux. noturna e da Amanda lida; prioridades combinadas com a Internista"
        ],
        [
         "10:30",
         "Saída no SimplesVet das medicações e insumos usados ontem (kits, prescrições e maleta)"
-       ],
-       [
-        "11:00",
-        "Medicações retiradas sem lançamento verificadas; divergência à Thay no mesmo dia"
-       ],
-       [
-        "11:30",
-        "Farmácia reposta: armário de medicamentos, maleta preta e farmácia da recepção"
        ]
       ]
      },
-     "say": "Segunda a sexta. Dez, Temperatura da geladeira de medicamentos registrada (dez) — pode delegar à Amanda; conferir que o registro foi feito. Dez e quinze, Passagem da auxiliar noturna e da Amanda lida; prioridades combinadas com a Internista. Dez e trinta, Saída no SimplesVet das medicações e insumos usados ontem (kits, prescrições e maleta). Onze, Medicações retiradas sem lançamento verificadas; divergência à Thay no mesmo dia. Onze e trinta, Farmácia reposta: armário de medicamentos, maleta preta e farmácia da recepção."
+     "say": "Segunda a sexta. Dez, Temperatura da geladeira de medicamentos registrada (dez) — pode delegar à Amanda; conferir que o registro foi feito. Dez e quinze, Passagem da aux. noturna e da Amanda lida; prioridades combinadas com a Internista. Dez e trinta, Saída no SimplesVet das medicações e insumos usados ontem (kits, prescrições e maleta)."
     },
     {
      "v": {
@@ -945,28 +929,24 @@ return {
       ],
       "rows": [
        [
+        "11:00",
+        "Medicações retiradas sem lançamento verificadas; divergência à Thay no mesmo dia"
+       ],
+       [
+        "11:30",
+        "Kits de internação montados e contados; devoluções dos estagiários conferidas"
+       ],
+       [
         "12:00",
-        "Reposição de insumos nos ambientes: internação, bloco cirúrgico e consultórios"
+        "Intervalo de almoço (1h) — a Amanda cobre a internação"
        ],
        [
         "13:00",
-        "Suporte ao M.V. em procedimentos, contenção e exames; cobertura da internação sem estagiário (13h–15h)"
-       ],
-       [
-        "14:00",
-        "Pedidos recebidos: NF conferida (pedido × nota × lote × validade) — pode delegar ao estagiário"
-       ],
-       [
-        "14:30",
-        "Entrada da NF no SimplesVet no mesmo dia; NF, XML e boleto entregues à Laís (BPO)"
-       ],
-       [
-        "15:15",
-        "Intervalo de almoço (1h) — o Bernardo cobre a internação"
+        "Suporte ao M.V. na internação e nos atendimentos (contenção, aferição de parâmetros); internação coberta das 13h às 15h"
        ]
       ]
      },
-     "say": "Doze, Reposição de insumos nos ambientes: internação, bloco cirúrgico e consultórios. Treze, Suporte ao médico veterinário em procedimentos, contenção e exames; cobertura da internação sem estagiário (das treze às quinze). Quatorze, Pedidos recebidos: nota fiscal conferida (pedido contra nota contra lote contra validade) — pode delegar ao estagiário. Quatorze e trinta, Entrada da nota fiscal no SimplesVet no mesmo dia; nota fiscal, xis eme ele e boleto entregues à Laís (bê pê ó). Quinze e quinze, Intervalo de almoço (uma hora) — o Bernardo cobre a internação."
+     "say": "Onze, Medicações retiradas sem lançamento verificadas; divergência à Thay no mesmo dia. Onze e trinta, Kits de internação montados e contados; devoluções dos estagiários conferidas. Doze, Intervalo de almoço (uma hora) — a Amanda cobre a internação. Treze, Suporte ao médico veterinário na internação e nos atendimentos (contenção, aferição de parâmetros); internação coberta das treze às quinze."
     },
     {
      "v": {
@@ -981,28 +961,20 @@ return {
       ],
       "rows": [
        [
-        "16:00",
-        "Temperatura da geladeira de medicamentos registrada (16h) — pode delegar ao Bernardo; conferir que o registro foi feito"
+        "14:00",
+        "Compras recebidas: NF conferida (pedido × nota × lote × validade) — pode delegar ao estagiário treinado"
        ],
        [
-        "16:15",
-        "Medicações do dia separadas conforme a prescrição; seringas identificadas"
+        "14:30",
+        "Entrada da NF e do boleto no SimplesVet no mesmo dia; NF, XML e boleto à Laís (BPO)"
        ],
        [
-        "17:00",
-        "Livro de controlados anotado com as saídas do dia, para assinatura do RT; receitas retidas arquivadas"
-       ],
-       [
-        "17:30",
-        "Estoque abaixo do mínimo anotado na lista de compras"
-       ],
-       [
-        "18:15",
-        "Descarte de perfurocortantes e resíduos dos setores (PGRSS)"
+        "15:30",
+        "Esterilização dos materiais do dia (embalados, identificados e registrados) — a Thay supervisiona"
        ]
       ]
      },
-     "say": "Dezesseis, Temperatura da geladeira de medicamentos registrada (dezesseis) — pode delegar ao Bernardo; conferir que o registro foi feito. Dezesseis e quinze, Medicações do dia separadas conforme a prescrição; seringas identificadas. Dezessete, Livro de controlados anotado com as saídas do dia, para assinatura do responsável técnico; receitas retidas arquivadas. Dezessete e trinta, Estoque abaixo do mínimo anotado na lista de compras. Dezoito e quinze, Descarte de perfurocortantes e resíduos dos setores (PGRSS)."
+     "say": "Quatorze, Compras recebidas: nota fiscal conferida (pedido contra nota contra lote contra validade) — pode delegar ao estagiário treinado. Quatorze e trinta, Entrada da nota fiscal e do boleto no SimplesVet no mesmo dia; nota fiscal, xis eme ele e boleto à Laís (bê pê ó). Quinze e trinta, Esterilização dos materiais do dia (embalados, identificados e registrados) — a Thay supervisiona."
     },
     {
      "v": {
@@ -1017,16 +989,52 @@ return {
       ],
       "rows": [
        [
+        "16:00",
+        "Temperatura da geladeira de medicamentos registrada (16h) — pode delegar ao Bernardo; conferir que o registro foi feito"
+       ],
+       [
+        "16:15",
+        "Medicações da prescrição dos internados puxadas e separadas; seringas identificadas"
+       ],
+       [
+        "17:00",
+        "Reposição de insumos e medicações nos ambientes: bloco cirúrgico, internação, consultórios, farmácia interna e maleta"
+       ]
+      ]
+     },
+     "say": "Dezesseis, Temperatura da geladeira de medicamentos registrada (dezesseis) — pode delegar ao Bernardo; conferir que o registro foi feito. Dezesseis e quinze, Medicações da prescrição dos internados puxadas e separadas; seringas identificadas. Dezessete, Reposição de insumos e medicações nos ambientes: bloco cirúrgico, internação, consultórios, farmácia interna e maleta."
+    },
+    {
+     "v": {
+      "type": "table",
+      "left": true,
+      "tag": "Sua rotina · Segunda a sexta (5)",
+      "h": "Igual ao **seu checklist**",
+      "grid": ".8fr 5fr",
+      "cols": [
+       "Hora",
+       "Tarefa"
+      ],
+      "rows": [
+       [
+        "17:30",
+        "Estoque abaixo do mínimo anotado na lista de compras"
+       ],
+       [
+        "18:15",
+        "Descarte de perfurocortantes e resíduos dos setores (PGRSS)"
+       ],
+       [
         "18:30",
         "Pacotes da noite e madrugada preparados e identificados"
        ],
        [
         "19:00",
-        "Passagem escrita à auxiliar noturna: pacotes, kits, pendências e faltas de estoque"
+        "Passagem escrita à aux. noturna: pacotes, kits, pendências e faltas de estoque"
        ]
       ]
      },
-     "say": "Dezoito e trinta, Pacotes da noite e madrugada preparados e identificados. Dezenove, Passagem escrita à auxiliar noturna: pacotes, kits, pendências e faltas de estoque."
+     "say": "Dezessete e trinta, Estoque abaixo do mínimo anotado na lista de compras. Dezoito e quinze, Descarte de perfurocortantes e resíduos dos setores (PGRSS). Dezoito e trinta, Pacotes da noite e madrugada preparados e identificados. Dezenove, Passagem escrita à aux. noturna: pacotes, kits, pendências e faltas de estoque."
     },
     {
      "v": {
@@ -1042,7 +1050,7 @@ return {
       "rows": [
        [
         "10:15",
-        "Passagem da auxiliar noturna lida"
+        "Passagem da aux. noturna lida"
        ],
        [
         "10:30",
@@ -1050,19 +1058,15 @@ return {
        ],
        [
         "11:00",
-        "Kits de internação produzidos para o fim de semana"
+        "Kits de internação montados para o fim de semana"
        ],
        [
         "11:30",
-        "Farmácia, maleta preta e ambientes abastecidos para o fim de semana"
-       ],
-       [
-        "12:30",
-        "Livro de controlados anotado (saídas de sexta e sábado)"
+        "Insumos e medicações suficientes para domingo (e feriado) repostos em todos os ambientes"
        ]
       ]
      },
-     "say": "Sábado. Dez e quinze, Passagem da auxiliar noturna lida. Dez e trinta, Saída no SimplesVet das medicações de sexta (kits e prescrições). Onze, Kits de internação produzidos para o fim de semana. Onze e trinta, Farmácia, maleta preta e ambientes abastecidos para o fim de semana. Doze e trinta, Livro de controlados anotado (saídas de sexta e sábado)."
+     "say": "Sábado. Dez e quinze, Passagem da aux. noturna lida. Dez e trinta, Saída no SimplesVet das medicações de sexta (kits e prescrições). Onze, Kits de internação montados para o fim de semana. Onze e trinta, Insumos e medicações suficientes para domingo (e feriado) repostos em todos os ambientes."
     },
     {
      "v": {
@@ -1077,16 +1081,20 @@ return {
       ],
       "rows": [
        [
+        "12:30",
+        "Esterilização dos materiais da semana conferida para o fim de semana"
+       ],
+       [
         "13:15",
         "Descarte de perfurocortantes e resíduos dos setores (PGRSS)"
        ],
        [
         "13:45",
-        "Passagem escrita ao Back/Plantonista e à noturna: o que fica até segunda"
+        "Passagem escrita à aux. de fim de semana, ao Back/Plantonista e à noturna: o que fica até segunda"
        ]
       ]
      },
-     "say": "Treze e quinze, Descarte de perfurocortantes e resíduos dos setores (PGRSS). Treze e quarenta e cinco, Passagem escrita ao Back ou Plantonista e à noturna: o que fica até segunda."
+     "say": "Doze e trinta, Esterilização dos materiais da semana conferida para o fim de semana. Treze e quinze, Descarte de perfurocortantes e resíduos dos setores (PGRSS). Treze e quarenta e cinco, Passagem escrita à aux. de fim de semana, ao Back ou Plantonista e à noturna: o que fica até segunda."
     },
     {
      "v": {
@@ -1101,28 +1109,24 @@ return {
       ],
       "rows": [
        [
-        "11:00",
-        "Insumos das máquinas da internação (IDEXX, hemogasômetro e demais) conferidos; falta na lista de compras à Thay"
-       ],
-       [
         "17:30",
         "Lista de compras da semana (insumos, medicamentos e vacinas) enviada à Thay (até 17h30)"
        ],
        [
+        "11:00",
+        "Insumos das máquinas da internação (IDEXX, hemogasômetro e demais) conferidos; falta na lista à Thay"
+       ],
+       [
+        "17:30",
+        "Contagem de vacinas e dos itens de maior saída (estoque × sistema); itens a vencer em 90 dias informados à Thay"
+       ],
+       [
         "17:30",
         "Montagem dos kits de testes rápidos"
-       ],
-       [
-        "17:30",
-        "Validade: produtos da loja e da internação a vencer em 90 dias informados à Thay e à Laís (promoção ou troca)"
-       ],
-       [
-        "17:30",
-        "Contagem de vacinas e dos itens de maior saída; estoque × sistema"
        ]
       ]
      },
-     "say": "Semanal. Onze, Insumos das máquinas da internação (IDEXX, hemogasômetro e demais) conferidos; falta na lista de compras à Thay. Dezessete e trinta, Lista de compras da semana (insumos, medicamentos e vacinas) enviada à Thay (até dezessete e trinta). Dezessete e trinta, Montagem dos kits de testes rápidos. Dezessete e trinta, Validade: produtos da loja e da internação a vencer em noventa dias informados à Thay e à Laís (promoção ou troca). Dezessete e trinta, Contagem de vacinas e dos itens de maior saída; estoque contra sistema."
+     "say": "Semanal. Dezessete e trinta, Lista de compras da semana (insumos, medicamentos e vacinas) enviada à Thay (até dezessete e trinta). Onze, Insumos das máquinas da internação (IDEXX, hemogasômetro e demais) conferidos; falta na lista à Thay. Dezessete e trinta, Contagem de vacinas e dos itens de maior saída (estoque contra sistema); itens a vencer em noventa dias informados à Thay. Dezessete e trinta, Montagem dos kits de testes rápidos."
     },
     {
      "v": {
@@ -1138,11 +1142,11 @@ return {
       "rows": [
        [
         "17:30",
-        "Livro de controlados entregue ao RT para assinatura; saldo físico conferido"
+        "Véspera de fim de semana: insumos e medicações suficientes para sábado, domingo e feriado"
        ]
       ]
      },
-     "say": "Dezessete e trinta, Livro de controlados entregue ao responsável técnico para assinatura; saldo físico conferido."
+     "say": "Dezessete e trinta, Véspera de fim de semana: insumos e medicações suficientes para sábado, domingo e feriado."
     },
     {
      "v": {
@@ -1158,27 +1162,15 @@ return {
       "rows": [
        [
         "17:30",
-        "Alopurinol separado para o alojamento e saída registrada"
-       ],
-       [
-        "17:30",
-        "Controle geral de validade (loja e internação); vencidos separados para descarte com registro"
-       ],
-       [
-        "17:30",
-        "Alopurinol separado para o alojamento e saída registrada"
-       ],
-       [
-        "17:30",
         "Lista mensal de compras de medicamentos enviada à Thay"
        ],
        [
         "17:30",
-        "Inventário geral e ajuste no SimplesVet (apoio dos estagiários)"
+        "Inventário geral e ajuste no SimplesVet, com a Thay (apoio dos estagiários)"
        ]
       ]
      },
-     "say": "Mensal. Dezessete e trinta, Alopurinol separado para o alojamento e saída registrada. Dezessete e trinta, Controle geral de validade (loja e internação); vencidos separados para descarte com registro. Dezessete e trinta, Alopurinol separado para o alojamento e saída registrada. Dezessete e trinta, Lista mensal de compras de medicamentos enviada à Thay. Dezessete e trinta, Inventário geral e ajuste no SimplesVet (apoio dos estagiários)."
+     "say": "Mensal. Dezessete e trinta, Lista mensal de compras de medicamentos enviada à Thay. Dezessete e trinta, Inventário geral e ajuste no SimplesVet, com a Thay (apoio dos estagiários)."
     },
     {
      "v": {
@@ -1198,23 +1190,19 @@ return {
        ],
        [
         "—",
-        "Temperatura da geladeira de medicamentos fora da faixa: M.V. de plantão e Thay avisados na hora; ocorrência registrada"
-       ],
-       [
-        "—",
-        "Falta urgente de item (atendimento parado): avisar a Thay na hora para compra emergencial"
-       ],
-       [
-        "—",
         "Conferência de NF delegada ao estagiário: revisada por ela antes da entrada no sistema"
        ],
        [
         "—",
-        "Emergência ou procedimento: suporte ao M.V. (contenção, materiais, monitoração)"
+        "Véspera de feriado: insumos e medicações suficientes para o feriado"
+       ],
+       [
+        "—",
+        "Temperatura da geladeira de medicamentos fora da faixa: M.V. de plantão e Thay avisados na hora; ocorrência registrada"
        ]
       ]
      },
-     "say": "Eventual. Entrega fora do dia previsto: nota fiscal conferida e entrada no SimplesVet no mesmo dia. Temperatura da geladeira de medicamentos fora da faixa: médico veterinário de plantão e Thay avisados na hora; ocorrência registrada. Falta urgente de item (atendimento parado): avisar a Thay na hora para compra emergencial. Conferência de nota fiscal delegada ao estagiário: revisada por ela antes da entrada no sistema. Emergência ou procedimento: suporte ao médico veterinário (contenção, materiais, monitoração)."
+     "say": "Eventual. Entrega fora do dia previsto: nota fiscal conferida e entrada no SimplesVet no mesmo dia. Conferência de nota fiscal delegada ao estagiário: revisada por ela antes da entrada no sistema. Véspera de feriado: insumos e medicações suficientes para o feriado. Temperatura da geladeira de medicamentos fora da faixa: médico veterinário de plantão e Thay avisados na hora; ocorrência registrada."
     },
     {
      "v": {
@@ -1230,22 +1218,26 @@ return {
       "rows": [
        [
         "—",
-        "Plantão de 12h no fim de semana (registrar hora extra ou banco de horas)"
+        "Falta urgente de item (atendimento parado): avisar a Thay na hora para compra emergencial"
+       ],
+       [
+        "—",
+        "Emergência ou procedimento: suporte ao M.V. (contenção, materiais, monitoração)"
        ]
       ]
      },
-     "say": "Plantão de meio-dia no fim de semana (registrar hora extra ou banco de horas)."
+     "say": "Falta urgente de item (atendimento parado): avisar a Thay na hora para compra emergencial. Emergência ou procedimento: suporte ao médico veterinário (contenção, materiais, monitoração)."
     }
    ],
    "quiz": {
-    "q": "Produto a vencer em 90 dias.",
+    "q": "Sexta ou véspera de feriado.",
     "o": [
-     "Avise a Thay e a Laís (loja e internação) para giro ou troca.",
+     "Deixe insumos e medicações suficientes em todos os ambientes até o próximo dia útil.",
      "Esperar a Laís perguntar",
      "Resolver sozinho e não contar a ninguém"
     ],
     "a": 0,
-    "why": "Avise a Thay e a Laís (loja e internação) para giro ou troca."
+    "why": "Deixe insumos e medicações suficientes em todos os ambientes até o próximo dia útil."
    }
   },
   {
@@ -1264,10 +1256,10 @@ return {
        "NF lançada no dia; conferência delegada é revisada por ela.",
        "Pacote noturno sempre identificado.",
        "Falta que para o atendimento: Thay na hora.",
-       "Temperatura da geladeira de medicamentos fora da faixa: M.V. de plantão e Vitor na hora, com registro."
+       "Temperatura da geladeira fora da faixa: M.V. de plantão e Thay na hora, com registro."
       ]
      },
-     "say": "As regras do cargo. Primeiro: divergência de estoque: avisar a Thay no mesmo dia. Depois: nota fiscal lançada no dia; conferência delegada é revisada por ela. Em seguida: pacote noturno sempre identificado. Também: falta que para o atendimento: Thay na hora. Por fim: temperatura da geladeira de medicamentos fora da faixa: médico veterinário de plantão e Vitor na hora, com registro."
+     "say": "As regras do cargo. Primeiro: divergência de estoque: avisar a Thay no mesmo dia. Depois: nota fiscal lançada no dia; conferência delegada é revisada por ela. Em seguida: pacote noturno sempre identificado. Também: falta que para o atendimento: Thay na hora. Por fim: temperatura da geladeira fora da faixa: médico veterinário de plantão e Thay na hora, com registro."
     },
     {
      "v": {
@@ -1276,13 +1268,13 @@ return {
       "tag": "Limites",
       "h": "Não é **sua função**",
       "items": [
-       "Pedido ou negociação com fornecedor (Thay).",
+       "Cotar, comprar ou negociar com fornecedor (Thay).",
+       "Escriturar o livro de controlados (Thay) ou assiná-lo (RT).",
        "Diagnosticar, prescrever ou mudar conduta.",
-       "Assinar o livro de controlados (RT).",
        "Limpeza pesada (faxina)."
       ]
      },
-     "say": "E o que não é sua função. Pedido ou negociação com fornecedor (Thay). Diagnosticar, prescrever ou mudar conduta. Assinar o livro de controlados (responsável técnico). Limpeza pesada (faxina)."
+     "say": "E o que não é sua função. Cotar, comprar ou negociar com fornecedor (Thay). Escriturar o livro de controlados (Thay) ou assiná-lo (responsável técnico). Diagnosticar, prescrever ou mudar conduta. Limpeza pesada (faxina)."
     },
     {
      "v": {
@@ -1292,7 +1284,7 @@ return {
       "two": true,
       "compact": true,
       "items": [
-       "Pontualidade e registro de ponto em todas as entradas, saídas e intervalos; troca de horário só com aprovação da Laís.",
+       "Pontualidade e registro de ponto em todas as entradas, saídas e intervalos; troca de horário só com aprovação da Laís (administrativo e faxina) ou da Thay (rotina clínica).",
        "Almoço sempre com cobertura definida (tabela de almoço da equipe).",
        "Passagem de turno sempre por escrito: pendências, pacientes, faltas de material e recados.",
        "Checklist do dia: só a coluna de hoje aceita marcação; ✔, ✘ (com motivo em Observações) ou N/A, e rubrica no dia.",
@@ -1300,18 +1292,18 @@ return {
        "Dados de tutores e pacientes só no sistema do hospital (LGPD): não trocar telefone pessoal com tutor, não fotografar nem divulgar prontuários, dependências ou clientes."
       ]
      },
-     "say": "E as regras gerais, que valem para toda a equipe. Pontualidade e registro de ponto em todas as entradas, saídas e intervalos; troca de horário só com aprovação da Laís. Almoço sempre com cobertura definida (tabela de almoço da equipe). Passagem de turno sempre por escrito: pendências, pacientes, faltas de material e recados. Checklist do dia: só a coluna de hoje aceita marcação; visto, xis (com motivo em Observações) ou não se aplica, e rubrica no dia. Um xis não é punição. Marcar visto sem realizar a atividade é fraude, passível de advertência. Dados de tutores e pacientes só no sistema do hospital (lei de proteção de dados): não trocar telefone pessoal com tutor, não fotografar nem divulgar prontuários, dependências ou clientes."
+     "say": "E as regras gerais, que valem para toda a equipe. Pontualidade e registro de ponto em todas as entradas, saídas e intervalos; troca de horário só com aprovação da Laís (administrativo e faxina) ou da Thay (rotina clínica). Almoço sempre com cobertura definida (tabela de almoço da equipe). Passagem de turno sempre por escrito: pendências, pacientes, faltas de material e recados. Checklist do dia: só a coluna de hoje aceita marcação; visto, xis (com motivo em Observações) ou não se aplica, e rubrica no dia. Um xis não é punição. Marcar visto sem realizar a atividade é fraude, passível de advertência. Dados de tutores e pacientes só no sistema do hospital (lei de proteção de dados): não trocar telefone pessoal com tutor, não fotografar nem divulgar prontuários, dependências ou clientes."
     }
    ],
    "quiz": {
-    "q": "Uso de medicamento controlado.",
+    "q": "Materiais usados no dia.",
     "o": [
      "Fazer do jeito que achar melhor, mesmo fora da regra",
-     "Anote no livro para assinatura do RT; arquive a receita retida.",
+     "Esterilize, identifique e registre; a Thay confere nas rondas.",
      "Deixar para o próximo turno, sem registrar"
     ],
     "a": 1,
-    "why": "Anote no livro para assinatura do RT; arquive a receita retida."
+    "why": "Esterilize, identifique e registre; a Thay confere nas rondas."
    }
   },
   {
@@ -1356,14 +1348,14 @@ return {
     }
    ],
    "quiz": {
-    "q": "O M.V. pediu apoio em procedimento.",
+    "q": "Fornecedor ligou oferecendo produto ou preço.",
     "o": [
-     "Suporte ao M.V. vem primeiro; registre o que ficou pendente na sua rotina.",
+     "Anote e passe à Thay; cotação e compra são dela.",
      "Ignorar, porque não é urgente",
      "Pedir para o tutor voltar outro dia"
     ],
     "a": 0,
-    "why": "Suporte ao M.V. vem primeiro; registre o que ficou pendente na sua rotina."
+    "why": "Anote e passe à Thay; cotação e compra são dela."
    }
   },
   {
@@ -1385,11 +1377,11 @@ return {
       "rows": [
        [
         "Item abaixo do estoque mínimo.",
-        "Entra na lista semanal de compras à Thay (segunda). Se parar o atendimento, avise a Thay na hora."
+        "Entra na lista semanal à Thay (segunda). Se parar o atendimento, avise a Thay na hora."
        ],
        [
         "Chegou uma compra.",
-        "Confira a NF (pode delegar ao estagiário e revisar), dê entrada no SimplesVet no mesmo dia e entregue NF, XML e boleto à Laís."
+        "Você recebe e confere a NF (pode delegar ao estagiário treinado e revisar), dá entrada no SimplesVet no mesmo dia e entrega NF, XML e boleto à Laís."
        ],
        [
         "Divergência no estoque.",
@@ -1397,7 +1389,7 @@ return {
        ]
       ]
      },
-     "say": "Quando: Item abaixo do estoque mínimo. Entra na lista semanal de compras à Thay (segunda). Se parar o atendimento, avise a Thay na hora. Quando: Chegou uma compra. Confira a nota fiscal (pode delegar ao estagiário e revisar), dê entrada no SimplesVet no mesmo dia e entregue nota fiscal, xis eme ele e boleto à Laís. Quando: Divergência no estoque. Avise a Thay no mesmo dia, com o item e a quantidade."
+     "say": "Quando: Item abaixo do estoque mínimo. Entra na lista semanal à Thay (segunda). Se parar o atendimento, avise a Thay na hora. Quando: Chegou uma compra. Você recebe e confere a nota fiscal (pode delegar ao estagiário treinado e revisar), dá entrada no SimplesVet no mesmo dia e entrega nota fiscal, xis eme ele e boleto à Laís. Quando: Divergência no estoque. Avise a Thay no mesmo dia, com o item e a quantidade."
     },
     {
      "v": {
@@ -1412,20 +1404,20 @@ return {
       ],
       "rows": [
        [
-        "Produto a vencer em 90 dias.",
-        "Avise a Thay e a Laís (loja e internação) para giro ou troca."
+        "Sexta ou véspera de feriado.",
+        "Deixe insumos e medicações suficientes em todos os ambientes até o próximo dia útil."
        ],
        [
-        "Uso de medicamento controlado.",
-        "Anote no livro para assinatura do RT; arquive a receita retida."
+        "Materiais usados no dia.",
+        "Esterilize, identifique e registre; a Thay confere nas rondas."
        ],
        [
-        "O M.V. pediu apoio em procedimento.",
-        "Suporte ao M.V. vem primeiro; registre o que ficou pendente na sua rotina."
+        "Fornecedor ligou oferecendo produto ou preço.",
+        "Anote e passe à Thay; cotação e compra são dela."
        ]
       ]
      },
-     "say": "Quando: Produto a vencer em noventa dias. Avise a Thay e a Laís (loja e internação) para giro ou troca. Quando: Uso de medicamento controlado. Anote no livro para assinatura do responsável técnico; arquive a receita retida. Quando: O médico veterinário pediu apoio em procedimento. Suporte ao médico veterinário vem primeiro; registre o que ficou pendente na sua rotina."
+     "say": "Quando: Sexta ou véspera de feriado. Deixe insumos e medicações suficientes em todos os ambientes até o próximo dia útil. Quando: Materiais usados no dia. Esterilize, identifique e registre; a Thay confere nas rondas. Quando: Fornecedor ligou oferecendo produto ou preço. Anote e passe à Thay; cotação e compra são dela."
     },
     {
      "v": {
@@ -1440,31 +1432,27 @@ return {
       ],
       "rows": [
        [
-        "Fornecedor ligou oferecendo produto ou preço.",
-        "Anote e passe à Thay; cotação e pedido são dela, com aprovação do Vitor."
-       ],
-       [
-        "Seu almoço (15h15–16h15).",
-        "O Bernardo cobre a internação; deixe as pendências escritas."
+        "Seu almoço (12h–13h).",
+        "A Amanda cobre a internação; deixe as pendências escritas."
        ],
        [
         "Temperatura da geladeira de medicamentos (10h e 16h).",
-        "Nos dias úteis, registre ou delegue (Amanda às 10h, Bernardo às 16h) e confira que os dois registros foram feitos. Sábados, domingos e feriados: a recepção registra. Fora da faixa: M.V. de plantão e Vitor na hora."
+        "Nos dias úteis, registre ou delegue (Amanda às 10h, Bernardo às 16h) e confira. Fora da faixa: M.V. de plantão e Thay na hora."
        ]
       ]
      },
-     "say": "Quando: Fornecedor ligou oferecendo produto ou preço. Anote e passe à Thay; cotação e pedido são dela, com aprovação do Vitor. Quando: Seu almoço (das quinze e quinze às dezesseis e quinze). O Bernardo cobre a internação; deixe as pendências escritas. Quando: Temperatura da geladeira de medicamentos (dez e dezesseis). Nos dias úteis, registre ou delegue (Amanda às dez, Bernardo às dezesseis) e confira que os dois registros foram feitos. Sábados, domingos e feriados: a recepção registra. Fora da faixa: médico veterinário de plantão e Vitor na hora."
+     "say": "Quando: Seu almoço (das doze às treze). A Amanda cobre a internação; deixe as pendências escritas. Quando: Temperatura da geladeira de medicamentos (dez e dezesseis). Nos dias úteis, registre ou delegue (Amanda às dez, Bernardo às dezesseis) e confira. Fora da faixa: médico veterinário de plantão e Thay na hora."
     }
    ],
    "quiz": {
-    "q": "Fornecedor ligou oferecendo produto ou preço.",
+    "q": "Seu almoço (12h–13h).",
     "o": [
      "Resolver sozinho e não contar a ninguém",
-     "Anote e passe à Thay; cotação e pedido são dela, com aprovação do Vitor.",
+     "A Amanda cobre a internação; deixe as pendências escritas.",
      "Esperar a Laís perguntar"
     ],
     "a": 1,
-    "why": "Anote e passe à Thay; cotação e pedido são dela, com aprovação do Vitor."
+    "why": "A Amanda cobre a internação; deixe as pendências escritas."
    }
   },
   {
@@ -1597,7 +1585,7 @@ return {
       "rows": [
        [
         "Indicadores",
-        "Divergências no inventário; rupturas; perdas por validade; NFs lançadas no dia; livro em dia; registros de temperatura da geladeira de medicamentos."
+        "Divergências no inventário; rupturas; NFs lançadas no dia; materiais esterilizados; registros de temperatura."
        ],
        [
         "Checklist",
@@ -1609,18 +1597,18 @@ return {
        ]
       ]
      },
-     "say": "Indicadores: Divergências no inventário; rupturas; perdas por validade; notas fiscais lançadas no dia; livro em dia; registros de temperatura da geladeira de medicamentos. Checklist: Meta: noventa por cento ou mais no mês. E todo dia quinze tem a conversa individual com a supervisão."
+     "say": "Indicadores: Divergências no inventário; rupturas; notas fiscais lançadas no dia; materiais esterilizados; registros de temperatura. Checklist: Meta: noventa por cento ou mais no mês. E todo dia quinze tem a conversa individual com a supervisão."
     }
    ],
    "quiz": {
-    "q": "Seu almoço (15h15–16h15).",
+    "q": "Temperatura da geladeira de medicamentos (10h e 16h).",
     "o": [
-     "O Bernardo cobre a internação; deixe as pendências escritas.",
+     "Nos dias úteis, registre ou delegue (Amanda às 10h, Bernardo às 16h) e confira. Fora da faixa: M.V. de plantão e Thay na hora.",
      "Deixar para o próximo turno, sem registrar",
      "Fazer do jeito que achar melhor, mesmo fora da regra"
     ],
     "a": 0,
-    "why": "O Bernardo cobre a internação; deixe as pendências escritas."
+    "why": "Nos dias úteis, registre ou delegue (Amanda às 10h, Bernardo às 16h) e confira. Fora da faixa: M.V. de plantão e Thay na hora."
    }
   },
   {
@@ -1634,13 +1622,13 @@ return {
       "tag": "Para levar com você",
       "h": "O essencial **do seu cargo**",
       "items": [
-       "Nenhum setor sem insumo, nenhum item vencido, nenhuma medicação sem lançamento, nenhuma nota sem entrada e o M.V. sempre apoiado.",
+       "Nenhum setor sem insumo, nenhuma medicação sem lançamento, nenhuma nota sem entrada, materiais esterilizados e o M.V. sempre apoiado.",
        "Divergência de estoque: avisar a Thay no mesmo dia.",
        "NF lançada no dia; conferência delegada é revisada por ela.",
        "Pacote noturno sempre identificado."
       ]
      },
-     "say": "Para fechar, o essencial. Nenhum setor sem insumo, nenhum item vencido, nenhuma medicação sem lançamento, nenhuma nota sem entrada e o médico veterinário sempre apoiado. Divergência de estoque: avisar a Thay no mesmo dia. Nota fiscal lançada no dia; conferência delegada é revisada por ela. Pacote noturno sempre identificado."
+     "say": "Para fechar, o essencial. Nenhum setor sem insumo, nenhuma medicação sem lançamento, nenhuma nota sem entrada, materiais esterilizados e o médico veterinário sempre apoiado. Divergência de estoque: avisar a Thay no mesmo dia. Nota fiscal lançada no dia; conferência delegada é revisada por ela. Pacote noturno sempre identificado."
     },
     {
      "v": {

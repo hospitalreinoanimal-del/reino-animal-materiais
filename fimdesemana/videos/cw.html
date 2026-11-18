@@ -113,7 +113,7 @@
 .bigstat .t small{display:block; font-family:var(--f-body); font-weight:400; font-size:1.7cqw; color:var(--s-dim); margin-top:1cqw}
 @media (prefers-reduced-motion: reduce){ .fx-blob,.fx-paw,.w,.hl,.bub,.rule::after,.s-title .lion::after{animation:none!important; opacity:1} }
 </style></head><body>
-<title>Treinamento individual · Raissa</title>
+<title>Treinamento · fimdesemana</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@500;700&display=swap">
@@ -638,132 +638,757 @@ button,select,input,textarea{font:inherit; color:inherit}
 
 <script>
 window.CARGO = (function(){
-const T = (n, sub, w, bars) => ({n, sub, w, bars});
 return {
-  id:'individual-raissa-v1', cargo:'Treinamento individual · Raissa', titulo:'Raissa: ==estoque, farmácia== e suporte ao M.V.', grupo:'Treinamento individual · Hospital Veterinário Reino Animal · 30/10/2026',
-  ciencia:'Assisti ao meu treinamento individual e conheço a minha rotina de estoque, compras, notas fiscais, farmácia, controlados, geladeira de medicamentos, máquinas da internação e suporte ao M.V., o que posso delegar e o que é só meu.',
-  rodape:'Base: política e premissas do cargo (v. 30/10/2026), checklist da Raissa e manual de consulta. A narração usa a voz instalada no aparelho; a mais natural costuma ser a do Microsoft Edge.',
-  chapters:[
-    {id:'abertura', title:'Abertura', small:'O seu papel no hospital',
-     beats:[
-      {v:{type:'title', dark:true, tag:'Treinamento individual · Raissa', h:'Nenhum setor **sem insumo**', sub:'Nenhum item vencido, nenhuma medicação sem lançamento, nenhuma nota sem entrada e o M.V. sempre apoiado.', chips:['Estoque','Compras','Farmácia','Suporte ao M.V.'], lastOn:true},
-       say:'Olá, Raissa! Este é o seu treinamento individual. A sua missão no hospital é esta: nenhum setor sem insumo, nenhum item vencido, nenhuma medicação sem lançamento, nenhuma nota sem entrada, e o médico veterinário sempre apoiado.'},
-      {v:{type:'list', tag:'Roteiro', h:'O que você vai ver', two:true, compact:true, num:true, items:['O seu dia e quem te apoia','Geladeira de medicamentos','Estoque no sistema','Lista de compras com a Thay','Recebimento e nota fiscal','Farmácia e controlados','Validade','Máquinas e setores','Suporte ao M.V.','Delegar sem perder o controle','Passagens e limites']},
-       say:'O roteiro. O seu dia e quem te apoia. A geladeira de medicamentos, que é novidade. O estoque no sistema, a lista de compras com a Thay, o recebimento e a nota fiscal. A farmácia e os controlados, a validade, as máquinas e os setores. O suporte ao médico veterinário. Como delegar sem perder o controle. E, por fim, as passagens e os limites do cargo.'}]},
-
-    {id:'dia', title:'O seu dia', small:'Jornada e quem te apoia',
-     beats:[
-      {v:{type:'timeline', tag:'Segunda a sábado', h:'O seu dia e **quem te apoia**', rows:[
-        T('Raissa · seg a sex','manhã e tarde; almoço 15h15–16h15','aux',[[10.25,15.25,'10h15–15h15'],[16.25,19.25,'16h15–19h15']]),
-        T('Raissa · sábado','kits e farmácia do fim de semana','aux',[[10.25,14,'10h15–14h']]),
-        T('Amanda · estagiária','manhã; temperatura das 10h','aux',[[8,13,'07h–13h']]),
-        T('Bernardo · estagiário','tarde; cobre o seu almoço','aux',[[15,21,'15h–21h']]),
-        T('Aux. Vet. Noturna','recebe a sua passagem','aux',[[19,31,'19h–07h']])]},
-       say:'De segunda a sexta, você começa às dez e quinze, almoça das quinze e quinze às dezesseis e quinze, e fecha o dia com a passagem às dezenove. No sábado, das dez e quinze às quatorze, você deixa kits, farmácia e ambientes prontos para o fim de semana. A Amanda está de manhã e registra a temperatura das dez. O Bernardo chega às quinze, cobre o seu almoço e registra a temperatura das dezesseis. E a auxiliar noturna recebe a sua passagem.'},
-      {v:{type:'table', left:true, tag:'A quem você responde', h:'Cada assunto tem **um dono**', grid:'1.6fr 3fr', cols:['Assunto','Com quem'], rows:[
-        ['Estoque, compras e custos','**Thay**'],['Pacientes e suporte clínico','**M.V. responsável** ou de plantão'],['Escala, folga e horário','**Thay**'],['Livro de controlados','**Marcos Veloso** (RT) assina'],['Apoio no dia a dia','**Amanda** (manhã) e **Bernardo** (tarde)']]},
-       say:'A quem você responde. Estoque, compras e custos, com a Thay. Pacientes e suporte clínico, com o médico veterinário responsável ou de plantão. Escala, folga e horário, com a Thay. O livro de controlados é assinado pelo responsável técnico, o doutor Marcos Veloso. E no dia a dia, você tem o apoio da Amanda de manhã e do Bernardo à tarde.'}],
-     quiz:{q:'Quem cobre a internação no seu almoço, das 15h15 às 16h15?', o:['A recepção','O Bernardo','Ninguém, a internação espera'], a:1, why:'O Bernardo cobre a internação no seu almoço. Deixe as pendências escritas antes de sair.'}},
-
-    {id:'geladeira', title:'Geladeira de medicamentos', small:'Registro às 10h e às 16h',
-     beats:[
-      {v:{type:'rule', tone:'rule', tag:'Novidade · geladeira de medicamentos', txt:'Temperatura registrada **às 10h e às 16h** nos dias úteis.', sub:'O registro é responsabilidade sua. Você pode delegar à Amanda (10h) e ao Bernardo (16h), mas confere todo dia que os dois foram feitos. Sábados, domingos e feriados: a recepção registra.'},
-       say:'Novidade na sua rotina: a temperatura da geladeira de medicamentos é registrada às dez e às dezesseis, nos dias úteis. O registro é responsabilidade sua. Você pode delegar à Amanda o das dez e ao Bernardo o das dezesseis, mas é você quem confere, todo dia, que os dois foram feitos.'},
-      {v:{type:'flow', tag:'Como funciona', h:'Delegar, **conferir** e agir', steps:[
-        {n:'1', t:'10h · registro', w:[['aux','Amanda (ou você)']]},{n:'2', t:'10h15 · confere', w:[['aux','você, ao chegar']]},
-        {n:'3', t:'16h · registro', w:[['aux','Bernardo (seu almoço)']]},{n:'4', t:'16h15 · confere', w:[['aux','você, na volta']]},
-        {n:'!', t:'Fora da faixa', w:[['plant','M.V. de plantão e Thay']]}], me:[1,3]},
-       say:'Funciona assim. Às dez, a Amanda registra; às dez e quinze, quando você chega, confere. Às dezesseis, o Bernardo registra, porque você está no almoço; às dezesseis e quinze, na volta, você confere. Se a temperatura estiver fora da faixa, avise na hora o médico veterinário de plantão e a Thay, e registre a ocorrência. Nos sábados, domingos e feriados, quem registra a geladeira de medicamentos é a recepção.'},
-      {v:{type:'split', tag:'Não confundir', h:'Duas geladeiras, **dois donos**', a:{k:'Geladeira de medicamentos', h:'**Você** é a dona', items:['Dias úteis: 10h e 16h','Amanda e Bernardo podem registrar','Fim de semana e feriado: recepção'], w:'aux'}, b:{k:'Geladeira de vacinas', h:'A **recepção** registra', items:['08h e 16h','Fora da faixa: avisam você e o M.V.','Você ajuda a resolver'], w:'rec'}},
-       say:'Não confunda as duas geladeiras. A de medicamentos é sua nos dias úteis, com registro às dez e às dezesseis; nos sábados, domingos e feriados, a recepção registra. A de vacinas é registrada pela recepção, às oito e às dezesseis; se der fora da faixa, a recepção avisa você e o médico veterinário de plantão.'}],
-     quiz:{q:'O Bernardo registrou a temperatura das 16h. O que falta?', o:['Nada, a tarefa é dele','Você conferir o registro na volta do almoço','Avisar a Laís'], a:1, why:'Quem delega confere. O registro é sua responsabilidade: na volta do almoço, você confere que foi feito.'}},
-
-    {id:'estoque', title:'Estoque no sistema', small:'O estoque só bate se tudo for lançado',
-     beats:[
-      {v:{type:'flow', tag:'Todo dia', h:'O estoque só bate **se tudo for lançado**', steps:[
-        {n:'1', t:'10h30 · saídas de ontem', w:[['aux','kits, prescrições, maleta']]},{n:'2', t:'11h · sem lançamento?', w:[['aux','medicações retiradas']]},{n:'!', t:'Divergência', w:[['ger','Thay no mesmo dia']]}], me:[0,1]},
-       say:'Todo dia, às dez e meia, você dá saída no SimplesVet das medicações e insumos usados ontem: kits, prescrições e maleta. Às onze, verifica as medicações retiradas sem lançamento. Achou divergência? Avise a Thay no mesmo dia, com o item e a quantidade.'},
-      {v:{type:'table', left:true, tag:'Contagens', h:'Quando você **conta**', grid:'1.3fr 3.4fr', cols:['Quando','O quê'], rows:[
-        ['Quinta, 17h30','Vacinas e itens de maior saída: estoque × sistema'],['Último dia do mês','Inventário geral e ajuste no SimplesVet, com apoio dos estagiários']]},
-       say:'As contagens. Toda quinta, às dezessete e trinta, você conta as vacinas e os itens de maior saída, comparando o estoque com o sistema. E no último dia do mês, faz o inventário geral e o ajuste no SimplesVet, com o apoio dos estagiários.'}],
-     quiz:{q:'Você achou um item com quantidade diferente do sistema. O que faz?', o:['Ajusta o sistema e segue','Avisa a Thay no mesmo dia, com item e quantidade','Espera o inventário do fim do mês'], a:1, why:'Divergência de estoque vai à Thay no mesmo dia. O ajuste geral é no inventário mensal.'}},
-
-    {id:'compras', title:'Lista de compras', small:'Você monta; a Thay pede',
-     beats:[
-      {v:{type:'flow', tag:'Compras', h:'Você monta a lista; **a Thay pede**', steps:[
-        {n:'1', t:'Abaixo do mínimo', w:[['aux','anota no dia']]},{n:'2', t:'Lista da semana', w:[['aux','segunda, até 17h30']]},{n:'3', t:'Cotação e pedido', w:[['ger','Thay · Vitor aprova']]},{n:'4', t:'Chegou', w:[['aux','conferência e NF']]}], me:[0,1,3]},
-       say:'Compras. Item abaixo do estoque mínimo é anotado no mesmo dia na lista de compras. Toda segunda, até as dezessete e trinta, a lista da semana, com insumos, medicamentos e vacinas, vai à Thay. A cotação, o pedido ao fornecedor e a negociação são da Thay, com aprovação do Vitor. Quando a compra chega, volta para você conferir e dar entrada.'},
-      {v:{type:'table', left:true, tag:'Situações', h:'E quando **foge da rotina**', grid:'1.6fr 3fr', cols:['Situação','O que fazer'], rows:[
-        ['Falta que para o atendimento','**Thay na hora**, para compra emergencial'],['Lista mensal de medicamentos','À Thay **até o dia 25**'],['Fornecedor ligou oferecendo produto','Anote e passe à Thay; você não negocia'],['Insumo das máquinas acabando','Entra na lista da semana']]},
-       say:'E quando foge da rotina. Se a falta para o atendimento, avise a Thay na hora, para compra emergencial. A lista mensal de medicamentos vai à Thay até o dia vinte e cinco. Se um fornecedor ligar oferecendo produto ou preço, anote e passe à Thay: você não negocia. E insumo das máquinas acabando entra na lista da semana.'}],
-     quiz:{q:'Acabou um insumo e o M.V. não consegue atender. O que você faz?', o:['Coloca na lista de segunda','Avisa a Thay na hora, para compra emergencial','Pede direto ao fornecedor'], a:1, why:'Falta que para o atendimento vai à Thay na hora. Pedido ao fornecedor é sempre da Thay.'}},
-
-    {id:'nf', title:'Recebimento e nota fiscal', small:'Entrada no mesmo dia',
-     beats:[
-      {v:{type:'flow', tag:'Chegou uma compra', h:'Nota conferida e **lançada no mesmo dia**', steps:[
-        {n:'1', t:'Conferir', w:[['aux','pedido × nota × lote × validade']]},{n:'2', t:'Revisar', w:[['aux','se o Bernardo conferiu']]},{n:'3', t:'Entrada', w:[['aux','SimplesVet, no mesmo dia']]},{n:'4', t:'Documentos', w:[['ger','NF, XML e boleto à Laís']]}], me:[0,1,2]},
-       say:'Chegou uma compra. Primeiro, confira pedido contra nota, lote e validade. Essa conferência você pode delegar ao Bernardo, mas revisa antes de lançar. A entrada no SimplesVet é sua, sempre no mesmo dia. Depois, a nota, o XML e o boleto vão para a Laís, que leva ao BPO financeiro.'},
-      {v:{type:'rule', tone:'no', tag:'Regra', txt:'A **entrada da NF no sistema é só sua**.', sub:'Entrega fora do dia previsto também entra no mesmo dia. Ninguém da equipe envia documento direto ao BPO: a ponte é a Laís.'},
-       say:'Guarde a regra: a entrada da nota fiscal no sistema é só sua. Entrega fora do dia previsto também entra no mesmo dia. E ninguém da equipe envia documento direto ao BPO: a ponte é a Laís.'}],
-     quiz:{q:'O Bernardo conferiu uma nota. Quem dá entrada no SimplesVet?', o:['O Bernardo','Você, depois de revisar a conferência','A Laís'], a:1, why:'A conferência pode ser delegada, mas a entrada no sistema é sua, depois de revisar.'}},
-
-    {id:'farmacia', title:'Farmácia e controlados', small:'Medicação identificada, livro em dia',
-     beats:[
-      {v:{type:'table', left:true, tag:'Farmácia', h:'A farmácia **sempre pronta**', grid:'.8fr 4fr', cols:['Hora','O quê'], rows:[
-        ['11h30','Armário de medicamentos, maleta preta e farmácia da recepção repostos'],['16h15','Medicações do dia separadas conforme a prescrição; seringas identificadas'],['18h30','Pacotes da noite e da madrugada preparados e identificados']]},
-       say:'A farmácia sempre pronta. Às onze e meia, o armário de medicamentos, a maleta preta e a farmácia da recepção repostos. Às dezesseis e quinze, as medicações do dia separadas conforme a prescrição, com as seringas identificadas. E às dezoito e trinta, os pacotes da noite e da madrugada preparados e identificados. Segurança do paciente primeiro: medicação sempre identificada.'},
-      {v:{type:'table', left:true, tag:'Controlados', h:'Livro em dia, **assinado pelo RT**', grid:'1.3fr 3.4fr', cols:['Quando','O quê'], rows:[
-        ['Todo dia, 17h','Livro anotado com as saídas do dia; receitas retidas arquivadas'],['Sábado, 12h30','Saídas de sexta e sábado anotadas'],['Sexta','Livro entregue ao RT (Marcos Veloso) para assinatura; saldo físico conferido']]},
-       say:'Os controlados. Todo dia, às dezessete, você anota no livro as saídas do dia e arquiva as receitas retidas, que a recepção te entrega. No sábado, às doze e trinta, anota as saídas de sexta e sábado. E toda sexta, entrega o livro ao responsável técnico, o doutor Marcos Veloso, para assinatura, conferindo o saldo físico. Você anota; quem assina é o responsável técnico.'}],
-     quiz:{q:'Quem assina o livro de controlados?', o:['Você','O RT, Marcos Veloso','O M.V. de plantão'], a:1, why:'Você anota as saídas e arquiva as receitas; a assinatura é do responsável técnico, o doutor Marcos Veloso.'}},
-
-    {id:'validade', title:'Validade', small:'Nenhum item vencido',
-     beats:[
-      {v:{type:'table', left:true, tag:'Validade', h:'Nenhum item **vencido**', grid:'1.3fr 3.4fr', cols:['Quando','O quê'], rows:[
-        ['Quarta, 17h30','Loja e internação: itens a vencer em 90 dias informados à Thay e à Laís (promoção ou troca)'],['Dia 5 do mês','Controle geral de validade; vencidos separados para descarte, com registro']]},
-       say:'Validade. Toda quarta, às dezessete e trinta, você informa à Thay e à Laís os itens da loja e da internação que vencem em noventa dias, para promoção ou troca. E no dia cinco de cada mês, faz o controle geral: vencidos separados para descarte, com registro.'}],
-     quiz:{q:'Um produto da loja vence em 2 meses. O que fazer?', o:['Nada até vencer','Avisar a Thay e a Laís, para promoção ou troca','Descartar agora'], a:1, why:'Itens a vencer em 90 dias vão à Thay e à Laís, para dar giro ou trocar com o fornecedor.'}},
-
-    {id:'setores', title:'Máquinas e setores', small:'IDEXX, hemogasômetro e reposição',
-     beats:[
-      {v:{type:'table', left:true, tag:'Máquinas e setores', h:'Cada setor **abastecido**', grid:'1.3fr 3.4fr', cols:['Quando','O quê'], rows:[
-        ['Segunda, 11h','Insumos das máquinas da internação (IDEXX, hemogasômetro e demais) conferidos; falta na lista à Thay'],['Todo dia, 12h','Reposição na internação, no bloco cirúrgico e nos consultórios'],['Terça, 17h30','Kits de testes rápidos montados'],['Todo dia, 18h15','Descarte de perfurocortantes e resíduos dos setores (PGRSS)'],['Dias 1 e 15','Alopurinol separado para o alojamento, com saída registrada']]},
-       say:'Máquinas e setores. Toda segunda, às onze, você confere os insumos das máquinas da internação, como o IDEXX e o hemogasômetro; o que faltar entra na lista da Thay. Todo dia, ao meio-dia, repõe os insumos da internação, do bloco cirúrgico e dos consultórios. Às terças, monta os kits de testes rápidos. Todo dia, às dezoito e quinze, faz o descarte de perfurocortantes e resíduos. E nos dias um e quinze, separa o alopurinol do alojamento, com a saída registrada.'},
-      {v:{type:'rule', tone:'ok', tag:'Não é sua função', txt:'Almotolias, caixas de lixo hospitalar e limpeza dos consultórios são **da faxina**.', sub:'Você higieniza e organiza o que usa; a limpeza pesada e a desinfecção dos consultórios são da faxina, que responde à Laís.'},
-       say:'Atenção: a reposição das almotolias e das caixas de lixo hospitalar, e a limpeza e a desinfecção dos consultórios, são da faxina, que responde à Laís. Você higieniza e organiza o que usa; a limpeza pesada não é sua.'}],
-     quiz:{q:'O hemogasômetro está com o insumo acabando. O que fazer?', o:['Esperar acabar','Colocar na lista de compras à Thay','Pedir à faxina'], a:1, why:'Os insumos das máquinas da internação são seus: o que está acabando entra na lista da Thay; se parar o atendimento, Thay na hora.'}},
-
-    {id:'suporte', title:'Suporte ao M.V.', small:'O paciente vem primeiro',
-     beats:[
-      {v:{type:'list', tag:'Suporte ao M.V.', h:'O paciente **vem primeiro**', num:true, items:['Procedimentos, contenção, exames e internação, sempre com o M.V.','Das 13h às 15h, você cobre a internação sem estagiário','Emergência: suporte ao M.V. primeiro; a rotina espera, com a pendência registrada','Nunca diagnostica, prescreve ou muda conduta']},
-       say:'O suporte ao médico veterinário. Você apoia procedimentos, contenção, exames e internação, sempre com o médico veterinário. Das treze às quinze, cobre a internação, que está sem estagiário. Na emergência, o suporte ao médico veterinário vem primeiro; a sua rotina espera, com a pendência registrada. E você nunca diagnostica, prescreve ou muda conduta.'}],
-     quiz:{q:'Chegou uma emergência enquanto você lançava uma nota. O que vem primeiro?', o:['Terminar a nota','O suporte ao M.V.; a nota fica registrada como pendente','Chamar a recepção'], a:1, why:'Suporte ao M.V. vem primeiro. A nota entra depois, ainda no mesmo dia.'}},
-
-    {id:'delegar', title:'Delegar sem perder o controle', small:'Quem delega confere',
-     beats:[
-      {v:{type:'split', tag:'Delegar', h:'Quem delega **confere**', a:{k:'Pode delegar', h:'Amanda e **Bernardo**', items:['Temperatura das 10h (Amanda) e das 16h (Bernardo)','Conferência da NF (Bernardo)','Reposição, contagem e inventário','Demandas manuais de controle básico'], w:'aux'}, b:{k:'Só você', h:'Não se **delega**', items:['Entrada da NF no SimplesVet','Livro de controlados','Lista de compras à Thay','Conferência dos registros de temperatura (dias úteis)'], w:'back'}},
-       say:'Delegar sem perder o controle. Você pode delegar à Amanda a temperatura das dez e ao Bernardo a temperatura das dezesseis, a conferência da nota, a reposição, as contagens e as demandas manuais. Mas não se delega: a entrada da nota no SimplesVet, o livro de controlados, a lista de compras à Thay e a conferência dos registros de temperatura. Regra de ouro: quem delega confere.'}],
-     quiz:{q:'Qual destas tarefas você NÃO pode delegar?', o:['Registrar a temperatura das 16h','Anotar o livro de controlados','Conferir uma NF'], a:1, why:'O livro de controlados é só seu. Temperatura e conferência de NF podem ser delegadas, com a sua conferência.'}},
-
-    {id:'passagens', title:'Passagens e limites', small:'Tudo por escrito',
-     beats:[
-      {v:{type:'table', left:true, tag:'Passagens', h:'Tudo **por escrito**', grid:'1.1fr 3.6fr', cols:['Quando','Passagem'], rows:[
-        ['10h15','Lê a passagem da auxiliar noturna e da Amanda; combina prioridades com a Internista'],['15h','Passa ao Bernardo as pendências da internação e do estoque'],['19h','Passagem escrita à auxiliar noturna: pacotes, kits, pendências e faltas'],['Sábado, 13h45','Ao Back, ao Plantonista e à noturna: o que fica até segunda']]},
-       say:'As passagens, sempre por escrito. Às dez e quinze, você lê a passagem da auxiliar noturna e da Amanda e combina as prioridades com a Internista. Às quinze, passa ao Bernardo as pendências da internação e do estoque. Às dezenove, faz a passagem escrita à auxiliar noturna: pacotes, kits, pendências e faltas. E no sábado, às treze e quarenta e cinco, passa ao Back, ao Plantonista e à noturna o que fica até segunda.'},
-      {v:{type:'list', no:true, tag:'Limites', h:'Não é **sua função**', items:['Pedido ou negociação com fornecedor (Thay)','Diagnosticar, prescrever ou mudar conduta (M.V.)','Assinar o livro de controlados (RT)','Limpeza pesada e desinfecção dos consultórios (faxina)']},
-       say:'E o que não é sua função: pedido ou negociação com fornecedor, que é da Thay; diagnosticar, prescrever ou mudar conduta, que é do médico veterinário; assinar o livro de controlados, que é do responsável técnico; e a limpeza pesada, que é da faxina.'}]},
-
-    {id:'fim', title:'Indicadores e ciência', small:'Como você é acompanhada',
-     beats:[
-      {v:{type:'table', left:true, tag:'Indicadores', h:'Como você é **acompanhada**', grid:'1.3fr 3.4fr', cols:['Item','Detalhe'], rows:[
-        ['Indicadores','Divergências no inventário, rupturas, perdas por validade, NFs lançadas no dia, livro em dia e registros de temperatura'],['Checklist','Meta: 90% ou mais no mês; ✔ sem fazer é fraude'],['Conversa individual','Todo dia 15, com a supervisão']]},
-       say:'Como você é acompanhada. Os indicadores são as divergências no inventário, as rupturas, as perdas por validade, as notas lançadas no dia, o livro em dia e os registros de temperatura. A meta do checklist é noventa por cento ou mais no mês, e marcar visto sem fazer é fraude. Todo dia quinze, há a conversa individual com a supervisão.'},
-      {v:{type:'title', dark:true, tag:'Hospital Veterinário Reino Animal', h:'Quem repõe **também controla.**', sub:'Consulte o seu manual de consulta e a política do cargo sempre que precisar. Envie o comprovante deste treinamento.', chips:['Estoque','Farmácia','Suporte'], lastOn:true},
-       say:'Para fechar: quem repõe também controla. Consulte o seu manual de consulta e a política do cargo sempre que precisar, e envie o comprovante deste treinamento. Obrigado, Raissa!'}],
-     detail:[{p:'Ao terminar, abra **Comprovante**, marque a ciência e envie pelo Gmail (hospitalreinoanimal@gmail.com) ou pelo WhatsApp da gestão (31 99711-9014).'}]}
-  ]};
+ "id": "cargo-fimdesemana",
+ "cargo": "Treinamento · Auxiliar Veterinária de Fim de Semana e Feriado",
+ "titulo": "Auxiliar Veterinária de Fim de Semana e Feriado",
+ "grupo": "Treinamento do cargo · versão 18/11/2026",
+ "ciencia": "Assisti ao treinamento da auxiliar veterinária de fim de semana e conheço a rotina do plantão, as regras e os limites.",
+ "rodape": "Base: premissas do cargo (versão 4), checklists v10 e manual de consulta (18/11/2026). A narração usa a voz instalada no aparelho; a voz mais natural costuma ser a do Microsoft Edge.",
+ "chapters": [
+  {
+   "id": "abertura",
+   "title": "Abertura",
+   "small": "O seu cargo em vídeo",
+   "beats": [
+    {
+     "v": {
+      "type": "title",
+      "dark": true,
+      "tag": "Treinamento do cargo · Reino Animal",
+      "h": "**Auxiliar Veterinária de Fim de Semana e Feriado**",
+      "sub": "Assumir no fim de semana e no feriado o suporte e as atividades das auxiliares e dos estagiários do dia.",
+      "chips": [
+       "Rotina",
+       "Regras",
+       "Atendimento",
+       "Checklist"
+      ],
+      "lastOn": true
+     },
+     "say": "Olá! Este é o treinamento do cargo Auxiliar Veterinária de Fim de Semana e Feriado, do Hospital Veterinário Reino Animal. A missão do cargo é esta: Assumir no fim de semana e no feriado o suporte e as atividades das auxiliares e dos estagiários do dia."
+    },
+    {
+     "v": {
+      "type": "list",
+      "tag": "Roteiro",
+      "h": "O que você vai ver",
+      "two": true,
+      "compact": true,
+      "num": true,
+      "items": [
+       "Seu cargo",
+       "Como você trabalha",
+       "Você é dono de",
+       "Sua rotina",
+       "Regras e limites",
+       "Boas condutas com o tutor",
+       "Situações do dia a dia",
+       "Emergência e óbito",
+       "Checklist e indicadores"
+      ]
+     },
+     "say": "O roteiro. Primeiro, o seu cargo e como você trabalha. Depois, do que você é dono e a sua rotina, igual ao checklist. Em seguida, as regras, os limites e as boas condutas com o tutor. E, por fim, as situações do dia a dia, a emergência e o óbito, e o checklist."
+    }
+   ]
+  },
+  {
+   "id": "cargo",
+   "title": "Seu cargo",
+   "small": "Jornada e a quem responde",
+   "beats": [
+    {
+     "v": {
+      "type": "table",
+      "left": true,
+      "tag": "Seu cargo",
+      "h": "Quem você é **no hospital**",
+      "grid": "1.2fr 4fr",
+      "cols": [
+       "Item",
+       "Detalhe"
+      ],
+      "rows": [
+       [
+        "Cargo",
+        "Auxiliar Veterinária de fim de semana e feriado (free lancer)"
+       ],
+       [
+        "Ocupantes",
+        "Aux. veterinárias free lancer da escala"
+       ],
+       [
+        "Jornada",
+        "Sábados, domingos e/ou feriados, das 07h às 19h, com 1h de almoço combinada com o M.V. de plantão."
+       ],
+       [
+        "Responde a",
+        "Thay (escala e rotina); M.V. de plantão (condutas); Raissa (estoque)."
+       ]
+      ]
+     },
+     "say": "Cargo: Auxiliar Veterinária de fim de semana e feriado (free lancer). Ocupantes: auxiliar veterinárias free lancer da escala. Jornada: Sábados, domingos e ou ou feriados, das sete às dezenove, com uma hora de almoço combinada com o médico veterinário de plantão. Responde a: Thay (escala e rotina); médico veterinário de plantão (condutas); Raissa (estoque)."
+    },
+    {
+     "v": {
+      "type": "rule",
+      "tone": "ok",
+      "tag": "Missão",
+      "txt": "Assumir no fim de semana e no feriado o suporte e as atividades das auxiliares e dos estagiários do dia.",
+      "sub": "Tudo o que você faz no dia serve a esta missão."
+     },
+     "say": "Guarde a sua missão: Assumir no fim de semana e no feriado o suporte e as atividades das auxiliares e dos estagiários do dia. Tudo o que você faz no dia serve a ela."
+    }
+   ],
+   "quiz": {
+    "q": "Começo do plantão (7h).",
+    "o": [
+     "Resolver sozinho e não contar a ninguém",
+     "Ouça a passagem da noturna com o M.V. e grave os vídeos de notícias entre 7h e 8h, com aval do M.V.",
+     "Esperar a Laís perguntar"
+    ],
+    "a": 1,
+    "why": "Ouça a passagem da noturna com o M.V. e grave os vídeos de notícias entre 7h e 8h, com aval do M.V."
+   }
+  },
+  {
+   "id": "premissas",
+   "title": "Como você trabalha",
+   "small": "As premissas do cargo",
+   "beats": [
+    {
+     "v": {
+      "type": "list",
+      "tag": "Premissas",
+      "h": "Como o cargo **trabalha**",
+      "items": [
+       "Nada clínico sem um M.V. presente.",
+       "Segue a mesma rotina dos estagiários e da Raissa, no plantão de 12h.",
+       "Tudo que sai do estoque fica registrado para a Raissa."
+      ]
+     },
+     "say": "Como o cargo trabalha. Primeiro: nada clínico sem um médico veterinário presente. Depois: segue a mesma rotina dos estagiários e da Raissa, no plantão de meio-dia. Por fim: tudo que sai do estoque fica registrado para a Raissa."
+    }
+   ],
+   "quiz": {
+    "q": "O M.V. não está presente e um paciente precisa de algo.",
+    "o": [
+     "Nada clínico sem o M.V. Chame o M.V. de plantão.",
+     "Deixar para o próximo turno, sem registrar",
+     "Fazer do jeito que achar melhor, mesmo fora da regra"
+    ],
+    "a": 0,
+    "why": "Nada clínico sem o M.V. Chame o M.V. de plantão."
+   }
+  },
+  {
+   "id": "resp",
+   "title": "Você é dono de",
+   "small": "Responsabilidades",
+   "beats": [
+    {
+     "v": {
+      "type": "table",
+      "left": true,
+      "tag": "Responsabilidades · 1",
+      "h": "Você é **dono(a) de**",
+      "grid": "1.3fr 3.6fr",
+      "cols": [
+       "Frente",
+       "O que faz"
+      ],
+      "rows": [
+       [
+        "Internação",
+        "Alimentação, baias, medicações da prescrição e suporte ao M.V."
+       ],
+       [
+        "Vídeos de notícias",
+        "Gravados com aval do M.V. e enviados entre 7h e 8h."
+       ],
+       [
+        "Ambientes",
+        "Limpeza e organização após o uso; esterilização dos materiais."
+       ],
+       [
+        "Estoque",
+        "Kits e insumos repostos; uso registrado para a saída da Raissa."
+       ]
+      ]
+     },
+     "say": "Você é dono das seguintes frentes. Internação: Alimentação, baias, medicações da prescrição e suporte ao médico veterinário. Vídeos de notícias: Gravados com aval do médico veterinário e enviados entre sete e oito. Ambientes: Limpeza e organização após o uso; esterilização dos materiais. Estoque: Kits e insumos repostos; uso registrado para a saída da Raissa."
+    },
+    {
+     "v": {
+      "type": "table",
+      "left": true,
+      "tag": "Responsabilidades · 2",
+      "h": "Você é **dono(a) de**",
+      "grid": "1.3fr 3.6fr",
+      "cols": [
+       "Frente",
+       "O que faz"
+      ],
+      "rows": [
+       [
+        "Passagem",
+        "À aux. noturna às 18h45."
+       ]
+      ]
+     },
+     "say": "Continuando. Passagem: À aux. noturna às dezoito e quarenta e cinco."
+    }
+   ],
+   "quiz": {
+    "q": "Usei medicação ou kit.",
+    "o": [
+     "Pedir para o tutor voltar outro dia",
+     "Registre o uso para a saída da Raissa na segunda; nada sai sem registro.",
+     "Ignorar, porque não é urgente"
+    ],
+    "a": 1,
+    "why": "Registre o uso para a saída da Raissa na segunda; nada sai sem registro."
+   }
+  },
+  {
+   "id": "rotina",
+   "title": "Sua rotina",
+   "small": "O checklist do cargo",
+   "beats": [
+    {
+     "v": {
+      "type": "table",
+      "left": true,
+      "tag": "Sua rotina · Regras do plantão",
+      "h": "Igual ao **seu checklist**",
+      "grid": ".8fr 5fr",
+      "cols": [
+       "Hora",
+       "Tarefa"
+      ],
+      "rows": [
+       [
+        "Plantão",
+        "Nenhuma conduta clínica sem M.V.; medicação só conforme a prescrição e sob supervisão"
+       ],
+       [
+        "Plantão",
+        "Nada sai do estoque sem lançamento ou registro para a Raissa; controlados só com o M.V."
+       ],
+       [
+        "Plantão",
+        "Vídeo de paciente só pelo aparelho e canal do hospital"
+       ]
+      ]
+     },
+     "say": "Regras do plantão. Nenhuma conduta clínica sem médico veterinário; medicação só conforme a prescrição e sob supervisão. Nada sai do estoque sem lançamento ou registro para a Raissa; controlados só com o médico veterinário. Vídeo de paciente só pelo aparelho e canal do hospital."
+    },
+    {
+     "v": {
+      "type": "table",
+      "left": true,
+      "tag": "Sua rotina · Rotina do plantão diurno (1)",
+      "h": "Igual ao **seu checklist**",
+      "grid": ".8fr 5fr",
+      "cols": [
+       "Hora",
+       "Tarefa"
+      ],
+      "rows": [
+       [
+        "07:00",
+        "Passagem da aux. noturna ouvida junto com o M.V."
+       ],
+       [
+        "07:15",
+        "Vídeos de notícias dos internados gravados (com aval do M.V.) e enviados entre 7h e 8h"
+       ],
+       [
+        "08:00",
+        "Alimentação dos internados conforme a prescrição"
+       ],
+       [
+        "08:30",
+        "Limpeza e organização das baias da internação"
+       ],
+       [
+        "09:00",
+        "Suporte ao M.V.: contenção, coleta, exames e parâmetros"
+       ]
+      ]
+     },
+     "say": "Rotina do plantão diurno. Sete, Passagem da aux. noturna ouvida junto com o médico veterinário. Sete e quinze, Vídeos de notícias dos internados gravados (com aval do médico veterinário) e enviados entre sete e oito. Oito, Alimentação dos internados conforme a prescrição. Oito e trinta, Limpeza e organização das baias da internação. Nove, Suporte ao médico veterinário: contenção, coleta, exames e parâmetros."
+    },
+    {
+     "v": {
+      "type": "table",
+      "left": true,
+      "tag": "Sua rotina · Rotina do plantão diurno (2)",
+      "h": "Igual ao **seu checklist**",
+      "grid": ".8fr 5fr",
+      "cols": [
+       "Hora",
+       "Tarefa"
+      ],
+      "rows": [
+       [
+        "10:30",
+        "Limpeza e organização após o uso: raio-X, consultórios, ambulatórios e bloco cirúrgico"
+       ],
+       [
+        "12:00",
+        "Intervalo de almoço (1h) combinado com o M.V. de plantão; internação coberta"
+       ],
+       [
+        "14:00",
+        "Medicações da prescrição puxadas e separadas; seringas identificadas"
+       ],
+       [
+        "15:00",
+        "Esterilização dos materiais usados (embalados, identificados e registrados)"
+       ]
+      ]
+     },
+     "say": "Dez e trinta, Limpeza e organização após o uso: raio-X, consultórios, ambulatórios e bloco cirúrgico. Doze, Intervalo de almoço (uma hora) combinado com o médico veterinário de plantão; internação coberta. Quatorze, Medicações da prescrição puxadas e separadas; seringas identificadas. Quinze, Esterilização dos materiais usados (embalados, identificados e registrados)."
+    },
+    {
+     "v": {
+      "type": "table",
+      "left": true,
+      "tag": "Sua rotina · Rotina do plantão diurno (3)",
+      "h": "Igual ao **seu checklist**",
+      "grid": ".8fr 5fr",
+      "cols": [
+       "Hora",
+       "Tarefa"
+      ],
+      "rows": [
+       [
+        "16:00",
+        "Kits e insumos dos ambientes repostos; uso do dia registrado para a saída da Raissa"
+       ],
+       [
+        "17:00",
+        "Alimentação dos internados (2ª rodada)"
+       ],
+       [
+        "18:15",
+        "Descarte de perfurocortantes e resíduos (PGRSS)"
+       ],
+       [
+        "18:45",
+        "Passagem escrita à aux. noturna: pendências, faltas e uso de estoque"
+       ]
+      ]
+     },
+     "say": "Dezesseis, Kits e insumos dos ambientes repostos; uso do dia registrado para a saída da Raissa. Dezessete, Alimentação dos internados (2ª rodada). Dezoito e quinze, Descarte de perfurocortantes e resíduos (PGRSS). Dezoito e quarenta e cinco, Passagem escrita à aux. noturna: pendências, faltas e uso de estoque."
+    },
+    {
+     "v": {
+      "type": "table",
+      "left": true,
+      "tag": "Sua rotina · Eventual",
+      "h": "Igual ao **seu checklist**",
+      "grid": ".8fr 5fr",
+      "cols": [
+       "Hora",
+       "Tarefa"
+      ],
+      "rows": [
+       [
+        "—",
+        "Emergência: suporte ao M.V. em contenção e procedimentos"
+       ],
+       [
+        "—",
+        "Item em falta: registrado na passagem para a Raissa e a Thay"
+       ],
+       [
+        "—",
+        "Óbito: apoio ao M.V.; a notícia é do M.V."
+       ]
+      ]
+     },
+     "say": "Eventual. Emergência: suporte ao médico veterinário em contenção e procedimentos. Item em falta: registrado na passagem para a Raissa e a Thay. Óbito: apoio ao médico veterinário; a notícia é do médico veterinário."
+    }
+   ],
+   "quiz": {
+    "q": "Materiais usados.",
+    "o": [
+     "Esterilize, identifique e registre antes de sair.",
+     "Esperar a Laís perguntar",
+     "Resolver sozinho e não contar a ninguém"
+    ],
+    "a": 0,
+    "why": "Esterilize, identifique e registre antes de sair."
+   }
+  },
+  {
+   "id": "regras",
+   "title": "Regras e limites",
+   "small": "O que vale sempre",
+   "beats": [
+    {
+     "v": {
+      "type": "list",
+      "tag": "Regras do cargo",
+      "h": "Regras que **não mudam**",
+      "num": true,
+      "items": [
+       "Passagem escrita antes de sair.",
+       "Controlados só com o M.V."
+      ]
+     },
+     "say": "As regras do cargo. Primeiro: passagem escrita antes de sair. Por fim: controlados só com o médico veterinário."
+    },
+    {
+     "v": {
+      "type": "list",
+      "no": true,
+      "tag": "Limites",
+      "h": "Não é **sua função**",
+      "items": [
+       "Diagnosticar, prescrever ou mudar conduta.",
+       "Cobrança ou orientação ao tutor (recepção e M.V.)."
+      ]
+     },
+     "say": "E o que não é sua função. Diagnosticar, prescrever ou mudar conduta. Cobrança ou orientação ao tutor (recepção e médico veterinário)."
+    },
+    {
+     "v": {
+      "type": "list",
+      "tag": "Regras gerais da equipe",
+      "h": "Valem para **todos**",
+      "two": true,
+      "compact": true,
+      "items": [
+       "Pontualidade e registro de ponto em todas as entradas, saídas e intervalos; troca de horário só com aprovação da Laís (administrativo e faxina) ou da Thay (rotina clínica).",
+       "Almoço sempre com cobertura definida (tabela de almoço da equipe).",
+       "Passagem de turno sempre por escrito: pendências, pacientes, faltas de material e recados.",
+       "Checklist do dia: só a coluna de hoje aceita marcação; ✔, ✘ (com motivo em Observações) ou N/A, e rubrica no dia.",
+       "Um ✘ não é punição. Marcar ✔ sem realizar a atividade é fraude, passível de advertência.",
+       "Dados de tutores e pacientes só no sistema do hospital (LGPD): não trocar telefone pessoal com tutor, não fotografar nem divulgar prontuários, dependências ou clientes."
+      ]
+     },
+     "say": "E as regras gerais, que valem para toda a equipe. Pontualidade e registro de ponto em todas as entradas, saídas e intervalos; troca de horário só com aprovação da Laís (administrativo e faxina) ou da Thay (rotina clínica). Almoço sempre com cobertura definida (tabela de almoço da equipe). Passagem de turno sempre por escrito: pendências, pacientes, faltas de material e recados. Checklist do dia: só a coluna de hoje aceita marcação; visto, xis (com motivo em Observações) ou não se aplica, e rubrica no dia. Um xis não é punição. Marcar visto sem realizar a atividade é fraude, passível de advertência. Dados de tutores e pacientes só no sistema do hospital (lei de proteção de dados): não trocar telefone pessoal com tutor, não fotografar nem divulgar prontuários, dependências ou clientes."
+    }
+   ],
+   "quiz": {
+    "q": "Faltou item.",
+    "o": [
+     "Fazer do jeito que achar melhor, mesmo fora da regra",
+     "Anote na passagem para a Raissa e a Thay; urgente: avise o M.V. de plantão.",
+     "Deixar para o próximo turno, sem registrar"
+    ],
+    "a": 1,
+    "why": "Anote na passagem para a Raissa e a Thay; urgente: avise o M.V. de plantão."
+   }
+  },
+  {
+   "id": "condutas",
+   "title": "Boas condutas com o tutor",
+   "small": "O padrão do atendimento",
+   "beats": [
+    {
+     "v": {
+      "type": "cards",
+      "tag": "Conduta com o tutor",
+      "h": "Quando falar **com o tutor**",
+      "cols": 2,
+      "cards": [
+       {
+        "k": "Quando falar com o tutor",
+        "t": "Acolher pelo nome, com calma e postura",
+        "x": "informação clínica é sempre do M.V.; nunca prometer resultado.",
+        "w": "aux"
+       },
+       {
+        "k": "Postura",
+        "t": "Uniforme e EPI completos",
+        "x": "nada de celular pessoal, lanche ou conversa alta na frente do tutor.",
+        "w": "aux"
+       },
+       {
+        "k": "Óbito e reclamação",
+        "t": "Óbito é comunicado pelo M.V.",
+        "x": "reclamação é escutada sem discutir e levada à Laís no mesmo dia.",
+        "w": "aux"
+       },
+       {
+        "k": "Sigilo",
+        "t": "Nenhuma foto ou vídeo de paciente fora do canal oficial",
+        "x": "dados só no sistema do hospital.",
+        "w": "aux"
+       }
+      ]
+     },
+     "say": "Quando você falar com o tutor, siga o padrão do hospital. Quando falar com o tutor: Acolher pelo nome, com calma e postura; informação clínica é sempre do médico veterinário; nunca prometer resultado. Postura: Uniforme e EPI completos; nada de celular pessoal, lanche ou conversa alta na frente do tutor. Óbito e reclamação: Óbito é comunicado pelo médico veterinário; reclamação é escutada sem discutir e levada à Laís no mesmo dia. Sigilo: Nenhuma foto ou vídeo de paciente fora do canal oficial; dados só no sistema do hospital."
+    }
+   ],
+   "quiz": {
+    "q": "Fim do plantão (19h).",
+    "o": [
+     "Passagem escrita à aux. noturna às 18h45.",
+     "Ignorar, porque não é urgente",
+     "Pedir para o tutor voltar outro dia"
+    ],
+    "a": 0,
+    "why": "Passagem escrita à aux. noturna às 18h45."
+   }
+  },
+  {
+   "id": "situacoes",
+   "title": "Situações do dia a dia",
+   "small": "Respostas rápidas",
+   "beats": [
+    {
+     "v": {
+      "type": "table",
+      "left": true,
+      "tag": "Situações do dia a dia",
+      "h": "E agora, **o que eu faço?**",
+      "grid": "1.4fr 3fr",
+      "cols": [
+       "Situação",
+       "O que fazer"
+      ],
+      "rows": [
+       [
+        "Começo do plantão (7h).",
+        "Ouça a passagem da noturna com o M.V. e grave os vídeos de notícias entre 7h e 8h, com aval do M.V."
+       ],
+       [
+        "O M.V. não está presente e um paciente precisa de algo.",
+        "Nada clínico sem o M.V. Chame o M.V. de plantão."
+       ],
+       [
+        "Usei medicação ou kit.",
+        "Registre o uso para a saída da Raissa na segunda; nada sai sem registro."
+       ]
+      ]
+     },
+     "say": "Quando: Começo do plantão (sete). Ouça a passagem da noturna com o médico veterinário e grave os vídeos de notícias entre sete e oito, com aval do médico veterinário. Quando: O médico veterinário não está presente e um paciente precisa de algo. Nada clínico sem o médico veterinário Chame o médico veterinário de plantão. Quando: Usei medicação ou kit. Registre o uso para a saída da Raissa na segunda; nada sai sem registro."
+    },
+    {
+     "v": {
+      "type": "table",
+      "left": true,
+      "tag": "Situações do dia a dia",
+      "h": "E agora, **o que eu faço?**",
+      "grid": "1.4fr 3fr",
+      "cols": [
+       "Situação",
+       "O que fazer"
+      ],
+      "rows": [
+       [
+        "Materiais usados.",
+        "Esterilize, identifique e registre antes de sair."
+       ],
+       [
+        "Faltou item.",
+        "Anote na passagem para a Raissa e a Thay; urgente: avise o M.V. de plantão."
+       ],
+       [
+        "Fim do plantão (19h).",
+        "Passagem escrita à aux. noturna às 18h45."
+       ]
+      ]
+     },
+     "say": "Quando: Materiais usados. Esterilize, identifique e registre antes de sair. Quando: Faltou item. Anote na passagem para a Raissa e a Thay; urgente: avise o médico veterinário de plantão. Quando: Fim do plantão (dezenove). Passagem escrita à aux. noturna às dezoito e quarenta e cinco."
+    }
+   ]
+  },
+  {
+   "id": "emergencia",
+   "title": "Emergência e óbito",
+   "small": "O paciente vem primeiro",
+   "beats": [
+    {
+     "v": {
+      "type": "flow",
+      "tag": "Emergência",
+      "h": "O paciente segue **direto para a internação**",
+      "steps": [
+       {
+        "n": "1",
+        "t": "Sinalizou",
+        "w": [
+         [
+          "aux",
+          "tutor ou equipe"
+         ]
+        ]
+       },
+       {
+        "n": "2",
+        "t": "Internação",
+        "w": [
+         [
+          "plant",
+          "antes do cadastro"
+         ]
+        ]
+       },
+       {
+        "n": "3",
+        "t": "Estabilizar",
+        "w": [
+         [
+          "plant",
+          "avaliação do M.V."
+         ]
+        ]
+       },
+       {
+        "n": "4",
+        "t": "Tutor aguarda",
+        "w": [
+         [
+          "todos",
+          "acolhido na recepção"
+         ]
+        ]
+       },
+       {
+        "n": "5",
+        "t": "Consultório",
+        "w": [
+         [
+          "plant",
+          "M.V. chama o tutor"
+         ]
+        ]
+       },
+       {
+        "n": "6",
+        "t": "Quadro e plano",
+        "w": [
+         [
+          "plant",
+          "tratamento e orçamento"
+         ]
+        ]
+       }
+      ],
+      "me": [
+       0,
+       3
+      ]
+     },
+     "say": "Na emergência, sinalizada pelo tutor ou identificada pela equipe, o paciente segue direto para a avaliação na internação, antes de qualquer cadastro. O médico veterinário avalia e estabiliza. O tutor aguarda na recepção, acolhido, com água, café e um lugar para sentar. Passado o momento crítico, o médico veterinário chama o tutor ao consultório e apresenta o quadro e o plano de tratamento com o orçamento. Diagnóstico e gravidade são sempre informados pelo médico veterinário."
+    },
+    {
+     "v": {
+      "type": "rule",
+      "tone": "rule",
+      "tag": "Óbito",
+      "txt": "Quem comunica é **sempre o M.V.**",
+      "sub": "A equipe acolhe em local reservado. A parte burocrática só depois, quando o tutor estiver pronto: \"Nossos sinceros sentimentos, toda a equipe sente muito.\""
+     },
+     "say": "No óbito, quem comunica é sempre o médico veterinário. A equipe acolhe o tutor em local reservado. A parte burocrática só vem depois, quando o tutor estiver pronto, começando pelos sentimentos: nossos sinceros sentimentos, toda a equipe sente muito."
+    }
+   ],
+   "quiz": {
+    "q": "Chegou um paciente em emergência. O que acontece primeiro?",
+    "o": [
+     "Fazer o cadastro e a cobrança",
+     "O paciente vai direto para a internação, e o tutor aguarda acolhido na recepção",
+     "O tutor entra junto na internação"
+    ],
+    "a": 1,
+    "why": "Na emergência o paciente vem primeiro. O cadastro é feito depois, com calma, e o M.V. chama o tutor ao consultório após estabilizar."
+   }
+  },
+  {
+   "id": "checklist",
+   "title": "Checklist e indicadores",
+   "small": "Como você é acompanhado(a)",
+   "beats": [
+    {
+     "v": {
+      "type": "rule",
+      "tone": "no",
+      "tag": "Checklist do dia",
+      "txt": "Só a **coluna de hoje** aceita marcação. Marcar ✔ sem fazer é **fraude**.",
+      "sub": "✘ com motivo em Observações nunca é punição: é informação para corrigir o processo."
+     },
+     "say": "No checklist do dia, só a coluna de hoje aceita marcação. Marcar visto sem ter feito a atividade é fraude, passível de advertência. Já o xis, com o motivo em Observações, nunca é punição: é informação para corrigir o processo."
+    },
+    {
+     "v": {
+      "type": "table",
+      "left": true,
+      "tag": "Indicadores",
+      "h": "Como o cargo é **acompanhado**",
+      "grid": "1.2fr 4fr",
+      "cols": [
+       "Item",
+       "Detalhe"
+      ],
+      "rows": [
+       [
+        "Indicadores",
+        "Passagens completas; vídeos enviados; ambientes prontos."
+       ],
+       [
+        "Checklist",
+        "Meta: 90% ou mais dos plantões."
+       ],
+       [
+        "Conversa individual",
+        "Todo dia 15, com a supervisão: pontos fortes, a melhorar e combinados do mês."
+       ]
+      ]
+     },
+     "say": "Indicadores: Passagens completas; vídeos enviados; ambientes prontos. Checklist: Meta: noventa por cento ou mais dos plantões. E todo dia quinze tem a conversa individual com a supervisão."
+    }
+   ]
+  },
+  {
+   "id": "fim",
+   "title": "Encerramento e ciência",
+   "small": "Resumo e comprovante",
+   "beats": [
+    {
+     "v": {
+      "type": "list",
+      "tag": "Para levar com você",
+      "h": "O essencial **do seu cargo**",
+      "items": [
+       "Assumir no fim de semana e no feriado o suporte e as atividades das auxiliares e dos estagiários do dia.",
+       "Passagem escrita antes de sair.",
+       "Controlados só com o M.V."
+      ]
+     },
+     "say": "Para fechar, o essencial. Assumir no fim de semana e no feriado o suporte e as atividades das auxiliares e dos estagiários do dia. Passagem escrita antes de sair. Controlados só com o médico veterinário."
+    },
+    {
+     "v": {
+      "type": "title",
+      "dark": true,
+      "tag": "Hospital Veterinário Reino Animal",
+      "h": "Cada dia bem feito **faz a diferença.**",
+      "sub": "Consulte o seu manual de consulta sempre que precisar. Envie o comprovante deste treinamento.",
+      "chips": [
+       "Clareza",
+       "Cuidado",
+       "Encantar"
+      ],
+      "lastOn": true
+     },
+     "say": "Obrigado por assistir. Consulte o seu manual de consulta sempre que tiver dúvida, e envie o comprovante deste treinamento."
+    }
+   ],
+   "detail": [
+    {
+     "p": "Ao terminar, abra **Comprovante**, marque a ciência e envie pelo Gmail (hospitalreinoanimal@gmail.com) ou pelo WhatsApp da gestão (31 99711-9014)."
+    }
+   ]
+  }
+ ]
+};
 })();
-
 
 </script>
 <script>
