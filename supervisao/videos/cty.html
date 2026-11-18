@@ -825,11 +825,11 @@ return {
       "rows": [
        [
         "Auditoria dos atendimentos",
-        "Com os M.V.: indicação médica e itens vendidos condizentes com a anamnese; documentos emitidos de acordo com o atendimento; ficha completa no sistema (padrão ouro); despesas dos internados lançadas pela Internista."
+        "Com os M.V.: indicação médica e itens vendidos condizentes com a anamnese; documentos emitidos de acordo com o atendimento; ficha completa no sistema (padrão ouro); despesas dos internados lançadas pela Internista; comissionado errado na venda corrigido (Laís, Thay, Ana ou Vitor podem alterar)."
        ]
       ]
      },
-     "say": "Você é dono das seguintes frentes. Auditoria dos atendimentos: Com os médico veterinário: indicação médica e itens vendidos condizentes com a anamnese; documentos emitidos de acordo com o atendimento; ficha completa no sistema (padrão ouro); despesas dos internados lançadas pela Internista."
+     "say": "Você é dono das seguintes frentes. Auditoria dos atendimentos: Com os médico veterinário: indicação médica e itens vendidos condizentes com a anamnese; documentos emitidos de acordo com o atendimento; ficha completa no sistema (padrão ouro); despesas dos internados lançadas pela Internista; comissionado errado na venda corrigido (Laís, Thay, Ana ou Vitor podem alterar)."
     },
     {
      "v": {
@@ -897,11 +897,11 @@ return {
        ],
        [
         "Documentos e conformidade",
-        "Alvarás, licença sanitária, AVCB, CRMV, laudos radiométricos do raio-X, dedetização, extintores, caixa d’água e MTR."
+        "Alvarás, licença sanitária, AVCB, CRMV, laudos radiométricos do raio-X, dedetização, extintores, caixa d’água; emissão do MTR no site (a faxina acompanha a retirada)."
        ]
       ]
      },
-     "say": "Continuando. Controlados: Gestão e escrituração do livro de controlados, receitas retidas e armário; o responsável técnico assina. Documentos e conformidade: Alvarás, licença sanitária, AVCB, CRMV, laudos radiométricos do raio-X, dedetização, extintores, caixa d’água e manifesto de resíduos."
+     "say": "Continuando. Controlados: Gestão e escrituração do livro de controlados, receitas retidas e armário; o responsável técnico assina. Documentos e conformidade: Alvarás, licença sanitária, AVCB, CRMV, laudos radiométricos do raio-X, dedetização, extintores, caixa d’água; emissão do manifesto de resíduos no site (a faxina acompanha a retirada)."
     },
     {
      "v": {
@@ -990,11 +990,11 @@ return {
        ],
        [
         "10:00",
-        "Divergências da auditoria devolvidas ao M.V. que atendeu (correção no sistema, inclusive glosa PetLove) e registradas"
+        "Divergências da auditoria devolvidas ao M.V. que atendeu (correção no sistema, inclusive glosa PetLove) e registradas; comissionado errado na venda corrigido"
        ]
       ]
      },
-     "say": "Nove e trinta, Internados: despesas lançadas pela Internista (Ana) conferidas com a prescrição e os kits usados; pendência devolvida a ela no dia. Dez, Divergências da auditoria devolvidas ao médico veterinário que atendeu (correção no sistema, inclusive glosa PetLove) e registradas."
+     "say": "Nove e trinta, Internados: despesas lançadas pela Internista (Ana) conferidas com a prescrição e os kits usados; pendência devolvida a ela no dia. Dez, Divergências da auditoria devolvidas ao médico veterinário que atendeu (correção no sistema, inclusive glosa PetLove) e registradas; comissionado errado na venda corrigido."
     },
     {
      "v": {
@@ -1146,7 +1146,7 @@ return {
       "rows": [
        [
         "16:30",
-        "MTR (preenchido pela Assistente) conferido e coleta do lixo hospitalar acompanhada pela faxina"
+        "MTR emitido no site do órgão ambiental para o dia da coleta; faxina orientada a acompanhar a retirada com a empresa"
        ],
        [
         "15:00",
@@ -1155,14 +1155,10 @@ return {
        [
         "15:30",
         "Apoio à Ana na escala dos veterinários: buracos e trocas da semana registrados"
-       ],
-       [
-        "15:00",
-        "Livro de controlados entregue ao RT para assinatura"
        ]
       ]
      },
-     "say": "Dezesseis e trinta, manifesto de resíduos (preenchido pela Assistente) conferido e coleta do lixo hospitalar acompanhada pela faxina. Quinze, Escala dos estagiários e das aux. veterinárias (noturnas e de fim de semana ou feriado) fechada e comunicada. Quinze e trinta, Apoio à Ana na escala dos veterinários: buracos e trocas da semana registrados. Quinze, Livro de controlados entregue ao responsável técnico para assinatura."
+     "say": "Dezesseis e trinta, manifesto de resíduos emitido no site do órgão ambiental para o dia da coleta; faxina orientada a acompanhar a retirada com a empresa. Quinze, Escala dos estagiários e das aux. veterinárias (noturnas e de fim de semana ou feriado) fechada e comunicada. Quinze e trinta, Apoio à Ana na escala dos veterinários: buracos e trocas da semana registrados."
     },
     {
      "v": {
@@ -1177,12 +1173,16 @@ return {
       ],
       "rows": [
        [
+        "15:00",
+        "Livro de controlados entregue ao RT para assinatura"
+       ],
+       [
         "16:00",
         "Indicadores da semana (taxa de retorno, vacinas programadas × realizadas, orçamentos de cirurgia) à Laís e ao Vitor"
        ]
       ]
      },
-     "say": "Dezesseis, Indicadores da semana (taxa de retorno, vacinas programadas contra realizadas, orçamentos de cirurgia) à Laís e ao Vitor."
+     "say": "Quinze, Livro de controlados entregue ao responsável técnico para assinatura. Dezesseis, Indicadores da semana (taxa de retorno, vacinas programadas contra realizadas, orçamentos de cirurgia) à Laís e ao Vitor."
     },
     {
      "v": {
@@ -1617,12 +1617,16 @@ return {
         "Trate com 60 dias de antecedência e registre no calendário de conformidade."
        ],
        [
+        "Semana da coleta do lixo hospitalar.",
+        "Emita o MTR no site para o dia da coleta e oriente a faxina a acompanhar a retirada."
+       ],
+       [
         "Faxina fora do procedimento.",
         "Oriente na hora pelo procedimento escrito; falta, atraso ou postura: leve à Laís."
        ]
       ]
      },
-     "say": "Quando: Documento perto de vencer (alvará, CRMV, laudo radiométrico). Trate com sessenta dias de antecedência e registre no calendário de conformidade. Quando: Faxina fora do procedimento. Oriente na hora pelo procedimento escrito; falta, atraso ou postura: leve à Laís."
+     "say": "Quando: Documento perto de vencer (alvará, CRMV, laudo radiométrico). Trate com sessenta dias de antecedência e registre no calendário de conformidade. Quando: Semana da coleta do lixo hospitalar. Emita o manifesto de resíduos no site para o dia da coleta e oriente a faxina a acompanhar a retirada. Quando: Faxina fora do procedimento. Oriente na hora pelo procedimento escrito; falta, atraso ou postura: leve à Laís."
     }
    ],
    "quiz": {
@@ -1790,14 +1794,14 @@ return {
     }
    ],
    "quiz": {
-    "q": "Faxina fora do procedimento.",
+    "q": "Semana da coleta do lixo hospitalar.",
     "o": [
-     "Oriente na hora pelo procedimento escrito; falta, atraso ou postura: leve à Laís.",
+     "Emita o MTR no site para o dia da coleta e oriente a faxina a acompanhar a retirada.",
      "Deixar para o próximo turno, sem registrar",
      "Fazer do jeito que achar melhor, mesmo fora da regra"
     ],
     "a": 0,
-    "why": "Oriente na hora pelo procedimento escrito; falta, atraso ou postura: leve à Laís."
+    "why": "Emita o MTR no site para o dia da coleta e oriente a faxina a acompanhar a retirada."
    }
   },
   {

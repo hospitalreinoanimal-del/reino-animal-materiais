@@ -719,7 +719,7 @@ return {
        ],
        [
         "Jornada",
-        "Escala 12x36, das 07h30 às 19h30, com 1h de almoço (12h–13h), revezando com a Assistente."
+        "Escala 12x36, das 07h30 às 19h30, com 1h de almoço (11h30–12h30), revezando com a Assistente."
        ],
        [
         "Responde a",
@@ -731,7 +731,7 @@ return {
        ]
       ]
      },
-     "say": "Cargo: Auxiliar Administrativo (Recepção). Ocupantes: Kethelen e Ester. Jornada: Escala doze por trinta e seis, das sete e trinta às dezenove e trinta, com uma hora de almoço (das doze às treze), revezando com a Assistente. Responde a: Laís, Coordenadora Administrativa. Referência técnica: Assistente Administrativo."
+     "say": "Cargo: Auxiliar Administrativo (Recepção). Ocupantes: Kethelen e Ester. Jornada: Escala doze por trinta e seis, das sete e trinta às dezenove e trinta, com uma hora de almoço (das onze e trinta às doze e trinta), revezando com a Assistente. Responde a: Laís, Coordenadora Administrativa. Referência técnica: Assistente Administrativo."
     },
     {
      "v": {
@@ -1073,12 +1073,12 @@ return {
       ],
       "rows": [
        [
-        "12:00",
-        "Intervalo de almoço (1h) — a Assistente cobre a recepção (seg–sex)"
+        "11:30",
+        "Intervalo de almoço (11h30–12h30) — a Assistente cobre a recepção (seg–sex)"
        ],
        [
-        "13:00",
-        "Cobertura dos canais da Assistente no almoço dela (Flow e orçamentos) — N/A no fim de semana"
+        "12:30",
+        "Cobertura dos canais da Assistente no almoço dela (12h30–13h30: Flow e orçamentos) — N/A no fim de semana"
        ],
        [
         "14:00",
@@ -1090,7 +1090,7 @@ return {
        ]
       ]
      },
-     "say": "Doze, Intervalo de almoço (uma hora) — a Assistente cobre a recepção (de segunda a sexta). Treze, Cobertura dos canais da Assistente no almoço dela (Flow e orçamentos) — não se aplica no fim de semana. Quatorze, Documentos assinados do período digitalizados e anexados. Quinze, E-mail: 2ª checagem de resultados que chegaram no dia."
+     "say": "Onze e trinta, Intervalo de almoço (das onze e trinta às doze e trinta) — a Assistente cobre a recepção (de segunda a sexta). Doze e trinta, Cobertura dos canais da Assistente no almoço dela (das doze e trinta às treze e trinta: Flow e orçamentos) — não se aplica no fim de semana. Quatorze, Documentos assinados do período digitalizados e anexados. Quinze, E-mail: 2ª checagem de resultados que chegaram no dia."
     },
     {
      "v": {
@@ -1124,7 +1124,7 @@ return {
      "v": {
       "type": "table",
       "left": true,
-      "tag": "Sua rotina · Rotina do plantão 12x36 (5)",
+      "tag": "Sua rotina · Fim do plantão (1)",
       "h": "Igual ao **seu checklist**",
       "grid": ".8fr 5fr",
       "cols": [
@@ -1137,12 +1137,36 @@ return {
         "Fechamento de caixa: maquininhas, PIX e dinheiro × sistema (relatório para a Laís)"
        ],
        [
+        "18:45",
+        "Pendências do dia listadas por escrito: atendimentos sem assinatura, recebimento ou anexo, retornos e orçamentos em aberto, exames aguardados"
+       ],
+       [
         "19:00",
-        "Recepção e consultórios organizados e passagem de turno escrita"
+        "Passagem de plantão escrita para a colega do dia seguinte dar continuidade (pendências, recados, faltas da farmácia de venda)"
        ]
       ]
      },
-     "say": "Dezoito e trinta, Fechamento de caixa: maquininhas, pix e dinheiro contra sistema (relatório para a Laís). Dezenove, Recepção e consultórios organizados e passagem de turno escrita."
+     "say": "Fim do plantão. Dezoito e trinta, Fechamento de caixa: maquininhas, pix e dinheiro contra sistema (relatório para a Laís). Dezoito e quarenta e cinco, Pendências do dia listadas por escrito: atendimentos sem assinatura, recebimento ou anexo, retornos e orçamentos em aberto, exames aguardados. Dezenove, Passagem de plantão escrita para a colega do dia seguinte dar continuidade (pendências, recados, faltas da farmácia de venda)."
+    },
+    {
+     "v": {
+      "type": "table",
+      "left": true,
+      "tag": "Sua rotina · Fim do plantão (2)",
+      "h": "Igual ao **seu checklist**",
+      "grid": ".8fr 5fr",
+      "cols": [
+       "Hora",
+       "Tarefa"
+      ],
+      "rows": [
+       [
+        "19:15",
+        "Recepção e consultórios organizados; computador, balcão e caixa prontos para a abertura"
+       ]
+      ]
+     },
+     "say": "Dezenove e quinze, Recepção e consultórios organizados; computador, balcão e caixa prontos para a abertura."
     },
     {
      "v": {
@@ -1255,12 +1279,12 @@ return {
        "Nenhum atendimento sai sem cobrança conferida.",
        "Nunca estornar ou cancelar sem aprovação da Laís.",
        "Temperatura fora da faixa: M.V. de plantão na hora.",
-       "Passagem escrita e rubrica em todo plantão.",
+       "Fim do plantão: pendências e passagem por escrito para a colega do dia seguinte dar continuidade; rubrica em todo plantão.",
        "Óbito: acolher; a notícia é do M.V.",
        "M.V. volante: agendamento e confirmação só após o adiantamento de R$ 115, abatido do valor do atendimento."
       ]
      },
-     "say": "As regras do cargo. Primeiro: nenhum atendimento sai sem cobrança conferida. Depois: nunca estornar ou cancelar sem aprovação da Laís. Em seguida: temperatura fora da faixa: médico veterinário de plantão na hora. Também: passagem escrita e rubrica em todo plantão. E ainda: óbito: acolher; a notícia é do médico veterinário. Por fim: médico veterinário volante: agendamento e confirmação só após o adiantamento de cento e quinze reais, abatido do valor do atendimento."
+     "say": "As regras do cargo. Primeiro: nenhum atendimento sai sem cobrança conferida. Depois: nunca estornar ou cancelar sem aprovação da Laís. Em seguida: temperatura fora da faixa: médico veterinário de plantão na hora. Também: fim do plantão: pendências e passagem por escrito para a colega do dia seguinte dar continuidade; rubrica em todo plantão. E ainda: óbito: acolher; a notícia é do médico veterinário. Por fim: médico veterinário volante: agendamento e confirmação só após o adiantamento de cento e quinze reais, abatido do valor do atendimento."
     },
     {
      "v": {
@@ -1518,31 +1542,51 @@ return {
       ],
       "rows": [
        [
+        "Fim do plantão.",
+        "Feche o caixa, liste as pendências e escreva a passagem para a colega do dia seguinte dar continuidade."
+       ],
+       [
         "Tutor quer atendimento com M.V. volante.",
         "Agende e confirme só após o adiantamento de R$ 115, abatido do valor do atendimento."
        ],
        [
         "Óbito de paciente.",
         "Quem comunica é o M.V. Você acolhe em local reservado; a parte burocrática só depois, quando o tutor estiver pronto."
-       ],
+       ]
+      ]
+     },
+     "say": "Quando: Fim do plantão. Feche o caixa, liste as pendências e escreva a passagem para a colega do dia seguinte dar continuidade. Quando: Tutor quer atendimento com médico veterinário volante. Agende e confirme só após o adiantamento de cento e quinze reais, abatido do valor do atendimento. Quando: Óbito de paciente. Quem comunica é o médico veterinário Você acolhe em local reservado; a parte burocrática só depois, quando o tutor estiver pronto."
+    },
+    {
+     "v": {
+      "type": "table",
+      "left": true,
+      "tag": "Situações do dia a dia",
+      "h": "E agora, **o que eu faço?**",
+      "grid": "1.4fr 3fr",
+      "cols": [
+       "Situação",
+       "O que fazer"
+      ],
+      "rows": [
        [
         "Receita controlada retida.",
         "Entregue à Thay (livro de controlados). Nunca descarte."
        ]
       ]
      },
-     "say": "Quando: Tutor quer atendimento com médico veterinário volante. Agende e confirme só após o adiantamento de cento e quinze reais, abatido do valor do atendimento. Quando: Óbito de paciente. Quem comunica é o médico veterinário Você acolhe em local reservado; a parte burocrática só depois, quando o tutor estiver pronto. Quando: Receita controlada retida. Entregue à Thay (livro de controlados). Nunca descarte."
+     "say": "Quando: Receita controlada retida. Entregue à Thay (livro de controlados). Nunca descarte."
     }
    ],
    "quiz": {
-    "q": "Tutor quer atendimento com M.V. volante.",
+    "q": "Fim do plantão.",
     "o": [
      "Resolver sozinho e não contar a ninguém",
-     "Agende e confirme só após o adiantamento de R$ 115, abatido do valor do atendimento.",
+     "Feche o caixa, liste as pendências e escreva a passagem para a colega do dia seguinte dar continuidade.",
      "Esperar a Laís perguntar"
     ],
     "a": 1,
-    "why": "Agende e confirme só após o adiantamento de R$ 115, abatido do valor do atendimento."
+    "why": "Feche o caixa, liste as pendências e escreva a passagem para a colega do dia seguinte dar continuidade."
    }
   },
   {
@@ -1699,14 +1743,14 @@ return {
     }
    ],
    "quiz": {
-    "q": "Óbito de paciente.",
+    "q": "Tutor quer atendimento com M.V. volante.",
     "o": [
-     "Quem comunica é o M.V. Você acolhe em local reservado; a parte burocrática só depois, quando o tutor estiver pronto.",
+     "Agende e confirme só após o adiantamento de R$ 115, abatido do valor do atendimento.",
      "Deixar para o próximo turno, sem registrar",
      "Fazer do jeito que achar melhor, mesmo fora da regra"
     ],
     "a": 0,
-    "why": "Quem comunica é o M.V. Você acolhe em local reservado; a parte burocrática só depois, quando o tutor estiver pronto."
+    "why": "Agende e confirme só após o adiantamento de R$ 115, abatido do valor do atendimento."
    }
   },
   {

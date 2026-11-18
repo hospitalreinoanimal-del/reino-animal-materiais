@@ -825,8 +825,28 @@ return {
       "rows": [
        [
         "Caixa",
-        "Conferência do caixa D-1 (recepção e aux. noturna), sangria e inadimplentes."
+        "Conferência do caixa D-1 (recepção e aux. noturna) e sangria."
        ],
+       [
+        "Inadimplência",
+        "Toda conta em aberto é sanada: contato com o tutor, negociação e acordo registrado; em último caso, negativação do cliente."
+       ]
+      ]
+     },
+     "say": "Você é dono das seguintes frentes. Caixa: Conferência do caixa do dia anterior (recepção e aux. noturna) e sangria. Inadimplência: Toda conta em aberto é sanada: contato com o tutor, negociação e acordo registrado; em último caso, negativação do cliente."
+    },
+    {
+     "v": {
+      "type": "table",
+      "left": true,
+      "tag": "Responsabilidades · 2",
+      "h": "Você é **dono(a) de**",
+      "grid": "1.3fr 3.6fr",
+      "cols": [
+       "Frente",
+       "O que faz"
+      ],
+      "rows": [
        [
         "Atendimento ao cliente",
         "Suporte ao cliente, reclamações e gestão dos atendimentos do CRM (Flow): tempo de resposta e distribuição entre Assistente e Recepção."
@@ -837,13 +857,13 @@ return {
        ]
       ]
      },
-     "say": "Você é dono das seguintes frentes. Caixa: Conferência do caixa do dia anterior (recepção e aux. noturna), sangria e inadimplentes. Atendimento ao cliente: Suporte ao cliente, reclamações e gestão dos atendimentos do CRM (Flow): tempo de resposta e distribuição entre Assistente e Recepção. Vendas: Aprovação de estornos e cancelamentos; apoio aos orçamentos e negociação dentro da alçada."
+     "say": "Continuando. Atendimento ao cliente: Suporte ao cliente, reclamações e gestão dos atendimentos do CRM (Flow): tempo de resposta e distribuição entre Assistente e Recepção. Vendas: Aprovação de estornos e cancelamentos; apoio aos orçamentos e negociação dentro da alçada."
     },
     {
      "v": {
       "type": "table",
       "left": true,
-      "tag": "Responsabilidades · 2",
+      "tag": "Responsabilidades · 3",
       "h": "Você é **dono(a) de**",
       "grid": "1.3fr 3.6fr",
       "cols": [
@@ -867,34 +887,6 @@ return {
      "v": {
       "type": "table",
       "left": true,
-      "tag": "Responsabilidades · 3",
-      "h": "Você é **dono(a) de**",
-      "grid": "1.3fr 3.6fr",
-      "cols": [
-       "Frente",
-       "O que faz"
-      ],
-      "rows": [
-       [
-        "Pessoas",
-        "Ponto, folha, atestados, comissionados no SimplesVet, fechamento das metas, feedback e 1a1 do administrativo e da faxina; contratar e desligar com o Vitor."
-       ],
-       [
-        "BPO",
-        "Envio de documentos, conferência das entregas e validação da DRE com o Vitor."
-       ],
-       [
-        "Gestão",
-        "Relatório e reunião semanal com o João (Conselho) e o Vitor: entregas, pendências e melhorias."
-       ]
-      ]
-     },
-     "say": "Continuando. Pessoas: Ponto, folha, atestados, comissionados no SimplesVet, fechamento das metas, feedback e individual do administrativo e da faxina; contratar e desligar com o Vitor. Bê pê ó: Envio de documentos, conferência das entregas e validação da DRE com o Vitor. Gestão: Relatório e reunião semanal com o João (Conselho) e o Vitor: entregas, pendências e melhorias."
-    },
-    {
-     "v": {
-      "type": "table",
-      "left": true,
       "tag": "Responsabilidades · 4",
       "h": "Você é **dono(a) de**",
       "grid": "1.3fr 3.6fr",
@@ -904,23 +896,51 @@ return {
       ],
       "rows": [
        [
+        "Pessoas",
+        "Ponto, folha, atestados, comissionados (conferência mensal), fechamento das metas, feedback e 1a1 do administrativo e da faxina; contrata e desliga na equipe dela (o Vitor apoia na estratégia e nas decisões quando ela pedir)."
+       ],
+       [
+        "BPO",
+        "Envio de documentos, conferência das entregas e validação da DRE com o Vitor."
+       ]
+      ]
+     },
+     "say": "Continuando. Pessoas: Ponto, folha, atestados, comissionados (conferência mensal), fechamento das metas, feedback e individual do administrativo e da faxina; contrata e desliga na equipe dela (o Vitor apoia na estratégia e nas decisões quando ela pedir). Bê pê ó: Envio de documentos, conferência das entregas e validação da DRE com o Vitor."
+    },
+    {
+     "v": {
+      "type": "table",
+      "left": true,
+      "tag": "Responsabilidades · 5",
+      "h": "Você é **dono(a) de**",
+      "grid": "1.3fr 3.6fr",
+      "cols": [
+       "Frente",
+       "O que faz"
+      ],
+      "rows": [
+       [
+        "Gestão",
+        "Relatório e reunião semanal com o João (Conselho) e o Vitor: entregas, pendências e melhorias."
+       ],
+       [
         "Checklists",
         "Confere os checklists da Assistente e da Recepção; ✘ com motivo vira follow-up."
        ]
       ]
      },
-     "say": "Continuando. Checklists: Confere os checklists da Assistente e da Recepção; xis com motivo vira follow-up."
+     "say": "Continuando. Gestão: Relatório e reunião semanal com o João (Conselho) e o Vitor: entregas, pendências e melhorias. Checklists: Confere os checklists da Assistente e da Recepção; xis com motivo vira follow-up."
     }
    ],
    "quiz": {
-    "q": "O caixa de ontem não fechou.",
+    "q": "Cliente inadimplente.",
     "o": [
      "Pedir para o tutor voltar outro dia",
-     "Compare fechamento × maquininhas × PIX. Achou a diferença: corrija e avise a recepção. Não achou: registre e leve ao Vitor; comprovantes ao BPO.",
+     "Contate, negocie e registre o acordo no SimplesVet; sem retorno ou sem acordo, em último caso, negativação.",
      "Ignorar, porque não é urgente"
     ],
     "a": 1,
-    "why": "Compare fechamento × maquininhas × PIX. Achou a diferença: corrija e avise a recepção. Não achou: registre e leve ao Vitor; comprovantes ao BPO."
+    "why": "Contate, negocie e registre o acordo no SimplesVet; sem retorno ou sem acordo, em último caso, negativação."
    }
   },
   {
@@ -998,7 +1018,7 @@ return {
       "rows": [
        [
         "13:00",
-        "Inadimplentes no SimplesVet: contas em aberto acompanhadas, tutores contatados e acordos registrados"
+        "Inadimplência: contas em aberto contatadas e negociadas, acordos registrados no SimplesVet; sem acordo, último caso negativação"
        ],
        [
         "14:00",
@@ -1010,7 +1030,7 @@ return {
        ]
       ]
      },
-     "say": "Treze, Inadimplentes no SimplesVet: contas em aberto acompanhadas, tutores contatados e acordos registrados. Quatorze, Intervalo de almoço (uma hora). Quinze, Cadastro e precificação de serviços para venda: pedidos da equipe atendidos no SimplesVet (custo dos insumos com a Thay)."
+     "say": "Treze, Inadimplência: contas em aberto contatadas e negociadas, acordos registrados no SimplesVet; sem acordo, último caso negativação. Quatorze, Intervalo de almoço (uma hora). Quinze, Cadastro e precificação de serviços para venda: pedidos da equipe atendidos no SimplesVet (custo dos insumos com a Thay)."
     },
     {
      "v": {
@@ -1138,7 +1158,7 @@ return {
       "rows": [
        [
         "15:00",
-        "Inadimplência da semana: valores em aberto, acordos fechados e cobranças enviadas"
+        "Inadimplência da semana: valores em aberto, acordos fechados e casos sem retorno encaminhados à negativação"
        ],
        [
         "15:00",
@@ -1147,14 +1167,30 @@ return {
        [
         "16:00",
         "Relatório semanal do BPO conferido: pagamentos da próxima semana, recebimentos e conciliação"
-       ],
+       ]
+      ]
+     },
+     "say": "Quinze, Inadimplência da semana: valores em aberto, acordos fechados e casos sem retorno encaminhados à negativação. Quinze, Escala do fim de semana da recepção e da faxina fechada e comunicada. Dezesseis, Relatório semanal do bê pê ó conferido: pagamentos da próxima semana, recebimentos e conciliação."
+    },
+    {
+     "v": {
+      "type": "table",
+      "left": true,
+      "tag": "Sua rotina · Semanal (4)",
+      "h": "Igual ao **seu checklist**",
+      "grid": ".8fr 5fr",
+      "cols": [
+       "Hora",
+       "Tarefa"
+      ],
+      "rows": [
        [
         "18:00",
         "Relatório e reunião semanal com o João (Conselho) e o Vitor: entregas, pendências e melhorias"
        ]
       ]
      },
-     "say": "Quinze, Inadimplência da semana: valores em aberto, acordos fechados e cobranças enviadas. Quinze, Escala do fim de semana da recepção e da faxina fechada e comunicada. Dezesseis, Relatório semanal do bê pê ó conferido: pagamentos da próxima semana, recebimentos e conciliação. Dezoito, Relatório e reunião semanal com o João (Conselho) e o Vitor: entregas, pendências e melhorias."
+     "say": "Dezoito, Relatório e reunião semanal com o João (Conselho) e o Vitor: entregas, pendências e melhorias."
     },
     {
      "v": {
@@ -1206,11 +1242,11 @@ return {
        ],
        [
         "16:30",
-        "Inadimplência do mês: relatório ao Vitor e casos para cobrança formal"
+        "Inadimplência do mês sanada: recuperado, acordos em andamento e negativações feitas (relatório ao Vitor)"
        ]
       ]
      },
-     "say": "Quinze, Fechamento das metas do mês anterior (premiação Assistente e Recepção), com os indicadores de vacinas e retornos da Thay. Dezesseis, Resumo PetLove do mês: atendimentos, glosas e recebimentos (para o bê pê ó). Dezesseis e trinta, Inadimplência do mês: relatório ao Vitor e casos para cobrança formal."
+     "say": "Quinze, Fechamento das metas do mês anterior (premiação Assistente e Recepção), com os indicadores de vacinas e retornos da Thay. Dezesseis, Resumo PetLove do mês: atendimentos, glosas e recebimentos (para o bê pê ó). Dezesseis e trinta, Inadimplência do mês sanada: recuperado, acordos em andamento e negativações feitas (relatório ao Vitor)."
     },
     {
      "v": {
@@ -1238,11 +1274,11 @@ return {
        ],
        [
         "16:00",
-        "Comissionados do mês incluídos ou alterados no SimplesVet e conferidos antes do fechamento"
+        "Comissionados do mês conferidos antes do fechamento (alteração na venda: Laís, Thay, Ana ou Vitor)"
        ]
       ]
      },
-     "say": "Dezessete, Reunião de resultados com o Vitor e os sócios: DRE e fluxo de caixa do bê pê ó validados. Quinze, Calendário de pessoas: ASO, férias e vencimento de contratos de experiência. Quinze e trinta, Conversa individual (feedback) com cada profissional do administrativo e da faxina. Dezesseis, Comissionados do mês incluídos ou alterados no SimplesVet e conferidos antes do fechamento."
+     "say": "Dezessete, Reunião de resultados com o Vitor e os sócios: DRE e fluxo de caixa do bê pê ó validados. Quinze, Calendário de pessoas: ASO, férias e vencimento de contratos de experiência. Quinze e trinta, Conversa individual (feedback) com cada profissional do administrativo e da faxina. Dezesseis, Comissionados do mês conferidos antes do fechamento (alteração na venda: Laís, Thay, Ana ou Vitor)."
     },
     {
      "v": {
@@ -1262,19 +1298,15 @@ return {
        ],
        [
         "—",
-        "Vaga aberta: recrutamento, entrevistas e contratação aprovada com o Vitor"
+        "Vaga aberta na equipe dela: recrutamento, entrevistas e contratação (o Vitor apoia na estratégia, se ela pedir)"
        ],
        [
         "—",
         "Admissão: documentos à contabilidade, integração e treinamento do novo funcionário"
-       ],
-       [
-        "—",
-        "Manual de boas condutas apresentado (vídeo-treinamento + ciência assinada) a quem entrou ou teve feedback de conduta"
        ]
       ]
      },
-     "say": "Eventual. Sangria extra: caixa acima do limite, retirada registrada no SimplesVet. Vaga aberta: recrutamento, entrevistas e contratação aprovada com o Vitor. Admissão: documentos à contabilidade, integração e treinamento do novo funcionário. Manual de boas condutas apresentado (vídeo-treinamento + ciência assinada) a quem entrou ou teve feedback de conduta."
+     "say": "Eventual. Sangria extra: caixa acima do limite, retirada registrada no SimplesVet. Vaga aberta na equipe dela: recrutamento, entrevistas e contratação (o Vitor apoia na estratégia, se ela pedir). Admissão: documentos à contabilidade, integração e treinamento do novo funcionário."
     },
     {
      "v": {
@@ -1290,23 +1322,19 @@ return {
       "rows": [
        [
         "—",
-        "Desligamento: aprovado com o Vitor; contabilidade avisada; acessos e materiais recolhidos"
+        "Manual de boas condutas apresentado (vídeo-treinamento + ciência assinada) a quem entrou ou teve feedback de conduta"
+       ],
+       [
+        "—",
+        "Desligamento na equipe dela: decisão da Laís; contabilidade avisada; acessos e materiais recolhidos"
        ],
        [
         "—",
         "Advertência ou feedback formal registrado e assinado"
-       ],
-       [
-        "—",
-        "Glosa PetLove recebida: passada à Thay (aciona o M.V.); reenvio e recebimento acompanhados no prazo"
-       ],
-       [
-        "—",
-        "Negociação fora da alçada (desconto, parcelamento) levada ao Vitor"
        ]
       ]
      },
-     "say": "Desligamento: aprovado com o Vitor; contabilidade avisada; acessos e materiais recolhidos. Advertência ou feedback formal registrado e assinado. Glosa PetLove recebida: passada à Thay (aciona o médico veterinário); reenvio e recebimento acompanhados no prazo. Negociação fora da alçada (desconto, parcelamento) levada ao Vitor."
+     "say": "Manual de boas condutas apresentado (vídeo-treinamento + ciência assinada) a quem entrou ou teve feedback de conduta. Desligamento na equipe dela: decisão da Laís; contabilidade avisada; acessos e materiais recolhidos. Advertência ou feedback formal registrado e assinado."
     },
     {
      "v": {
@@ -1322,6 +1350,14 @@ return {
       "rows": [
        [
         "—",
+        "Glosa PetLove recebida: passada à Thay (aciona o M.V.); reenvio e recebimento acompanhados no prazo"
+       ],
+       [
+        "—",
+        "Negociação fora da alçada (desconto, parcelamento) levada ao Vitor"
+       ],
+       [
+        "—",
         "Reclamação formal de tutor: resposta em até 24h"
        ],
        [
@@ -1330,18 +1366,18 @@ return {
        ]
       ]
      },
-     "say": "Reclamação formal de tutor: resposta em até vinte e quatro horas. Falta sem cobertura (recepção, assistente, faxina): substituto acionado e troca registrada."
+     "say": "Glosa PetLove recebida: passada à Thay (aciona o médico veterinário); reenvio e recebimento acompanhados no prazo. Negociação fora da alçada (desconto, parcelamento) levada ao Vitor. Reclamação formal de tutor: resposta em até vinte e quatro horas. Falta sem cobertura (recepção, assistente, faxina): substituto acionado e troca registrada."
     }
    ],
    "quiz": {
-    "q": "O Flow está com mensagens sem resposta.",
+    "q": "O caixa de ontem não fechou.",
     "o": [
-     "Redistribua entre Assistente e Recepção e acompanhe até zerar; tempo de resposta é indicador seu.",
+     "Compare fechamento × maquininhas × PIX. Achou a diferença: corrija e avise a recepção. Não achou: registre e leve ao Vitor; comprovantes ao BPO.",
      "Esperar a Laís perguntar",
      "Resolver sozinho e não contar a ninguém"
     ],
     "a": 0,
-    "why": "Redistribua entre Assistente e Recepção e acompanhe até zerar; tempo de resposta é indicador seu."
+    "why": "Compare fechamento × maquininhas × PIX. Achou a diferença: corrija e avise a recepção. Não achou: registre e leve ao Vitor; comprovantes ao BPO."
    }
   },
   {
@@ -1358,12 +1394,12 @@ return {
       "items": [
        "Nenhum estorno ou cancelamento sem a sua aprovação, com motivo no SimplesVet.",
        "Sangria registrada no SimplesVet no mesmo dia.",
-       "Inadimplência revista toda quinta e reportada ao Vitor no dia 5.",
+       "Inadimplência sanada: contato, negociação e, em último caso, negativação; revista toda quinta e reportada ao Vitor no dia 5.",
        "Reunião semanal com o João e o Vitor toda sexta.",
        "Apresenta o Manual de Boas Condutas a cada novo colaborador que atende tutor."
       ]
      },
-     "say": "As regras do cargo. Primeiro: nenhum estorno ou cancelamento sem a sua aprovação, com motivo no SimplesVet. Depois: sangria registrada no SimplesVet no mesmo dia. Em seguida: inadimplência revista toda quinta e reportada ao Vitor no dia cinco. Também: reunião semanal com o João e o Vitor toda sexta. Por fim: apresenta o Manual de Boas Condutas a cada novo colaborador que atende tutor."
+     "say": "As regras do cargo. Primeiro: nenhum estorno ou cancelamento sem a sua aprovação, com motivo no SimplesVet. Depois: sangria registrada no SimplesVet no mesmo dia. Em seguida: inadimplência sanada: contato, negociação e, em último caso, negativação; revista toda quinta e reportada ao Vitor no dia cinco. Também: reunião semanal com o João e o Vitor toda sexta. Por fim: apresenta o Manual de Boas Condutas a cada novo colaborador que atende tutor."
     },
     {
      "v": {
@@ -1374,10 +1410,11 @@ return {
       "items": [
        "Conduta clínica e correção de glosa (M.V.).",
        "Auditoria clínica dos atendimentos, compras, estoque e conformidade (Thay).",
-       "Execução financeira: lançamentos, conciliação, agendamento de pagamentos (BPO)."
+       "Execução financeira: lançamentos, conciliação, agendamento de pagamentos (BPO).",
+       "Contratar ou desligar cargos superiores da gestão (Vitor)."
       ]
      },
-     "say": "E o que não é sua função. Conduta clínica e correção de glosa (médico veterinário). Auditoria clínica dos atendimentos, compras, estoque e conformidade (Thay). Execução financeira: lançamentos, conciliação, agendamento de pagamentos (bê pê ó)."
+     "say": "E o que não é sua função. Conduta clínica e correção de glosa (médico veterinário). Auditoria clínica dos atendimentos, compras, estoque e conformidade (Thay). Execução financeira: lançamentos, conciliação, agendamento de pagamentos (bê pê ó). Contratar ou desligar cargos superiores da gestão (Vitor)."
     },
     {
      "v": {
@@ -1399,14 +1436,14 @@ return {
     }
    ],
    "quiz": {
-    "q": "Um ✘ apareceu no checklist do administrativo.",
+    "q": "O Flow está com mensagens sem resposta.",
     "o": [
      "Fazer do jeito que achar melhor, mesmo fora da regra",
-     "Leia o motivo em Observações. Se for de processo, vira linha no Follow-up; se for de pessoa, vira assunto da conversa 1a1.",
+     "Redistribua entre Assistente e Recepção e acompanhe até zerar; tempo de resposta é indicador seu.",
      "Deixar para o próximo turno, sem registrar"
     ],
     "a": 1,
-    "why": "Leia o motivo em Observações. Se for de processo, vira linha no Follow-up; se for de pessoa, vira assunto da conversa 1a1."
+    "why": "Redistribua entre Assistente e Recepção e acompanhe até zerar; tempo de resposta é indicador seu."
    }
   },
   {
@@ -1535,14 +1572,14 @@ return {
     }
    ],
    "quiz": {
-    "q": "O BPO pediu um documento.",
+    "q": "Um ✘ apareceu no checklist do administrativo.",
     "o": [
-     "Você é a ponte: reúna com a equipe (Raissa para NFs de compra) e envie. Ninguém da equipe fala direto com o BPO.",
+     "Leia o motivo em Observações. Se for de processo, vira linha no Follow-up; se for de pessoa, vira assunto da conversa 1a1.",
      "Ignorar, porque não é urgente",
      "Pedir para o tutor voltar outro dia"
     ],
     "a": 0,
-    "why": "Você é a ponte: reúna com a equipe (Raissa para NFs de compra) e envie. Ninguém da equipe fala direto com o BPO."
+    "why": "Leia o motivo em Observações. Se for de processo, vira linha no Follow-up; se for de pessoa, vira assunto da conversa 1a1."
    }
   },
   {
@@ -1571,12 +1608,12 @@ return {
         "Escute, registre e dê retorno em até 24h. Se envolver conduta clínica, converse com o M.V. (e com a Thay, se for padrão de atendimento) antes do retorno."
        ],
        [
-        "O caixa de ontem não fechou.",
-        "Compare fechamento × maquininhas × PIX. Achou a diferença: corrija e avise a recepção. Não achou: registre e leve ao Vitor; comprovantes ao BPO."
+        "Cliente inadimplente.",
+        "Contate, negocie e registre o acordo no SimplesVet; sem retorno ou sem acordo, em último caso, negativação."
        ]
       ]
      },
-     "say": "Quando: A recepção pediu para estornar uma venda. Confira o motivo e o atendimento. Aprovou: estorno no SimplesVet com o motivo registrado. Negou: explique à recepção como conduzir com o tutor. Quando: Chegou reclamação de tutor (ou insatisfação na pesquisa). Escute, registre e dê retorno em até vinte e quatro horas. Se envolver conduta clínica, converse com o médico veterinário (e com a Thay, se for padrão de atendimento) antes do retorno. Quando: O caixa de ontem não fechou. Compare fechamento contra maquininhas contra pix. Achou a diferença: corrija e avise a recepção. Não achou: registre e leve ao Vitor; comprovantes ao bê pê ó."
+     "say": "Quando: A recepção pediu para estornar uma venda. Confira o motivo e o atendimento. Aprovou: estorno no SimplesVet com o motivo registrado. Negou: explique à recepção como conduzir com o tutor. Quando: Chegou reclamação de tutor (ou insatisfação na pesquisa). Escute, registre e dê retorno em até vinte e quatro horas. Se envolver conduta clínica, converse com o médico veterinário (e com a Thay, se for padrão de atendimento) antes do retorno. Quando: Cliente inadimplente. Contate, negocie e registre o acordo no SimplesVet; sem retorno ou sem acordo, em último caso, negativação."
     },
     {
      "v": {
@@ -1590,6 +1627,10 @@ return {
        "O que fazer"
       ],
       "rows": [
+       [
+        "O caixa de ontem não fechou.",
+        "Compare fechamento × maquininhas × PIX. Achou a diferença: corrija e avise a recepção. Não achou: registre e leve ao Vitor; comprovantes ao BPO."
+       ],
        [
         "O Flow está com mensagens sem resposta.",
         "Redistribua entre Assistente e Recepção e acompanhe até zerar; tempo de resposta é indicador seu."
@@ -1597,14 +1638,10 @@ return {
        [
         "Um ✘ apareceu no checklist do administrativo.",
         "Leia o motivo em Observações. Se for de processo, vira linha no Follow-up; se for de pessoa, vira assunto da conversa 1a1."
-       ],
-       [
-        "O BPO pediu um documento.",
-        "Você é a ponte: reúna com a equipe (Raissa para NFs de compra) e envie. Ninguém da equipe fala direto com o BPO."
        ]
       ]
      },
-     "say": "Quando: O Flow está com mensagens sem resposta. Redistribua entre Assistente e Recepção e acompanhe até zerar; tempo de resposta é indicador seu. Quando: Um xis apareceu no checklist do administrativo. Leia o motivo em Observações. Se for de processo, vira linha no Follow-up; se for de pessoa, vira assunto da conversa individual. Quando: O bê pê ó pediu um documento. Você é a ponte: reúna com a equipe (Raissa para notas fiscais de compra) e envie. Ninguém da equipe fala direto com o bê pê ó."
+     "say": "Quando: O caixa de ontem não fechou. Compare fechamento contra maquininhas contra pix. Achou a diferença: corrija e avise a recepção. Não achou: registre e leve ao Vitor; comprovantes ao bê pê ó. Quando: O Flow está com mensagens sem resposta. Redistribua entre Assistente e Recepção e acompanhe até zerar; tempo de resposta é indicador seu. Quando: Um xis apareceu no checklist do administrativo. Leia o motivo em Observações. Se for de processo, vira linha no Follow-up; se for de pessoa, vira assunto da conversa individual."
     },
     {
      "v": {
@@ -1618,6 +1655,10 @@ return {
        "O que fazer"
       ],
       "rows": [
+       [
+        "O BPO pediu um documento.",
+        "Você é a ponte: reúna com a equipe (Raissa para NFs de compra) e envie. Ninguém da equipe fala direto com o BPO."
+       ],
        [
         "Lançamento PetLove com erro no D-1.",
         "Valor ou guia: corrija no financeiro. Erro do atendimento: passe à Thay, que aciona o M.V. que atendeu."
@@ -1628,18 +1669,18 @@ return {
        ]
       ]
      },
-     "say": "Quando: Lançamento PetLove com erro no do dia anterior. Valor ou guia: corrija no financeiro. Erro do atendimento: passe à Thay, que aciona o médico veterinário que atendeu. Quando: Sexta-feira. Relatório e reunião com o João (Conselho) e o Vitor: entregas, pendências e melhorias."
+     "say": "Quando: O bê pê ó pediu um documento. Você é a ponte: reúna com a equipe (Raissa para notas fiscais de compra) e envie. Ninguém da equipe fala direto com o bê pê ó. Quando: Lançamento PetLove com erro no do dia anterior. Valor ou guia: corrija no financeiro. Erro do atendimento: passe à Thay, que aciona o médico veterinário que atendeu. Quando: Sexta-feira. Relatório e reunião com o João (Conselho) e o Vitor: entregas, pendências e melhorias."
     }
    ],
    "quiz": {
-    "q": "Lançamento PetLove com erro no D-1.",
+    "q": "O BPO pediu um documento.",
     "o": [
      "Resolver sozinho e não contar a ninguém",
-     "Valor ou guia: corrija no financeiro. Erro do atendimento: passe à Thay, que aciona o M.V. que atendeu.",
+     "Você é a ponte: reúna com a equipe (Raissa para NFs de compra) e envie. Ninguém da equipe fala direto com o BPO.",
      "Esperar a Laís perguntar"
     ],
     "a": 1,
-    "why": "Valor ou guia: corrija no financeiro. Erro do atendimento: passe à Thay, que aciona o M.V. que atendeu."
+    "why": "Você é a ponte: reúna com a equipe (Raissa para NFs de compra) e envie. Ninguém da equipe fala direto com o BPO."
    }
   },
   {
@@ -1772,7 +1813,7 @@ return {
       "rows": [
        [
         "Indicadores",
-        "Conversão de orçamentos; estornos; inadimplência; reclamações com retorno em 24h; tempo de resposta do Flow; entrega do checklist do administrativo."
+        "Conversão de orçamentos; estornos; inadimplência recuperada; reclamações com retorno em 24h; tempo de resposta do Flow; entrega do checklist do administrativo."
        ],
        [
         "Indicador compartilhado",
@@ -1788,18 +1829,18 @@ return {
        ]
       ]
      },
-     "say": "Indicadores: Conversão de orçamentos; estornos; inadimplência; reclamações com retorno em vinte e quatro horas; tempo de resposta do Flow; entrega do checklist do administrativo. Indicador compartilhado: Vacinas e retornos são resultado de todos: o médico veterinário registra o retorno e a vacina programada (a Thay garante o registro e acompanha o indicador); a Assistente e a Recepção fazem o contato com o tutor (a Laís acompanha a meta). Checklist: Meta: noventa por cento ou mais no mês. E todo dia quinze tem a conversa individual com a supervisão."
+     "say": "Indicadores: Conversão de orçamentos; estornos; inadimplência recuperada; reclamações com retorno em vinte e quatro horas; tempo de resposta do Flow; entrega do checklist do administrativo. Indicador compartilhado: Vacinas e retornos são resultado de todos: o médico veterinário registra o retorno e a vacina programada (a Thay garante o registro e acompanha o indicador); a Assistente e a Recepção fazem o contato com o tutor (a Laís acompanha a meta). Checklist: Meta: noventa por cento ou mais no mês. E todo dia quinze tem a conversa individual com a supervisão."
     }
    ],
    "quiz": {
-    "q": "Sexta-feira.",
+    "q": "Lançamento PetLove com erro no D-1.",
     "o": [
-     "Relatório e reunião com o João (Conselho) e o Vitor: entregas, pendências e melhorias.",
+     "Valor ou guia: corrija no financeiro. Erro do atendimento: passe à Thay, que aciona o M.V. que atendeu.",
      "Deixar para o próximo turno, sem registrar",
      "Fazer do jeito que achar melhor, mesmo fora da regra"
     ],
     "a": 0,
-    "why": "Relatório e reunião com o João (Conselho) e o Vitor: entregas, pendências e melhorias."
+    "why": "Valor ou guia: corrija no financeiro. Erro do atendimento: passe à Thay, que aciona o M.V. que atendeu."
    }
   },
   {
@@ -1816,10 +1857,10 @@ return {
        "Cliente bem atendido, venda bem feita, caixa em dia e equipe administrativa treinada e alinhada ao Manual de Boas Condutas.",
        "Nenhum estorno ou cancelamento sem a sua aprovação, com motivo no SimplesVet.",
        "Sangria registrada no SimplesVet no mesmo dia.",
-       "Inadimplência revista toda quinta e reportada ao Vitor no dia 5."
+       "Inadimplência sanada: contato, negociação e, em último caso, negativação; revista toda quinta e reportada ao Vitor no dia 5."
       ]
      },
-     "say": "Para fechar, o essencial. Cliente bem atendido, venda bem feita, caixa em dia e equipe administrativa treinada e alinhada ao Manual de Boas Condutas. Nenhum estorno ou cancelamento sem a sua aprovação, com motivo no SimplesVet. Sangria registrada no SimplesVet no mesmo dia. Inadimplência revista toda quinta e reportada ao Vitor no dia cinco."
+     "say": "Para fechar, o essencial. Cliente bem atendido, venda bem feita, caixa em dia e equipe administrativa treinada e alinhada ao Manual de Boas Condutas. Nenhum estorno ou cancelamento sem a sua aprovação, com motivo no SimplesVet. Sangria registrada no SimplesVet no mesmo dia. Inadimplência sanada: contato, negociação e, em último caso, negativação; revista toda quinta e reportada ao Vitor no dia cinco."
     },
     {
      "v": {

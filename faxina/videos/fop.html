@@ -692,8 +692,8 @@ return {
         T('Thay · Supervisora','auditoria, compras, estoque e rondas','aux',[[8,18,'08h–18h']]),
         T('Raissa · Aux. Vet.','estoque, farmácia, esterilização e suporte','aux',[[10.25,19.25,'10h15–19h15']]),
         T('Estagiários','Amanda · Bernardo','aux',[[8,13,'07h–13h'],[15,21,'15h–21h']]),
-        T('Faxina 12x36','todos os dias','todos',[[8,19,'07h–19h']])], notes:[['12h–13h','a Amanda cobre o almoço da Raissa; a Assistente cobre a recepção']]},
-       say:'No apoio: a recepção das sete e meia às dezenove e meia, a assistente das oito às dezoito, a Laís das dez às vinte, a Thay de segunda a sexta, das oito às dezoito, a Raissa a partir das dez e quinze, a Amanda de manhã e o Bernardo à tarde, e a faxina das sete às dezenove. Os almoços são em escala: ao meio-dia, a Amanda cobre a Raissa e a assistente cobre a recepção, que nunca fica vazia.'},
+        T('Faxina 12x36','todos os dias','todos',[[8,19,'07h–19h']])], notes:[['11h30–13h30','recepção e assistente almoçam em revezamento; 12h–13h a Amanda cobre a Raissa']]},
+       say:'No apoio: a recepção das sete e meia às dezenove e meia, a assistente das oito às dezoito, a Laís das dez às vinte, a Thay de segunda a sexta, das oito às dezoito, a Raissa a partir das dez e quinze, a Amanda de manhã e o Bernardo à tarde, e a faxina das sete às dezenove. Os almoços são em escala: a recepção almoça das onze e meia ao meio-dia e meia, com a assistente cobrindo, e a assistente das doze e meia às treze e meia; ao meio-dia, a Amanda cobre a Raissa. A recepção nunca fica vazia.'},
       {v:{type:'table', left:true, tag:'Seg a sex · atendimento', h:'Do balcão **ao consultório**', grid:'2fr 1.4fr 1.8fr 1.4fr', cols:['Processo','Dono','Participa','Recorre a'], rows:[
         ['Chegada, pesagem, cadastro e plano de saúde','**Recepção**','Assistente (almoço)','M.V. (emergência)'],
         ['Emergência','**M.V. da Linha de Frente**','Back, Raissa, estagiário','Internista'],
@@ -821,7 +821,7 @@ return {
       {v:{type:'table', left:true, tag:'Supervisão administrativa · Thay', h:'Escala, conformidade **e rondas**', grid:'2.2fr 1.1fr 2fr 1.2fr', cols:['Processo','Dono','Participa','Recorre a'], rows:[
         ['Escala dos estagiários e aux. veterinárias','**Thay**','—','Vitor'],
         ['Escala dos veterinários','**Ana (Internista)**','Thay apoia','Vitor'],
-        ['Controlados, documentos, raio-X, MTR e dedetização','**Thay**','RT assina; Assistente preenche o MTR','Vitor'],
+        ['Controlados, documentos, raio-X, MTR e dedetização','**Thay** (emite o MTR)','RT assina; faxina acompanha a coleta','Vitor'],
         ['Esterilização e procedimentos da faxina','**Thay** supervisiona','Raissa, auxiliares e faxina','Vitor']]},
        say:'Continuando. Faz a escala dos estagiários e das auxiliares veterinárias e apoia a Ana, que é a responsável pela escala dos veterinários. E cuida do livro de controlados, dos documentos e da conformidade, e supervisiona a esterilização e os procedimentos da faxina.'},
       {v:{type:'rule', tone:'rule', tag:'Quem recorre a quem', txt:'Necessidade da rotina clínica: **leve à Thay**.', sub:'Falta, compra, auditoria, equipamento, documento ou escala de estagiários e auxiliares: a Thay resolve ou leva à diretoria. Escala dos veterinários: Ana. Atendimento ao cliente, recepção e equipe administrativa seguem com a Laís.'},
