@@ -655,8 +655,9 @@ return {
       {v:{type:'table', left:true, tag:'Admissão · escolha pela permanência', h:'Qual kit **lançar na entrada**', grid:'1.3fr 4fr', cols:['Kit','Quando usar'], rows:[
         ['1.1.1 · 18526','**Diária inteira**: o paciente continua internado depois das 18h'],
         ['1.1 · 18513','**Meia diária**: alta no mesmo dia, até as 18h'],
-        ['1.1.2 · 18514','**Meia diária semi-intensiva**: descompensado, com critério registrado, e alta até as 18h']]},
-       say:'Na entrada do paciente, a primeira cobrança é sempre um kit de admissão, e a escolha depende da permanência. Se o paciente vai continuar internado depois das dezoito horas, lance o Kit Admissão Diária Inteira, código um ponto um ponto um. Se ele tem alta no mesmo dia, até as dezoito horas, lance o Kit Admissão Meia Diária, um ponto um. E se é um paciente descompensado, com o critério registrado, que tem alta até as dezoito horas, o Kit Admissão Meia Diária Semi-Intensiva, um ponto um ponto dois. Todos já trazem a diária e a taxa de admissão, com a bomba de infusão e os insumos.'},
+        ['1.1.2 · 18514','**Meia diária semi-intensiva**: descompensado, com critério registrado, e alta até as 18h'],
+        ['1.1.3 · 18527','**Diária inteira semi-intensiva**: descompensado, com critério registrado, e continua depois das 18h']]},
+       say:'Na entrada do paciente, a primeira cobrança é sempre um kit de admissão, e a escolha depende da permanência. Se o paciente vai continuar internado depois das dezoito horas, lance o Kit Admissão Diária Inteira, código um ponto um ponto um. Se ele tem alta no mesmo dia, até as dezoito horas, lance o Kit Admissão Meia Diária, um ponto um. Para o paciente descompensado, com o critério registrado, vale a mesma lógica na versão semi-intensiva: alta até as dezoito horas, o kit um ponto um ponto dois; continua internado depois das dezoito horas, o kit um ponto um ponto três. Todos já trazem a diária e a taxa de admissão, com a bomba de infusão e os insumos.'},
       {v:{type:'flow', tag:'No dia da admissão', h:'Kit **+ ambulatório + fluido**', steps:[
         {n:'1', t:'Kit de admissão', w:[['plant','pela permanência']]},
         {n:'2', t:'Ambulatório', w:[['plant','faixa de peso']]},
